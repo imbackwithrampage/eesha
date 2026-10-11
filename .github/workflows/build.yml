@@ -1,0 +1,59 @@
+# Builds the Windows installer from this repository on GitHub's own runner.
+# Run it by hand (Actions > Build > Run workflow) or by pushing a version tag.
+# The installer it uploads is unsigned. When the SignPath Foundation grants the
+# project a certificate, the signing request is added after the upload step:
+# it takes the uploaded artifact, so what is signed is exactly what was built here.
+name: Build
+
+on:
+  workflow_dispatch:
+  push:
+    tags: ["v*"]
+
+permissions:
+  contents: read
+
+jobs:
+  windows:
+    name: Windows installer
+    runs-on: windows-latest
+    timeout-minutes: 120
+    env:
+      CARGO_TERM_COLOR: always
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 24
+          cache: npm
+
+      - uses: dtolnay/rust-toolchain@stable
+
+      - uses: Swatinem/rust-cache@v2
+
+      - uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: 8.0.x
+
+      - name: Install the packages
+        run: npm ci
+
+      - name: Type-check, bundle and test the page
+        run: |
+          npm run build
+          npm test
+
+      - name: Build the installer
+        run: npm run pack
+
+      - name: Checksum
+        shell: pwsh
+        run: Get-FileHash release/lintel-*-setup.exe -Algorithm SHA256 | Format-List
+
+      - name: Upload the unsigned installer
+        uses: actions/upload-artifact@v4
+        with:
+          name: lintel-installer-unsigned
+          path: release/lintel-*-setup.exe
+          if-no-files-found: error

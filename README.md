@@ -18,6 +18,7 @@ Lintel shows your AI coding agent sessions and lets you answer their permission 
 - [Privacy](#privacy)
 - [Downloads and extra consent](#downloads-and-extra-consent)
 - [Known limits](#known-limits)
+- [Code signing policy](#code-signing-policy)
 - [Contributing](#contributing)
 - [Credits](#credits)
 - [Licence](#licence)
@@ -195,6 +196,19 @@ Hardware sensors (temperatures and fans) need two more consents. The helper `lin
 - On some laptops the sensor library cannot read the fans.
 
 [docs/ROADMAP.md](docs/ROADMAP.md) has the full list.
+
+## Code signing policy
+
+Releases are not code-signed yet. Lintel is applying to the SignPath Foundation's free code signing for open-source projects. Once it is granted, release installers will be signed on these terms:
+
+- Free code signing provided by [SignPath.io](https://signpath.io), certificate by [SignPath Foundation](https://signpath.org).
+- Every signed installer is built from this repository by the [build workflow](.github/workflows/build.yml) on GitHub's own runners, never on a private machine.
+- Committers and reviewers: [the repository's contributors](https://github.com/shakibbinkabir/lintel/graphs/contributors).
+- Approvers: [the repository's owner](https://github.com/shakibbinkabir).
+
+Privacy policy: this program will not transfer any information to other networked systems unless specifically requested by the user or the person installing or operating it. [docs/PRIVACY.md](docs/PRIVACY.md) lists every address Lintel can call and what turns each one on.
+
+Until then, each release gives the SHA-256 of its installer so a download can be checked.
 
 ## Contributing
 
