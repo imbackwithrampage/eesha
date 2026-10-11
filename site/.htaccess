@@ -1,2 +1,7 @@
 ErrorDocument 404 /404.html
 RedirectMatch 404 ^/_src(/|$)
+
+# Always the secure address.
+RewriteEngine On
+RewriteCond %{HTTPS} off
+RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
