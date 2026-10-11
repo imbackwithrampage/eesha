@@ -1,0 +1,81 @@
+[package]
+name = "lintel"
+description = "A notch toolkit for Windows"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+
+[lib]
+name = "notch_lib"
+crate-type = ["staticlib", "cdylib", "rlib"]
+
+[build-dependencies]
+tauri-build = { version = "2", features = [] }
+
+# scripts/new-feature.mjs adds one `notch-feat-<id>` line per feature below, in
+# order; build.rs turns those lines into the feature list.
+[dependencies]
+notch-brand = { path = "../crates/brand" }
+notch-core = { path = "../crates/core" }
+notch-feat-agent-usage = { path = "../crates/agent-usage" }
+notch-feat-apps = { path = "../crates/apps" }
+notch-feat-audio-extras = { path = "../crates/audio-extras" }
+notch-feat-audio-mixer = { path = "../crates/audio-mixer" }
+notch-feat-breaks = { path = "../crates/breaks" }
+notch-feat-calendar = { path = "../crates/calendar" }
+notch-feat-capture = { path = "../crates/capture" }
+notch-feat-chat-plus = { path = "../crates/chat-plus" }
+notch-feat-cleaner-uninstaller = { path = "../crates/cleaner-uninstaller" }
+notch-feat-clipboard = { path = "../crates/clipboard" }
+notch-feat-command-bar = { path = "../crates/command-bar" }
+notch-feat-companion = { path = "../crates/companion" }
+notch-feat-controls-toggles = { path = "../crates/controls-toggles" }
+notch-feat-dictation = { path = "../crates/dictation" }
+notch-feat-displays-keepawake = { path = "../crates/displays-keepawake" }
+notch-feat-editor = { path = "../crates/editor" }
+notch-feat-huds-power = { path = "../crates/huds-power" }
+notch-feat-hw-helper = { path = "../crates/hw-helper" }
+notch-feat-input-tools = { path = "../crates/input-tools" }
+notch-feat-island-extras = { path = "../crates/island-extras" }
+notch-feat-lyrics = { path = "../crates/lyrics" }
+notch-feat-media = { path = "../crates/media" }
+notch-feat-media-tools = { path = "../crates/media-tools" }
+notch-feat-misc-late = { path = "../crates/misc-late" }
+notch-feat-notifications-accessories = { path = "../crates/notifications-accessories" }
+notch-feat-radial-menu = { path = "../crates/radial-menu" }
+notch-feat-recorder = { path = "../crates/recorder" }
+notch-feat-shelf = { path = "../crates/shelf" }
+notch-feat-sysmon = { path = "../crates/sysmon" }
+notch-feat-timers-downloads = { path = "../crates/timers-downloads" }
+notch-feat-voice = { path = "../crates/voice" }
+notch-feat-weather = { path = "../crates/weather" }
+notch-feat-window-layout = { path = "../crates/window-layout" }
+svc-input = { path = "../crates/svc-input" }
+svc-windows = { path = "../crates/svc-windows" }
+tauri = { version = "2", features = ["tray-icon"] }
+tauri-plugin-single-instance = "2"
+tauri-plugin-autostart = "2"
+tauri-plugin-global-shortcut = "2"
+serde = { version = "1", features = ["derive"] }
+serde_json = { version = "1", features = ["preserve_order"] }
+tokio = { version = "1", features = ["net", "io-util", "sync", "time", "rt"] }
+reqwest = { version = "0.12", default-features = false, features = ["json", "rustls-tls"] }
+
+[target.'cfg(windows)'.dependencies]
+# The island's file drop reads paths straight from WebView2 (webview_drop.rs).
+# Same versions as wry, so nothing new is compiled.
+webview2-com = "0.39"
+wv2_core = { package = "windows-core", version = "0.62" }
+windows = { version = "0.61", features = [
+  "Win32_Foundation",
+  "Win32_Security",
+  "Win32_Security_Authorization",
+  "Win32_Storage_FileSystem",
+  "Win32_System_Com",
+  "Win32_System_Ole",
+  "Win32_System_Pipes",
+  "Win32_System_Threading",
+  "Win32_UI_Input_KeyboardAndMouse",
+  "Win32_UI_Shell",
+  "Win32_UI_WindowsAndMessaging",
+] }

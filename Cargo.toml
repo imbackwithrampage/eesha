@@ -1,0 +1,28 @@
+[workspace]
+members = ["src-tauri", "hook", "crates/*"]
+resolver = "2"
+
+[workspace.package]
+version = "1.0.0"
+edition = "2021"
+license = "GPL-3.0-or-later"
+
+# Release profile shared by the app and the hook relay: the hook must start fast
+# (Claude Code spawns it on every event), so we optimise for size and speed.
+# A debug copy grabs and encodes the screen in 0.4 s each without this.
+[profile.dev.package.svc-capture]
+opt-level = 3
+[profile.dev.package.png]
+opt-level = 3
+[profile.dev.package.fdeflate]
+opt-level = 3
+# A debug copy takes over a minute to checksum a 2.7 GB model file without this.
+[profile.dev.package.sha2]
+opt-level = 3
+
+[profile.release]
+opt-level = "s"
+lto = true
+codegen-units = 1
+panic = "abort"
+strip = true

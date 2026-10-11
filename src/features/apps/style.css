@@ -1,0 +1,76 @@
+/* Apps. Every selector starts with .f-apps- and uses the tokens of src/ui/tokens.css. */
+
+/* The island section, and one page of the window: a column whose list scrolls. */
+.f-apps-page { display: flex; flex-direction: column; gap: var(--s-2); height: 100%; min-height: 0; }
+/* The island is short: the card that shows a command takes the section until it is answered. */
+.f-apps-page > .f-apps-lane { min-height: 0; overflow-y: auto; scrollbar-width: thin; scrollbar-color: var(--card-2) transparent; }
+.f-apps-page:has(.f-apps-asking) > .f-apps-view { display: none; }
+.f-apps-view { display: flex; flex-direction: column; gap: var(--s-2); flex: 1; min-height: 0; }
+.f-apps-view > .field { flex: none; }
+
+.f-apps-head { display: flex; align-items: center; gap: var(--s-2); flex: none; min-height: 34px; }
+.f-apps-status { flex: 1; min-width: 0; display: flex; flex-direction: column; }
+.f-apps-status b { font: 600 var(--t-md) var(--font); color: var(--ink); }
+.f-apps-status small { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; font: 400 var(--t-xs) var(--font); color: var(--dim); }
+.f-apps-note { flex: none; margin: 0; font: 400 var(--t-sm) var(--font); color: var(--warn); }
+
+.f-apps-list { display: flex; flex-direction: column; gap: 2px; flex: 1; min-height: 0; overflow-y: auto; scrollbar-width: thin; scrollbar-color: var(--card-2) transparent; }
+.f-apps-row { display: flex; align-items: center; gap: var(--s-2); flex: none; min-height: 42px; padding: 0 var(--s-1) 0 var(--s-3); border-radius: var(--r-sm); transition: background-color var(--d-fast) var(--ease-out); }
+.f-apps-row:hover { background: var(--card); }
+.f-apps-name { flex: 1; min-width: 0; display: flex; flex-direction: column; }
+.f-apps-name b, .f-apps-name small { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.f-apps-name b { font: 500 var(--t-md) var(--font); color: var(--ink); }
+.f-apps-name small { font: 400 var(--t-xs) var(--font); color: var(--dim-2); }
+.f-apps-ver { flex: none; max-width: 42%; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; font: 400 var(--t-sm) var(--font); font-variant-numeric: tabular-nums; color: var(--dim); }
+.f-apps-ver b { font-weight: 500; color: var(--ink-2); }
+/* In the island a row is one line. */
+.f-apps-compact .f-apps-row { min-height: 32px; }
+.f-apps-compact .f-apps-name small { display: none; }
+.f-apps-empty { margin: auto; max-width: 70%; text-align: center; font: 400 var(--t-sm) var(--font); color: var(--dim); }
+.f-apps-empty.f-apps-bad { color: var(--bad); }
+
+/* The lane: the command about to run, the one running, how the last one ended. */
+.f-apps-lane { display: flex; flex-direction: column; gap: var(--s-2); flex: none; }
+.f-apps-lane:empty, .f-apps-lane[hidden] { display: none; }
+.f-apps-op { display: flex; align-items: center; gap: var(--s-2); }
+.f-apps-op-text { flex: 1; min-width: 0; display: flex; flex-direction: column; }
+.f-apps-op-text b, .f-apps-op-text small { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.f-apps-op-text b { font: 500 var(--t-md) var(--font); color: var(--ink); }
+.f-apps-op-text small { font: 400 var(--t-xs) var(--font); color: var(--dim); }
+.f-apps-op-text small.f-apps-wrap { white-space: normal; overflow-wrap: anywhere; user-select: text; }
+.f-apps-op .meter { flex: none; width: 120px; }
+.f-apps-pct { flex: none; width: 34px; text-align: right; font: 400 var(--t-sm) var(--font); font-variant-numeric: tabular-nums; color: var(--ink-2); }
+.f-apps-pct:empty { display: none; }
+.f-apps-busy::before { animation: f-apps-breathe 1s var(--ease-in-out) infinite alternate; }
+@keyframes f-apps-breathe { from { opacity: .25; } to { opacity: .7; } }
+@media (prefers-reduced-motion: reduce) { .f-apps-busy::before { animation: none; opacity: .45; } }
+
+.f-apps-ask { font: 600 var(--t-md) var(--font); color: var(--ink); }
+.f-apps-cmd { margin: var(--s-2) 0; padding: var(--s-2); max-height: 96px; overflow: auto; border-radius: var(--r-xs); background: var(--bg); color: var(--ink-2); font: 400 var(--t-xs) var(--mono); white-space: pre-wrap; overflow-wrap: anywhere; user-select: text; scrollbar-width: thin; scrollbar-color: var(--card-2) transparent; }
+.f-apps-hint { margin: 0; font: 400 var(--t-sm) var(--font); color: var(--dim); }
+.f-apps-actions { display: flex; justify-content: flex-end; gap: var(--s-2); margin-top: var(--s-2); }
+.f-apps-actions.f-apps-left { justify-content: flex-start; flex-wrap: wrap; margin-top: 0; }
+
+/* The window. */
+.f-apps-win { height: 100%; box-sizing: border-box; }
+.f-apps-tabs { display: flex; gap: var(--s-1); flex: none; padding: var(--s-2) var(--s-3); border-bottom: 1px solid var(--hairline); }
+.f-apps-win > .f-apps-lane { padding: var(--s-3) var(--s-4) 0; }
+.f-apps-body { display: flex; flex-direction: column; flex: 1; min-height: 0; padding: var(--s-3) var(--s-4) var(--s-4); }
+.f-apps-scroll { display: flex; flex-direction: column; gap: var(--s-2); flex: 1; min-height: 0; overflow-y: auto; scrollbar-width: thin; scrollbar-color: var(--card-2) transparent; }
+.f-apps-scroll > * { flex: none; }
+.f-apps-scroll .section-title { margin-bottom: 0; }
+.f-apps-scroll > .field textarea { min-height: 120px; resize: none; }
+
+.f-apps-result { display: flex; align-items: center; flex-wrap: wrap; gap: var(--s-2); padding-bottom: var(--s-2); font: 400 var(--t-sm) var(--font); color: var(--ink-2); }
+.f-apps-result:empty { display: none; }
+.f-apps-result > .f-apps-cmd { flex-basis: 100%; margin-bottom: 0; }
+.f-apps-log + .f-apps-log { margin-top: var(--s-3); }
+.f-apps-log h4 { margin: 0 0 var(--s-1); font: 600 var(--t-xs) var(--font); letter-spacing: var(--caps); text-transform: uppercase; color: var(--dim); }
+.f-apps-log ul { margin: 0; padding-left: var(--s-4); font: 400 var(--t-md) var(--font); color: var(--ink-2); }
+.f-apps-log li + li { margin-top: var(--s-1); }
+
+.f-apps-kinds { display: flex; align-items: center; gap: var(--s-1); }
+.f-apps-count { margin-left: auto; font: 400 var(--t-xs) var(--font); font-variant-numeric: tabular-nums; color: var(--dim); }
+
+/* Settings. */
+.f-apps-settings > .card > .f-apps-hint { padding: var(--s-2) 0; }

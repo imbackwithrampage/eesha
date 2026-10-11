@@ -1,0 +1,28 @@
+[
+  {
+    "version": "1.0.0",
+    "added": [
+      "The first public release, under its name: Lintel.",
+      "Capture with an editor, screen recording, a radial menu, a command bar and a desktop companion.",
+      "A voice assistant (new, off by default, English only)."
+    ],
+    "changed": [
+      "Settings, data and saved keys of the code-named build are copied over at the first start; the old install is left as it is.",
+      "Agents are connected again from Settings, with the usual diff and confirmation."
+    ],
+    "fixed": []
+  },
+  {
+    "version": "0.3.0",
+    "added": [
+      "Apps: the updates winget can install, a package search, these release notes and a way to send feedback.",
+      "Music with lyrics, volume and brightness levels, the battery and a clipboard history in the island.",
+      "Timers, downloads, a calendar with reminders, the weather and a shelf for files."
+    ],
+    "changed": [
+      "One dark look across the island, its windows and the settings.",
+      "Every feature can be turned off, and a feature that is off loads nothing."
+    ],
+    "fixed": []
+  }
+]

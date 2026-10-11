@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="dark">
+<title>Download Lintel 1.0.0 for Windows 10 and 11 | Lintel</title>
+<meta name="description" content="Download the free Lintel installer for Windows 10 and 11. No administrator rights needed. What Windows will ask, how to remove it, and how to build it yourself.">
+<link rel="canonical" href="https://lintel.thisissbk.com/download.html">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Lintel">
+<meta property="og:url" content="https://lintel.thisissbk.com/download.html">
+<meta property="og:title" content="Download Lintel 1.0.0 for Windows 10 and 11">
+<meta property="og:description" content="Download the free Lintel installer for Windows 10 and 11. No administrator rights needed. What Windows will ask, how to remove it, and how to build it yourself.">
+<meta property="og:image" content="https://lintel.thisissbk.com/img/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#0a0a0b">
+<link rel="icon" href="favicon.ico" sizes="32x32">
+<link rel="icon" href="img/icon-128.png" type="image/png">
+<link rel="apple-touch-icon" href="img/icon-256.png">
+<link rel="preload" href="fonts/Geist-Variable.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="css/site.css">
+<script>document.documentElement.classList.add("js")</script>
+<script defer src="js/site.js"></script>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="nav">
+  <nav class="nav-in wrap" aria-label="Main">
+    <a class="wordmark" href="index.html" aria-label="Lintel, home" translate="no"><svg class="bot" viewBox="0 0 58 58" aria-hidden="true"><defs><linearGradient id="bot-body" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#b0beff"/><stop offset=".55" stop-color="#8ea2ff"/><stop offset="1" stop-color="#616ead"/></linearGradient></defs><g id="bot"><circle cx="29" cy="29" r="26.7" fill="url(#bot-body)"/><rect x="8.7" y="15.1" width="40.6" height="16.2" rx="8.1" fill="#070708" fill-opacity=".94"/><rect class="bot-bar" x="20.3" y="21" width="17.4" height="4.4" rx="2.2" fill="#fff"/></g></svg>Lintel</a>
+    <button type="button" class="nav-toggle" aria-label="Menu" aria-expanded="false" aria-controls="nav-links"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 8.5h16M4 15.5h16"/></svg></button>
+    <div class="nav-links" id="nav-links">
+      <a href="features.html">Features</a>
+      <a href="screenshots.html">Screenshots</a>
+      <a href="guide.html">Guide</a>
+      <a href="docs.html">Docs</a>
+      <a href="contribute.html">Contribute</a>
+      <a href="about.html">About</a>
+      <a class="nav-get" href="download.html" aria-current="page">Download</a>
+    </div>
+  </nav>
+</header>
+
+<main id="main" tabindex="-1">
+<div class="page-head wrap">
+  <h1 class="rise">Download Lintel.</h1>
+  <p class="lede rise">Free, for Windows 10 and 11. It installs for your account only, so it never asks for administrator rights.</p>
+</div>
+
+<section class="wrap">
+  <div class="get">
+    <div class="get-card rise-late">
+      <div class="get-in">
+        <h2>Lintel for Windows</h2>
+        <a class="btn btn-solid" href="https://github.com/shakibbinkabir/lintel/releases/download/v1.0.0/lintel-1.0.0-setup.exe"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 4v11M7 10.5l5 5 5-5M5 19.5h14"/></svg>Download for Windows</a>
+        <dl class="facts">
+          <div><dt>Version</dt><dd>1.0.0</dd></div>
+          <div><dt>Size</dt><dd>39.8 MB</dd></div>
+          <div><dt>Needs</dt><dd>Windows 10 or 11</dd></div>
+        </dl>
+        <p class="fine" style="margin-top:22px">The file is <code>lintel-1.0.0-setup.exe</code>, from the project’s <a href="https://github.com/shakibbinkabir/lintel/releases">releases page on GitHub</a>, where older and newer versions are listed too.</p>
+      </div>
+    </div>
+
+    <div class="prose">
+      <h2>What Windows will ask</h2>
+      <p>Lintel is not code-signed yet. A signing certificate costs money every year, and this is a free project. So Windows does not know the file, and SmartScreen shows a blue warning: <strong>“Windows protected your PC”</strong>.</p>
+      <ol class="steps">
+        <li><strong>Open the file you downloaded.</strong>Your browser may also warn you. Choose Keep.</li>
+        <li><strong>Click “More info”.</strong>It is the small link in the blue window.</li>
+        <li><strong>Click “Run anyway”.</strong>The installer starts. It does not ask for an administrator.</li>
+        <li><strong>Finish the installer.</strong>Lintel starts, and the island greets you at the top of the screen.</li>
+      </ol>
+      <p>If you would rather not run an unsigned file, that is a fair choice. The whole source is public, and you can build it yourself with the commands below.</p>
+    </div>
+  </div>
+</section>
+
+<section class="wrap" style="padding-top:0">
+  <div class="prose">
+    <h2>What you need</h2>
+    <ul>
+      <li><strong>Windows 10 or Windows 11, 64-bit.</strong> Lintel does not run on macOS or Linux.</li>
+      <li><strong>The WebView2 runtime.</strong> Windows 11 has it. On Windows 10 the installer fetches it if it is missing.</li>
+      <li><strong>No account.</strong> Lintel has no sign-up and no server of its own.</li>
+      <li><strong>Nothing else to start.</strong> A few features need something extra, and each one says so: a key of your own for chat, a download for the voice assistant and dictation, one administrator prompt for hardware sensors.</li>
+    </ul>
+
+    <h2>Updates</h2>
+    <p>Lintel never checks for updates by itself. In Settings, open Apps and click “Check for updates” when you want to look.</p>
+
+    <h2>How to remove it</h2>
+    <ol class="steps">
+      <li><strong>Open Windows Settings.</strong>Go to Apps, then Installed apps.</li>
+      <li><strong>Find Lintel and choose Uninstall.</strong>The uninstaller takes Lintel’s entries out of your agents’ settings. It leaves your own data unless you tick the box to delete it.</li>
+    </ol>
+
+    <h2>Build it from source</h2>
+    <p>You need Node.js, the Rust toolchain and the WebView2 runtime on Windows. Then:</p>
+<pre><code>git clone https://github.com/shakibbinkabir/lintel
+cd lintel
+npm install
+npm run build
+npm run tauri dev</code></pre>
+    <p><code>npm run pack</code> makes the installer into the <code>release</code> folder. It also builds the hardware helper, which needs the .NET 8 SDK. More detail is in the <a href="docs.html#build">documentation</a> and on the <a href="contribute.html">Contribute</a> page.</p>
+  </div>
+</section>
+</main>
+
+<footer class="footer wrap">
+  <nav aria-label="Footer">
+    <a href="index.html">Home</a>
+    <a href="features.html">Features</a>
+    <a href="screenshots.html">Screenshots</a>
+    <a href="guide.html">Guide</a>
+    <a href="docs.html">Documentation</a>
+    <a href="contribute.html">Contribute</a>
+    <a href="about.html">About</a>
+    <a href="download.html">Download</a>
+    <a href="https://github.com/shakibbinkabir/lintel">GitHub</a>
+    <a href="https://github.com/shakibbinkabir/lintel/releases">Releases</a>
+  </nav>
+  <p>Lintel is free to use, to change and to share under the <a href="https://github.com/shakibbinkabir/lintel/blob/main/LICENSE">GNU General Public License, version 3 or later</a>. It is an independent project. The work it builds on is credited on the <a href="about.html">About</a> page and in <a href="https://github.com/shakibbinkabir/lintel/blob/main/NOTICE.md">NOTICE.md</a>.</p>
+  <p>Made by <a href="https://github.com/shakibbinkabir">Shakib Bin Kabir</a>. This site sets no cookies and loads nothing from anywhere else.</p>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,76 @@
+/* Cleaner. Every selector starts with .f-cleaner-uninstaller- and uses the tokens of src/ui/tokens.css. */
+
+/* The island section, and one page of the window: a column whose list scrolls. */
+.f-cleaner-uninstaller-page { display: flex; flex-direction: column; gap: var(--s-2); height: 100%; min-height: 0; }
+/* The island is short: the card that asks takes the section until it is answered. */
+.f-cleaner-uninstaller-page > .f-cleaner-uninstaller-lane { min-height: 0; overflow-y: auto; scrollbar-width: thin; scrollbar-color: var(--card-2) transparent; }
+.f-cleaner-uninstaller-page:has(.f-cleaner-uninstaller-asking) > .f-cleaner-uninstaller-view { display: none; }
+.f-cleaner-uninstaller-view { display: flex; flex-direction: column; gap: var(--s-2); flex: 1; min-height: 0; }
+.f-cleaner-uninstaller-view > .field { flex: none; }
+.f-cleaner-uninstaller-view > [hidden] { display: none; }
+
+.f-cleaner-uninstaller-head { display: flex; align-items: center; gap: var(--s-2); flex: none; min-height: 34px; }
+.f-cleaner-uninstaller-status { flex: 1; min-width: 0; display: flex; flex-direction: column; }
+.f-cleaner-uninstaller-status b { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; font: 600 var(--t-md) var(--font); color: var(--ink); }
+.f-cleaner-uninstaller-status small { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; font: 400 var(--t-xs) var(--font); color: var(--dim); }
+
+/* The list: group titles, then a row a find. */
+.f-cleaner-uninstaller-list { display: flex; flex-direction: column; gap: 2px; flex: 1; min-height: 0; overflow-y: auto; scrollbar-width: thin; scrollbar-color: var(--card-2) transparent; }
+.f-cleaner-uninstaller-list > * { flex: none; }
+/* A group's size stands over the sizes of its rows, which have a small button after them. */
+.f-cleaner-uninstaller-group { display: flex; align-items: center; gap: var(--s-2); margin: var(--s-2) 0 var(--s-1); padding: 0 calc(var(--s-1) + 24px + var(--s-2)) 0 var(--s-3); }
+.f-cleaner-uninstaller-group:first-child { margin-top: 0; }
+.f-cleaner-uninstaller-group > span:first-of-type { flex: 1; min-width: 0; }
+/* A group nobody can tick (the Recycle Bin) keeps its title in line with the others. */
+.f-cleaner-uninstaller-group > span:first-child { padding-left: calc(16px + var(--s-2)); }
+.f-cleaner-uninstaller-row { display: flex; align-items: center; gap: var(--s-2); min-height: 42px; padding: 0 var(--s-1) 0 var(--s-3); border-radius: var(--r-sm); transition: background-color var(--d-fast) var(--ease-out); }
+.f-cleaner-uninstaller-row:hover { background: var(--card); }
+.f-cleaner-uninstaller-name { flex: 1; min-width: 0; display: flex; flex-direction: column; }
+.f-cleaner-uninstaller-name b, .f-cleaner-uninstaller-name small { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.f-cleaner-uninstaller-name b { font: 500 var(--t-md) var(--font); color: var(--ink); }
+.f-cleaner-uninstaller-name small { font: 400 var(--t-xs) var(--font); color: var(--dim-2); }
+.f-cleaner-uninstaller-noted small { color: var(--warn); }
+.f-cleaner-uninstaller-size { flex: none; font: 400 var(--t-sm) var(--font); font-variant-numeric: tabular-nums; letter-spacing: 0; text-transform: none; color: var(--ink-2); }
+/* In the island a row is one line. */
+.f-cleaner-uninstaller-compact .f-cleaner-uninstaller-row { min-height: 32px; }
+.f-cleaner-uninstaller-compact .f-cleaner-uninstaller-name:not(.f-cleaner-uninstaller-noted) small { display: none; }
+.f-cleaner-uninstaller-empty { margin: auto; padding: var(--s-4) 0; max-width: 76%; text-align: center; font: 400 var(--t-sm) var(--font); color: var(--dim); }
+.f-cleaner-uninstaller-foot { padding: var(--s-3) var(--s-3) 0; }
+
+/* The tick box. */
+.f-cleaner-uninstaller-check { display: grid; flex: none; place-items: center; width: 16px; height: 16px; padding: 0; border: 1.5px solid var(--dim-2); border-radius: var(--r-xs); background: transparent; color: transparent; cursor: pointer; outline: 2px solid transparent; outline-offset: 2px; transition: background-color var(--d-fast) var(--ease-out), border-color var(--d-fast) var(--ease-out), color var(--d-fast) var(--ease-out); }
+.f-cleaner-uninstaller-check:hover { border-color: var(--ink-2); }
+.f-cleaner-uninstaller-check:focus-visible { outline-color: color-mix(in srgb, var(--accent) 50%, transparent); }
+.f-cleaner-uninstaller-check[aria-checked="true"] { border-color: var(--accent); background: var(--accent); color: var(--accent-ink); }
+.f-cleaner-uninstaller-check svg { stroke-width: 2.5; }
+
+/* The lane: what is about to move or run, what is moving, how it ended. */
+.f-cleaner-uninstaller-lane, .f-cleaner-uninstaller-un { display: flex; flex-direction: column; gap: var(--s-2); flex: none; }
+.f-cleaner-uninstaller-lane:empty, .f-cleaner-uninstaller-un:empty { display: none; }
+.f-cleaner-uninstaller-op { display: flex; align-items: center; gap: var(--s-2); }
+.f-cleaner-uninstaller-op-text { flex: 1; min-width: 0; display: flex; flex-direction: column; }
+.f-cleaner-uninstaller-op-text b, .f-cleaner-uninstaller-op-text small { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.f-cleaner-uninstaller-op-text b { font: 500 var(--t-md) var(--font); color: var(--ink); }
+.f-cleaner-uninstaller-op-text small { font: 400 var(--t-xs) var(--font); font-variant-numeric: tabular-nums; color: var(--dim); }
+.f-cleaner-uninstaller-wrap .f-cleaner-uninstaller-op { align-items: flex-start; }
+.f-cleaner-uninstaller-wrap .f-cleaner-uninstaller-op-text :is(b, small) { white-space: normal; overflow-wrap: anywhere; }
+.f-cleaner-uninstaller-op .meter { flex: none; width: 120px; }
+/* What an uninstalled program left, inside its card. */
+.f-cleaner-uninstaller-un .f-cleaner-uninstaller-list { flex: none; max-height: 190px; margin-top: var(--s-2); }
+.f-cleaner-uninstaller-un .f-cleaner-uninstaller-row:hover { background: var(--card-2); }
+
+.f-cleaner-uninstaller-ask { font: 600 var(--t-md) var(--font); color: var(--ink); }
+.f-cleaner-uninstaller-picked { margin: var(--s-1) 0 var(--s-2); font: 400 var(--t-sm) var(--font); color: var(--ink-2); overflow-wrap: anywhere; }
+.f-cleaner-uninstaller-cmd { margin: var(--s-2) 0; padding: var(--s-2); max-height: 96px; overflow: auto; border-radius: var(--r-xs); background: var(--bg); color: var(--ink-2); font: 400 var(--t-xs) var(--mono); white-space: pre-wrap; overflow-wrap: anywhere; user-select: text; scrollbar-width: thin; scrollbar-color: var(--card-2) transparent; }
+.f-cleaner-uninstaller-hint { margin: 0; font: 400 var(--t-sm) var(--font); color: var(--dim); }
+.f-cleaner-uninstaller-actions { display: flex; justify-content: flex-end; gap: var(--s-2); margin-top: var(--s-2); }
+.f-cleaner-uninstaller-actions.f-cleaner-uninstaller-left { justify-content: flex-start; flex-wrap: wrap; margin-top: var(--s-3); }
+
+/* The window. */
+.f-cleaner-uninstaller-win { height: 100%; box-sizing: border-box; }
+.f-cleaner-uninstaller-tabs { display: flex; gap: var(--s-1); flex: none; padding: var(--s-2) var(--s-3); border-bottom: 1px solid var(--hairline); }
+.f-cleaner-uninstaller-win > .f-cleaner-uninstaller-lane { padding: var(--s-3) var(--s-4) 0; }
+.f-cleaner-uninstaller-body { display: flex; flex-direction: column; flex: 1; min-height: 0; padding: var(--s-3) var(--s-4) var(--s-4); }
+
+/* Settings: the kinds of file, as chips that are on or off. */
+.f-cleaner-uninstaller-kinds { display: flex; flex-wrap: wrap; gap: var(--s-1); padding: var(--s-2) 0; border-top: 1px solid var(--hairline); }

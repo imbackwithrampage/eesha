@@ -1,0 +1,59 @@
+/* Media tools. Every selector starts with .f-media-tools- and uses the tokens of src/ui/tokens.css. */
+
+.f-media-tools-page {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: var(--s-2);
+  min-height: 0;
+  border-radius: var(--r-sm);
+  outline: 2px solid transparent;
+  outline-offset: 6px;
+  transition: outline-color var(--d-fast) var(--ease-out);
+}
+.f-media-tools-page.f-media-tools-over { outline-color: var(--accent); }
+.f-media-tools-page > .isl-row > .btn { flex: none; }
+.f-media-tools-page > .isl-row > .meter { flex: 0 0 96px; }
+.f-media-tools-status { min-width: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+
+/* The chosen files, or the invitation to drop some. */
+.f-media-tools-files {
+  display: flex;
+  align-items: center;
+  gap: var(--s-2);
+  height: 36px;
+  padding: 0 var(--s-3);
+  border-radius: var(--r-sm);
+  background: var(--card);
+  box-shadow: inset 0 0 0 1px var(--hairline);
+  color: var(--ink-2);
+  font: 400 var(--t-sm) var(--font);
+}
+.f-media-tools-files > span { min-width: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+
+/* A few options in a row, each with its small label above. */
+.f-media-tools-opts { display: flex; flex-wrap: wrap; gap: var(--s-2) var(--s-3); align-items: flex-end; min-height: 0; }
+.f-media-tools-opt { display: flex; flex-direction: column; gap: var(--s-1); font: 400 var(--t-sm) var(--font); color: var(--ink-3); }
+.f-media-tools-select select { min-width: 72px; }
+.f-media-tools-num { width: 64px; }
+.f-media-tools-num input { width: 100%; }
+.f-media-tools-wide { width: 168px; }
+
+/* What the text recogniser read. */
+.f-media-tools-text {
+  min-height: 0;
+  max-height: 72px;
+  padding: var(--s-2) var(--s-3);
+  overflow: auto;
+  border-radius: var(--r-sm);
+  background: var(--card);
+  box-shadow: inset 0 0 0 1px var(--hairline);
+  color: var(--ink);
+  font: 400 var(--t-sm) var(--font);
+  white-space: pre-wrap;
+  user-select: text;
+}
+
+.f-media-tools-settings { display: flex; flex-direction: column; gap: var(--s-3); }
+.f-media-tools-hint { color: var(--ink-2); font: 400 var(--t-sm) var(--font); }
+.f-media-tools-note { margin: 0; color: var(--ink-3); font: 400 var(--t-sm) var(--font); }

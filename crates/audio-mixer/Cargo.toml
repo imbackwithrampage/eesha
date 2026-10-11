@@ -1,0 +1,27 @@
+[package]
+name = "notch-feat-audio-mixer"
+description = "Lintel feature: Audio mixer"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+
+[dependencies]
+notch-core = { path = "../core" }
+svc-audio = { path = "../svc-audio" }
+# App icons, as PNG.
+svc-shell = { path = "../svc-shell" }
+base64 = "0.22"
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+tauri = { version = "2", features = [] }
+# List the Win32 API sets this feature calls; Cargo unifies them across the workspace.
+windows = { version = "0.61", features = [
+  "Win32_Foundation",
+  "Win32_Storage_FileSystem",
+] }
+
+# Every example of the workspace is linked into target/<profile>/examples/ under
+# its own name, so a name several crates use is whichever was built last.
+[[example]]
+name = "mixer-probe"
+path = "examples/mixer-probe.rs"

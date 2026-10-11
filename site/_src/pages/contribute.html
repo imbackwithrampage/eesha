@@ -1,0 +1,123 @@
+<div class="page-head wrap">
+  <h1 class="rise">Everyone is welcome.</h1>
+  <p class="lede rise">That includes people who have never sent a pull request. A typo fix, a better translation, a clear bug report and a new feature are all real contributions.</p>
+</div>
+
+<section class="wrap">
+  <div class="split">
+    <nav class="toc" aria-label="On this page">
+      <a href="#start">Build and run</a>
+      <a href="#where">A map of the tree</a>
+      <a href="#feature">Add a feature</a>
+      <a href="#translate">Translate</a>
+      <a href="#rules">The rules</a>
+      <a href="#wanted">Help wanted</a>
+      <a href="#propose">Propose a change</a>
+      <a href="#bugs">Bugs and security</a>
+      <a href="#licence">Licence</a>
+    </nav>
+
+    <div class="prose">
+      <p>This page is a short version of <a href="{REPO}/blob/main/CONTRIBUTING.md">CONTRIBUTING.md</a> in the repository, which is the full guide. Please read the <a href="{REPO}/blob/main/CODE_OF_CONDUCT.md">code of conduct</a> first. It is short. If something is unclear, open an issue and ask: the question is useful too.</p>
+
+      <h2 id="start">Build and run in four commands</h2>
+      <p>You need Windows 10 or 11, Node.js, the Rust toolchain and the WebView2 runtime.</p>
+<pre><code>npm install
+npm run build            # type-check and vite build (also builds the hook relay)
+cargo check --workspace  # needs dist/ to exist, so run `npm run build` first
+npm run tauri dev        # run the app</code></pre>
+      <p>Two more commands help while you work:</p>
+<pre><code>npm test                 # the node --test suites
+npm run fake-session     # a pretend agent session through the relay, while the app runs</code></pre>
+      <p><code>npm run pack</code> builds the installer into <code>release/</code>. It also builds the hardware helper, which needs the .NET 8 SDK. Nothing else needs it.</p>
+
+      <h2 id="where">A map of the tree</h2>
+      <ul>
+        <li><code>crates/&lt;feature&gt;/</code>: one Rust crate for each feature. <code>crates/svc-&lt;name&gt;/</code>: shared services (audio, media, capture, input and so on). <code>crates/core/</code>: what every feature uses.</li>
+        <li><code>src/features/&lt;feature&gt;/</code>: the TypeScript side of each feature.</li>
+        <li><code>src-tauri/</code>: the app host. The island window, the feature registry, settings, the tray, shortcuts and the base features.</li>
+        <li><code>src/ui/</code>: the design tokens and components. <code>src/island/</code>, <code>src/settings/</code>, <code>src/i18n/</code> and the rest: the shared page code.</li>
+        <li><code>hook/</code>: the relay <code>lintel-hook.exe</code> that agent programs start on each event. <code>helper/</code>: the hardware helper <code>lintel-hw.exe</code>, the only part that runs as administrator.</li>
+        <li><code>tests/</code>, <code>scripts/</code> and <code>docs/</code>: the test suites, the generator and the checks, and the documents.</li>
+      </ul>
+      <p>Inside the code, crate names keep an older prefix (<code>notch-core</code>, <code>notch-feat-&lt;id&gt;</code>). That is on purpose. Do not rename them.</p>
+
+      <h2 id="feature">A feature is one folder that can be switched off</h2>
+      <ol class="steps">
+        <li><strong>Pick a short id.</strong>Lower case with dashes, for example <code>night-light</code>.</li>
+        <li><strong>Run the generator.</strong><code>node scripts/new-feature.mjs night-light</code> creates the crate (a feature that is off by default) and the folder <code>src/features/night-light/</code>. The app finds the feature by itself.</li>
+        <li><strong>Run <code>cargo check --workspace</code> once.</strong>It completes the lock file.</li>
+        <li><strong>Write the two sides.</strong>Rust in <code>crates/night-light/src/lib.rs</code>, the page in <code>src/features/night-light/index.ts</code>.</li>
+        <li><strong>Check your feature alone while you work.</strong><code>cargo check -p notch-feat-night-light</code> and <code>npx tsc --noEmit -p src/features/night-light</code>.</li>
+      </ol>
+      <p>A feature owns its two folders and nothing outside them, its CSS classes (they start with <code>.f-&lt;id&gt;-</code>), its words in its own <code>strings.json</code>, and its settings.</p>
+      <p class="note"><strong>The rule that matters most: a feature that is off loads nothing.</strong> Everything starts in <code>start</code> and ends in <code>stop</code>: hooks, timers, threads, windows, subscriptions.</p>
+
+      <h2 id="translate">Add or fix a translation</h2>
+      <p>Translations are very welcome, and you do not need to build the app to help.</p>
+      <ul>
+        <li>The words of a feature live in <code>src/features/&lt;id&gt;/strings.json</code>. The words of the base app live in <code>src/i18n/strings.json</code> and <code>src/i18n/extra.json</code>.</li>
+        <li>Each entry is keyed by its English text and holds ten languages: English, Simplified Chinese, Hindi, Spanish, Arabic, French, Bengali, Brazilian Portuguese, Russian and Indonesian.</li>
+        <li>Placeholders in braces, such as <code>{app}</code> and <code>{count}</code>, stay exactly as they are. Move them to where they belong in your sentence.</li>
+        <li>To fix a translation, change the value for your language and leave the key alone.</li>
+      </ul>
+
+      <h2 id="rules">Rules that are not negotiable</h2>
+      <p>Each rule protects the person using Lintel.</p>
+      <ul>
+        <li><strong>Windows only.</strong> Lintel is made for Windows 10 and 11.</li>
+        <li><strong>No telemetry and no account.</strong> Network calls go only to services the user configured.</li>
+        <li><strong>Never act for the user without a click.</strong> Nothing is approved, sent or deleted without a clear yes. Nothing ever answers a permission card except the user's own click.</li>
+        <li><strong>Never block an agent program.</strong> If the app does not answer, the relay exits at once.</li>
+        <li><strong>Never overwrite an agent's settings file.</strong> Dated backup, merge, show the difference, write only after the user confirms.</li>
+        <li><strong>Idle means idle.</strong> Prefer Windows events to polling, and pause any poller that nobody is watching.</li>
+        <li><strong>Every feature can be turned off</strong>, and a feature that is off loads nothing.</li>
+        <li><strong>Secrets live only in Windows Credential Manager.</strong> Never on disk, never in git.</li>
+        <li><strong>The app runs without administrator rights.</strong> Only the hardware helper asks, and only after the user opts in.</li>
+        <li><strong>No branding of the projects Lintel grew from</strong> in code, strings or assets. They are credited in NOTICE.md and the README.</li>
+      </ul>
+      <p>Two smaller ones: keep the code minimal, and name the original file in a header comment when a file is largely ported from another project.</p>
+      <h3>The design language in five lines</h3>
+      <ul>
+        <li>One look, dark everywhere.</li>
+        <li>Colours, sizes, radii and curves come only from the tokens in <code>src/ui/tokens.css</code>.</li>
+        <li>Buttons, switches, rows and cards come only from the shared components in <code>src/ui/</code>.</li>
+        <li>Animate transform and opacity, not width or height, and respect reduced motion.</li>
+        <li>Plain TypeScript, the DOM and Canvas. No UI framework.</li>
+      </ul>
+
+      <h2 id="wanted">What help is wanted most</h2>
+      <p>The <a href="{REPO}/blob/main/docs/ROADMAP.md">roadmap</a> is the honest list of what version 1.0.0 leaves open, sorted by size. Some places to start:</p>
+      <ul>
+        <li><strong>Translations.</strong> Some newer lines are English only, and the lines of the Features page are not translated at all. If a line reads badly in your language, fix it.</li>
+        <li><strong>Testing on other machines.</strong> Lintel was built and checked on one laptop with Windows 11. Reports from Windows 10, desktops, other display scalings and several displays are useful even when everything works.</li>
+        <li><strong>Agent hooks on real installs.</strong> The hooks for Antigravity, Cursor, Muse and Hermes were never confirmed against a real install.</li>
+        <li><strong>The voice assistant.</strong> It was checked mostly with recorded clips. It needs real voices, real rooms and real interruptions, and the wake phrase needs measuring with many voices.</li>
+        <li><strong>Larger work.</strong> Code signing, mirroring notifications (it waits for a signed build), the island on a second display, and reading fans on more laptops.</li>
+      </ul>
+
+      <h2 id="propose">Propose a change</h2>
+      <ul>
+        <li><strong>For anything large, open an issue first.</strong> Small fixes can go straight to a pull request.</li>
+        <li><strong>Keep pull requests small.</strong> One change each.</li>
+        <li><strong>Write a description that stands alone.</strong> What changes for the user, why, how you tried it, and a screenshot for anything visible. Use made-up content in screenshots.</li>
+        <li><strong>Run the four checks before you push.</strong></li>
+      </ul>
+<pre><code>npm run build
+cargo check --workspace
+npm test
+node scripts/check-brand.mjs</code></pre>
+      <p>A maintainer reads every pull request. Expect questions: they are about the code, not about you. A pull request that cannot be merged gets a reason.</p>
+
+      <h2 id="bugs">Report a bug or a security problem</h2>
+      <ul>
+        <li><strong>A bug.</strong> Open an issue on the <a href="{REPO}/issues">issues page</a>. Say what you did, what you expected, what happened, and your version of Windows.</li>
+        <li><strong>A question or an idea.</strong> The <a href="{REPO}/discussions">discussions</a> are open.</li>
+        <li><strong>A security problem.</strong> Do not open a public issue. Use the <a href="{REPO}/security/advisories/new">private report form</a>. <a href="{REPO}/blob/main/SECURITY.md">SECURITY.md</a> says what a good report holds. Never put a real key or a personal file in it.</li>
+      </ul>
+
+      <h2 id="licence">Licence</h2>
+      <p>Lintel is licensed under <a href="{REPO}/blob/main/LICENSE">GPL-3.0-or-later</a>. By sending a contribution you agree that it is licensed under the same terms, and you confirm that you have the right to send it. If you bring in code from another project, say where it comes from and under which licence, so that NOTICE.md can credit it.</p>
+    </div>
+  </div>
+</section>

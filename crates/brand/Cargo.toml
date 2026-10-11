@@ -1,0 +1,6 @@
+[package]
+name = "notch-brand"
+description = "The codename constants; the only place a runtime name is spelled"
+version.workspace = true
+edition.workspace = true
+license.workspace = true

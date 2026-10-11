@@ -1,0 +1,10 @@
+{
+  "bundle": {
+    "resources": {
+      "../helper/bin/publish/lintel-hw.exe": "lintel-hw.exe",
+      "../target/release/lintel-speak.exe": "speak/lintel-speak.exe",
+      "../target/release/sherpa-onnx-c-api.dll": "speak/sherpa-onnx-c-api.dll",
+      "../target/release/onnxruntime.dll": "speak/onnxruntime.dll"
+    }
+  }
+}

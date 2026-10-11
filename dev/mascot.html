@@ -1,0 +1,140 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Lintel — mascot and sounds</title>
+    <link rel="icon" href="/src-tauri/icons/32x32.png" />
+    <style>
+      /* Layout of this review page only; the look is src/ui/tokens.css + components.css. */
+      *, *::before, *::after { box-sizing: border-box; }
+      html { background: var(--panel); }
+      body { margin: 0; color: var(--ink); font: 400 var(--t-md) var(--font); -webkit-font-smoothing: antialiased; }
+      main { max-width: 1040px; margin: 0 auto; padding: 40px var(--s-5) 96px; display: grid; gap: 40px; }
+      h1, h2, p { margin: 0; }
+      h1 { font: 600 var(--t-xl) var(--font); }
+      h2 { font: 600 var(--t-lg) var(--font); }
+      code { font-family: var(--mono); color: var(--ink-2); }
+      a { color: var(--accent); }
+      section { display: grid; gap: var(--s-3); }
+      .note { max-width: 76ch; color: var(--dim); font: 400 var(--t-sm) var(--font); }
+      .cap { color: var(--dim); font: 600 var(--t-xs) var(--font); letter-spacing: var(--caps); text-transform: uppercase; }
+      .ctl { display: flex; flex-wrap: wrap; align-items: flex-end; gap: var(--s-3) var(--s-5); }
+      .ctl > div { display: grid; gap: var(--s-2); justify-items: start; }
+      .seg { display: inline-flex; flex-wrap: wrap; gap: 2px; padding: var(--s-1); border-radius: var(--r-md); background: var(--bg); box-shadow: inset 0 0 0 1px var(--hairline); }
+      .row-gap { display: flex; flex-wrap: wrap; align-items: center; gap: var(--s-2); }
+      .dot { width: 24px; height: 24px; padding: 0; border: 0; border-radius: var(--r-pill); background: var(--c); box-shadow: inset 0 0 0 1px var(--outline); cursor: pointer; }
+      .dot.on { box-shadow: 0 0 0 2px var(--panel), 0 0 0 4px var(--ink-2); }
+      input[type="range"] { width: 160px; accent-color: var(--accent); }
+      label.check { display: inline-flex; align-items: center; gap: var(--s-2); color: var(--ink-2); font: 400 var(--t-sm) var(--font); }
+      label.check input { accent-color: var(--accent); }
+
+      /* The island's black, where every mascot lives. */
+      .stage { border-radius: var(--r-lg); background: var(--bg); box-shadow: inset 0 0 0 1px var(--hairline); }
+      .m { position: relative; display: inline-block; flex: none; }
+      .m canvas { position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%); pointer-events: none; }
+      .trio { display: flex; align-items: flex-end; justify-content: center; gap: 72px; padding: 48px var(--s-5) var(--s-5); }
+      .trio > span, .sheet > span { display: grid; justify-items: center; gap: var(--s-3); color: var(--dim-2); font: 400 var(--t-xs) var(--font); text-align: center; }
+      .trio .m { cursor: pointer; }
+      .sheet { display: grid; align-items: end; row-gap: 28px; padding: 36px var(--s-3) var(--s-4); }
+      .sheet > b { align-self: center; padding-left: var(--s-2); color: var(--dim); font: 500 var(--t-xs) var(--mono); }
+      .sheet > span { color: var(--ink-2); }
+
+      /* Greeting: the strip under the top edge of a screen. */
+      .screen { position: relative; height: 96px; overflow: hidden; border-radius: var(--r-md); background: linear-gradient(#20242c, #15171c); box-shadow: inset 0 0 0 1px var(--hairline); }
+      .strip { position: absolute; left: 50%; top: 0; width: 288px; height: 32px; margin-left: -144px; overflow: hidden; border-radius: 0 0 var(--r-md) var(--r-md); background: var(--bg); transform: translateY(-100%); }
+      .strip.down { transform: none; transition: transform 250ms var(--ease-out); }
+      .strip canvas { position: absolute; inset: 0; width: 288px; height: 32px; }
+      .strip b { position: absolute; left: 46px; top: 8px; font: 500 var(--t-sm) var(--font); opacity: 0; }
+      .strip.down b { opacity: 1; transition: opacity 400ms 900ms; }
+
+      iframe { width: 100%; height: 252px; border: 0; border-radius: var(--r-md); background: #1b1b1f; }
+      .recap { display: flex; align-items: flex-start; gap: var(--s-5); }
+      .recap > img { width: 270px; border-radius: var(--r-md); }
+
+      .sounds { display: grid; grid-template-columns: repeat(auto-fill, minmax(152px, 1fr)); gap: var(--s-2); }
+      .sound { display: grid; gap: var(--s-1); padding: var(--s-2) var(--s-3); border: 0; border-radius: var(--r-sm); background: var(--card); box-shadow: inset 0 0 0 1px var(--hairline); color: var(--ink); font: 500 var(--t-sm) var(--font); text-align: left; cursor: pointer; transition: background-color var(--d-fast) var(--ease-out); }
+      .sound:hover { background: var(--card-2); }
+      .sound:active { transform: scale(.98); }
+      .sound.bad { box-shadow: inset 0 0 0 1px var(--bad); }
+      .sound canvas { width: 100%; height: 28px; }
+      .sound small { color: var(--dim); font: 400 var(--t-xs) var(--mono); }
+
+      .icons { display: flex; flex-wrap: wrap; align-items: flex-end; gap: var(--s-5); }
+      .icons figure { display: grid; justify-items: center; gap: var(--s-2); margin: 0; color: var(--dim-2); font: 400 var(--t-xs) var(--font); }
+      .bar { display: flex; align-items: center; gap: 14px; padding: 8px 14px; border-radius: var(--r-xs); }
+      .bar.dark { background: #1c1c1c; }
+      .bar.light { background: #f3f3f3; }
+      .bar canvas { image-rendering: pixelated; }
+    </style>
+  </head>
+  <body>
+    <main>
+      <header>
+        <h1>Mascot and sounds</h1>
+        <p class="note">The Visor (ARCHITECTURE §9) and the 29 synthesised sounds (§10). Everything here is the shipping code: <code>src/mascot/engine.ts</code>, <code>greeting.ts</code>, <code>src/upload/canvas.ts</code>, <code>src/recap/share.ts</code>, <code>src/core/synth.ts</code> and the icons from <code>scripts/gen-icons.mjs</code>.</p>
+      </header>
+
+      <section>
+        <h2>Live</h2>
+        <p class="note">Move the pointer: the bar follows it. Rest on a mascot for 1.9 s: love. Click one: it looks annoyed and shakes; three clicks inside 1.7 s make it dizzy for 3.3 s.</p>
+        <div class="ctl">
+          <div><span class="cap">State</span><div class="seg" id="states"></div></div>
+          <div><span class="cap">Emote</span><div class="row-gap" id="emotes"></div></div>
+          <div><span class="cap">Pill colour</span><div class="row-gap" id="colors"></div></div>
+          <div><span class="cap">Hatch (file drop)</span><input type="range" id="hatch" min="0" max="1" step="0.01" value="0" /></div>
+          <div><span class="cap">Options</span><div class="row-gap"><label class="check"><input type="checkbox" id="dance" />Dance</label><label class="check"><input type="checkbox" id="with-sound" checked />Play each state's sound</label></div></div>
+        </div>
+        <div class="stage trio" id="trio"></div>
+      </section>
+
+      <section>
+        <h2>Every state</h2>
+        <div class="stage sheet" id="sheet-states"></div>
+      </section>
+
+      <section>
+        <h2>Every emote</h2>
+        <p class="note">Each one replays every 2.8 s. Mini pills (22 px) are the body and the bar only: no hearts, no sparkle.</p>
+        <div class="stage sheet" id="sheet-emotes"></div>
+      </section>
+
+      <section>
+        <h2>Greeting</h2>
+        <p class="note">1.6 s: the strip slides down, the body rises from below on a 0.5 s spring and blinks twice, with the <code>greeting</code> motif.</p>
+        <div class="screen"><div class="strip" id="strip"><canvas id="greeting"></canvas><b>Lintel</b></div></div>
+        <div><button class="btn sm secondary" id="greet">Replay the greeting</button></div>
+      </section>
+
+      <section>
+        <h2>Drop sequence</h2>
+        <p class="note">The band opens into a hatch, the file slides in behind the lower lip, and the mascot rides the progress bar. Replays every 12 s (<a href="./upload-preview.html">open it alone</a>).</p>
+        <iframe src="./upload-preview.html" title="Drop sequence"></iframe>
+      </section>
+
+      <section>
+        <h2>Recap image and icons</h2>
+        <div class="recap">
+          <img id="recap" alt="Weekly recap share image" />
+          <div style="display: grid; gap: var(--s-4)">
+            <p class="note">App icon, and the tray sizes read out of <code>icon.ico</code> pixel for pixel, on a dark and a light taskbar. Run <code>npm run icons</code> to regenerate.</p>
+            <div class="icons" id="icons"></div>
+            <div class="bar dark" id="tray-dark"></div>
+            <div class="bar light" id="tray-light"></div>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <h2>Sounds</h2>
+        <p class="note" id="sound-stats">Rendering…</p>
+        <div class="ctl">
+          <div><span class="cap">Volume <span id="vol-read"></span></span><input type="range" id="vol" min="0" max="0.2" step="0.01" value="0.12" /></div>
+          <div><button class="btn sm secondary" id="play-all">Play all 29 in order</button></div>
+        </div>
+        <div class="sounds" id="sounds"></div>
+      </section>
+    </main>
+    <script type="module" src="./mascot.ts"></script>
+  </body>
+</html>

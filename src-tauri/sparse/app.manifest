@@ -1,0 +1,26 @@
+<!--
+  The app manifest lintel.exe needs for the identity package (AppxManifest.xml
+  beside this file) to apply to a plain launch of the program: Tauri's default
+  manifest with the msix element added. Without a registered package the
+  element does nothing.
+
+  Not wired in yet: src-tauri/build.rs has to hand it to tauri-build
+  (WindowsAttributes::app_manifest). publisher, packageName and applicationId
+  must stay equal to Identity and Application Id in AppxManifest.xml.
+-->
+<assembly xmlns="urn:schemas-microsoft-com:asm.v1" manifestVersion="1.0">
+  <assemblyIdentity version="1.0.0.0" name="dev.lintel.app" />
+  <dependency>
+    <dependentAssembly>
+      <assemblyIdentity
+        type="win32"
+        name="Microsoft.Windows.Common-Controls"
+        version="6.0.0.0"
+        processorArchitecture="*"
+        publicKeyToken="6595b64144ccf1df"
+        language="*"
+      />
+    </dependentAssembly>
+  </dependency>
+  <msix xmlns="urn:schemas-microsoft-com:msix.v1" publisher="CN=Lintel" packageName="dev.lintel.app" applicationId="App" />
+</assembly>

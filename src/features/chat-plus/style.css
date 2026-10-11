@@ -1,0 +1,26 @@
+/* Chat plus. Every selector starts with .f-chat-plus- and uses the tokens of src/ui/tokens.css. */
+
+/* The halo over the window being dragged onto: a border in the accent colour, click-through. */
+.f-chat-plus-halo {
+  position: fixed;
+  inset: 0;
+  box-sizing: border-box;
+  border: 3px solid var(--accent);
+  border-radius: 10px;
+  box-shadow: inset 0 0 40px color-mix(in srgb, var(--accent) 35%, transparent);
+  animation: f-chat-plus-in 600ms var(--ease-out) both;
+}
+@keyframes f-chat-plus-in { from { opacity: 0; } }
+
+/* The mail window. */
+.f-chat-plus-mail { height: 100%; box-sizing: border-box; }
+.f-chat-plus-form { display: flex; flex-direction: column; gap: var(--s-2); padding: var(--s-3); flex: 1; min-height: 0; }
+.f-chat-plus-form .field { width: 100%; box-sizing: border-box; }
+.f-chat-plus-form .field[hidden] { display: none; }
+.f-chat-plus-form textarea { min-height: 84px; resize: none; }
+.f-chat-plus-file { color: var(--dim); font: 400 var(--t-sm) var(--font); overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.f-chat-plus-actions { display: flex; justify-content: flex-end; gap: var(--s-2); margin-top: auto; }
+.f-chat-plus-status { min-height: 16px; color: var(--ink-2); font: 400 var(--t-sm) var(--font); }
+.f-chat-plus-status.ok { color: var(--ok); }
+.f-chat-plus-status.warn { color: var(--warn); }
+.f-chat-plus-status.bad { color: var(--bad); }

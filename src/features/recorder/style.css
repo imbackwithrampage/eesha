@@ -1,0 +1,53 @@
+/* Recorder. Every selector starts with .f-recorder- and uses the tokens of src/ui/tokens.css. */
+
+/* The strip's mark while a recording runs: a red dot, amber while paused. */
+.f-recorder-dot {
+  display: grid;
+  flex: none;
+  place-items: center;
+  width: 22px;
+  height: 22px;
+}
+.f-recorder-dot::before {
+  width: 10px;
+  height: 10px;
+  border-radius: var(--r-pill);
+  background: var(--bad);
+  box-shadow: 0 0 0 3px color-mix(in srgb, var(--bad) 22%, transparent);
+  content: "";
+}
+.f-recorder-dot.paused::before {
+  background: var(--warn);
+  box-shadow: 0 0 0 3px color-mix(in srgb, var(--warn) 22%, transparent);
+}
+
+/* The saved notice's mark is a button that plays the film: the tinted chip of a toned row, pressable. */
+.f-recorder-play {
+  padding: 0;
+  border: 0;
+  cursor: pointer;
+  transition: background var(--d-fast) var(--ease-out), color var(--d-fast) var(--ease-out);
+}
+.f-recorder-play:hover {
+  background: color-mix(in srgb, var(--tone, var(--dim)) 30%, transparent);
+  color: var(--ink);
+}
+.f-recorder-play:focus-visible {
+  outline: 2px solid color-mix(in srgb, var(--accent) 50%, transparent);
+  outline-offset: 1px;
+}
+
+.f-recorder-settings {
+  display: flex;
+  flex-direction: column;
+  gap: var(--s-3);
+}
+.f-recorder-note {
+  margin: 0;
+  color: var(--dim);
+  font: 400 var(--t-sm) var(--font);
+}
+.f-recorder-none {
+  color: var(--dim);
+  font: 400 var(--t-sm) var(--font);
+}

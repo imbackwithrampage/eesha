@@ -1,0 +1,16 @@
+/* Island extras. Every selector starts with .f-island-extras- and uses the tokens of src/ui/tokens.css. */
+.f-island-extras-mirror { display: flex; flex-direction: column; align-items: center; justify-content: center; gap: var(--s-2); height: 100%; }
+.f-island-extras-video { height: 200px; width: 200px; object-fit: cover; transform: scaleX(-1); border-radius: var(--r-md); background: var(--card); }
+.f-island-extras-mirror.circle .f-island-extras-video { border-radius: 50%; }
+.f-island-extras-msg { margin: 0; display: flex; gap: var(--s-2); align-items: center; font: 400 var(--t-sm) var(--font); color: var(--dim); text-align: center; }
+.f-island-extras-quick { display: flex; flex-wrap: wrap; gap: var(--s-2); align-content: center; justify-content: center; height: 100%; padding: var(--s-2) var(--s-4); }
+.f-island-extras-edit { display: flex; flex-direction: column; gap: var(--s-2); }
+.f-island-extras-erow { display: flex; gap: var(--s-2); align-items: center; }
+.f-island-extras-quick { overflow-y: auto; }
+.f-island-extras-sites { flex-basis: 100%; display: flex; flex-wrap: wrap; justify-content: center; gap: var(--s-2); }
+.f-island-extras-site { all: unset; box-sizing: border-box; width: 56px; display: flex; flex-direction: column; align-items: center; gap: var(--s-1); cursor: pointer; border-radius: var(--r-sm); padding: var(--s-1) 0; transition: background var(--d-fast) var(--ease-out); }
+.f-island-extras-site:hover { background: var(--card-2); }
+.f-island-extras-site:focus-visible { outline: 2px solid color-mix(in srgb, var(--accent) 50%, transparent); }
+.f-island-extras-dot { width: 32px; height: 32px; border-radius: var(--r-pill); background: var(--card-2); color: var(--ink); display: grid; place-items: center; font: 600 var(--t-md) var(--font); }
+.f-island-extras-sl { max-width: 100%; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; font: 400 var(--t-xs) var(--font); color: var(--dim); }
+.f-island-extras-site-name { flex: 1; font: 400 var(--t-sm) var(--font); color: var(--ink); overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }

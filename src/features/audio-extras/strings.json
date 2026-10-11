@@ -1,0 +1,172 @@
+{
+  "strings": {
+    "Audio extras": {
+      "en": "Audio extras",
+      "zh-Hans": "音频增强",
+      "hi": "ऑडियो अतिरिक्त",
+      "es": "Extras de audio",
+      "ar": "إضافات الصوت",
+      "fr": "Extras audio",
+      "bn": "অডিও এক্সট্রা",
+      "pt-BR": "Extras de áudio",
+      "ru": "Дополнения для звука",
+      "id": "Ekstra audio"
+    },
+    "Listening": {
+      "en": "Listening",
+      "zh-Hans": "聆听",
+      "hi": "सुनना",
+      "es": "Escucha",
+      "ar": "الاستماع",
+      "fr": "Écoute",
+      "bn": "শোনা",
+      "pt-BR": "Escuta",
+      "ru": "Прослушивание",
+      "id": "Mendengarkan"
+    },
+    "Bars follow the music": {
+      "en": "Bars follow the music",
+      "zh-Hans": "音柱随音乐跳动",
+      "hi": "बार संगीत के साथ चलते हैं",
+      "es": "Las barras siguen la música",
+      "ar": "الأشرطة تتبع الموسيقى",
+      "fr": "Les barres suivent la musique",
+      "bn": "বার সংগীত অনুসরণ করে",
+      "pt-BR": "As barras seguem a música",
+      "ru": "Столбики следуют за музыкой",
+      "id": "Batang mengikuti musik"
+    },
+    "The playing bars show the real sound, from bass to treble. Every app that sounds moves them.": {
+      "en": "The playing bars show the real sound, from bass to treble. Every app that sounds moves them.",
+      "zh-Hans": "播放条显示真实声音，从低音到高音。任何发声的应用都会让它们跳动。",
+      "hi": "चलते बार असली आवाज़ दिखाते हैं, बास से ट्रेबल तक। आवाज़ करने वाला हर ऐप उन्हें हिलाता है।",
+      "es": "Las barras de reproducción muestran el sonido real, de graves a agudos. Cualquier aplicación que suene las mueve.",
+      "ar": "تعرض أشرطة التشغيل الصوت الحقيقي، من الجهير إلى الحاد. وكل تطبيق يصدر صوتاً يحرّكها.",
+      "fr": "Les barres de lecture montrent le son réel, des graves aux aigus. Toute application qui émet du son les anime.",
+      "bn": "চলমান বারগুলো আসল শব্দ দেখায়, বেস থেকে ট্রেবল পর্যন্ত। শব্দ করা প্রতিটি অ্যাপ এগুলো নাড়ায়।",
+      "pt-BR": "As barras de reprodução mostram o som real, dos graves aos agudos. Qualquer app que emite som as move.",
+      "ru": "Столбики воспроизведения показывают реальный звук, от низких частот до высоких. Их двигает любое приложение со звуком.",
+      "id": "Batang pemutaran menampilkan suara asli, dari bas hingga treble. Setiap aplikasi yang bersuara menggerakkannya."
+    },
+    "Mascot bounces to the beat": {
+      "en": "Mascot bounces to the beat",
+      "zh-Hans": "吉祥物随节拍跳动",
+      "hi": "शुभंकर बीट पर उछलता है",
+      "es": "La mascota rebota al ritmo",
+      "ar": "التميمة تقفز مع الإيقاع",
+      "fr": "La mascotte rebondit au rythme",
+      "bn": "মাসকট বিটের সঙ্গে লাফায়",
+      "pt-BR": "O mascote pula no ritmo",
+      "ru": "Талисман подпрыгивает в такт",
+      "id": "Maskot memantul mengikuti ketukan"
+    },
+    "While music plays the mascot lands on the song's beats. Finding the tempo takes about ten seconds of the song.": {
+      "en": "While music plays the mascot lands on the song's beats. Finding the tempo takes about ten seconds of the song.",
+      "zh-Hans": "音乐播放时，吉祥物会落在歌曲的节拍上。识别节奏大约需要十秒的歌曲。",
+      "hi": "संगीत चलते समय शुभंकर गाने की बीट पर उतरता है। टेंपो पहचानने में गाने के लगभग दस सेकंड लगते हैं।",
+      "es": "Mientras suena música, la mascota cae en los tiempos de la canción. Detectar el tempo lleva unos diez segundos de canción.",
+      "ar": "أثناء تشغيل الموسيقى تهبط التميمة على إيقاعات الأغنية. يستغرق تحديد الإيقاع نحو عشر ثوانٍ من الأغنية.",
+      "fr": "Pendant la musique, la mascotte retombe sur les temps du morceau. Trouver le tempo demande environ dix secondes de morceau.",
+      "bn": "সংগীত বাজার সময় মাসকট গানের বিটে নামে। টেম্পো খুঁজে পেতে গানের প্রায় দশ সেকেন্ড লাগে।",
+      "pt-BR": "Enquanto a música toca, o mascote cai nas batidas da música. Descobrir o andamento leva cerca de dez segundos da música.",
+      "ru": "Пока играет музыка, талисман приземляется на доли песни. Определение темпа занимает около десяти секунд композиции.",
+      "id": "Saat musik diputar, maskot mendarat tepat di ketukan lagu. Menemukan tempo memerlukan sekitar sepuluh detik lagu."
+    },
+    "What the computer plays is read a few seconds at a time, and only while the bars or the mascot are on screen. Nothing is recorded or sent.": {
+      "en": "What the computer plays is read a few seconds at a time, and only while the bars or the mascot are on screen. Nothing is recorded or sent.",
+      "zh-Hans": "只在音柱或吉祥物显示时，才会每次读取电脑正在播放的几秒声音。不会录音，也不会发送任何内容。",
+      "hi": "कंप्यूटर जो बजाता है उसे कुछ सेकंड के टुकड़ों में पढ़ा जाता है, और केवल तब जब बार या शुभंकर स्क्रीन पर हों। कुछ भी रिकॉर्ड या भेजा नहीं जाता।",
+      "es": "Lo que reproduce el equipo se lee unos segundos cada vez, y solo mientras las barras o la mascota están en pantalla. No se graba ni se envía nada.",
+      "ar": "يُقرأ ما يشغّله الكمبيوتر على دفعات من بضع ثوانٍ، وفقط أثناء ظهور الأشرطة أو التميمة على الشاشة. لا يُسجَّل شيء ولا يُرسَل.",
+      "fr": "Ce que joue l’ordinateur est lu quelques secondes à la fois, et seulement quand les barres ou la mascotte sont à l’écran. Rien n’est enregistré ni envoyé.",
+      "bn": "কম্পিউটার যা বাজায় তা কয়েক সেকেন্ড করে পড়া হয়, আর শুধু বার বা মাসকট পর্দায় থাকলে। কিছুই রেকর্ড বা পাঠানো হয় না।",
+      "pt-BR": "O que o computador toca é lido alguns segundos por vez, e apenas enquanto as barras ou o mascote estão na tela. Nada é gravado nem enviado.",
+      "ru": "Звук компьютера считывается по несколько секунд и только пока на экране столбики или талисман. Ничего не записывается и не отправляется.",
+      "id": "Suara yang diputar komputer dibaca beberapa detik sekali, dan hanya saat batang atau maskot tampil di layar. Tidak ada yang direkam atau dikirim."
+    },
+    "Volume keys": {
+      "en": "Volume keys",
+      "zh-Hans": "音量键",
+      "hi": "वॉल्यूम कुंजियाँ",
+      "es": "Teclas de volumen",
+      "ar": "مفاتيح الصوت",
+      "fr": "Touches de volume",
+      "bn": "ভলিউম কী",
+      "pt-BR": "Teclas de volume",
+      "ru": "Клавиши громкости",
+      "id": "Tombol volume"
+    },
+    "Finer volume steps": {
+      "en": "Finer volume steps",
+      "zh-Hans": "更精细的音量步进",
+      "hi": "बारीक वॉल्यूम चरण",
+      "es": "Pasos de volumen más finos",
+      "ar": "خطوات صوت أدق",
+      "fr": "Pas de volume plus fins",
+      "bn": "সূক্ষ্মতর ভলিউম ধাপ",
+      "pt-BR": "Passos de volume mais finos",
+      "ru": "Более мелкие шаги громкости",
+      "id": "Langkah volume lebih halus"
+    },
+    "Shift with a volume key moves the level by 1/64 instead of 2 %.": {
+      "en": "Shift with a volume key moves the level by 1/64 instead of 2 %.",
+      "zh-Hans": "按住 Shift 再按音量键，音量每次变化 1/64，而不是 2 %。",
+      "hi": "Shift के साथ वॉल्यूम कुंजी दबाने पर स्तर 2 % की जगह 1/64 बदलता है।",
+      "es": "Shift con una tecla de volumen cambia el nivel en 1/64 en lugar de 2 %.",
+      "ar": "يغيّر Shift مع مفتاح الصوت المستوى بمقدار 1/64 بدلاً من 2 %.",
+      "fr": "Maj avec une touche de volume change le niveau de 1/64 au lieu de 2 %.",
+      "bn": "ভলিউম কী-র সঙ্গে Shift চাপলে মাত্রা ২ %-এর বদলে 1/64 করে বদলায়।",
+      "pt-BR": "Shift com uma tecla de volume muda o nível em 1/64 em vez de 2 %.",
+      "ru": "Shift с клавишей громкости меняет уровень на 1/64 вместо 2 %.",
+      "id": "Shift dengan tombol volume mengubah level sebesar 1/64, bukan 2 %."
+    },
+    "Replace the Windows volume flyout": {
+      "en": "Replace the Windows volume flyout",
+      "zh-Hans": "替换 Windows 音量浮出控件",
+      "hi": "Windows वॉल्यूम फ़्लाईआउट बदलें",
+      "es": "Reemplazar el control de volumen de Windows",
+      "ar": "استبدال نافذة الصوت المنبثقة في Windows",
+      "fr": "Remplacer la fenêtre de volume de Windows",
+      "bn": "Windows ভলিউম ফ্লাইআউট প্রতিস্থাপন করুন",
+      "pt-BR": "Substituir o painel de volume do Windows",
+      "ru": "Заменить панель громкости Windows",
+      "id": "Ganti panel volume Windows"
+    },
+    "The volume keys are applied here and the level shows on the island: the Windows flyout no longer appears for a key press. A change made any other way, such as the Windows slider, still brings it.": {
+      "en": "The volume keys are applied here and the level shows on the island: the Windows flyout no longer appears for a key press. A change made any other way, such as the Windows slider, still brings it.",
+      "zh-Hans": "音量键由这里处理，音量显示在灵动岛上：按键时不再出现 Windows 浮出控件。通过其他方式（如 Windows 滑块）调节时，它仍会出现。",
+      "hi": "वॉल्यूम कुंजियाँ यहीं लागू होती हैं और स्तर आइलैंड पर दिखता है: कुंजी दबाने पर Windows फ़्लाईआउट अब नहीं आता। किसी और तरीके से, जैसे Windows स्लाइडर से, बदलाव करने पर वह फिर भी आता है।",
+      "es": "Las teclas de volumen se aplican aquí y el nivel se muestra en la isla: el control de Windows ya no aparece al pulsar una tecla. Un cambio hecho de otra forma, como el control deslizante de Windows, sí lo muestra.",
+      "ar": "تُطبَّق مفاتيح الصوت هنا ويظهر المستوى على الجزيرة: لا تظهر نافذة Windows المنبثقة عند ضغط مفتاح. أما التغيير بأي طريقة أخرى، مثل شريط Windows، فيُظهرها.",
+      "fr": "Les touches de volume sont appliquées ici et le niveau s’affiche sur l’îlot : la fenêtre Windows n’apparaît plus à l’appui d’une touche. Un changement fait autrement, comme avec le curseur Windows, la fait toujours apparaître.",
+      "bn": "ভলিউম কী এখানে প্রয়োগ হয় এবং মাত্রা আইল্যান্ডে দেখায়: কী চাপলে আর Windows ফ্লাইআউট আসে না। অন্য উপায়ে, যেমন Windows স্লাইডারে, বদলালে তা এখনও আসে।",
+      "pt-BR": "As teclas de volume são aplicadas aqui e o nível aparece na ilha: o painel do Windows não aparece mais ao pressionar uma tecla. Uma mudança feita de outra forma, como o controle deslizante do Windows, ainda o exibe.",
+      "ru": "Клавиши громкости обрабатываются здесь, а уровень показывается на острове: панель Windows больше не появляется при нажатии клавиши. Если изменить громкость иначе, например ползунком Windows, она по-прежнему появится.",
+      "id": "Tombol volume diterapkan di sini dan level tampil di pulau: panel Windows tidak lagi muncul saat tombol ditekan. Perubahan dengan cara lain, seperti penggeser Windows, tetap memunculkannya."
+    },
+    "Volume": {
+      "en": "Volume",
+      "zh-Hans": "音量",
+      "hi": "वॉल्यूम",
+      "es": "Volumen",
+      "ar": "مستوى الصوت",
+      "fr": "Volume",
+      "bn": "ভলিউম",
+      "pt-BR": "Volume",
+      "ru": "Громкость",
+      "id": "Volume"
+    },
+    "Muted": {
+      "en": "Muted",
+      "zh-Hans": "已静音",
+      "hi": "म्यूट",
+      "es": "Silenciado",
+      "ar": "مكتوم",
+      "fr": "Muet",
+      "bn": "মিউট করা",
+      "pt-BR": "Silenciado",
+      "ru": "Без звука",
+      "id": "Dibisukan"
+    }
+  }
+}

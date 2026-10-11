@@ -1,0 +1,72 @@
+/* Clipboard. Every selector starts with .f-clipboard- and uses the tokens of src/ui/tokens.css. */
+
+/* The section: filters and tools, the rows, one line of status. */
+.f-clipboard-page {
+  display: flex;
+  flex-direction: column;
+  gap: var(--s-2);
+  height: 100%;
+  min-height: 0;
+}
+.f-clipboard-page [hidden] { display: none; }
+.f-clipboard-page > .isl-row:last-child { min-height: 16px; }
+.f-clipboard-page > .isl-row > .isl-meta { min-width: 0; overflow: hidden; text-overflow: ellipsis; }
+
+.f-clipboard-tabs { display: flex; gap: 2px; min-width: 0; }
+.f-clipboard-tabs > .tab > small { color: var(--dim-2); font: 400 var(--t-xs) var(--font); font-variant-numeric: tabular-nums; }
+.f-clipboard-tabs > .tab.on > small { color: var(--dim); }
+.f-clipboard-search { flex: 1; min-width: 0; }
+.f-clipboard-paused { color: var(--warn); }
+
+.f-clipboard-rows {
+  flex: 1;
+  min-height: 0;
+  overflow: hidden auto;
+  scrollbar-width: thin;
+  scrollbar-color: var(--card-2) transparent;
+}
+.f-clipboard-row { cursor: pointer; }
+.f-clipboard-row.f-clipboard-cursor { box-shadow: inset 0 0 0 1px var(--outline); }
+.f-clipboard-row > .kbd { flex: none; }
+.f-clipboard-mono { font: 400 var(--t-sm) var(--mono); }
+
+/* Left end: the program's icon, the kind, or the picture itself. */
+.f-clipboard-mark {
+  display: grid;
+  place-items: center;
+  flex: none;
+  width: 22px;
+  height: 22px;
+  overflow: hidden;
+  border-radius: var(--r-xs);
+  color: var(--dim);
+}
+.f-clipboard-mark > img { width: 18px; height: 18px; object-fit: contain; pointer-events: none; -webkit-user-drag: none; }
+.f-clipboard-mark.f-clipboard-picture { background-color: var(--card); box-shadow: inset 0 0 0 1px var(--hairline); }
+.f-clipboard-mark.f-clipboard-picture > img { width: 100%; height: 100%; object-fit: cover; }
+
+.f-clipboard-pin { display: grid; flex: none; color: var(--accent); }
+
+/* Copy, pin, delete: in place of the time while the pointer is on the row. */
+.f-clipboard-acts { display: none; flex: none; gap: 2px; }
+.f-clipboard-acts > .btn { width: 24px; height: 24px; min-height: 24px; }
+.f-clipboard-row:is(:hover, :focus-within) > .f-clipboard-acts { display: flex; }
+.f-clipboard-row:is(:hover, :focus-within) > :is(small, .kbd) { display: none; }
+
+.f-clipboard-empty {
+  display: flex;
+  flex: 1;
+  align-items: center;
+  justify-content: center;
+  gap: var(--s-2);
+  border-radius: var(--r-sm);
+  box-shadow: inset 0 0 0 1px var(--hairline);
+  color: var(--dim);
+  font: 400 var(--t-md) var(--font);
+}
+
+/* Settings: what the link cleaner made of the link that was tried. */
+.f-clipboard-tried { display: grid; gap: var(--s-1); padding-bottom: var(--s-2); }
+.f-clipboard-tried:empty { display: none; }
+.f-clipboard-tried > code { overflow-wrap: anywhere; color: var(--ink); font: 400 var(--t-sm) var(--mono); }
+.f-clipboard-tried > small { color: var(--dim); font: 400 var(--t-xs) var(--font); }

@@ -1,0 +1,25 @@
+[package]
+name = "notch-feat-capture"
+description = "Lintel feature: Capture"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+
+[dependencies]
+notch-core = { path = "../core" }
+svc-capture = { path = "../svc-capture" }
+# The clipboard, and the window the keyboard goes back to.
+svc-inject = { path = "../svc-inject" }
+# Thumbnails, share and drag-out, as the shelf does them.
+svc-shell = { path = "../svc-shell" }
+# Already in the tree's lock file: pictures go to the pages as text.
+base64 = "0.22"
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+tauri = { version = "2", features = [] }
+# List the Win32 API sets this feature calls; Cargo unifies them across the workspace.
+windows = { version = "0.61", features = [
+  "Win32_Foundation",
+  "Win32_UI_Input_KeyboardAndMouse",
+  "Win32_UI_WindowsAndMessaging",
+] }

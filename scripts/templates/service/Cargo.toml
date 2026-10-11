@@ -1,0 +1,11 @@
+[package]
+name = "svc-__ID__"
+description = "Lintel shared service: __NAME__"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+
+[dependencies]
+notch-core = { path = "../core" }
+# List the Win32 API sets this service calls; Cargo unifies them across the workspace.
+windows = { version = "0.61", features = [] }

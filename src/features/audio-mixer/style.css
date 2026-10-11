@@ -1,0 +1,127 @@
+/* Audio mixer (docs/ARCHITECTURE.md §7): tokens only, every selector starts with .f-audio-mixer-. */
+
+/* ── The section: the output and the microphone left, a fader per app right ── */
+
+.f-audio-mixer-page {
+  display: grid;
+  grid-template-columns: 232px minmax(0, 1fr);
+  gap: var(--s-3);
+  height: 100%;
+}
+.f-audio-mixer-page [hidden] { display: none !important; }
+
+.f-audio-mixer-side { display: flex; flex-direction: column; gap: var(--s-2); min-height: 0; }
+
+.f-audio-mixer-dev { display: flex; flex-direction: column; gap: var(--s-1); padding: var(--s-2); }
+.f-audio-mixer-fader { display: flex; align-items: center; gap: var(--s-2); padding-right: var(--s-1); }
+/* Waiting for the mute to end, or no such device. */
+.f-audio-mixer-fader > .meter[aria-disabled="true"] { opacity: .4; }
+
+/* The button that names the device and opens the list of them. */
+.f-audio-mixer-pick.btn { justify-content: space-between; min-width: 0; }
+.f-audio-mixer-pick > span { overflow: hidden; text-overflow: ellipsis; }
+.f-audio-mixer-pick > svg { flex: none; color: var(--dim); }
+.f-audio-mixer-pick.btn:disabled { cursor: default; opacity: 1; }
+.f-audio-mixer-pick.btn:disabled > svg { visibility: hidden; }
+/* The microphone the user keeps is the default. */
+.f-audio-mixer-pick.kept > svg { color: var(--accent); }
+
+.f-audio-mixer-pct {
+  flex: none;
+  width: 32px;
+  color: var(--dim);
+  font: 400 var(--t-xs) var(--font);
+  font-variant-numeric: tabular-nums;
+  text-align: right;
+}
+
+.f-audio-mixer-foot { display: flex; margin-top: auto; }
+
+/* ── The apps ── */
+
+.f-audio-mixer-main { min-width: 0; min-height: 0; }
+
+.f-audio-mixer-apps {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  height: 100%;
+  overflow-y: auto;
+  scrollbar-width: thin;
+  scrollbar-color: var(--card-2) transparent;
+}
+
+.f-audio-mixer-app {
+  display: grid;
+  flex: none;
+  grid-template-columns: 22px minmax(0, 1fr) 108px 32px 24px;
+  align-items: center;
+  gap: var(--s-2);
+  height: 34px;
+  padding: 0 var(--s-1) 0 var(--s-2);
+  border-radius: var(--r-sm);
+  transition: background-color var(--d-fast) var(--ease-out);
+}
+.f-audio-mixer-app:hover { background: var(--card); }
+
+.f-audio-mixer-ico {
+  position: relative;
+  display: grid;
+  place-items: center;
+  width: 22px;
+  height: 22px;
+  border-radius: var(--r-xs);
+  background: center / contain no-repeat;
+  color: var(--dim);
+}
+.f-audio-mixer-ico > svg { display: none; }
+.f-audio-mixer-ico.none { background-color: var(--card-2); }
+.f-audio-mixer-ico.none > svg { display: block; }
+/* Sound is coming out of it now. */
+.f-audio-mixer-app.playing .f-audio-mixer-ico::after {
+  content: "";
+  position: absolute;
+  right: -2px;
+  bottom: -2px;
+  width: 7px;
+  height: 7px;
+  border-radius: var(--r-pill);
+  background: var(--ok);
+  box-shadow: 0 0 0 2px var(--bg);
+}
+
+.f-audio-mixer-name {
+  display: flex;
+  align-items: center;
+  gap: var(--s-1);
+  min-width: 0;
+  color: var(--ink-2);
+  font: 500 var(--t-md) var(--font);
+}
+.f-audio-mixer-name > span { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.f-audio-mixer-name > svg { display: none; flex: none; color: var(--accent); }
+.f-audio-mixer-app.pinned .f-audio-mixer-name > svg { display: block; }
+.f-audio-mixer-app.playing .f-audio-mixer-name { color: var(--ink); }
+
+.f-audio-mixer-app.muted .meter { opacity: .4; }
+.f-audio-mixer-app.muted .btn { color: var(--bad); }
+
+/* Nothing plays. */
+.f-audio-mixer-empty {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: var(--s-1);
+  height: 100%;
+  color: var(--dim);
+  font: 400 var(--t-sm) var(--font);
+}
+.f-audio-mixer-empty > b { margin-top: var(--s-1); color: var(--ink-2); font: 500 var(--t-md) var(--font); }
+
+/* ── Settings ── */
+
+.f-audio-mixer-settings .f-audio-mixer-pick.btn { max-width: 260px; }
+.f-audio-mixer-range { display: flex; align-items: center; gap: var(--s-2); width: 180px; }
+.f-audio-mixer-note { margin: var(--s-2) 0 0; color: var(--dim); font: 400 var(--t-sm) var(--font); }
+.f-audio-mixer-arrows { display: flex; gap: var(--s-1); }

@@ -1,0 +1,71 @@
+/* Tools and setup. Every selector starts with .f-misc-late- and uses the tokens of src/ui/tokens.css. */
+
+.f-misc-late-page { display: flex; flex-direction: column; gap: var(--s-3); }
+.f-misc-late-page > section { display: flex; flex-direction: column; gap: var(--s-3); }
+
+.f-misc-late-actions { display: flex; flex-wrap: wrap; align-items: center; gap: var(--s-2); }
+.f-misc-late-wide { display: flex; }
+.f-misc-late-wide > .field { flex: 1; }
+.f-misc-late-out { display: flex; flex-direction: column; gap: var(--s-2); }
+.f-misc-late-ok { color: var(--ok); }
+.f-misc-late-warn { color: var(--warn); }
+.f-misc-late-err { color: var(--bad); }
+
+/* The first-run page: the settings shell's page column, centred in its window. */
+.f-misc-late-first { justify-content: center; overflow-y: auto; }
+.f-misc-late-first > .page { flex: 1; max-width: 640px; margin: 0 auto; }
+
+/* Bundles */
+.f-misc-late-presets { display: flex; flex-direction: column; gap: var(--s-3); }
+.f-misc-late-cards { display: grid; grid-template-columns: repeat(3, 1fr); gap: var(--s-2); }
+.f-misc-late-pcard {
+  display: flex; flex-direction: column; align-items: flex-start; gap: var(--s-1);
+  padding: var(--s-3); text-align: start;
+  border: 0; border-radius: var(--r-md);
+  background: var(--card-2); color: var(--ink-2);
+  box-shadow: inset 0 0 0 1px var(--hairline);
+  font: 400 var(--t-sm) var(--font); cursor: pointer;
+  transition: background var(--d-fast) var(--ease-out), box-shadow var(--d-fast) var(--ease-out);
+}
+.f-misc-late-pcard:hover { color: var(--ink); }
+.f-misc-late-pcard.on { color: var(--ink); box-shadow: inset 0 0 0 1.5px var(--accent); }
+.f-misc-late-pcard b { color: var(--ink); font: 600 var(--t-md) var(--font); }
+.f-misc-late-pico { display: grid; place-items: center; width: 32px; height: 32px; border-radius: var(--r-sm); background: var(--card); color: var(--accent); }
+.f-misc-late-pcap { flex: 1; color: var(--dim); font: 400 var(--t-xs) var(--font); }
+.f-misc-late-pn { color: var(--dim-2); font: 500 var(--t-xs) var(--font); font-variant-numeric: tabular-nums; }
+.f-misc-late-detail { display: flex; flex-direction: column; gap: var(--s-2); }
+.f-misc-late-chips { display: flex; flex-wrap: wrap; gap: var(--s-1); }
+.f-misc-late-chip { padding: 2px var(--s-2); border-radius: var(--r-pill); background: var(--card-2); color: var(--ink-2); font: 500 var(--t-xs) var(--font); }
+.f-misc-late-uses { display: flex; flex-direction: column; gap: var(--s-1); }
+.f-misc-late-use { display: flex; align-items: flex-start; gap: var(--s-2); color: var(--dim); font: 400 var(--t-sm) var(--font); }
+.f-misc-late-use svg { flex: none; margin-top: calc((1lh - 14px) / 2); color: var(--accent); }
+.f-misc-late-use b { color: var(--ink-2); font: 500 var(--t-sm) var(--font); white-space: nowrap; }
+
+/* Privacy */
+.f-misc-late-priv { display: flex; align-items: center; gap: var(--s-3); padding: var(--s-2) 0; border-top: 1px solid var(--hairline); }
+.f-misc-late-priv:first-of-type { border-top: 0; }
+.f-misc-late-priv .f-misc-late-pico { flex: none; color: var(--dim); }
+.f-misc-late-priv.active .f-misc-late-pico { color: var(--ok); }
+.f-misc-late-privtext { display: flex; flex: 1; flex-direction: column; gap: 2px; min-width: 0; }
+.f-misc-late-privtext b { font: 500 var(--t-md) var(--font); }
+.f-misc-late-used { color: var(--ink-2); font: 500 var(--t-sm) var(--font); }
+
+/* Import preview */
+.f-misc-late-diff { display: flex; flex-direction: column; gap: 2px; max-height: 220px; overflow-y: auto; padding: var(--s-2); border-radius: var(--r-sm); background: var(--card-2); }
+.f-misc-late-diffrow { display: flex; align-items: baseline; gap: var(--s-2); font: 400 var(--t-xs) var(--font); color: var(--dim); }
+.f-misc-late-diffrow code { flex: none; color: var(--ink-2); font: 400 var(--t-xs) var(--mono); }
+.f-misc-late-diffrow .to { color: var(--ink); }
+.f-misc-late-diffrow span { min-width: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+
+/* The cleaning window: the way out, always in view. */
+.f-misc-late-clean { width: 100vw; height: 100vh; border-color: var(--accent); }
+.f-misc-late-clean-body { display: flex; flex: 1; flex-direction: column; align-items: center; justify-content: center; gap: var(--s-3); padding: var(--s-5); text-align: center; }
+.f-misc-late-clean-body h1 { margin: 0; font: 600 var(--t-xl) var(--font); }
+.f-misc-late-clean-sub { margin: 0; color: var(--ink-2); font: 400 var(--t-md) var(--font); }
+.f-misc-late-count { color: var(--ink); font-variant-numeric: tabular-nums; }
+.f-misc-late-dots { display: flex; gap: var(--s-2); }
+.f-misc-late-dot { width: 14px; height: 14px; border-radius: var(--r-pill); background: var(--card-2); box-shadow: inset 0 0 0 1px var(--outline); transition: background var(--d-fast) var(--ease-out); }
+.f-misc-late-dot.on { background: var(--accent); box-shadow: none; }
+.f-misc-late-clean-note { margin: 0; color: var(--dim); font: 400 var(--t-xs) var(--font); }
+/* The window picker takes its width from the longest window title: keep it inside the page. */
+.f-misc-late-page .row > select { max-width: 260px; text-overflow: ellipsis; }

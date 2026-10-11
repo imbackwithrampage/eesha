@@ -1,0 +1,25 @@
+[package]
+name = "svc-media"
+description = "Lintel shared service: Media"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+
+[dependencies]
+notch-core = { path = "../core" }
+# List the Win32 API sets this service calls; Cargo unifies them across the workspace.
+windows = { version = "0.61", features = [
+  "ApplicationModel",
+  "Foundation",
+  "Foundation_Collections",
+  "Media",
+  "Media_Control",
+  "Storage_Streams",
+  "Win32_Foundation",
+  "Win32_System_Com",
+  "Win32_UI_Shell",
+] }
+
+# examples/media-probe.rs --demo registers a silent session of its own to read back.
+[dev-dependencies]
+windows = { version = "0.61", features = ["Media_Playback"] }

@@ -1,0 +1,20 @@
+[package]
+name = "svc-apps"
+description = "Lintel shared service: Apps"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+
+[dependencies]
+notch-core = { path = "../core" }
+serde = { version = "1", features = ["derive"] }
+# List the Win32 API sets this service calls; Cargo unifies them across the workspace.
+windows = { version = "0.61", features = [
+  "ApplicationModel",
+  "Foundation_Collections",
+  "Management_Deployment",
+  "Win32_Foundation",
+  "Win32_Security",
+  "Win32_System_JobObjects",
+  "Win32_System_Registry",
+] }

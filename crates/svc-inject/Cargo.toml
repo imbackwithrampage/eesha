@@ -1,0 +1,28 @@
+[package]
+name = "svc-inject"
+description = "Lintel shared service: Inject"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+
+[dependencies]
+notch-core = { path = "../core" }
+# List the Win32 API sets this service calls; Cargo unifies them across the workspace.
+windows = { version = "0.61", features = [
+  "Win32_Foundation",
+  "Win32_Graphics_Gdi",
+  "Win32_Security",
+  "Win32_System_DataExchange",
+  "Win32_System_LibraryLoader",
+  "Win32_System_Memory",
+  "Win32_System_Ole",
+  "Win32_System_Threading",
+  "Win32_UI_Input_KeyboardAndMouse",
+  "Win32_UI_WindowsAndMessaging",
+] }
+
+# Every example of the workspace is linked into target/<profile>/examples/ under
+# its own name, so a name several crates use is whichever was built last.
+[[example]]
+name = "inject-probe"
+path = "examples/probe.rs"

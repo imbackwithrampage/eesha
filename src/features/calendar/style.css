@@ -1,0 +1,37 @@
+/* Calendar. Every selector starts with .f-calendar- and uses the tokens of src/ui/tokens.css. */
+.f-calendar-page { display: flex; flex-direction: column; gap: var(--s-2); height: 100%; padding: var(--s-1) var(--s-3) 0; min-height: 0; }
+.f-calendar-head { display: flex; align-items: center; gap: var(--s-1); font: 400 var(--t-md) var(--font); color: var(--ink); }
+.f-calendar-head .isl-gap { flex: 1; }
+.f-calendar-flip svg { transform: scaleX(-1); }
+.f-calendar-days { display: grid; grid-template-columns: repeat(7, 1fr); gap: var(--s-1); }
+.f-calendar-day { display: flex; flex-direction: column; align-items: center; gap: 1px; padding: 5px 0 4px; border: 0; border-radius: var(--r-sm); background: transparent; color: var(--ink-2); cursor: pointer; transition: background var(--d-fast) var(--ease-out); }
+.f-calendar-day:hover { background: var(--card); }
+.f-calendar-day small { font: 400 var(--t-xs) var(--font); color: var(--dim); text-transform: uppercase; letter-spacing: var(--caps); }
+.f-calendar-day b { font: 600 var(--t-lg) var(--font); font-variant-numeric: tabular-nums; }
+.f-calendar-day i { width: 4px; height: 4px; border-radius: 50%; background: transparent; }
+.f-calendar-day i.has { background: var(--accent); }
+.f-calendar-day.today b { color: var(--accent); }
+.f-calendar-day.on { background: var(--card-2); color: var(--ink); }
+.f-calendar-day.on small { color: var(--ink-2); }
+.f-calendar-list { display: flex; flex-direction: column; gap: var(--s-1); flex: 1; min-height: 0; overflow-y: auto; scrollbar-width: thin; scrollbar-color: var(--card-2) transparent; }
+.f-calendar-ev, .f-calendar-rem, .f-calendar-cal { display: flex; align-items: center; gap: var(--s-2); min-height: 34px; padding: 3px var(--s-2); border-radius: var(--r-sm); background: var(--card); }
+.f-calendar-bar { align-self: stretch; width: 3px; flex: none; margin: 3px 0; border-radius: 2px; }
+.f-calendar-time { flex: none; min-width: 92px; font: 400 var(--t-sm) var(--font); color: var(--dim); font-variant-numeric: tabular-nums; }
+.f-calendar-name { flex: 1; min-width: 0; display: flex; flex-direction: column; }
+.f-calendar-name b { font: 400 var(--t-md) var(--font); font-weight: 500; color: var(--ink); overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.f-calendar-name small { font: 400 var(--t-xs) var(--font); color: var(--dim); overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.f-calendar-name small.warn { color: var(--warn); }
+.f-calendar-name small.bad { color: var(--bad); }
+.f-calendar-tag { flex: none; padding: 1px 6px; border-radius: var(--r-pill); background: var(--card-2); font: 400 var(--t-xs) var(--font); color: var(--ink-2); }
+.f-calendar-tag.now { background: var(--accent); color: var(--accent-ink); }
+.f-calendar-empty { margin: auto; font: 400 var(--t-sm) var(--font); color: var(--dim); text-align: center; }
+.f-calendar-note { margin: 0; font: 400 var(--t-xs) var(--font); color: var(--dim); }
+.f-calendar-check { flex: none; display: grid; place-items: center; width: 18px; height: 18px; padding: 0; border: 1.5px solid var(--dim-2); border-radius: 50%; background: transparent; color: var(--accent-ink); cursor: pointer; transition: background var(--d-fast) var(--ease-out), border-color var(--d-fast) var(--ease-out); }
+.f-calendar-check:hover { border-color: var(--accent); }
+.f-calendar-rem.done .f-calendar-check { background: var(--ok); border-color: var(--ok); }
+.f-calendar-rem.done .f-calendar-name b { color: var(--dim); text-decoration: line-through; }
+.f-calendar-settings { display: flex; flex-direction: column; gap: var(--s-3); }
+.f-calendar-settings .f-calendar-cal { background: var(--card-2); margin: var(--s-1) 0; }
+.f-calendar-add { display: flex; gap: var(--s-2); align-items: center; }
+.f-calendar-add .field { flex: 1; min-width: 0; }
+.f-calendar-ev .btn { flex: none; height: 24px; padding: 0 var(--s-2); font: 400 var(--t-sm) var(--font); }

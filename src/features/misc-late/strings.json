@@ -1,0 +1,1850 @@
+{
+  "strings": {
+    "Press Esc {n} times in a row to unlock.": {
+      "en": "Press Esc {n} times in a row to unlock.",
+      "zh-Hans": "连续按 {n} 次 Esc 即可解锁。",
+      "hi": "अनलॉक करने के लिए Esc को लगातार {n} बार दबाएँ।",
+      "es": "Pulsa Esc {n} veces seguidas para desbloquear.",
+      "ar": "اضغط Esc {n} مرات متتالية لإلغاء القفل.",
+      "fr": "Appuyez {n} fois de suite sur Échap pour déverrouiller.",
+      "bn": "আনলক করতে পরপর {n} বার Esc চাপুন।",
+      "pt-BR": "Pressione Esc {n} vezes seguidas para desbloquear.",
+      "ru": "Нажмите Esc {n} раз подряд, чтобы разблокировать.",
+      "id": "Tekan Esc {n} kali berturut-turut untuk membuka kunci."
+    },
+    "Keyboard locked for cleaning": {
+      "en": "Keyboard locked for cleaning",
+      "zh-Hans": "键盘已锁定以便清洁",
+      "hi": "सफ़ाई के लिए कीबोर्ड लॉक है",
+      "es": "Teclado bloqueado para limpiar",
+      "ar": "تم قفل لوحة المفاتيح للتنظيف",
+      "fr": "Clavier verrouillé pour le nettoyage",
+      "bn": "পরিষ্কারের জন্য কীবোর্ড লক করা আছে",
+      "pt-BR": "Teclado bloqueado para limpeza",
+      "ru": "Клавиатура заблокирована для чистки",
+      "id": "Keyboard dikunci untuk dibersihkan"
+    },
+    "Unlocks by itself in ": {
+      "en": "Unlocks by itself in ",
+      "zh-Hans": "将在以下时间后自动解锁：",
+      "hi": "अपने आप अनलॉक होगा: ",
+      "es": "Se desbloquea solo en ",
+      "ar": "يُفتح القفل تلقائياً بعد ",
+      "fr": "Se déverrouille tout seul dans ",
+      "bn": "নিজে থেকে আনলক হবে: ",
+      "pt-BR": "Desbloqueia sozinho em ",
+      "ru": "Разблокируется сам через ",
+      "id": "Terbuka sendiri dalam "
+    },
+    "Unlock now": {
+      "en": "Unlock now",
+      "zh-Hans": "立即解锁",
+      "hi": "अभी अनलॉक करें",
+      "es": "Desbloquear ahora",
+      "ar": "إلغاء القفل الآن",
+      "fr": "Déverrouiller maintenant",
+      "bn": "এখনই আনলক করুন",
+      "pt-BR": "Desbloquear agora",
+      "ru": "Разблокировать",
+      "id": "Buka kunci sekarang"
+    },
+    "The mouse still works. Ctrl+Alt+Del and Win+L are Windows' own and still work too.": {
+      "en": "The mouse still works. Ctrl+Alt+Del and Win+L are Windows' own and still work too.",
+      "zh-Hans": "鼠标仍可使用。Ctrl+Alt+Del 和 Win+L 属于 Windows 自身，同样仍然有效。",
+      "hi": "माउस अब भी काम करता है। Ctrl+Alt+Del और Win+L Windows के अपने हैं और वे भी काम करते हैं।",
+      "es": "El ratón sigue funcionando. Ctrl+Alt+Supr y Win+L son propios de Windows y también siguen funcionando.",
+      "ar": "لا يزال الماوس يعمل. كما يستمر عمل Ctrl+Alt+Del وWin+L لأنهما من Windows نفسه.",
+      "fr": "La souris fonctionne toujours. Ctrl+Alt+Suppr et Win+L appartiennent à Windows et fonctionnent aussi.",
+      "bn": "মাউস এখনও কাজ করে। Ctrl+Alt+Del ও Win+L Windows-এর নিজস্ব, সেগুলোও কাজ করে।",
+      "pt-BR": "O mouse continua funcionando. Ctrl+Alt+Del e Win+L são do próprio Windows e também continuam funcionando.",
+      "ru": "Мышь по-прежнему работает. Ctrl+Alt+Del и Win+L принадлежат самой Windows и тоже работают.",
+      "id": "Mouse tetap berfungsi. Ctrl+Alt+Del dan Win+L milik Windows sendiri dan tetap berfungsi."
+    },
+    "Welcome to {app}": {
+      "en": "Welcome to {app}",
+      "zh-Hans": "欢迎使用 {app}",
+      "hi": "{app} में आपका स्वागत है",
+      "es": "Te damos la bienvenida a {app}",
+      "ar": "مرحباً بك في {app}",
+      "fr": "Bienvenue dans {app}",
+      "bn": "{app}-এ স্বাগতম",
+      "pt-BR": "Boas-vindas ao {app}",
+      "ru": "Добро пожаловать в {app}",
+      "id": "Selamat datang di {app}"
+    },
+    "It stays out of the way at the top of your screen and comes out when something needs you. Pick a bundle to start with, or keep things as they are. You can change every switch later in Settings.": {
+      "en": "It stays out of the way at the top of your screen and comes out when something needs you. Pick a bundle to start with, or keep things as they are. You can change every switch later in Settings.",
+      "zh-Hans": "它不碍事地待在屏幕顶部，有事需要您时才会出现。选择一个套装开始，或保持现状。之后可随时在“设置”中更改每个开关。",
+      "hi": "यह आपकी स्क्रीन के ऊपर रास्ते से हटकर रहता है और ज़रूरत पड़ने पर बाहर आता है। शुरू करने के लिए एक बंडल चुनें, या चीज़ें जैसी हैं वैसी रखें। हर स्विच आप बाद में सेटिंग में बदल सकते हैं।",
+      "es": "Se queda fuera de tu camino en la parte superior de la pantalla y sale cuando algo te necesita. Elige un paquete para empezar o deja todo como está. Podrás cambiar cada interruptor más tarde en Ajustes.",
+      "ar": "يبقى بعيداً عن طريقك في أعلى الشاشة ويظهر عندما يحتاج إليك أمر ما. اختر حزمة للبدء أو أبقِ الأمور كما هي. يمكنك تغيير كل مفتاح لاحقاً من الإعدادات.",
+      "fr": "Il reste discret en haut de l’écran et ressort quand quelque chose a besoin de vous. Choisissez un pack pour commencer, ou gardez tout tel quel. Vous pourrez modifier chaque option plus tard dans Paramètres.",
+      "bn": "এটি আপনার স্ক্রিনের উপরে সরে থাকে এবং কিছু প্রয়োজন হলে বেরিয়ে আসে। শুরু করতে একটি বান্ডল বেছে নিন, অথবা যেমন আছে তেমন রাখুন। প্রতিটি সুইচ পরে সেটিংসে বদলাতে পারবেন।",
+      "pt-BR": "Ele fica fora do caminho no topo da tela e aparece quando algo precisa de você. Escolha um pacote para começar ou deixe tudo como está. Você pode alterar cada opção depois, em Configurações.",
+      "ru": "Он не мешает, оставаясь вверху экрана, и выдвигается, когда вы ему нужны. Выберите набор для начала или оставьте всё как есть. Каждый переключатель можно изменить позже в настройках.",
+      "id": "Aplikasi ini tidak mengganggu di bagian atas layar dan muncul saat ada yang memerlukan Anda. Pilih paket untuk memulai, atau biarkan seperti sekarang. Setiap sakelar bisa diubah nanti di Pengaturan."
+    },
+    "Start with a bundle": {
+      "en": "Start with a bundle",
+      "zh-Hans": "从套装开始",
+      "hi": "बंडल से शुरू करें",
+      "es": "Empezar con un paquete",
+      "ar": "ابدأ بحزمة",
+      "fr": "Commencer avec un pack",
+      "bn": "একটি বান্ডল দিয়ে শুরু করুন",
+      "pt-BR": "Começar com um pacote",
+      "ru": "Начать с набора",
+      "id": "Mulai dengan paket"
+    },
+    "Apply this bundle": {
+      "en": "Apply this bundle",
+      "zh-Hans": "应用此套装",
+      "hi": "यह बंडल लागू करें",
+      "es": "Aplicar este paquete",
+      "ar": "تطبيق هذه الحزمة",
+      "fr": "Appliquer ce pack",
+      "bn": "এই বান্ডল প্রয়োগ করুন",
+      "pt-BR": "Aplicar este pacote",
+      "ru": "Применить этот набор",
+      "id": "Terapkan paket ini"
+    },
+    "Nothing is turned on until you press Apply. Claude Code and the other agents are connected from the Agents page, after you have seen exactly what would be written to their settings.": {
+      "en": "Nothing is turned on until you press Apply. Claude Code and the other agents are connected from the Agents page, after you have seen exactly what would be written to their settings.",
+      "zh-Hans": "在您点击“应用”之前不会开启任何功能。Claude Code 和其他智能体在“智能体”页面连接，届时您会先看到将写入其设置的确切内容。",
+      "hi": "आप लागू करें दबाते हैं तब तक कुछ भी चालू नहीं होता। Claude Code और अन्य एजेंट एजेंट पेज से जोड़े जाते हैं, उससे पहले आप देख लेते हैं कि उनकी सेटिंग में ठीक क्या लिखा जाएगा।",
+      "es": "No se activa nada hasta que pulses Aplicar. Claude Code y los demás agentes se conectan desde la página Agentes, después de que veas exactamente qué se escribiría en sus ajustes.",
+      "ar": "لا يُفعَّل شيء حتى تضغط على «تطبيق». يُربط Claude Code والوكلاء الآخرون من صفحة الوكلاء، بعد أن ترى بالضبط ما سيُكتب في إعداداتهم.",
+      "fr": "Rien n’est activé tant que vous n’appuyez pas sur Appliquer. Claude Code et les autres agents se connectent depuis la page Agents, après que vous avez vu exactement ce qui serait écrit dans leurs paramètres.",
+      "bn": "আপনি প্রয়োগ করুন চাপার আগে কিছুই চালু হয় না। Claude Code ও অন্য এজেন্টগুলো এজেন্ট পেজ থেকে যুক্ত করা হয়, তাদের সেটিংসে ঠিক কী লেখা হবে তা আপনি দেখে নেওয়ার পর।",
+      "pt-BR": "Nada é ativado até você pressionar Aplicar. O Claude Code e os outros agentes são conectados pela página Agentes, depois que você ver exatamente o que seria gravado nas configurações deles.",
+      "ru": "Ничего не включится, пока вы не нажмёте «Применить». Claude Code и другие агенты подключаются на странице «Агенты» после того, как вы увидите, что именно будет записано в их настройки.",
+      "id": "Tidak ada yang diaktifkan sampai Anda menekan Terapkan. Claude Code dan agen lain dihubungkan dari halaman Agen, setelah Anda melihat persis apa yang akan ditulis ke pengaturan mereka."
+    },
+    "Keep my setup": {
+      "en": "Keep my setup",
+      "zh-Hans": "保留我的设置",
+      "hi": "मेरा सेटअप रखें",
+      "es": "Mantener mi configuración",
+      "ar": "الاحتفاظ بإعدادي",
+      "fr": "Garder ma configuration",
+      "bn": "আমার সেটআপ রাখুন",
+      "pt-BR": "Manter minha configuração",
+      "ru": "Оставить мои настройки",
+      "id": "Pertahankan pengaturan saya"
+    },
+    "Skip for now": {
+      "en": "Skip for now",
+      "zh-Hans": "暂时跳过",
+      "hi": "अभी छोड़ें",
+      "es": "Omitir por ahora",
+      "ar": "تخطَّ الآن",
+      "fr": "Passer pour l’instant",
+      "bn": "আপাতত বাদ দিন",
+      "pt-BR": "Pular por enquanto",
+      "ru": "Пропустить",
+      "id": "Lewati dulu"
+    },
+    "That did not work. Try again.": {
+      "en": "That did not work. Try again.",
+      "zh-Hans": "没有成功。请重试。",
+      "hi": "यह काम नहीं किया। फिर कोशिश करें।",
+      "es": "No funcionó. Inténtalo de nuevo.",
+      "ar": "لم تنجح العملية. حاول مرة أخرى.",
+      "fr": "Cela n’a pas fonctionné. Réessayez.",
+      "bn": "এটি কাজ করেনি। আবার চেষ্টা করুন।",
+      "pt-BR": "Não funcionou. Tente novamente.",
+      "ru": "Не получилось. Повторите попытку.",
+      "id": "Tidak berhasil. Coba lagi."
+    },
+    "A bundle turns on a set of features and turns the others off. You are asked before anything changes, and every switch stays yours.": {
+      "en": "A bundle turns on a set of features and turns the others off. You are asked before anything changes, and every switch stays yours.",
+      "zh-Hans": "套装会开启一组功能并关闭其余功能。任何更改前都会先征求您的同意，每个开关始终由您掌控。",
+      "hi": "एक बंडल कुछ सुविधाएँ चालू करता है और बाकी बंद कर देता है। कुछ भी बदलने से पहले आपसे पूछा जाता है, और हर स्विच आपके हाथ में रहता है।",
+      "es": "Un paquete activa un conjunto de funciones y desactiva las demás. Se te pregunta antes de cambiar nada, y cada interruptor sigue siendo tuyo.",
+      "ar": "تُفعِّل الحزمة مجموعة من الميزات وتُعطِّل البقية. يُطلب رأيك قبل تغيير أي شيء، ويبقى كل مفتاح بيدك.",
+      "fr": "Un pack active un ensemble de fonctions et désactive les autres. On vous demande avant tout changement, et chaque option reste la vôtre.",
+      "bn": "একটি বান্ডল কিছু ফিচার চালু করে আর বাকিগুলো বন্ধ করে। কিছু বদলানোর আগে আপনাকে জিজ্ঞাসা করা হয়, আর প্রতিটি সুইচ আপনার হাতেই থাকে।",
+      "pt-BR": "Um pacote ativa um conjunto de recursos e desativa os outros. Você é consultado antes de qualquer mudança, e cada opção continua sendo sua.",
+      "ru": "Набор включает ряд функций и отключает остальные. Перед любыми изменениями вас спросят, а каждый переключатель остаётся за вами.",
+      "id": "Paket mengaktifkan sekumpulan fitur dan menonaktifkan sisanya. Anda ditanya sebelum ada yang berubah, dan setiap sakelar tetap milik Anda."
+    },
+    "Done, except: {names}": {
+      "en": "Done, except: {names}",
+      "zh-Hans": "完成，但以下除外：{names}",
+      "hi": "पूरा हुआ, सिवाय: {names}",
+      "es": "Hecho, salvo: {names}",
+      "ar": "تم، باستثناء: {names}",
+      "fr": "Terminé, sauf : {names}",
+      "bn": "হয়ে গেছে, তবে এগুলো ছাড়া: {names}",
+      "pt-BR": "Concluído, exceto: {names}",
+      "ru": "Готово, кроме: {names}",
+      "id": "Selesai, kecuali: {names}"
+    },
+    "Done.": {
+      "en": "Done.",
+      "zh-Hans": "完成。",
+      "hi": "हो गया।",
+      "es": "Hecho.",
+      "ar": "تم.",
+      "fr": "Terminé.",
+      "bn": "হয়ে গেছে।",
+      "pt-BR": "Concluído.",
+      "ru": "Готово.",
+      "id": "Selesai."
+    },
+    "Apply": {
+      "en": "Apply",
+      "zh-Hans": "应用",
+      "hi": "लागू करें",
+      "es": "Aplicar",
+      "ar": "تطبيق",
+      "fr": "Appliquer",
+      "bn": "প্রয়োগ করুন",
+      "pt-BR": "Aplicar",
+      "ru": "Применить",
+      "id": "Terapkan"
+    },
+    "Nothing in this file differs from your settings.": {
+      "en": "Nothing in this file differs from your settings.",
+      "zh-Hans": "此文件中没有任何内容与您的设置不同。",
+      "hi": "इस फ़ाइल में कुछ भी आपकी सेटिंग से अलग नहीं है।",
+      "es": "Nada de este archivo difiere de tus ajustes.",
+      "ar": "لا شيء في هذا الملف يختلف عن إعداداتك.",
+      "fr": "Rien dans ce fichier ne diffère de vos paramètres.",
+      "bn": "এই ফাইলের কিছুই আপনার সেটিংস থেকে আলাদা নয়।",
+      "pt-BR": "Nada neste arquivo difere das suas configurações.",
+      "ru": "В этом файле нет отличий от ваших настроек.",
+      "id": "Tidak ada isi file ini yang berbeda dari pengaturan Anda."
+    },
+    "not set": {
+      "en": "not set",
+      "zh-Hans": "未设置",
+      "hi": "सेट नहीं है",
+      "es": "sin definir",
+      "ar": "غير معيّن",
+      "fr": "non défini",
+      "bn": "সেট করা নেই",
+      "pt-BR": "não definido",
+      "ru": "не задано",
+      "id": "belum diatur"
+    },
+    "A dated copy of your current settings is kept first.": {
+      "en": "A dated copy of your current settings is kept first.",
+      "zh-Hans": "会先保留一份带日期的当前设置副本。",
+      "hi": "पहले आपकी मौजूदा सेटिंग की तारीख़ वाली एक कॉपी रखी जाती है।",
+      "es": "Primero se guarda una copia fechada de tus ajustes actuales.",
+      "ar": "تُحفظ أولاً نسخة مؤرَّخة من إعداداتك الحالية.",
+      "fr": "Une copie datée de vos paramètres actuels est d’abord conservée.",
+      "bn": "প্রথমে আপনার বর্তমান সেটিংসের তারিখসহ একটি কপি রাখা হয়।",
+      "pt-BR": "Primeiro, uma cópia datada das suas configurações atuais é mantida.",
+      "ru": "Сначала сохраняется копия текущих настроек с датой.",
+      "id": "Salinan bertanggal dari pengaturan Anda saat ini disimpan terlebih dahulu."
+    },
+    "Import": {
+      "en": "Import",
+      "zh-Hans": "导入",
+      "hi": "आयात करें",
+      "es": "Importar",
+      "ar": "استيراد",
+      "fr": "Importer",
+      "bn": "আমদানি",
+      "pt-BR": "Importar",
+      "ru": "Импорт",
+      "id": "Impor"
+    },
+    "Imported. Your previous settings are kept at {path}.": {
+      "en": "Imported. Your previous settings are kept at {path}.",
+      "zh-Hans": "已导入。您之前的设置保存在 {path}。",
+      "hi": "आयात हो गया। आपकी पिछली सेटिंग {path} पर रखी गई हैं।",
+      "es": "Importado. Tus ajustes anteriores se guardaron en {path}.",
+      "ar": "تم الاستيراد. حُفظت إعداداتك السابقة في {path}.",
+      "fr": "Importé. Vos paramètres précédents sont conservés dans {path}.",
+      "bn": "আমদানি হয়েছে। আপনার আগের সেটিংস {path}-এ রাখা আছে।",
+      "pt-BR": "Importado. Suas configurações anteriores foram mantidas em {path}.",
+      "ru": "Импортировано. Прежние настройки сохранены в {path}.",
+      "id": "Diimpor. Pengaturan sebelumnya disimpan di {path}."
+    },
+    "Cancel": {
+      "en": "Cancel",
+      "zh-Hans": "取消",
+      "hi": "रद्द करें",
+      "es": "Cancelar",
+      "ar": "إلغاء",
+      "fr": "Annuler",
+      "bn": "বাতিল",
+      "pt-BR": "Cancelar",
+      "ru": "Отмена",
+      "id": "Batal"
+    },
+    "Back up your settings": {
+      "en": "Back up your settings",
+      "zh-Hans": "备份您的设置",
+      "hi": "अपनी सेटिंग का बैकअप लें",
+      "es": "Copia de seguridad de tus ajustes",
+      "ar": "نسخ إعداداتك احتياطياً",
+      "fr": "Sauvegarder vos paramètres",
+      "bn": "আপনার সেটিংসের ব্যাকআপ নিন",
+      "pt-BR": "Fazer backup das configurações",
+      "ru": "Резервная копия настроек",
+      "id": "Cadangkan pengaturan Anda"
+    },
+    "Settings only. Keys and tokens stay in the Windows Credential Manager and are never written to the file; this machine's startup and hook state stays here too.": {
+      "en": "Settings only. Keys and tokens stay in the Windows Credential Manager and are never written to the file; this machine's startup and hook state stays here too.",
+      "zh-Hans": "仅包含设置。密钥和令牌保留在 Windows 凭据管理器中，绝不会写入该文件；本机的启动和钩子状态也只保留在本机。",
+      "hi": "केवल सेटिंग। कुंजियाँ और टोकन Windows क्रेडेंशियल मैनेजर में ही रहते हैं और फ़ाइल में कभी नहीं लिखे जाते; इस मशीन की स्टार्टअप और हुक की स्थिति भी यहीं रहती है।",
+      "es": "Solo ajustes. Las claves y los tokens permanecen en el Administrador de credenciales de Windows y nunca se escriben en el archivo; el estado de inicio y de hooks de este equipo también se queda aquí.",
+      "ar": "الإعدادات فقط. تبقى المفاتيح والرموز في مدير بيانات اعتماد Windows ولا تُكتب في الملف أبداً؛ وتبقى كذلك حالة بدء التشغيل والخطافات لهذا الجهاز هنا.",
+      "fr": "Paramètres uniquement. Les clés et jetons restent dans le Gestionnaire d’informations d’identification Windows et ne sont jamais écrits dans le fichier ; l’état de démarrage et des hooks de cette machine reste aussi ici.",
+      "bn": "শুধু সেটিংস। কী ও টোকেন Windows ক্রেডেনশিয়াল ম্যানেজারে থাকে এবং ফাইলে কখনো লেখা হয় না; এই মেশিনের স্টার্টআপ ও হুকের অবস্থাও এখানেই থাকে।",
+      "pt-BR": "Somente configurações. Chaves e tokens permanecem no Gerenciador de Credenciais do Windows e nunca são gravados no arquivo; o estado de inicialização e de hooks desta máquina também fica aqui.",
+      "ru": "Только настройки. Ключи и токены остаются в диспетчере учётных данных Windows и никогда не записываются в файл; состояние автозапуска и хуков этого компьютера тоже остаётся здесь.",
+      "id": "Hanya pengaturan. Kunci dan token tetap di Windows Credential Manager dan tidak pernah ditulis ke file; status startup dan hook di mesin ini juga tetap di sini."
+    },
+    "Export": {
+      "en": "Export",
+      "zh-Hans": "导出",
+      "hi": "निर्यात करें",
+      "es": "Exportar",
+      "ar": "تصدير",
+      "fr": "Exporter",
+      "bn": "রপ্তানি",
+      "pt-BR": "Exportar",
+      "ru": "Экспорт",
+      "id": "Ekspor"
+    },
+    "Saved to {path}": {
+      "en": "Saved to {path}",
+      "zh-Hans": "已保存到 {path}",
+      "hi": "{path} पर सहेजा गया",
+      "es": "Guardado en {path}",
+      "ar": "تم الحفظ في {path}",
+      "fr": "Enregistré dans {path}",
+      "bn": "{path}-এ সংরক্ষিত",
+      "pt-BR": "Salvo em {path}",
+      "ru": "Сохранено в {path}",
+      "id": "Disimpan di {path}"
+    },
+    "Show in folder": {
+      "en": "Show in folder",
+      "zh-Hans": "在文件夹中显示",
+      "hi": "फ़ोल्डर में दिखाएँ",
+      "es": "Mostrar en la carpeta",
+      "ar": "إظهار في المجلد",
+      "fr": "Afficher dans le dossier",
+      "bn": "ফোল্ডারে দেখান",
+      "pt-BR": "Mostrar na pasta",
+      "ru": "Показать в папке",
+      "id": "Tampilkan di folder"
+    },
+    "Import…": {
+      "en": "Import…",
+      "zh-Hans": "导入…",
+      "hi": "आयात करें…",
+      "es": "Importar…",
+      "ar": "استيراد…",
+      "fr": "Importer…",
+      "bn": "আমদানি…",
+      "pt-BR": "Importar…",
+      "ru": "Импорт…",
+      "id": "Impor…"
+    },
+    "Play the demo": {
+      "en": "Play the demo",
+      "zh-Hans": "播放演示",
+      "hi": "डेमो चलाएँ",
+      "es": "Reproducir la demo",
+      "ar": "تشغيل العرض التجريبي",
+      "fr": "Lancer la démo",
+      "bn": "ডেমো চালান",
+      "pt-BR": "Reproduzir a demonstração",
+      "ru": "Запустить демо",
+      "id": "Putar demo"
+    },
+    "Stop the demo": {
+      "en": "Stop the demo",
+      "zh-Hans": "停止演示",
+      "hi": "डेमो रोकें",
+      "es": "Detener la demo",
+      "ar": "إيقاف العرض التجريبي",
+      "fr": "Arrêter la démo",
+      "bn": "ডেমো থামান",
+      "pt-BR": "Parar a demonstração",
+      "ru": "Остановить демо",
+      "id": "Hentikan demo"
+    },
+    "Step {n} of {total}": {
+      "en": "Step {n} of {total}",
+      "zh-Hans": "第 {n} 步，共 {total} 步",
+      "hi": "चरण {n} / {total}",
+      "es": "Paso {n} de {total}",
+      "ar": "الخطوة {n} من {total}",
+      "fr": "Étape {n} sur {total}",
+      "bn": "ধাপ {n} / {total}",
+      "pt-BR": "Etapa {n} de {total}",
+      "ru": "Шаг {n} из {total}",
+      "id": "Langkah {n} dari {total}"
+    },
+    "Demo": {
+      "en": "Demo",
+      "zh-Hans": "演示",
+      "hi": "डेमो",
+      "es": "Demo",
+      "ar": "عرض تجريبي",
+      "fr": "Démo",
+      "bn": "ডেমো",
+      "pt-BR": "Demonstração",
+      "ru": "Демо",
+      "id": "Demo"
+    },
+    "Plays a pretend coding session on the island: steps, a diff, a permission request, a question and a second agent. Nothing runs. The two cards wait for you like real ones.": {
+      "en": "Plays a pretend coding session on the island: steps, a diff, a permission request, a question and a second agent. Nothing runs. The two cards wait for you like real ones.",
+      "zh-Hans": "在岛上播放一段模拟的编码会话：步骤、差异对比、权限请求、一个问题和第二个智能体。不会实际运行任何内容。两张卡片会像真实的一样等待您操作。",
+      "hi": "आइलैंड पर एक नकली कोडिंग सत्र चलता है: चरण, एक डिफ़, अनुमति का अनुरोध, एक सवाल और एक दूसरा एजेंट। कुछ भी वास्तव में नहीं चलता। दोनों कार्ड असली कार्डों की तरह आपका इंतज़ार करते हैं।",
+      "es": "Reproduce en la isla una sesión de programación simulada: pasos, un diff, una solicitud de permiso, una pregunta y un segundo agente. No se ejecuta nada. Las dos tarjetas te esperan como las reales.",
+      "ar": "يعرض على الجزيرة جلسة برمجة تمثيلية: خطوات، وفرق بين نسختين، وطلب إذن، وسؤال، ووكيل ثانٍ. لا يُنفَّذ شيء فعلياً. وتنتظرك البطاقتان كما لو كانتا حقيقيتين.",
+      "fr": "Joue sur l’île une session de code fictive : des étapes, un diff, une demande d’autorisation, une question et un second agent. Rien ne s’exécute. Les deux cartes vous attendent comme des vraies.",
+      "bn": "আইল্যান্ডে একটি নকল কোডিং সেশন চলে: ধাপ, একটি ডিফ, অনুমতির অনুরোধ, একটি প্রশ্ন ও দ্বিতীয় একটি এজেন্ট। আসলে কিছুই চলে না। দুটি কার্ড আসল কার্ডের মতোই আপনার অপেক্ষায় থাকে।",
+      "pt-BR": "Executa na ilha uma sessão de código de mentira: etapas, um diff, um pedido de permissão, uma pergunta e um segundo agente. Nada é executado. Os dois cartões esperam por você como os reais.",
+      "ru": "На острове проигрывается ненастоящий сеанс кодинга: шаги, diff, запрос разрешения, вопрос и второй агент. Ничего не запускается. Две карточки ждут вас, как настоящие.",
+      "id": "Memutar sesi pengodean pura-pura di pulau: langkah, diff, permintaan izin, pertanyaan, dan agen kedua. Tidak ada yang dijalankan. Kedua kartu menunggu Anda seperti yang asli."
+    },
+    "Cleaning mode": {
+      "en": "Cleaning mode",
+      "zh-Hans": "清洁模式",
+      "hi": "सफ़ाई मोड",
+      "es": "Modo de limpieza",
+      "ar": "وضع التنظيف",
+      "fr": "Mode nettoyage",
+      "bn": "পরিষ্কার মোড",
+      "pt-BR": "Modo de limpeza",
+      "ru": "Режим чистки",
+      "id": "Mode pembersihan"
+    },
+    "Locks the keyboard and the mouse wheel so you can wipe them. The pointer and clicks keep working. It ends by itself when the time is up, after five presses of Esc, or with the Unlock button. Ctrl+Alt+Del and Win+L are Windows' own and still work.": {
+      "en": "Locks the keyboard and the mouse wheel so you can wipe them. The pointer and clicks keep working. It ends by itself when the time is up, after five presses of Esc, or with the Unlock button. Ctrl+Alt+Del and Win+L are Windows' own and still work.",
+      "zh-Hans": "锁定键盘和鼠标滚轮，方便您擦拭。指针和点击仍可使用。时间到、连按五次 Esc 或点击“解锁”按钮后会自动结束。Ctrl+Alt+Del 和 Win+L 属于 Windows 自身，仍然有效。",
+      "hi": "कीबोर्ड और माउस व्हील को लॉक करता है ताकि आप उन्हें पोंछ सकें। पॉइंटर और क्लिक काम करते रहते हैं। समय पूरा होने पर, Esc पाँच बार दबाने पर या अनलॉक बटन से यह अपने आप खत्म होता है। Ctrl+Alt+Del और Win+L Windows के अपने हैं और काम करते रहते हैं।",
+      "es": "Bloquea el teclado y la rueda del ratón para que puedas limpiarlos. El puntero y los clics siguen funcionando. Termina solo al acabarse el tiempo, tras pulsar Esc cinco veces o con el botón Desbloquear. Ctrl+Alt+Supr y Win+L son propios de Windows y siguen funcionando.",
+      "ar": "يقفل لوحة المفاتيح وعجلة الماوس لتتمكن من مسحهما. يستمر عمل المؤشر والنقرات. وينتهي من تلقاء نفسه عند انتهاء المدة، أو بعد خمس ضغطات على Esc، أو بزر إلغاء القفل. يستمر عمل Ctrl+Alt+Del وWin+L لأنهما من Windows نفسه.",
+      "fr": "Verrouille le clavier et la molette de la souris pour que vous puissiez les essuyer. Le pointeur et les clics continuent de fonctionner. Il se termine tout seul à la fin du temps, après cinq appuis sur Échap ou avec le bouton Déverrouiller. Ctrl+Alt+Suppr et Win+L appartiennent à Windows et fonctionnent toujours.",
+      "bn": "কীবোর্ড ও মাউস হুইল লক করে দেয় যাতে আপনি মুছে নিতে পারেন। পয়েন্টার ও ক্লিক কাজ করতে থাকে। সময় শেষ হলে, পাঁচবার Esc চাপলে বা আনলক বোতামে এটি নিজে থেকে শেষ হয়। Ctrl+Alt+Del ও Win+L Windows-এর নিজস্ব এবং কাজ করে।",
+      "pt-BR": "Bloqueia o teclado e a roda do mouse para você poder limpá-los. O ponteiro e os cliques continuam funcionando. Termina sozinho quando o tempo acaba, após cinco toques em Esc ou com o botão Desbloquear. Ctrl+Alt+Del e Win+L são do próprio Windows e continuam funcionando.",
+      "ru": "Блокирует клавиатуру и колесо мыши, чтобы вы могли их протереть. Указатель и клики продолжают работать. Режим завершается сам по истечении времени, после пяти нажатий Esc или кнопкой «Разблокировать». Ctrl+Alt+Del и Win+L принадлежат самой Windows и продолжают работать.",
+      "id": "Mengunci keyboard dan roda mouse agar bisa dilap. Pointer dan klik tetap berfungsi. Berakhir sendiri saat waktu habis, setelah lima kali menekan Esc, atau dengan tombol Buka kunci. Ctrl+Alt+Del dan Win+L milik Windows sendiri dan tetap berfungsi."
+    },
+    "Unlocks by itself after": {
+      "en": "Unlocks by itself after",
+      "zh-Hans": "自动解锁时间",
+      "hi": "अपने आप अनलॉक होने का समय",
+      "es": "Se desbloquea solo después de",
+      "ar": "يُفتح القفل تلقائياً بعد",
+      "fr": "Se déverrouille tout seul après",
+      "bn": "নিজে থেকে আনলক হবে",
+      "pt-BR": "Desbloqueia sozinho após",
+      "ru": "Разблокируется сам через",
+      "id": "Terbuka sendiri setelah"
+    },
+    "30 seconds": {
+      "en": "30 seconds",
+      "zh-Hans": "30 秒",
+      "hi": "30 सेकंड",
+      "es": "30 segundos",
+      "ar": "30 ثانية",
+      "fr": "30 secondes",
+      "bn": "৩০ সেকেন্ড",
+      "pt-BR": "30 segundos",
+      "ru": "30 секунд",
+      "id": "30 detik"
+    },
+    "1 minute": {
+      "en": "1 minute",
+      "zh-Hans": "1 分钟",
+      "hi": "1 मिनट",
+      "es": "1 minuto",
+      "ar": "دقيقة واحدة",
+      "fr": "1 minute",
+      "bn": "১ মিনিট",
+      "pt-BR": "1 minuto",
+      "ru": "1 минута",
+      "id": "1 menit"
+    },
+    "2 minutes": {
+      "en": "2 minutes",
+      "zh-Hans": "2 分钟",
+      "hi": "2 मिनट",
+      "es": "2 minutos",
+      "ar": "دقيقتان",
+      "fr": "2 minutes",
+      "bn": "২ মিনিট",
+      "pt-BR": "2 minutos",
+      "ru": "2 минуты",
+      "id": "2 menit"
+    },
+    "5 minutes": {
+      "en": "5 minutes",
+      "zh-Hans": "5 分钟",
+      "hi": "5 मिनट",
+      "es": "5 minutos",
+      "ar": "5 دقائق",
+      "fr": "5 minutes",
+      "bn": "৫ মিনিট",
+      "pt-BR": "5 minutos",
+      "ru": "5 минут",
+      "id": "5 menit"
+    },
+    "10 minutes": {
+      "en": "10 minutes",
+      "zh-Hans": "10 分钟",
+      "hi": "10 मिनट",
+      "es": "10 minutos",
+      "ar": "10 دقائق",
+      "fr": "10 minutes",
+      "bn": "১০ মিনিট",
+      "pt-BR": "10 minutos",
+      "ru": "10 минут",
+      "id": "10 menit"
+    },
+    "Lock the keyboard": {
+      "en": "Lock the keyboard",
+      "zh-Hans": "锁定键盘",
+      "hi": "कीबोर्ड लॉक करें",
+      "es": "Bloquear el teclado",
+      "ar": "قفل لوحة المفاتيح",
+      "fr": "Verrouiller le clavier",
+      "bn": "কীবোর্ড লক করুন",
+      "pt-BR": "Bloquear o teclado",
+      "ru": "Заблокировать клавиатуру",
+      "id": "Kunci keyboard"
+    },
+    "Changes": {
+      "en": "Changes",
+      "zh-Hans": "发生变化",
+      "hi": "बदलता है",
+      "es": "Cambia",
+      "ar": "يتغيّر",
+      "fr": "Change",
+      "bn": "বদলায়",
+      "pt-BR": "Muda",
+      "ru": "Меняется",
+      "id": "Berubah"
+    },
+    "Reaches a number": {
+      "en": "Reaches a number",
+      "zh-Hans": "达到某个数值",
+      "hi": "किसी संख्या तक पहुँचता है",
+      "es": "Alcanza un número",
+      "ar": "يبلغ رقماً",
+      "fr": "Atteint un nombre",
+      "bn": "একটি সংখ্যায় পৌঁছায়",
+      "pt-BR": "Atinge um número",
+      "ru": "Достигает числа",
+      "id": "Mencapai angka"
+    },
+    "Shows these words": {
+      "en": "Shows these words",
+      "zh-Hans": "显示这些文字",
+      "hi": "ये शब्द दिखाता है",
+      "es": "Muestra estas palabras",
+      "ar": "يعرض هذه الكلمات",
+      "fr": "Affiche ces mots",
+      "bn": "এই শব্দগুলো দেখায়",
+      "pt-BR": "Mostra estas palavras",
+      "ru": "Показывает эти слова",
+      "id": "Menampilkan kata ini"
+    },
+    "For example 80": {
+      "en": "For example 80",
+      "zh-Hans": "例如 80",
+      "hi": "उदाहरण: 80",
+      "es": "Por ejemplo, 80",
+      "ar": "مثلاً 80",
+      "fr": "Par exemple 80",
+      "bn": "যেমন ৮০",
+      "pt-BR": "Por exemplo, 80",
+      "ru": "Например, 80",
+      "id": "Contoh: 80"
+    },
+    "The words to wait for": {
+      "en": "The words to wait for",
+      "zh-Hans": "要等待的文字",
+      "hi": "जिन शब्दों का इंतज़ार है",
+      "es": "Las palabras que esperar",
+      "ar": "الكلمات المراد انتظارها",
+      "fr": "Les mots à attendre",
+      "bn": "যে শব্দগুলোর অপেক্ষা",
+      "pt-BR": "As palavras a aguardar",
+      "ru": "Слова, которых нужно дождаться",
+      "id": "Kata yang ditunggu"
+    },
+    "Watching {title}: {headline}": {
+      "en": "Watching {title}: {headline}",
+      "zh-Hans": "正在监视 {title}：{headline}",
+      "hi": "{title} देख रहे हैं: {headline}",
+      "es": "Vigilando {title}: {headline}",
+      "ar": "مراقبة {title}: {headline}",
+      "fr": "Surveillance de {title} : {headline}",
+      "bn": "{title} নজরে আছে: {headline}",
+      "pt-BR": "Observando {title}: {headline}",
+      "ru": "Слежение за {title}: {headline}",
+      "id": "Memantau {title}: {headline}"
+    },
+    "It happened: {headline}": {
+      "en": "It happened: {headline}",
+      "zh-Hans": "条件已满足：{headline}",
+      "hi": "ऐसा हो गया: {headline}",
+      "es": "Ha ocurrido: {headline}",
+      "ar": "حدث ذلك: {headline}",
+      "fr": "C’est arrivé : {headline}",
+      "bn": "ঘটেছে: {headline}",
+      "pt-BR": "Aconteceu: {headline}",
+      "ru": "Условие выполнено: {headline}",
+      "id": "Terjadi: {headline}"
+    },
+    "Watch a window": {
+      "en": "Watch a window",
+      "zh-Hans": "监视窗口",
+      "hi": "किसी विंडो पर नज़र रखें",
+      "es": "Vigilar una ventana",
+      "ar": "مراقبة نافذة",
+      "fr": "Surveiller une fenêtre",
+      "bn": "একটি উইন্ডো নজরে রাখুন",
+      "pt-BR": "Observar uma janela",
+      "ru": "Следить за окном",
+      "id": "Pantau jendela"
+    },
+    "Reads a window now and then and shows what it says on the island: a percentage, a time, a number. You are told when your condition is met. The window can be behind others but not minimised.": {
+      "en": "Reads a window now and then and shows what it says on the island: a percentage, a time, a number. You are told when your condition is met. The window can be behind others but not minimised.",
+      "zh-Hans": "会定期读取某个窗口，并把其内容显示在岛上：百分比、时间或数字。条件满足时会通知您。窗口可以被其他窗口遮住，但不能最小化。",
+      "hi": "समय-समय पर किसी विंडो को पढ़ता है और जो लिखा है उसे आइलैंड पर दिखाता है: प्रतिशत, समय या संख्या। आपकी शर्त पूरी होने पर आपको बताया जाता है। विंडो दूसरों के पीछे हो सकती है, पर छोटी (मिनिमाइज़) नहीं होनी चाहिए।",
+      "es": "Lee una ventana de vez en cuando y muestra en la isla lo que dice: un porcentaje, una hora, un número. Se te avisa cuando se cumple tu condición. La ventana puede estar detrás de otras, pero no minimizada.",
+      "ar": "يقرأ نافذةً بين حين وآخر ويعرض ما فيها على الجزيرة: نسبة مئوية أو وقتاً أو رقماً. يُخطَرك عند تحقق شرطك. يمكن أن تكون النافذة خلف نوافذ أخرى لكن ليست مصغّرة.",
+      "fr": "Lit une fenêtre de temps en temps et affiche ce qu’elle indique sur l’île : un pourcentage, une heure, un nombre. Vous êtes prévenu quand votre condition est remplie. La fenêtre peut être derrière d’autres, mais pas réduite.",
+      "bn": "মাঝে মাঝে একটি উইন্ডো পড়ে এবং তাতে যা লেখা আছে তা আইল্যান্ডে দেখায়: শতাংশ, সময় বা সংখ্যা। আপনার শর্ত পূরণ হলে আপনাকে জানানো হয়। উইন্ডোটি অন্যগুলোর পেছনে থাকতে পারে, কিন্তু মিনিমাইজ করা চলবে না।",
+      "pt-BR": "Lê uma janela de vez em quando e mostra na ilha o que ela diz: uma porcentagem, uma hora, um número. Você é avisado quando sua condição é atendida. A janela pode estar atrás de outras, mas não minimizada.",
+      "ru": "Время от времени считывает окно и показывает на острове, что в нём написано: процент, время, число. Вас уведомят, когда условие выполнится. Окно может быть под другими, но не свёрнуто.",
+      "id": "Sesekali membaca jendela dan menampilkan isinya di pulau: persentase, waktu, atau angka. Anda diberi tahu saat kondisi terpenuhi. Jendela boleh berada di belakang jendela lain, tetapi tidak diminimalkan."
+    },
+    "Window": {
+      "en": "Window",
+      "zh-Hans": "窗口",
+      "hi": "विंडो",
+      "es": "Ventana",
+      "ar": "النافذة",
+      "fr": "Fenêtre",
+      "bn": "উইন্ডো",
+      "pt-BR": "Janela",
+      "ru": "Окно",
+      "id": "Jendela"
+    },
+    "Tell me when it": {
+      "en": "Tell me when it",
+      "zh-Hans": "在以下情况通知我",
+      "hi": "मुझे तब बताएँ जब यह",
+      "es": "Avísame cuando",
+      "ar": "أخطرني عندما",
+      "fr": "Prévenez-moi quand il",
+      "bn": "আমাকে জানান যখন এটি",
+      "pt-BR": "Avise-me quando",
+      "ru": "Сообщить, когда это",
+      "id": "Beri tahu saya saat ini"
+    },
+    "Watch": {
+      "en": "Watch",
+      "zh-Hans": "监视",
+      "hi": "देखें",
+      "es": "Vigilar",
+      "ar": "مراقبة",
+      "fr": "Surveiller",
+      "bn": "নজরে রাখুন",
+      "pt-BR": "Observar",
+      "ru": "Следить",
+      "id": "Pantau"
+    },
+    "Stop": {
+      "en": "Stop",
+      "zh-Hans": "停止",
+      "hi": "रोकें",
+      "es": "Detener",
+      "ar": "إيقاف",
+      "fr": "Arrêter",
+      "bn": "থামান",
+      "pt-BR": "Parar",
+      "ru": "Остановить",
+      "id": "Berhenti"
+    },
+    "Refresh the windows": {
+      "en": "Refresh the windows",
+      "zh-Hans": "刷新窗口列表",
+      "hi": "विंडो सूची रीफ़्रेश करें",
+      "es": "Actualizar las ventanas",
+      "ar": "تحديث قائمة النوافذ",
+      "fr": "Actualiser les fenêtres",
+      "bn": "উইন্ডো তালিকা রিফ্রেশ করুন",
+      "pt-BR": "Atualizar as janelas",
+      "ru": "Обновить список окон",
+      "id": "Segarkan daftar jendela"
+    },
+    "Explorer": {
+      "en": "Explorer",
+      "zh-Hans": "Explorer",
+      "hi": "Explorer",
+      "es": "Explorer",
+      "ar": "Explorer",
+      "fr": "Explorer",
+      "bn": "Explorer",
+      "pt-BR": "Explorer",
+      "ru": "Explorer",
+      "id": "Explorer"
+    },
+    "Both are off until you turn them on. Neither adds anything to Explorer's menus.": {
+      "en": "Both are off until you turn them on. Neither adds anything to Explorer's menus.",
+      "zh-Hans": "两者在您开启之前都是关闭的。二者都不会向资源管理器的菜单添加任何内容。",
+      "hi": "दोनों तब तक बंद हैं जब तक आप उन्हें चालू नहीं करते। दोनों में से कोई भी एक्सप्लोरर के मेनू में कुछ नहीं जोड़ता।",
+      "es": "Ambos están desactivados hasta que los actives. Ninguno añade nada a los menús del Explorador.",
+      "ar": "كلاهما معطّل حتى تُفعّله. ولا يضيف أيٌّ منهما شيئاً إلى قوائم المستكشف.",
+      "fr": "Les deux sont désactivés tant que vous ne les activez pas. Aucun n’ajoute quoi que ce soit aux menus de l’Explorateur.",
+      "bn": "দুটোই বন্ধ থাকে যতক্ষণ না আপনি চালু করেন। কোনোটিই এক্সপ্লোরারের মেনুতে কিছু যোগ করে না।",
+      "pt-BR": "Ambos ficam desativados até você ativá-los. Nenhum deles adiciona nada aos menus do Explorador.",
+      "ru": "Обе функции выключены, пока вы их не включите. Ни одна не добавляет ничего в меню проводника.",
+      "id": "Keduanya nonaktif sampai Anda mengaktifkannya. Tidak ada yang menambahkan apa pun ke menu Explorer."
+    },
+    "Paste a copied picture as a file": {
+      "en": "Paste a copied picture as a file",
+      "zh-Hans": "将复制的图片粘贴为文件",
+      "hi": "कॉपी की गई तस्वीर को फ़ाइल के रूप में पेस्ट करें",
+      "es": "Pegar una imagen copiada como archivo",
+      "ar": "لصق صورة منسوخة كملف",
+      "fr": "Coller une image copiée en tant que fichier",
+      "bn": "কপি করা ছবি ফাইল হিসেবে পেস্ট করুন",
+      "pt-BR": "Colar uma imagem copiada como arquivo",
+      "ru": "Вставлять скопированное изображение как файл",
+      "id": "Tempel gambar yang disalin sebagai file"
+    },
+    "Ctrl+V in a folder or on the desktop saves a copied picture as a PNG named Pasted_Image_ and the time. Anywhere else, and for anything that is not a picture, Ctrl+V works as always.": {
+      "en": "Ctrl+V in a folder or on the desktop saves a copied picture as a PNG named Pasted_Image_ and the time. Anywhere else, and for anything that is not a picture, Ctrl+V works as always.",
+      "zh-Hans": "在文件夹或桌面上按 Ctrl+V，会将复制的图片保存为名为 Pasted_Image_ 加时间的 PNG 文件。在其他任何地方，或复制的不是图片时，Ctrl+V 照常工作。",
+      "hi": "किसी फ़ोल्डर या डेस्कटॉप पर Ctrl+V कॉपी की गई तस्वीर को Pasted_Image_ और समय नाम की PNG के रूप में सहेजता है। बाकी हर जगह, और जो तस्वीर नहीं है उसके लिए, Ctrl+V हमेशा की तरह काम करता है।",
+      "es": "Ctrl+V en una carpeta o en el escritorio guarda una imagen copiada como un PNG llamado Pasted_Image_ y la hora. En cualquier otro sitio, y para lo que no sea una imagen, Ctrl+V funciona como siempre.",
+      "ar": "يحفظ Ctrl+V داخل مجلد أو على سطح المكتب الصورة المنسوخة بصيغة PNG باسم Pasted_Image_ متبوعاً بالوقت. وفي أي مكان آخر، ولأي شيء ليس صورة، يعمل Ctrl+V كالمعتاد.",
+      "fr": "Ctrl+V dans un dossier ou sur le bureau enregistre une image copiée en PNG nommé Pasted_Image_ suivi de l’heure. Partout ailleurs, et pour tout ce qui n’est pas une image, Ctrl+V fonctionne comme d’habitude.",
+      "bn": "কোনো ফোল্ডারে বা ডেস্কটপে Ctrl+V কপি করা ছবিকে Pasted_Image_ ও সময় নামের PNG হিসেবে সংরক্ষণ করে। অন্য সব জায়গায় এবং ছবি নয় এমন কিছুর জন্য Ctrl+V আগের মতোই কাজ করে।",
+      "pt-BR": "Ctrl+V em uma pasta ou na área de trabalho salva uma imagem copiada como um PNG chamado Pasted_Image_ e a hora. Em qualquer outro lugar, e para o que não for imagem, Ctrl+V funciona como sempre.",
+      "ru": "Ctrl+V в папке или на рабочем столе сохраняет скопированное изображение как PNG с именем Pasted_Image_ и временем. В любых других местах и для всего, что не является изображением, Ctrl+V работает как обычно.",
+      "id": "Ctrl+V di folder atau desktop menyimpan gambar yang disalin sebagai PNG bernama Pasted_Image_ dan waktunya. Di tempat lain, dan untuk apa pun yang bukan gambar, Ctrl+V berfungsi seperti biasa."
+    },
+    "Explorer selection to the shelf": {
+      "en": "Explorer selection to the shelf",
+      "zh-Hans": "将资源管理器选中项加入暂存架",
+      "hi": "एक्सप्लोरर में चुनी फ़ाइलें शेल्फ़ में",
+      "es": "Selección del Explorador a la repisa",
+      "ar": "تحديد المستكشف إلى الرف",
+      "fr": "Sélection de l’Explorateur vers l’étagère",
+      "bn": "এক্সপ্লোরারের নির্বাচন শেলফে",
+      "pt-BR": "Seleção do Explorador para a prateleira",
+      "ru": "Выделенное в проводнике — на полку",
+      "id": "Pilihan Explorer ke rak"
+    },
+    "A shortcut that adds the files selected in the Explorer window in front to the shelf. Choose its keys under Shortcuts.": {
+      "en": "A shortcut that adds the files selected in the Explorer window in front to the shelf. Choose its keys under Shortcuts.",
+      "zh-Hans": "一个快捷键，可将最前面的资源管理器窗口中选中的文件添加到暂存架。可在“快捷键”下设置按键。",
+      "hi": "एक शॉर्टकट जो सबसे आगे वाली एक्सप्लोरर विंडो में चुनी गई फ़ाइलों को शेल्फ़ में जोड़ता है। इसकी कुंजियाँ शॉर्टकट में चुनें।",
+      "es": "Un atajo que añade a la repisa los archivos seleccionados en la ventana del Explorador que está delante. Elige sus teclas en Atajos.",
+      "ar": "اختصار يضيف الملفات المحددة في نافذة المستكشف الأمامية إلى الرف. اختر مفاتيحه من الاختصارات.",
+      "fr": "Un raccourci qui ajoute à l’étagère les fichiers sélectionnés dans la fenêtre de l’Explorateur au premier plan. Choisissez ses touches dans Raccourcis.",
+      "bn": "একটি শর্টকাট যা সামনের এক্সপ্লোরার উইন্ডোতে নির্বাচিত ফাইলগুলো শেলফে যোগ করে। এর কী শর্টকাট অংশে বেছে নিন।",
+      "pt-BR": "Um atalho que adiciona à prateleira os arquivos selecionados na janela do Explorador na frente. Escolha as teclas em Atalhos.",
+      "ru": "Сочетание клавиш, которое добавляет на полку файлы, выделенные в окне проводника на переднем плане. Клавиши выбираются в разделе «Сочетания клавиш».",
+      "id": "Pintasan yang menambahkan file yang dipilih di jendela Explorer paling depan ke rak. Pilih tombolnya di Pintasan."
+    },
+    "Open terminal": {
+      "en": "Open terminal",
+      "zh-Hans": "打开终端",
+      "hi": "टर्मिनल खोलें",
+      "es": "Abrir terminal",
+      "ar": "فتح الطرفية",
+      "fr": "Ouvrir le terminal",
+      "bn": "টার্মিনাল খুলুন",
+      "pt-BR": "Abrir terminal",
+      "ru": "Открыть терминал",
+      "id": "Buka terminal"
+    },
+    "When an agent runs in Windows Terminal, Open terminal selects its tab, found by the folder or the title it shows. A tab that matches nothing is left alone. An elevated Terminal cannot be read from here.": {
+      "en": "When an agent runs in Windows Terminal, Open terminal selects its tab, found by the folder or the title it shows. A tab that matches nothing is left alone. An elevated Terminal cannot be read from here.",
+      "zh-Hans": "当智能体在 Windows 终端中运行时，“打开终端”会选中其标签页，依据其显示的文件夹或标题查找。没有匹配的标签页则不做处理。无法从这里读取以管理员身份运行的终端。",
+      "hi": "जब कोई एजेंट Windows टर्मिनल में चलता है, तो टर्मिनल खोलें उसका टैब चुन लेता है, जो उसके दिखाए फ़ोल्डर या शीर्षक से मिलता है। जो टैब किसी से मेल न खाए उसे छुआ नहीं जाता। ऊँचे अधिकार वाला टर्मिनल यहाँ से पढ़ा नहीं जा सकता।",
+      "es": "Cuando un agente se ejecuta en Terminal de Windows, Abrir terminal selecciona su pestaña, que se encuentra por la carpeta o el título que muestra. Una pestaña que no coincida con nada se deja como está. Un Terminal elevado no se puede leer desde aquí.",
+      "ar": "عندما يعمل وكيل في Windows Terminal، يحدّد «فتح الطرفية» علامة التبويب الخاصة به، ويجدها من المجلد أو العنوان الذي تعرضه. تُترك أي علامة تبويب لا تطابق شيئاً كما هي. لا يمكن قراءة طرفية مرفوعة الصلاحيات من هنا.",
+      "fr": "Quand un agent s’exécute dans Windows Terminal, Ouvrir le terminal sélectionne son onglet, retrouvé grâce au dossier ou au titre qu’il affiche. Un onglet qui ne correspond à rien est laissé tel quel. Un Terminal élevé ne peut pas être lu d’ici.",
+      "bn": "কোনো এজেন্ট Windows Terminal-এ চললে টার্মিনাল খুলুন তার ট্যাব বেছে নেয়, যা সে যে ফোল্ডার বা শিরোনাম দেখায় তা দিয়ে খোঁজা হয়। কিছুর সাথে না মেলা ট্যাব ছোঁয়া হয় না। উচ্চ অধিকারে চলা টার্মিনাল এখান থেকে পড়া যায় না।",
+      "pt-BR": "Quando um agente é executado no Terminal do Windows, Abrir terminal seleciona a guia dele, encontrada pela pasta ou pelo título que ela mostra. Uma guia que não corresponde a nada é deixada como está. Um Terminal elevado não pode ser lido daqui.",
+      "ru": "Когда агент работает в Windows Terminal, «Открыть терминал» выбирает его вкладку, находя её по папке или заголовку. Вкладка, которая ничему не соответствует, не затрагивается. Терминал с правами администратора отсюда прочитать нельзя.",
+      "id": "Saat agen berjalan di Windows Terminal, Buka terminal memilih tab-nya, yang ditemukan lewat folder atau judul yang ditampilkannya. Tab yang tidak cocok dibiarkan. Terminal dengan hak administrator tidak dapat dibaca dari sini."
+    },
+    "Startup entry": {
+      "en": "Startup entry",
+      "zh-Hans": "启动项",
+      "hi": "स्टार्टअप प्रविष्टि",
+      "es": "Entrada de inicio",
+      "ar": "إدخال بدء التشغيل",
+      "fr": "Entrée de démarrage",
+      "bn": "স্টার্টআপ এন্ট্রি",
+      "pt-BR": "Entrada de inicialização",
+      "ru": "Запись автозагрузки",
+      "id": "Entri startup"
+    },
+    "Stops the app from starting with Windows.": {
+      "en": "Stops the app from starting with Windows.",
+      "zh-Hans": "阻止应用随 Windows 启动。",
+      "hi": "ऐप को Windows के साथ शुरू होने से रोकता है।",
+      "es": "Evita que la app se inicie con Windows.",
+      "ar": "يمنع التطبيق من البدء مع Windows.",
+      "fr": "Empêche l’application de démarrer avec Windows.",
+      "bn": "অ্যাপটিকে Windows-এর সাথে শুরু হওয়া থেকে থামায়।",
+      "pt-BR": "Impede que o app inicie com o Windows.",
+      "ru": "Не даёт приложению запускаться вместе с Windows.",
+      "id": "Mencegah aplikasi berjalan saat Windows mulai."
+    },
+    "Saved keys": {
+      "en": "Saved keys",
+      "zh-Hans": "已保存的密钥",
+      "hi": "सहेजी गई कुंजियाँ",
+      "es": "Claves guardadas",
+      "ar": "المفاتيح المحفوظة",
+      "fr": "Clés enregistrées",
+      "bn": "সংরক্ষিত কী",
+      "pt-BR": "Chaves salvas",
+      "ru": "Сохранённые ключи",
+      "id": "Kunci tersimpan"
+    },
+    "The keys and tokens in the Windows Credential Manager.": {
+      "en": "The keys and tokens in the Windows Credential Manager.",
+      "zh-Hans": "保存在 Windows 凭据管理器中的密钥和令牌。",
+      "hi": "Windows क्रेडेंशियल मैनेजर में मौजूद कुंजियाँ और टोकन।",
+      "es": "Las claves y los tokens del Administrador de credenciales de Windows.",
+      "ar": "المفاتيح والرموز الموجودة في مدير بيانات اعتماد Windows.",
+      "fr": "Les clés et jetons du Gestionnaire d’informations d’identification Windows.",
+      "bn": "Windows ক্রেডেনশিয়াল ম্যানেজারে থাকা কী ও টোকেন।",
+      "pt-BR": "As chaves e os tokens no Gerenciador de Credenciais do Windows.",
+      "ru": "Ключи и токены в диспетчере учётных данных Windows.",
+      "id": "Kunci dan token di Windows Credential Manager."
+    },
+    "What features keep": {
+      "en": "What features keep",
+      "zh-Hans": "功能保存的内容",
+      "hi": "सुविधाएँ जो रखती हैं",
+      "es": "Lo que guardan las funciones",
+      "ar": "ما تحتفظ به الميزات",
+      "fr": "Ce que les fonctions conservent",
+      "bn": "ফিচারগুলো যা রাখে",
+      "pt-BR": "O que os recursos guardam",
+      "ru": "Что хранят функции",
+      "id": "Yang disimpan fitur"
+    },
+    "History, caches and files the features saved.": {
+      "en": "History, caches and files the features saved.",
+      "zh-Hans": "各功能保存的历史记录、缓存和文件。",
+      "hi": "इतिहास, कैश और सुविधाओं द्वारा सहेजी गई फ़ाइलें।",
+      "es": "Historial, cachés y archivos que guardaron las funciones.",
+      "ar": "السجل والذاكرة المؤقتة والملفات التي حفظتها الميزات.",
+      "fr": "L’historique, les caches et les fichiers enregistrés par les fonctions.",
+      "bn": "ইতিহাস, ক্যাশ এবং ফিচারগুলোর সংরক্ষিত ফাইল।",
+      "pt-BR": "Histórico, caches e arquivos que os recursos salvaram.",
+      "ru": "История, кэш и файлы, сохранённые функциями.",
+      "id": "Riwayat, cache, dan file yang disimpan fitur."
+    },
+    "Dropped files": {
+      "en": "Dropped files",
+      "zh-Hans": "拖入的文件",
+      "hi": "छोड़ी गई फ़ाइलें",
+      "es": "Archivos soltados",
+      "ar": "الملفات المُسقَطة",
+      "fr": "Fichiers déposés",
+      "bn": "ড্রপ করা ফাইল",
+      "pt-BR": "Arquivos soltos",
+      "ru": "Перетащенные файлы",
+      "id": "File yang dijatuhkan"
+    },
+    "The copies of files dropped on the island.": {
+      "en": "The copies of files dropped on the island.",
+      "zh-Hans": "拖放到岛上的文件的副本。",
+      "hi": "आइलैंड पर छोड़ी गई फ़ाइलों की प्रतियाँ।",
+      "es": "Las copias de los archivos soltados en la isla.",
+      "ar": "نُسخ الملفات التي أُسقطت على الجزيرة.",
+      "fr": "Les copies des fichiers déposés sur l’île.",
+      "bn": "আইল্যান্ডে ফেলা ফাইলগুলোর কপি।",
+      "pt-BR": "As cópias dos arquivos soltos na ilha.",
+      "ru": "Копии файлов, перетащенных на остров.",
+      "id": "Salinan file yang dijatuhkan ke pulau."
+    },
+    "Agent hooks and the relay": {
+      "en": "Agent hooks and the relay",
+      "zh-Hans": "智能体钩子与中继程序",
+      "hi": "एजेंट हुक और रिले",
+      "es": "Hooks de agentes y el relé",
+      "ar": "خطافات الوكلاء والمُرحِّل",
+      "fr": "Hooks des agents et relais",
+      "bn": "এজেন্ট হুক ও রিলে",
+      "pt-BR": "Hooks dos agentes e o relay",
+      "ru": "Хуки агентов и ретранслятор",
+      "id": "Hook agen dan relay"
+    },
+    "Takes Lintel's entries out of the agents' settings, with a dated backup of each file, then removes the relay program.": {
+      "en": "Takes Lintel's entries out of the agents' settings, with a dated backup of each file, then removes the relay program.",
+      "zh-Hans": "从智能体的设置中移除 Lintel 的条目，并为每个文件保留带日期的备份，然后删除中继程序。",
+      "hi": "एजेंटों की सेटिंग से Lintel की प्रविष्टियाँ हटाता है, हर फ़ाइल का तारीख़ वाला बैकअप रखकर, फिर रिले प्रोग्राम हटा देता है।",
+      "es": "Quita las entradas de Lintel de los ajustes de los agentes, con una copia fechada de cada archivo, y luego elimina el programa relé.",
+      "ar": "يزيل إدخالات Lintel من إعدادات الوكلاء مع نسخة احتياطية مؤرَّخة لكل ملف، ثم يحذف برنامج المُرحِّل.",
+      "fr": "Retire les entrées de Lintel des paramètres des agents, avec une sauvegarde datée de chaque fichier, puis supprime le programme relais.",
+      "bn": "এজেন্টদের সেটিংস থেকে Lintel-এর এন্ট্রি সরায়, প্রতিটি ফাইলের তারিখসহ ব্যাকআপ রেখে, তারপর রিলে প্রোগ্রাম মুছে দেয়।",
+      "pt-BR": "Remove as entradas do Lintel das configurações dos agentes, com um backup datado de cada arquivo, e depois remove o programa relay.",
+      "ru": "Удаляет записи Lintel из настроек агентов, сохраняя датированную копию каждого файла, затем удаляет программу-ретранслятор.",
+      "id": "Menghapus entri Lintel dari pengaturan agen, dengan cadangan bertanggal untuk tiap file, lalu menghapus program relay."
+    },
+    "Your settings": {
+      "en": "Your settings",
+      "zh-Hans": "您的设置",
+      "hi": "आपकी सेटिंग",
+      "es": "Tus ajustes",
+      "ar": "إعداداتك",
+      "fr": "Vos paramètres",
+      "bn": "আপনার সেটিংস",
+      "pt-BR": "Suas configurações",
+      "ru": "Ваши настройки",
+      "id": "Pengaturan Anda"
+    },
+    "Settings, shortcuts and backups. Removed after the app has quit.": {
+      "en": "Settings, shortcuts and backups. Removed after the app has quit.",
+      "zh-Hans": "设置、快捷键和备份。将在应用退出后删除。",
+      "hi": "सेटिंग, शॉर्टकट और बैकअप। ऐप बंद होने के बाद हटाए जाते हैं।",
+      "es": "Ajustes, atajos y copias de seguridad. Se eliminan después de que la app se cierre.",
+      "ar": "الإعدادات والاختصارات والنسخ الاحتياطية. تُحذف بعد إغلاق التطبيق.",
+      "fr": "Paramètres, raccourcis et sauvegardes. Supprimés après la fermeture de l’application.",
+      "bn": "সেটিংস, শর্টকাট ও ব্যাকআপ। অ্যাপ বন্ধ হওয়ার পর মুছে ফেলা হয়।",
+      "pt-BR": "Configurações, atalhos e backups. Removidos depois que o app for fechado.",
+      "ru": "Настройки, сочетания клавиш и резервные копии. Удаляются после закрытия приложения.",
+      "id": "Pengaturan, pintasan, dan cadangan. Dihapus setelah aplikasi ditutup."
+    },
+    "This removes everything below and then quits. Windows then removes the program itself.": {
+      "en": "This removes everything below and then quits. Windows then removes the program itself.",
+      "zh-Hans": "这会删除下方的所有内容，然后退出。随后由 Windows 卸载程序本身。",
+      "hi": "यह नीचे की सब चीज़ें हटाता है और फिर बंद हो जाता है। उसके बाद Windows प्रोग्राम को खुद हटा देता है।",
+      "es": "Esto elimina todo lo de abajo y luego se cierra. Después Windows elimina el propio programa.",
+      "ar": "يزيل هذا كل ما في الأسفل ثم يُغلق. بعد ذلك يزيل Windows البرنامج نفسه.",
+      "fr": "Cela supprime tout ce qui est ci-dessous, puis quitte. Windows supprime ensuite le programme lui-même.",
+      "bn": "এটি নিচের সবকিছু মুছে দিয়ে তারপর বন্ধ হয়ে যায়। এরপর Windows প্রোগ্রামটি নিজেই সরিয়ে দেয়।",
+      "pt-BR": "Isso remove tudo abaixo e depois fecha. Em seguida, o Windows remove o próprio programa.",
+      "ru": "Будет удалено всё перечисленное ниже, затем приложение закроется. После этого Windows удалит саму программу.",
+      "id": "Ini menghapus semua di bawah lalu keluar. Setelah itu Windows menghapus programnya sendiri."
+    },
+    "This removes what is ticked. The app stays installed and keeps running.": {
+      "en": "This removes what is ticked. The app stays installed and keeps running.",
+      "zh-Hans": "这会删除已勾选的内容。应用仍保持安装并继续运行。",
+      "hi": "यह चुनी हुई चीज़ें हटाता है। ऐप इंस्टॉल रहता है और चलता रहता है।",
+      "es": "Esto elimina lo marcado. La app sigue instalada y en ejecución.",
+      "ar": "يزيل هذا ما حدّدته. يبقى التطبيق مثبتاً ويستمر في العمل.",
+      "fr": "Cela supprime ce qui est coché. L’application reste installée et continue de fonctionner.",
+      "bn": "এটি টিক করা জিনিসগুলো মুছে দেয়। অ্যাপ ইনস্টল থাকে এবং চলতে থাকে।",
+      "pt-BR": "Isso remove o que está marcado. O app continua instalado e em execução.",
+      "ru": "Будет удалено то, что отмечено. Приложение останется установленным и продолжит работать.",
+      "id": "Ini menghapus yang dicentang. Aplikasi tetap terpasang dan terus berjalan."
+    },
+    "There is nothing to remove.": {
+      "en": "There is nothing to remove.",
+      "zh-Hans": "没有可删除的内容。",
+      "hi": "हटाने के लिए कुछ नहीं है।",
+      "es": "No hay nada que eliminar.",
+      "ar": "لا يوجد شيء لإزالته.",
+      "fr": "Il n’y a rien à supprimer.",
+      "bn": "মুছে ফেলার কিছু নেই।",
+      "pt-BR": "Não há nada para remover.",
+      "ru": "Удалять нечего.",
+      "id": "Tidak ada yang dihapus."
+    },
+    "Remove and quit": {
+      "en": "Remove and quit",
+      "zh-Hans": "删除并退出",
+      "hi": "हटाएँ और बंद करें",
+      "es": "Eliminar y salir",
+      "ar": "إزالة وإغلاق",
+      "fr": "Supprimer et quitter",
+      "bn": "সরান ও বন্ধ করুন",
+      "pt-BR": "Remover e sair",
+      "ru": "Удалить и выйти",
+      "id": "Hapus dan keluar"
+    },
+    "Remove": {
+      "en": "Remove",
+      "zh-Hans": "删除",
+      "hi": "हटाएँ",
+      "es": "Eliminar",
+      "ar": "إزالة",
+      "fr": "Supprimer",
+      "bn": "সরান",
+      "pt-BR": "Remover",
+      "ru": "Удалить",
+      "id": "Hapus"
+    },
+    "Reset or remove": {
+      "en": "Reset or remove",
+      "zh-Hans": "重置或删除",
+      "hi": "रीसेट या हटाएँ",
+      "es": "Restablecer o eliminar",
+      "ar": "إعادة التعيين أو الإزالة",
+      "fr": "Réinitialiser ou supprimer",
+      "bn": "রিসেট বা সরান",
+      "pt-BR": "Redefinir ou remover",
+      "ru": "Сброс или удаление",
+      "id": "Atur ulang atau hapus"
+    },
+    "Nothing is removed until you have seen the list and pressed the button.": {
+      "en": "Nothing is removed until you have seen the list and pressed the button.",
+      "zh-Hans": "在您查看列表并点击按钮之前，不会删除任何内容。",
+      "hi": "जब तक आप सूची देखकर बटन नहीं दबाते, कुछ भी नहीं हटाया जाता।",
+      "es": "No se elimina nada hasta que hayas visto la lista y pulsado el botón.",
+      "ar": "لا يُزال شيء حتى ترى القائمة وتضغط الزر.",
+      "fr": "Rien n’est supprimé tant que vous n’avez pas vu la liste et appuyé sur le bouton.",
+      "bn": "আপনি তালিকা দেখে বোতাম না চাপা পর্যন্ত কিছুই মোছা হয় না।",
+      "pt-BR": "Nada é removido até você ver a lista e pressionar o botão.",
+      "ru": "Ничего не удаляется, пока вы не посмотрите список и не нажмёте кнопку.",
+      "id": "Tidak ada yang dihapus sampai Anda melihat daftar dan menekan tombol."
+    },
+    "Reset…": {
+      "en": "Reset…",
+      "zh-Hans": "重置…",
+      "hi": "रीसेट…",
+      "es": "Restablecer…",
+      "ar": "إعادة تعيين…",
+      "fr": "Réinitialiser…",
+      "bn": "রিসেট…",
+      "pt-BR": "Redefinir…",
+      "ru": "Сбросить…",
+      "id": "Atur ulang…"
+    },
+    "Uninstall…": {
+      "en": "Uninstall…",
+      "zh-Hans": "卸载…",
+      "hi": "अनइंस्टॉल…",
+      "es": "Desinstalar…",
+      "ar": "إلغاء التثبيت…",
+      "fr": "Désinstaller…",
+      "bn": "আনইনস্টল…",
+      "pt-BR": "Desinstalar…",
+      "ru": "Удалить…",
+      "id": "Copot…"
+    },
+    "Apps in Windows Settings": {
+      "en": "Apps in Windows Settings",
+      "zh-Hans": "Windows 设置中的应用",
+      "hi": "Windows सेटिंग में ऐप्स",
+      "es": "Aplicaciones en Configuración de Windows",
+      "ar": "التطبيقات في إعدادات Windows",
+      "fr": "Applications dans les Paramètres Windows",
+      "bn": "Windows সেটিংসে অ্যাপ",
+      "pt-BR": "Aplicativos nas Configurações do Windows",
+      "ru": "Приложения в параметрах Windows",
+      "id": "Aplikasi di Pengaturan Windows"
+    },
+    "Shortcuts for the demo, cleaning mode and the Explorer selection can be set under Shortcuts.": {
+      "en": "Shortcuts for the demo, cleaning mode and the Explorer selection can be set under Shortcuts.",
+      "zh-Hans": "演示、清洁模式和资源管理器选中项的快捷键可在“快捷键”下设置。",
+      "hi": "डेमो, सफ़ाई मोड और एक्सप्लोरर चयन के शॉर्टकट शॉर्टकट में सेट किए जा सकते हैं।",
+      "es": "Los atajos de la demo, el modo de limpieza y la selección del Explorador se pueden configurar en Atajos.",
+      "ar": "يمكن ضبط اختصارات العرض التجريبي ووضع التنظيف وتحديد المستكشف من الاختصارات.",
+      "fr": "Les raccourcis de la démo, du mode nettoyage et de la sélection de l’Explorateur se règlent dans Raccourcis.",
+      "bn": "ডেমো, পরিষ্কার মোড ও এক্সপ্লোরার নির্বাচনের শর্টকাট শর্টকাট অংশে সেট করা যায়।",
+      "pt-BR": "Os atalhos da demonstração, do modo de limpeza e da seleção do Explorador podem ser definidos em Atalhos.",
+      "ru": "Сочетания клавиш для демо, режима чистки и выделения в проводнике настраиваются в разделе «Сочетания клавиш».",
+      "id": "Pintasan untuk demo, mode pembersihan, dan pilihan Explorer dapat diatur di Pintasan."
+    },
+    "Importing changes {count} settings:": {
+      "en": {
+        "one": "Importing changes {count} setting:",
+        "other": "Importing changes {count} settings:"
+      },
+      "zh-Hans": {
+        "other": "导入将更改 {count} 项设置："
+      },
+      "hi": {
+        "one": "आयात {count} सेटिंग बदलता है:",
+        "other": "आयात {count} सेटिंग बदलता है:"
+      },
+      "es": {
+        "one": "Importar cambia {count} ajuste:",
+        "other": "Importar cambia {count} ajustes:"
+      },
+      "ar": {
+        "zero": "سيغيّر الاستيراد {count} إعداد:",
+        "one": "سيغيّر الاستيراد {count} إعداداً:",
+        "two": "سيغيّر الاستيراد {count} إعدادين:",
+        "few": "سيغيّر الاستيراد {count} إعدادات:",
+        "many": "سيغيّر الاستيراد {count} إعداداً:",
+        "other": "سيغيّر الاستيراد {count} إعداد:"
+      },
+      "fr": {
+        "one": "L’importation modifie {count} paramètre :",
+        "other": "L’importation modifie {count} paramètres :"
+      },
+      "bn": {
+        "one": "আমদানিতে {count}টি সেটিংস বদলাবে:",
+        "other": "আমদানিতে {count}টি সেটিংস বদলাবে:"
+      },
+      "pt-BR": {
+        "one": "A importação altera {count} configuração:",
+        "other": "A importação altera {count} configurações:"
+      },
+      "ru": {
+        "one": "Импорт изменит {count} параметр:",
+        "few": "Импорт изменит {count} параметра:",
+        "many": "Импорт изменит {count} параметров:",
+        "other": "Импорт изменит {count} параметра:"
+      },
+      "id": {
+        "other": "Impor mengubah {count} pengaturan:"
+      }
+    },
+    "and {count} more": {
+      "en": {
+        "one": "and {count} more",
+        "other": "and {count} more"
+      },
+      "zh-Hans": {
+        "other": "以及另外 {count} 项"
+      },
+      "hi": {
+        "one": "और {count} और",
+        "other": "और {count} और"
+      },
+      "es": {
+        "one": "y {count} más",
+        "other": "y {count} más"
+      },
+      "ar": {
+        "zero": "و{count} آخر",
+        "one": "و{count} آخر",
+        "two": "و{count} آخران",
+        "few": "و{count} آخرين",
+        "many": "و{count} آخر",
+        "other": "و{count} آخر"
+      },
+      "fr": {
+        "one": "et {count} de plus",
+        "other": "et {count} de plus"
+      },
+      "bn": {
+        "one": "এবং আরও {count}টি",
+        "other": "এবং আরও {count}টি"
+      },
+      "pt-BR": {
+        "one": "e mais {count}",
+        "other": "e mais {count}"
+      },
+      "ru": {
+        "one": "и ещё {count}",
+        "few": "и ещё {count}",
+        "many": "и ещё {count}",
+        "other": "и ещё {count}"
+      },
+      "id": {
+        "other": "dan {count} lainnya"
+      }
+    },
+    "{count} entries in the file were left out (keys, other machines' state, or values that do not fit).": {
+      "en": {
+        "one": "{count} entry in the file was left out (keys, other machines' state, or values that do not fit).",
+        "other": "{count} entries in the file were left out (keys, other machines' state, or values that do not fit)."
+      },
+      "zh-Hans": {
+        "other": "文件中有 {count} 个条目被略过（密钥、其他电脑的状态或不适用的值）。"
+      },
+      "hi": {
+        "one": "फ़ाइल की {count} प्रविष्टि छोड़ दी गई (कुंजियाँ, अन्य मशीनों की स्थिति, या मेल न खाने वाले मान)।",
+        "other": "फ़ाइल की {count} प्रविष्टियाँ छोड़ दी गईं (कुंजियाँ, अन्य मशीनों की स्थिति, या मेल न खाने वाले मान)।"
+      },
+      "es": {
+        "one": "Se omitió {count} entrada del archivo (claves, estado de otros equipos o valores que no encajan).",
+        "other": "Se omitieron {count} entradas del archivo (claves, estado de otros equipos o valores que no encajan)."
+      },
+      "ar": {
+        "zero": "تم تجاهل {count} إدخال في الملف (مفاتيح أو حالة أجهزة أخرى أو قيم غير مناسبة).",
+        "one": "تم تجاهل {count} إدخال في الملف (مفاتيح أو حالة أجهزة أخرى أو قيم غير مناسبة).",
+        "two": "تم تجاهل {count} إدخالين في الملف (مفاتيح أو حالة أجهزة أخرى أو قيم غير مناسبة).",
+        "few": "تم تجاهل {count} إدخالات في الملف (مفاتيح أو حالة أجهزة أخرى أو قيم غير مناسبة).",
+        "many": "تم تجاهل {count} إدخالاً في الملف (مفاتيح أو حالة أجهزة أخرى أو قيم غير مناسبة).",
+        "other": "تم تجاهل {count} إدخال في الملف (مفاتيح أو حالة أجهزة أخرى أو قيم غير مناسبة)."
+      },
+      "fr": {
+        "one": "{count} entrée du fichier a été ignorée (clés, état d’autres machines ou valeurs inadaptées).",
+        "other": "{count} entrées du fichier ont été ignorées (clés, état d’autres machines ou valeurs inadaptées)."
+      },
+      "bn": {
+        "one": "ফাইলের {count}টি এন্ট্রি বাদ দেওয়া হয়েছে (কী, অন্য মেশিনের অবস্থা, বা বেমানান মান)।",
+        "other": "ফাইলের {count}টি এন্ট্রি বাদ দেওয়া হয়েছে (কী, অন্য মেশিনের অবস্থা, বা বেমানান মান)।"
+      },
+      "pt-BR": {
+        "one": "{count} entrada do arquivo foi ignorada (chaves, estado de outras máquinas ou valores que não se encaixam).",
+        "other": "{count} entradas do arquivo foram ignoradas (chaves, estado de outras máquinas ou valores que não se encaixam)."
+      },
+      "ru": {
+        "one": "{count} запись файла пропущена (ключи, состояние других компьютеров или неподходящие значения).",
+        "few": "{count} записи файла пропущены (ключи, состояние других компьютеров или неподходящие значения).",
+        "many": "{count} записей файла пропущено (ключи, состояние других компьютеров или неподходящие значения).",
+        "other": "{count} записи файла пропущены (ключи, состояние других компьютеров или неподходящие значения)."
+      },
+      "id": {
+        "other": "{count} entri dalam file dilewati (kunci, status mesin lain, atau nilai yang tidak cocok)."
+      }
+    },
+    "{count} keys": {
+      "en": {
+        "one": "{count} key",
+        "other": "{count} keys"
+      },
+      "zh-Hans": {
+        "other": "{count} 个密钥"
+      },
+      "hi": {
+        "one": "{count} कुंजी",
+        "other": "{count} कुंजियाँ"
+      },
+      "es": {
+        "one": "{count} clave",
+        "other": "{count} claves"
+      },
+      "ar": {
+        "zero": "{count} مفتاح",
+        "one": "{count} مفتاح",
+        "two": "{count} مفتاحان",
+        "few": "{count} مفاتيح",
+        "many": "{count} مفتاحاً",
+        "other": "{count} مفتاح"
+      },
+      "fr": {
+        "one": "{count} clé",
+        "other": "{count} clés"
+      },
+      "bn": {
+        "one": "{count}টি কী",
+        "other": "{count}টি কী"
+      },
+      "pt-BR": {
+        "one": "{count} chave",
+        "other": "{count} chaves"
+      },
+      "ru": {
+        "one": "{count} ключ",
+        "few": "{count} ключа",
+        "many": "{count} ключей",
+        "other": "{count} ключа"
+      },
+      "id": {
+        "other": "{count} kunci"
+      }
+    },
+    "Agents only": {
+      "en": "Agents only",
+      "zh-Hans": "仅智能体",
+      "hi": "केवल एजेंट",
+      "es": "Solo agentes",
+      "ar": "الوكلاء فقط",
+      "fr": "Agents uniquement",
+      "bn": "শুধু এজেন্ট",
+      "pt-BR": "Somente agentes",
+      "ru": "Только агенты",
+      "id": "Hanya agen"
+    },
+    "Your coding agents on the island and nothing else. Nothing listens to the keyboard.": {
+      "en": "Your coding agents on the island and nothing else. Nothing listens to the keyboard.",
+      "zh-Hans": "岛上只有您的编码智能体，别无其他。没有任何内容监听键盘。",
+      "hi": "आइलैंड पर केवल आपके कोडिंग एजेंट, और कुछ नहीं। कुछ भी कीबोर्ड नहीं सुनता।",
+      "es": "Tus agentes de programación en la isla y nada más. Nada escucha el teclado.",
+      "ar": "وكلاء البرمجة الخاصون بك على الجزيرة ولا شيء غير ذلك. لا شيء يتنصّت على لوحة المفاتيح.",
+      "fr": "Vos agents de code sur l’île et rien d’autre. Rien n’écoute le clavier.",
+      "bn": "আইল্যান্ডে শুধু আপনার কোডিং এজেন্ট, আর কিছু নয়। কিছুই কীবোর্ড শোনে না।",
+      "pt-BR": "Seus agentes de programação na ilha e mais nada. Nada escuta o teclado.",
+      "ru": "Только ваши агенты для кода на острове и ничего больше. Ничто не прослушивает клавиатуру.",
+      "id": "Hanya agen pengodean Anda di pulau, tidak ada yang lain. Tidak ada yang mendengarkan keyboard."
+    },
+    "Essentials": {
+      "en": "Essentials",
+      "zh-Hans": "基本套装",
+      "hi": "ज़रूरी चीज़ें",
+      "es": "Esenciales",
+      "ar": "الأساسيات",
+      "fr": "Essentiel",
+      "bn": "প্রয়োজনীয়",
+      "pt-BR": "Essenciais",
+      "ru": "Основное",
+      "id": "Esensial"
+    },
+    "Agents, chat, music, clipboard, shelf, timers and the system heads-up displays.": {
+      "en": "Agents, chat, music, clipboard, shelf, timers and the system heads-up displays.",
+      "zh-Hans": "智能体、聊天、音乐、剪贴板、暂存架、计时器和系统提示浮层。",
+      "hi": "एजेंट, चैट, संगीत, क्लिपबोर्ड, शेल्फ़, टाइमर और सिस्टम के हेड्स-अप डिस्प्ले।",
+      "es": "Agentes, chat, música, portapapeles, repisa, temporizadores y los avisos emergentes del sistema.",
+      "ar": "الوكلاء والدردشة والموسيقى والحافظة والرف والمؤقتات وشاشات التنبيه السريعة للنظام.",
+      "fr": "Agents, chat, musique, presse-papiers, étagère, minuteurs et affichages d’information du système.",
+      "bn": "এজেন্ট, চ্যাট, গান, ক্লিপবোর্ড, শেলফ, টাইমার এবং সিস্টেমের হেডস-আপ ডিসপ্লে।",
+      "pt-BR": "Agentes, chat, música, área de transferência, prateleira, temporizadores e os avisos rápidos do sistema.",
+      "ru": "Агенты, чат, музыка, буфер обмена, полка, таймеры и системные всплывающие индикаторы.",
+      "id": "Agen, obrolan, musik, papan klip, rak, pengatur waktu, dan tampilan info cepat sistem."
+    },
+    "Everything": {
+      "en": "Everything",
+      "zh-Hans": "全部",
+      "hi": "सब कुछ",
+      "es": "Todo",
+      "ar": "كل شيء",
+      "fr": "Tout",
+      "bn": "সবকিছু",
+      "pt-BR": "Tudo",
+      "ru": "Всё",
+      "id": "Semuanya"
+    },
+    "Every tool, except what needs administrator rights.": {
+      "en": "Every tool, except what needs administrator rights.",
+      "zh-Hans": "所有工具，需要管理员权限的除外。",
+      "hi": "हर टूल, सिवाय उनके जिन्हें व्यवस्थापक अधिकार चाहिए।",
+      "es": "Todas las herramientas, salvo las que necesitan derechos de administrador.",
+      "ar": "كل الأدوات، باستثناء ما يحتاج إلى صلاحيات المسؤول.",
+      "fr": "Tous les outils, sauf ceux qui nécessitent des droits d’administrateur.",
+      "bn": "প্রতিটি টুল, শুধু যেগুলোর অ্যাডমিনিস্ট্রেটর অধিকার লাগে সেগুলো বাদে।",
+      "pt-BR": "Todas as ferramentas, exceto as que precisam de direitos de administrador.",
+      "ru": "Все инструменты, кроме тех, которым нужны права администратора.",
+      "id": "Semua alat, kecuali yang memerlukan hak administrator."
+    },
+    "Network": {
+      "en": "Network",
+      "zh-Hans": "网络",
+      "hi": "नेटवर्क",
+      "es": "Red",
+      "ar": "الشبكة",
+      "fr": "Réseau",
+      "bn": "নেটওয়ার্ক",
+      "pt-BR": "Rede",
+      "ru": "Сеть",
+      "id": "Jaringan"
+    },
+    "Reaches the internet, only to services you set up yourself.": {
+      "en": "Reaches the internet, only to services you set up yourself.",
+      "zh-Hans": "访问互联网，仅限您自己设置的服务。",
+      "hi": "इंटरनेट तक पहुँचता है, केवल उन सेवाओं तक जिन्हें आपने खुद सेट किया है।",
+      "es": "Accede a internet, solo a los servicios que tú mismo configuraste.",
+      "ar": "يصل إلى الإنترنت، فقط إلى الخدمات التي أعددتها بنفسك.",
+      "fr": "Accède à Internet, uniquement aux services que vous avez configurés vous-même.",
+      "bn": "ইন্টারনেটে পৌঁছায়, শুধু আপনার নিজের সেট করা সেবাগুলোতে।",
+      "pt-BR": "Acessa a internet, apenas os serviços que você mesmo configurou.",
+      "ru": "Выходит в интернет, только к сервисам, которые вы настроили сами.",
+      "id": "Mengakses internet, hanya ke layanan yang Anda atur sendiri."
+    },
+    "Microphone": {
+      "en": "Microphone",
+      "zh-Hans": "麦克风",
+      "hi": "माइक्रोफ़ोन",
+      "es": "Micrófono",
+      "ar": "الميكروفون",
+      "fr": "Microphone",
+      "bn": "মাইক্রোফোন",
+      "pt-BR": "Microfone",
+      "ru": "Микрофон",
+      "id": "Mikrofon"
+    },
+    "Listens through the microphone, only while you use it.": {
+      "en": "Listens through the microphone, only while you use it.",
+      "zh-Hans": "通过麦克风收听，仅在您使用时。",
+      "hi": "माइक्रोफ़ोन से सुनता है, केवल जब आप उसका उपयोग करते हैं।",
+      "es": "Escucha a través del micrófono, solo mientras lo usas.",
+      "ar": "يستمع عبر الميكروفون، فقط أثناء استخدامك له.",
+      "fr": "Écoute via le microphone, uniquement pendant que vous l’utilisez.",
+      "bn": "মাইক্রোফোনের মাধ্যমে শোনে, শুধু আপনি ব্যবহার করলে।",
+      "pt-BR": "Escuta pelo microfone, apenas enquanto você o usa.",
+      "ru": "Слушает через микрофон, только пока вы им пользуетесь.",
+      "id": "Mendengarkan lewat mikrofon, hanya saat Anda menggunakannya."
+    },
+    "Camera": {
+      "en": "Camera",
+      "zh-Hans": "摄像头",
+      "hi": "कैमरा",
+      "es": "Cámara",
+      "ar": "الكاميرا",
+      "fr": "Caméra",
+      "bn": "ক্যামেরা",
+      "pt-BR": "Câmera",
+      "ru": "Камера",
+      "id": "Kamera"
+    },
+    "Uses the camera, only while its preview is open.": {
+      "en": "Uses the camera, only while its preview is open.",
+      "zh-Hans": "使用摄像头，仅在预览打开时。",
+      "hi": "कैमरा इस्तेमाल करता है, केवल जब उसका प्रीव्यू खुला हो।",
+      "es": "Usa la cámara, solo mientras su vista previa está abierta.",
+      "ar": "يستخدم الكاميرا، فقط أثناء فتح المعاينة.",
+      "fr": "Utilise la caméra, uniquement tant que son aperçu est ouvert.",
+      "bn": "ক্যামেরা ব্যবহার করে, শুধু এর প্রিভিউ খোলা থাকলে।",
+      "pt-BR": "Usa a câmera, apenas enquanto a pré-visualização está aberta.",
+      "ru": "Использует камеру, только пока открыт её предпросмотр.",
+      "id": "Memakai kamera, hanya saat pratinjaunya terbuka."
+    },
+    "Clipboard": {
+      "en": "Clipboard",
+      "zh-Hans": "剪贴板",
+      "hi": "क्लिपबोर्ड",
+      "es": "Portapapeles",
+      "ar": "الحافظة",
+      "fr": "Presse-papiers",
+      "bn": "ক্লিপবোর্ড",
+      "pt-BR": "Área de transferência",
+      "ru": "Буфер обмена",
+      "id": "Papan klip"
+    },
+    "Reads and writes what you copy.": {
+      "en": "Reads and writes what you copy.",
+      "zh-Hans": "读取和写入您复制的内容。",
+      "hi": "आप जो कॉपी करते हैं उसे पढ़ता और लिखता है।",
+      "es": "Lee y escribe lo que copias.",
+      "ar": "يقرأ ويكتب ما تنسخه.",
+      "fr": "Lit et écrit ce que vous copiez.",
+      "bn": "আপনি যা কপি করেন তা পড়ে ও লেখে।",
+      "pt-BR": "Lê e grava o que você copia.",
+      "ru": "Читает и записывает то, что вы копируете.",
+      "id": "Membaca dan menulis yang Anda salin."
+    },
+    "Keyboard and mouse": {
+      "en": "Keyboard and mouse",
+      "zh-Hans": "键盘和鼠标",
+      "hi": "कीबोर्ड और माउस",
+      "es": "Teclado y ratón",
+      "ar": "لوحة المفاتيح والماوس",
+      "fr": "Clavier et souris",
+      "bn": "কীবোর্ড ও মাউস",
+      "pt-BR": "Teclado e mouse",
+      "ru": "Клавиатура и мышь",
+      "id": "Keyboard dan mouse"
+    },
+    "Sees every key and click as it happens, so it can react to your shortcuts.": {
+      "en": "Sees every key and click as it happens, so it can react to your shortcuts.",
+      "zh-Hans": "实时检测每次按键和点击，以便响应您的快捷键。",
+      "hi": "हर कुंजी और क्लिक को होते ही देखता है, ताकि आपके शॉर्टकट पर प्रतिक्रिया दे सके।",
+      "es": "Ve cada tecla y clic en el momento en que ocurre, para poder reaccionar a tus atajos.",
+      "ar": "يرى كل ضغطة مفتاح ونقرة لحظة حدوثها ليتمكن من الاستجابة لاختصاراتك.",
+      "fr": "Voit chaque touche et chaque clic au moment où ils se produisent, afin de réagir à vos raccourcis.",
+      "bn": "প্রতিটি কী ও ক্লিক ঘটার সাথে সাথেই দেখে, যাতে আপনার শর্টকাটে সাড়া দিতে পারে।",
+      "pt-BR": "Vê cada tecla e clique no momento em que acontecem, para poder reagir aos seus atalhos.",
+      "ru": "Видит каждое нажатие клавиши и клик в момент действия, чтобы реагировать на ваши сочетания клавиш.",
+      "id": "Melihat setiap tombol dan klik saat terjadi, agar bisa merespons pintasan Anda."
+    },
+    "Screen capture": {
+      "en": "Screen capture",
+      "zh-Hans": "屏幕截取",
+      "hi": "स्क्रीन कैप्चर",
+      "es": "Captura de pantalla",
+      "ar": "التقاط الشاشة",
+      "fr": "Capture d’écran",
+      "bn": "স্ক্রিন ক্যাপচার",
+      "pt-BR": "Captura de tela",
+      "ru": "Захват экрана",
+      "id": "Tangkapan layar"
+    },
+    "Reads what is on the screen when you ask it to.": {
+      "en": "Reads what is on the screen when you ask it to.",
+      "zh-Hans": "仅在您要求时读取屏幕上的内容。",
+      "hi": "जब आप कहते हैं तब स्क्रीन पर जो है उसे पढ़ता है।",
+      "es": "Lee lo que hay en la pantalla cuando se lo pides.",
+      "ar": "يقرأ ما على الشاشة عندما تطلب منه ذلك.",
+      "fr": "Lit ce qui est à l’écran quand vous le demandez.",
+      "bn": "আপনি বললে স্ক্রিনে যা আছে তা পড়ে।",
+      "pt-BR": "Lê o que está na tela quando você pede.",
+      "ru": "Считывает содержимое экрана, когда вы об этом просите.",
+      "id": "Membaca isi layar saat Anda memintanya."
+    },
+    "Administrator rights": {
+      "en": "Administrator rights",
+      "zh-Hans": "管理员权限",
+      "hi": "व्यवस्थापक अधिकार",
+      "es": "Derechos de administrador",
+      "ar": "صلاحيات المسؤول",
+      "fr": "Droits d’administrateur",
+      "bn": "অ্যাডমিনিস্ট্রেটর অধিকার",
+      "pt-BR": "Direitos de administrador",
+      "ru": "Права администратора",
+      "id": "Hak administrator"
+    },
+    "Asks for administrator rights, only after you agree.": {
+      "en": "Asks for administrator rights, only after you agree.",
+      "zh-Hans": "仅在您同意后才请求管理员权限。",
+      "hi": "व्यवस्थापक अधिकार माँगता है, केवल आपकी सहमति के बाद।",
+      "es": "Pide derechos de administrador, solo después de que aceptes.",
+      "ar": "يطلب صلاحيات المسؤول، فقط بعد موافقتك.",
+      "fr": "Demande des droits d’administrateur, uniquement après votre accord.",
+      "bn": "অ্যাডমিনিস্ট্রেটর অধিকার চায়, শুধু আপনার সম্মতির পর।",
+      "pt-BR": "Pede direitos de administrador, apenas depois de você concordar.",
+      "ru": "Запрашивает права администратора, только после вашего согласия.",
+      "id": "Meminta hak administrator, hanya setelah Anda setuju."
+    },
+    "Deleting files": {
+      "en": "Deleting files",
+      "zh-Hans": "删除文件",
+      "hi": "फ़ाइलें हटाना",
+      "es": "Eliminar archivos",
+      "ar": "حذف الملفات",
+      "fr": "Suppression de fichiers",
+      "bn": "ফাইল মোছা",
+      "pt-BR": "Excluir arquivos",
+      "ru": "Удаление файлов",
+      "id": "Menghapus file"
+    },
+    "Can delete files, only the ones you choose.": {
+      "en": "Can delete files, only the ones you choose.",
+      "zh-Hans": "可以删除文件，仅限您选择的文件。",
+      "hi": "फ़ाइलें हटा सकता है, केवल वही जिन्हें आप चुनते हैं।",
+      "es": "Puede eliminar archivos, solo los que tú elijas.",
+      "ar": "يمكنه حذف الملفات، فقط تلك التي تختارها.",
+      "fr": "Peut supprimer des fichiers, uniquement ceux que vous choisissez.",
+      "bn": "ফাইল মুছতে পারে, শুধু আপনার বেছে নেওয়াগুলো।",
+      "pt-BR": "Pode excluir arquivos, apenas os que você escolher.",
+      "ru": "Может удалять файлы, только те, которые вы выберете.",
+      "id": "Dapat menghapus file, hanya yang Anda pilih."
+    },
+    "Nothing here listens to the keyboard, reads the screen or the clipboard.": {
+      "en": "Nothing here listens to the keyboard, reads the screen or the clipboard.",
+      "zh-Hans": "这里没有任何功能会监听键盘、读取屏幕或剪贴板。",
+      "hi": "यहाँ कुछ भी कीबोर्ड नहीं सुनता, स्क्रीन या क्लिपबोर्ड नहीं पढ़ता।",
+      "es": "Nada aquí escucha el teclado ni lee la pantalla o el portapapeles.",
+      "ar": "لا شيء هنا يتنصّت على لوحة المفاتيح أو يقرأ الشاشة أو الحافظة.",
+      "fr": "Rien ici n’écoute le clavier ni ne lit l’écran ou le presse-papiers.",
+      "bn": "এখানে কিছুই কীবোর্ড শোনে না, স্ক্রিন বা ক্লিপবোর্ড পড়ে না।",
+      "pt-BR": "Nada aqui escuta o teclado nem lê a tela ou a área de transferência.",
+      "ru": "Здесь ничто не прослушивает клавиатуру и не читает экран или буфер обмена.",
+      "id": "Tidak ada di sini yang mendengarkan keyboard atau membaca layar maupun papan klip."
+    },
+    "Pick a bundle to see what it turns on.": {
+      "en": "Pick a bundle to see what it turns on.",
+      "zh-Hans": "选择一个套装，查看它会开启什么。",
+      "hi": "यह देखने के लिए कि क्या चालू होता है, एक बंडल चुनें।",
+      "es": "Elige un paquete para ver qué activa.",
+      "ar": "اختر حزمة لترى ما الذي تُفعّله.",
+      "fr": "Choisissez un pack pour voir ce qu’il active.",
+      "bn": "কী চালু হয় দেখতে একটি বান্ডল বেছে নিন।",
+      "pt-BR": "Escolha um pacote para ver o que ele ativa.",
+      "ru": "Выберите набор, чтобы увидеть, что он включает.",
+      "id": "Pilih paket untuk melihat apa yang diaktifkannya."
+    },
+    "Turns on": {
+      "en": "Turns on",
+      "zh-Hans": "将开启",
+      "hi": "चालू करता है",
+      "es": "Activa",
+      "ar": "يُفعّل",
+      "fr": "Active",
+      "bn": "চালু করে",
+      "pt-BR": "Ativa",
+      "ru": "Включает",
+      "id": "Mengaktifkan"
+    },
+    "Nothing.": {
+      "en": "Nothing.",
+      "zh-Hans": "无。",
+      "hi": "कुछ नहीं।",
+      "es": "Nada.",
+      "ar": "لا شيء.",
+      "fr": "Rien.",
+      "bn": "কিছুই না।",
+      "pt-BR": "Nada.",
+      "ru": "Ничего.",
+      "id": "Tidak ada."
+    },
+    "What it touches": {
+      "en": "What it touches",
+      "zh-Hans": "涉及的内容",
+      "hi": "यह किसे छूता है",
+      "es": "Qué toca",
+      "ar": "ما الذي يمسّه",
+      "fr": "Ce qu’il touche",
+      "bn": "এটি কী ছোঁয়",
+      "pt-BR": "No que mexe",
+      "ru": "К чему обращается",
+      "id": "Yang disentuh"
+    },
+    "Turn on {count}, turn off {off}": {
+      "en": "Turn on {count}, turn off {off}",
+      "zh-Hans": "开启 {count} 项，关闭 {off} 项",
+      "hi": "{count} चालू करें, {off} बंद करें",
+      "es": "Activar {count}, desactivar {off}",
+      "ar": "تفعيل {count} وتعطيل {off}",
+      "fr": "Activer {count}, désactiver {off}",
+      "bn": "{count}টি চালু করুন, {off}টি বন্ধ করুন",
+      "pt-BR": "Ativar {count}, desativar {off}",
+      "ru": "Включить: {count}, выключить: {off}",
+      "id": "Aktifkan {count}, nonaktifkan {off}"
+    },
+    "{count} features": {
+      "en": {
+        "one": "{count} feature",
+        "other": "{count} features"
+      },
+      "zh-Hans": {
+        "other": "{count} 项功能"
+      },
+      "hi": {
+        "one": "{count} सुविधा",
+        "other": "{count} सुविधाएँ"
+      },
+      "es": {
+        "one": "{count} función",
+        "other": "{count} funciones"
+      },
+      "ar": {
+        "zero": "{count} ميزة",
+        "one": "{count} ميزة",
+        "two": "{count} ميزتان",
+        "few": "{count} ميزات",
+        "many": "{count} ميزة",
+        "other": "{count} ميزة"
+      },
+      "fr": {
+        "one": "{count} fonction",
+        "other": "{count} fonctions"
+      },
+      "bn": {
+        "one": "{count}টি ফিচার",
+        "other": "{count}টি ফিচার"
+      },
+      "pt-BR": {
+        "one": "{count} recurso",
+        "other": "{count} recursos"
+      },
+      "ru": {
+        "one": "{count} функция",
+        "few": "{count} функции",
+        "many": "{count} функций",
+        "other": "{count} функции"
+      },
+      "id": {
+        "other": "{count} fitur"
+      }
+    },
+    "Applying also turns off {count} features that are on now.": {
+      "en": {
+        "one": "Applying also turns off {count} feature that is on now.",
+        "other": "Applying also turns off {count} features that are on now."
+      },
+      "zh-Hans": {
+        "other": "应用时还会关闭当前已开启的 {count} 项功能。"
+      },
+      "hi": {
+        "one": "लागू करने पर अभी चालू {count} सुविधा भी बंद हो जाएगी।",
+        "other": "लागू करने पर अभी चालू {count} सुविधाएँ भी बंद हो जाएँगी।"
+      },
+      "es": {
+        "one": "Al aplicar también se desactiva {count} función que está activada ahora.",
+        "other": "Al aplicar también se desactivan {count} funciones que están activadas ahora."
+      },
+      "ar": {
+        "zero": "سيؤدي التطبيق أيضاً إلى تعطيل {count} ميزة مفعّلة حالياً.",
+        "one": "سيؤدي التطبيق أيضاً إلى تعطيل {count} ميزة مفعّلة حالياً.",
+        "two": "سيؤدي التطبيق أيضاً إلى تعطيل {count} ميزتين مفعّلتين حالياً.",
+        "few": "سيؤدي التطبيق أيضاً إلى تعطيل {count} ميزات مفعّلة حالياً.",
+        "many": "سيؤدي التطبيق أيضاً إلى تعطيل {count} ميزة مفعّلة حالياً.",
+        "other": "سيؤدي التطبيق أيضاً إلى تعطيل {count} ميزة مفعّلة حالياً."
+      },
+      "fr": {
+        "one": "Appliquer désactive aussi {count} fonction actuellement activée.",
+        "other": "Appliquer désactive aussi {count} fonctions actuellement activées."
+      },
+      "bn": {
+        "one": "প্রয়োগ করলে এখন চালু থাকা {count}টি ফিচারও বন্ধ হবে।",
+        "other": "প্রয়োগ করলে এখন চালু থাকা {count}টি ফিচারও বন্ধ হবে।"
+      },
+      "pt-BR": {
+        "one": "Aplicar também desativa {count} recurso que está ativado agora.",
+        "other": "Aplicar também desativa {count} recursos que estão ativados agora."
+      },
+      "ru": {
+        "one": "Применение также отключит {count} включённую сейчас функцию.",
+        "few": "Применение также отключит {count} включённые сейчас функции.",
+        "many": "Применение также отключит {count} включённых сейчас функций.",
+        "other": "Применение также отключит {count} включённой сейчас функции."
+      },
+      "id": {
+        "other": "Penerapan juga menonaktifkan {count} fitur yang sedang aktif."
+      }
+    },
+    "Windows keeps an app that is not running as administrator from reacting to windows that are. Those windows are left alone.": {
+      "en": "Windows keeps an app that is not running as administrator from reacting to windows that are. Those windows are left alone.",
+      "zh-Hans": "Windows 不允许非管理员身份运行的应用对管理员身份运行的窗口做出响应，因此这些窗口不会被处理。",
+      "hi": "Windows उस ऐप को, जो व्यवस्थापक के रूप में नहीं चल रहा, व्यवस्थापक के रूप में चल रही विंडो पर प्रतिक्रिया देने नहीं देता। ऐसी विंडो को छुआ नहीं जाता।",
+      "es": "Windows impide que una app que no se ejecuta como administrador reaccione a ventanas que sí lo hacen. Esas ventanas se dejan como están.",
+      "ar": "يمنع Windows التطبيق الذي لا يعمل كمسؤول من التفاعل مع النوافذ التي تعمل كمسؤول. تُترك هذه النوافذ كما هي.",
+      "fr": "Windows empêche une application qui ne s’exécute pas en administrateur de réagir aux fenêtres qui le sont. Ces fenêtres sont laissées de côté.",
+      "bn": "Windows অ্যাডমিনিস্ট্রেটর হিসেবে না চলা অ্যাপকে অ্যাডমিনিস্ট্রেটর হিসেবে চলা উইন্ডোতে সাড়া দিতে দেয় না। সেই উইন্ডোগুলো ছোঁয়া হয় না।",
+      "pt-BR": "O Windows impede que um app que não está sendo executado como administrador reaja a janelas que estão. Essas janelas são deixadas como estão.",
+      "ru": "Windows не позволяет приложению без прав администратора реагировать на окна, запущенные с такими правами. Эти окна не затрагиваются.",
+      "id": "Windows mencegah aplikasi yang tidak berjalan sebagai administrator bereaksi terhadap jendela yang berjalan sebagai administrator. Jendela itu dibiarkan."
+    },
+    "Camera privacy settings": {
+      "en": "Camera privacy settings",
+      "zh-Hans": "摄像头隐私设置",
+      "hi": "कैमरा गोपनीयता सेटिंग",
+      "es": "Configuración de privacidad de la cámara",
+      "ar": "إعدادات خصوصية الكاميرا",
+      "fr": "Paramètres de confidentialité de la caméra",
+      "bn": "ক্যামেরা গোপনীয়তা সেটিংস",
+      "pt-BR": "Configurações de privacidade da câmera",
+      "ru": "Параметры конфиденциальности камеры",
+      "id": "Pengaturan privasi kamera"
+    },
+    "Microphone privacy settings": {
+      "en": "Microphone privacy settings",
+      "zh-Hans": "麦克风隐私设置",
+      "hi": "माइक्रोफ़ोन गोपनीयता सेटिंग",
+      "es": "Configuración de privacidad del micrófono",
+      "ar": "إعدادات خصوصية الميكروفون",
+      "fr": "Paramètres de confidentialité du microphone",
+      "bn": "মাইক্রোফোন গোপনীয়তা সেটিংস",
+      "pt-BR": "Configurações de privacidade do microfone",
+      "ru": "Параметры конфиденциальности микрофона",
+      "id": "Pengaturan privasi mikrofon"
+    },
+    "Nothing that is on uses this.": {
+      "en": "Nothing that is on uses this.",
+      "zh-Hans": "当前开启的功能都不使用它。",
+      "hi": "जो चालू है उनमें से कोई इसका उपयोग नहीं करता।",
+      "es": "Nada de lo que está activado usa esto.",
+      "ar": "لا شيء مما هو مفعّل يستخدم هذا.",
+      "fr": "Rien de ce qui est activé n’utilise ceci.",
+      "bn": "যা চালু আছে তার কিছুই এটি ব্যবহার করে না।",
+      "pt-BR": "Nada do que está ativado usa isto.",
+      "ru": "Ни одна из включённых функций этим не пользуется.",
+      "id": "Tidak ada fitur aktif yang memakai ini."
+    },
+    "Off: {names}": {
+      "en": "Off: {names}",
+      "zh-Hans": "已关闭：{names}",
+      "hi": "बंद: {names}",
+      "es": "Desactivado: {names}",
+      "ar": "معطّل: {names}",
+      "fr": "Désactivé : {names}",
+      "bn": "বন্ধ: {names}",
+      "pt-BR": "Desativado: {names}",
+      "ru": "Выключено: {names}",
+      "id": "Nonaktif: {names}"
+    },
+    "What is running uses": {
+      "en": "What is running uses",
+      "zh-Hans": "正在运行的功能使用",
+      "hi": "जो चल रहा है वह उपयोग करता है",
+      "es": "Lo que se está ejecutando usa",
+      "ar": "ما يعمل حالياً يستخدم",
+      "fr": "Ce qui s’exécute utilise",
+      "bn": "যা চলছে তা ব্যবহার করে",
+      "pt-BR": "O que está em execução usa",
+      "ru": "Работающие функции используют",
+      "id": "Yang sedang berjalan menggunakan"
+    },
+    "Only features that are on and running are counted. Nothing is sent anywhere unless a feature says so and you set it up.": {
+      "en": "Only features that are on and running are counted. Nothing is sent anywhere unless a feature says so and you set it up.",
+      "zh-Hans": "仅统计已开启并正在运行的功能。除非某项功能明确说明且由您设置，否则不会向任何地方发送任何内容。",
+      "hi": "केवल वही सुविधाएँ गिनी जाती हैं जो चालू हैं और चल रही हैं। कुछ भी कहीं नहीं भेजा जाता, जब तक कोई सुविधा ऐसा न कहे और आपने उसे सेट न किया हो।",
+      "es": "Solo se cuentan las funciones activadas y en ejecución. No se envía nada a ningún sitio a menos que una función lo indique y tú lo configures.",
+      "ar": "تُحتسب فقط الميزات المفعّلة والعاملة. لا يُرسل أي شيء إلى أي مكان ما لم تنصّ ميزة على ذلك وتقم أنت بإعدادها.",
+      "fr": "Seules les fonctions activées et en cours d’exécution sont comptées. Rien n’est envoyé nulle part, sauf si une fonction l’indique et que vous l’avez configurée.",
+      "bn": "শুধু চালু ও চলমান ফিচারগুলো গোনা হয়। কোনো ফিচার না বললে এবং আপনি সেট না করলে কিছুই কোথাও পাঠানো হয় না।",
+      "pt-BR": "Apenas os recursos ativados e em execução são contados. Nada é enviado a lugar nenhum, a menos que um recurso diga isso e você o configure.",
+      "ru": "Учитываются только включённые и работающие функции. Ничего никуда не отправляется, пока функция не сообщит об этом и вы её не настроите.",
+      "id": "Hanya fitur yang aktif dan berjalan yang dihitung. Tidak ada yang dikirim ke mana pun kecuali sebuah fitur menyatakannya dan Anda mengaturnya."
+    },
+    "Used by {names}": {
+      "en": {
+        "one": "Used by {names}",
+        "other": "Used by {names}"
+      },
+      "zh-Hans": {
+        "other": "由 {names} 使用"
+      },
+      "hi": {
+        "one": "{names} द्वारा उपयोग",
+        "other": "{names} द्वारा उपयोग"
+      },
+      "es": {
+        "one": "Usado por {names}",
+        "other": "Usado por {names}"
+      },
+      "ar": {
+        "zero": "يستخدمه {names}",
+        "one": "يستخدمه {names}",
+        "two": "يستخدمه {names}",
+        "few": "يستخدمه {names}",
+        "many": "يستخدمه {names}",
+        "other": "يستخدمه {names}"
+      },
+      "fr": {
+        "one": "Utilisé par {names}",
+        "other": "Utilisé par {names}"
+      },
+      "bn": {
+        "one": "{names} ব্যবহার করে",
+        "other": "{names} ব্যবহার করে"
+      },
+      "pt-BR": {
+        "one": "Usado por {names}",
+        "other": "Usado por {names}"
+      },
+      "ru": {
+        "one": "Использует: {names}",
+        "few": "Использует: {names}",
+        "many": "Использует: {names}",
+        "other": "Использует: {names}"
+      },
+      "id": {
+        "other": "Dipakai oleh {names}"
+      }
+    },
+    "Tools and setup": {
+      "en": "Tools and setup",
+      "zh-Hans": "工具与设置",
+      "hi": "टूल और सेटअप",
+      "es": "Herramientas y configuración",
+      "ar": "الأدوات والإعداد",
+      "fr": "Outils et configuration",
+      "bn": "টুল ও সেটআপ",
+      "pt-BR": "Ferramentas e configuração",
+      "ru": "Инструменты и настройка",
+      "id": "Alat dan penyiapan"
+    },
+    "Play or stop the demo": {
+      "en": "Play or stop the demo",
+      "zh-Hans": "播放或停止演示",
+      "hi": "डेमो चलाएँ या रोकें",
+      "es": "Reproducir o detener la demo",
+      "ar": "تشغيل العرض التجريبي أو إيقافه",
+      "fr": "Lancer ou arrêter la démo",
+      "bn": "ডেমো চালান বা থামান",
+      "pt-BR": "Reproduzir ou parar a demonstração",
+      "ru": "Запустить или остановить демо",
+      "id": "Putar atau hentikan demo"
+    },
+    "Lock the keyboard for cleaning": {
+      "en": "Lock the keyboard for cleaning",
+      "zh-Hans": "锁定键盘以便清洁",
+      "hi": "सफ़ाई के लिए कीबोर्ड लॉक करें",
+      "es": "Bloquear el teclado para limpiar",
+      "ar": "قفل لوحة المفاتيح للتنظيف",
+      "fr": "Verrouiller le clavier pour le nettoyage",
+      "bn": "পরিষ্কারের জন্য কীবোর্ড লক করুন",
+      "pt-BR": "Bloquear o teclado para limpeza",
+      "ru": "Заблокировать клавиатуру для чистки",
+      "id": "Kunci keyboard untuk dibersihkan"
+    },
+    "Add the Explorer selection to the shelf": {
+      "en": "Add the Explorer selection to the shelf",
+      "zh-Hans": "将资源管理器选中项加入暂存架",
+      "hi": "एक्सप्लोरर में चुनी फ़ाइलें शेल्फ़ में जोड़ें",
+      "es": "Añadir la selección del Explorador a la repisa",
+      "ar": "إضافة تحديد المستكشف إلى الرف",
+      "fr": "Ajouter la sélection de l’Explorateur à l’étagère",
+      "bn": "এক্সপ্লোরারের নির্বাচন শেলফে যোগ করুন",
+      "pt-BR": "Adicionar a seleção do Explorador à prateleira",
+      "ru": "Добавить выделенное в проводнике на полку",
+      "id": "Tambahkan pilihan Explorer ke rak"
+    }
+  }
+}

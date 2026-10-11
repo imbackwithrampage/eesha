@@ -1,0 +1,49 @@
+[package]
+name = "notch-feat-shelf"
+description = "Lintel feature: Shelf"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+
+[dependencies]
+notch-core = { path = "../core" }
+# The codename: the name of the "Add to Shelf" verb in the registry.
+notch-brand = { path = "../brand" }
+svc-shell = { path = "../svc-shell" }
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+tauri = { version = "2", features = [] }
+# List the Win32 API sets this feature calls; Cargo unifies them across the workspace.
+windows = { version = "0.61", features = [
+  "Win32_Foundation",
+  "Win32_System_LibraryLoader",
+  "Win32_System_Threading",
+  "Win32_UI_HiDpi",
+  "Win32_UI_WindowsAndMessaging",
+] }
+
+# For the example only (a WebView2 of the probe's own, to see what a drop of
+# offered files gives the page): crates the app already builds, at its versions.
+[dev-dependencies]
+wry = "0.57"
+webview2-com = "0.39"
+wv2_core = { package = "windows-core", version = "0.62" }
+# What the `implement` macro's code names, for the data object the probe offers.
+windows-core = "0.61"
+windows = { version = "0.61", features = [
+  "Win32_Graphics_Dwm",
+  "Win32_Graphics_Gdi",
+  "Win32_System_Com",
+  "Win32_System_Com_StructuredStorage",
+  "Win32_System_DataExchange",
+  "Win32_System_Memory",
+  "Win32_System_Ole",
+  "Win32_UI_Input_KeyboardAndMouse",
+  "Win32_UI_Shell",
+] }
+
+# Every example of the workspace is linked into target/<profile>/examples/ under
+# its own name, so it is named after its crate.
+[[example]]
+name = "shelf-drop-probe"
+path = "examples/drop-probe.rs"

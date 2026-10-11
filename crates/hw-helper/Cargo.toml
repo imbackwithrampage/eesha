@@ -1,0 +1,16 @@
+[package]
+name = "notch-feat-hw-helper"
+description = "Lintel feature: Hardware sensors (the elevated helper)"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+
+[dependencies]
+notch-core = { path = "../core" }
+# The pipe to lintel-hw.exe, and starting it.
+svc-hw = { path = "../svc-hw" }
+# winget, for the driver the user may choose to install.
+svc-apps = { path = "../svc-apps" }
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+tauri = { version = "2", features = [] }

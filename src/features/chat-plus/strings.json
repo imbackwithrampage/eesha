@@ -1,0 +1,17 @@
+{
+  "strings": {
+    "No file attached": { "en": "No file attached" },
+    "Chat plus": {
+      "en": "Chat plus",
+      "zh-Hans": "聊天增强",
+      "hi": "चैट प्लस",
+      "es": "Chat plus",
+      "ar": "الدردشة بلس",
+      "fr": "Chat plus",
+      "bn": "চ্যাট প্লাস",
+      "pt-BR": "Chat plus",
+      "ru": "Чат плюс",
+      "id": "Obrolan plus"
+    }
+  }
+}

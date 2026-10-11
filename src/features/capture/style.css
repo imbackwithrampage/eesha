@@ -1,0 +1,272 @@
+/* Capture. Every selector starts with .f-capture- and uses the tokens of src/ui/tokens.css. */
+
+/* ── The Captures section: tools, the last captures, what to do with one ─────── */
+
+.f-capture-page {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: var(--s-2);
+  min-height: 0;
+}
+.f-capture-page [hidden] { display: none; }
+.f-capture-page > .isl-row > .isl-meta { min-width: 0; overflow: hidden; text-overflow: ellipsis; }
+.f-capture-page > .isl-row > .btn { flex: none; }
+
+/* One row, five across; more scroll sideways. The 2 px keep a selection ring from being cut. */
+.f-capture-shots {
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: calc((100% - 4 * var(--s-3)) / 5);
+  gap: var(--s-3);
+  margin: -2px;
+  padding: 2px;
+  overflow: auto hidden;
+  scrollbar-width: none;
+}
+.f-capture-shots.f-capture-more { mask-image: linear-gradient(to right, black calc(100% - 40px), transparent); }
+
+.f-capture-shot {
+  display: grid;
+  justify-items: center;
+  min-width: 0;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  background: none;
+  color: var(--ink-2);
+  font: 400 var(--t-xs) var(--font);
+  cursor: pointer;
+  user-select: none;
+}
+.f-capture-thumb {
+  display: grid;
+  place-items: center;
+  width: 100%;
+  height: 64px;
+  margin-bottom: var(--s-2);
+  overflow: hidden;
+  border-radius: var(--r-sm);
+  background-color: var(--card);
+  box-shadow: inset 0 0 0 1px var(--hairline);
+  color: var(--dim);
+  transition: background-color var(--d-fast) var(--ease-out), box-shadow var(--d-fast) var(--ease-out);
+}
+/* The whole capture, whatever its shape. */
+.f-capture-thumb > img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  pointer-events: none;
+  -webkit-user-drag: none;
+}
+.f-capture-shot > b {
+  max-width: 100%;
+  overflow: hidden;
+  font-weight: 500;
+  font-variant-numeric: tabular-nums;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.f-capture-shot > small {
+  color: var(--dim-2);
+  font: inherit;
+  font-variant-numeric: tabular-nums;
+}
+.f-capture-shot:hover > .f-capture-thumb { background-color: var(--card-2); }
+.f-capture-shot:focus-visible > .f-capture-thumb { box-shadow: 0 0 0 2px color-mix(in srgb, var(--accent) 50%, transparent); }
+.f-capture-shot.on > .f-capture-thumb { box-shadow: 0 0 0 2px var(--accent); }
+.f-capture-shot.on > b { color: var(--ink); }
+
+.f-capture-empty {
+  display: flex;
+  flex: 1;
+  align-items: center;
+  justify-content: center;
+  gap: var(--s-2);
+  border-radius: var(--r-sm);
+  box-shadow: inset 0 0 0 1px var(--hairline);
+  color: var(--dim);
+  font: 400 var(--t-md) var(--font);
+}
+
+/* A picked colour: a dot in a row, a 22 px mark in the strip. */
+.f-capture-mark { display: inline-flex; flex: none; }
+.f-capture-swatch {
+  display: block;
+  flex: none;
+  width: 10px;
+  height: 10px;
+  border-radius: var(--r-pill);
+  box-shadow: inset 0 0 0 1px var(--outline);
+}
+.f-capture-swatch.big {
+  width: 22px;
+  height: 22px;
+  border-radius: var(--r-xs);
+}
+
+/* ── Settings ────────────────────────────────────────────────────────────────── */
+
+.f-capture-settings {
+  display: flex;
+  flex-direction: column;
+  gap: var(--s-3);
+}
+.f-capture-note {
+  margin: 0;
+  color: var(--dim);
+  font: 400 var(--t-sm) var(--font);
+}
+
+/* ── The selector: one window per display, the frozen picture and what is drawn on it ── */
+
+.f-capture-sel {
+  --f-capture-scrim: color-mix(in srgb, var(--bg) 30%, transparent);
+  position: fixed;
+  inset: 0;
+  overflow: hidden;
+  color: var(--ink);
+  font: 400 var(--t-sm) var(--font);
+  cursor: crosshair;
+  user-select: none;
+}
+.f-capture-sel [hidden],
+.f-capture-sel.done > :not(.f-capture-frame) { display: none; }
+
+/* One pixel of the picture on one pixel of the display. */
+.f-capture-frame {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  image-rendering: pixelated;
+}
+
+.f-capture-dim {
+  position: absolute;
+  inset: 0;
+  background: var(--f-capture-scrim);
+  pointer-events: none;
+}
+/* A colour is read as it is. */
+.f-capture-sel[data-tool="color"] > .f-capture-dim { display: none; }
+
+/* The selection, or the window a click would take: a line around it, the rest dimmed. */
+.f-capture-box {
+  position: absolute;
+  box-shadow: 0 0 0 1px var(--accent), 0 0 0 200vmax var(--f-capture-scrim);
+  pointer-events: none;
+}
+.f-capture-box.hover { background: color-mix(in srgb, var(--accent) 10%, transparent); }
+
+.f-capture-size {
+  position: absolute;
+  padding: 2px var(--s-2);
+  border-radius: var(--r-xs);
+  background: var(--panel);
+  box-shadow: 0 0 0 1px var(--outline);
+  color: var(--ink);
+  font: 500 var(--t-xs) var(--font);
+  font-variant-numeric: tabular-nums;
+  white-space: nowrap;
+  pointer-events: none;
+}
+
+/* The magnifier: the pixels around the pointer, then the colour of the one in the middle and where it is. */
+.f-capture-loupe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 148px;
+  overflow: hidden;
+  border-radius: var(--r-sm);
+  background: var(--panel);
+  box-shadow: 0 0 0 1px var(--outline), var(--shadow-win);
+  pointer-events: none;
+}
+.f-capture-loupe > canvas {
+  display: block;
+  width: 148px;
+  height: 148px;
+}
+.f-capture-read {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  align-items: center;
+  column-gap: var(--s-2);
+  padding: var(--s-1) var(--s-2);
+  border-top: 1px solid var(--hairline);
+  color: var(--ink);
+  font: 500 var(--t-xs) var(--font);
+  font-variant-numeric: tabular-nums;
+  white-space: nowrap;
+}
+.f-capture-read > b {
+  overflow: hidden;
+  font-weight: 500;
+  text-overflow: ellipsis;
+}
+.f-capture-read > small {
+  grid-column: 2;
+  color: var(--dim);
+  font: 400 var(--t-xs) var(--font);
+}
+
+/* The tools and what the pointer does, under the top edge where the island lives. */
+.f-capture-bar {
+  position: absolute;
+  top: var(--s-4);
+  left: 50%;
+  display: flex;
+  align-items: center;
+  gap: var(--s-1);
+  padding: var(--s-1);
+  border-radius: var(--r-win);
+  background: var(--panel);
+  box-shadow: 0 0 0 1px var(--outline), var(--shadow-win);
+  translate: -50% 0;
+  cursor: default;
+  transition: opacity var(--d-fast) var(--ease-out);
+}
+.f-capture-bar.away {
+  opacity: 0;
+  pointer-events: none;
+}
+.f-capture-bar > i {
+  width: 1px;
+  height: 16px;
+  margin: 0 var(--s-1);
+  background: var(--hairline);
+}
+.f-capture-hint {
+  padding-right: var(--s-2);
+  color: var(--dim);
+  font: 400 var(--t-sm) var(--font);
+  white-space: nowrap;
+}
+
+/* ── A pinned capture ────────────────────────────────────────────────────────── */
+
+.f-capture-pin {
+  position: fixed;
+  inset: 0;
+  cursor: grab;
+  user-select: none;
+}
+.f-capture-pin > img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  -webkit-user-drag: none;
+  transition: opacity var(--d-fast) var(--ease-out);
+}
+.f-capture-pin::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  box-shadow: inset 0 0 0 1px var(--outline);
+  pointer-events: none;
+}

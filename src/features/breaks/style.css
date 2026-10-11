@@ -1,0 +1,65 @@
+/* Breaks. Every selector starts with .f-breaks- and uses the tokens of src/ui/tokens.css. */
+
+/* A category's colour: the ring, its legend and the app rows read --c. */
+.f-breaks-c-development { --c: var(--accent); }
+.f-breaks-c-browsing { --c: var(--info); }
+.f-breaks-c-communication { --c: var(--ok); }
+.f-breaks-c-productivity { --c: var(--warn); }
+.f-breaks-c-entertainment { --c: var(--bad); }
+.f-breaks-c-design { --c: color-mix(in srgb, var(--accent) 50%, var(--bad)); }
+.f-breaks-c-utilities { --c: var(--ink-2); }
+.f-breaks-c-other { --c: var(--dim-2); }
+
+/* ── Breaks section ───────────────────────────────────────────────────── */
+.f-breaks-brk { display: flex; flex-direction: column; align-items: center; justify-content: center; gap: var(--s-2); height: 100%; }
+.f-breaks-now { display: flex; align-items: center; gap: var(--s-2); font: 400 var(--t-sm) var(--font); color: var(--dim); }
+.f-breaks-now b { font: 600 var(--t-md) var(--font); color: var(--ink); }
+.f-breaks-clock { font-family: var(--mono); font-size: 44px; line-height: 48px; font-variant-numeric: tabular-nums; letter-spacing: -.02em; color: var(--ink); }
+.f-breaks-brk > .meter { flex: none; width: 56%; }
+.f-breaks-actions { display: flex; gap: var(--s-2); margin-top: var(--s-1); }
+.f-breaks-plans { display: grid; grid-template-columns: 1fr 1fr; gap: var(--s-3); width: 100%; }
+.f-breaks-plans > .card { display: flex; flex-direction: column; align-items: flex-start; gap: var(--s-2); }
+.f-breaks-plan { display: flex; align-items: center; gap: var(--s-2); width: 100%; }
+.f-breaks-plan b { flex: 1; font: 500 var(--t-md) var(--font); color: var(--ink); }
+.f-breaks-plans p { margin: 0; min-height: 32px; font: 400 var(--t-sm) var(--font); color: var(--dim); }
+
+/* ── Screen time section: the ring, the apps, the week ────────────────── */
+.f-breaks-st { display: grid; grid-template-columns: 136px minmax(0, 1fr) 150px; gap: var(--s-5); height: 100%; }
+.f-breaks-overview { display: flex; flex-direction: column; gap: var(--s-1); min-width: 0; }
+.f-breaks-dial { position: relative; flex: none; width: 116px; height: 116px; margin: 0 auto var(--s-2); }
+.f-breaks-ring { display: block; width: 100%; height: 100%; transform: rotate(-90deg); }
+.f-breaks-ring circle { fill: none; stroke: var(--c); stroke-width: 3; }
+.f-breaks-ring .f-breaks-track { stroke: var(--card-2); }
+.f-breaks-dial > div { position: absolute; inset: 0; display: flex; flex-direction: column; align-items: center; justify-content: center; }
+.f-breaks-dial b { font: 600 var(--t-md) var(--font); font-variant-numeric: tabular-nums; color: var(--ink); }
+.f-breaks-dial small { font: 400 var(--t-xs) var(--font); color: var(--dim); }
+.f-breaks-key { display: flex; align-items: center; gap: var(--s-2); font: 400 var(--t-xs) var(--font); color: var(--ink-2); }
+.f-breaks-key i, .f-breaks-app i { flex: none; width: 8px; height: 8px; border-radius: var(--r-pill); background: var(--c); }
+.f-breaks-key span, .f-breaks-app span { flex: 1; min-width: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.f-breaks-key small { font: inherit; font-variant-numeric: tabular-nums; color: var(--dim); }
+
+.f-breaks-apps, .f-breaks-history { display: flex; flex-direction: column; min-width: 0; min-height: 0; }
+.f-breaks-head { display: flex; flex: none; align-items: baseline; justify-content: space-between; height: 18px; margin-bottom: var(--s-1); font: 600 var(--t-xs) var(--font); letter-spacing: var(--caps); text-transform: uppercase; color: var(--dim); }
+.f-breaks-head small { font: 400 var(--t-xs) var(--font); letter-spacing: 0; text-transform: none; color: var(--dim-2); }
+.f-breaks-app { display: flex; flex: none; align-items: center; gap: var(--s-2); height: 28px; font: 400 var(--t-sm) var(--font); color: var(--ink-2); }
+.f-breaks-app .meter { flex: none; width: 56px; --tone: var(--c); }
+.f-breaks-app small { flex: none; width: 62px; font: 400 var(--t-xs) var(--font); font-variant-numeric: tabular-nums; text-align: right; color: var(--dim); }
+.f-breaks-apps p { margin: var(--s-2) 0 0; font: 400 var(--t-sm) var(--font); color: var(--dim); }
+
+.f-breaks-week { display: flex; flex: 1; gap: var(--s-1); min-height: 0; }
+.f-breaks-day { display: grid; flex: 1; grid-template-rows: minmax(0, 1fr) auto; gap: var(--s-1); justify-items: center; }
+.f-breaks-day i { align-self: end; width: 100%; min-height: 2px; border-radius: var(--s-1); background: var(--card-2); transition: background-color var(--d-fast) var(--ease-out); }
+.f-breaks-day:hover i { background: var(--dim-2); }
+.f-breaks-day.today i { background: var(--accent); }
+.f-breaks-day small { font: 400 var(--t-xs) var(--font); color: var(--dim-2); }
+.f-breaks-day.today small { color: var(--ink); }
+.f-breaks-history > .btn { flex: none; align-self: flex-end; margin-top: var(--s-2); }
+
+.f-breaks-off { display: flex; grid-column: 1 / -1; flex-direction: column; align-items: center; justify-content: center; gap: var(--s-2); text-align: center; }
+.f-breaks-off b { font: 600 var(--t-lg) var(--font); color: var(--ink); }
+.f-breaks-off p { margin: 0 0 var(--s-2); max-width: 420px; font: 400 var(--t-sm) var(--font); color: var(--dim); }
+
+/* ── Settings ─────────────────────────────────────────────────────────── */
+.f-breaks-num { display: flex; align-items: center; gap: var(--s-3); width: 190px; }
+.f-breaks-num b { flex: none; min-width: 52px; font: 500 var(--t-sm) var(--font); font-variant-numeric: tabular-nums; text-align: right; color: var(--ink); }
+.f-breaks-try { display: flex; gap: var(--s-2); }

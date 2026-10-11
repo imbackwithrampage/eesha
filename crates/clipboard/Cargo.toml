@@ -1,0 +1,35 @@
+[package]
+name = "notch-feat-clipboard"
+description = "Lintel feature: Clipboard"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+
+[dependencies]
+notch-core = { path = "../core" }
+svc-inject = { path = "../svc-inject" }
+svc-shell = { path = "../svc-shell" }
+svc-sysevents = { path = "../svc-sysevents" }
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+tauri = { version = "2", features = [] }
+# All four are already in the workspace's lock file (tauri and dictation use them).
+base64 = "0.22"
+percent-encoding = "2"
+png = "0.17"
+sha2 = "0.10"
+# List the Win32 API sets this feature calls; Cargo unifies them across the workspace.
+windows = { version = "0.61", features = [
+  "ApplicationModel_DataTransfer",
+  "Win32_Foundation",
+  "Win32_System_DataExchange",
+  "Win32_System_LibraryLoader",
+  "Win32_System_Threading",
+  "Win32_UI_WindowsAndMessaging",
+] }
+
+# Every example of the workspace is linked into target/<profile>/examples/ under
+# its own name, so a name several crates use is whichever was built last.
+[[example]]
+name = "clipboard-probe"
+path = "examples/probe.rs"

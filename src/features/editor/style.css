@@ -1,0 +1,375 @@
+/* Editor. Every selector starts with .f-editor- and uses the tokens of src/ui/tokens.css. */
+
+/* ── The editor's window: bar, tool rail and stage, foot ───────────────── */
+
+.f-editor-win {
+  position: relative;
+  height: 100%;
+  box-sizing: border-box;
+}
+/* A component that sets its own display would show through `hidden`. */
+.f-editor-win [hidden] { display: none; }
+
+/* Undo, redo, Copy and Save sit in the drag row, and are not part of the drag. */
+.f-editor-acts {
+  display: flex;
+  align-items: center;
+  gap: var(--s-1);
+  flex: none;
+  margin-right: var(--s-2);
+  -webkit-app-region: no-drag;
+}
+.f-editor-acts > .btn { height: 26px; font: 500 var(--t-sm) var(--font); }
+.f-editor-acts > .btn:not(.icon) { padding: 0 var(--s-2) 0 var(--s-3); }
+
+.f-editor-sep {
+  flex: none;
+  width: 1px;
+  height: 16px;
+  margin: 0 var(--s-1);
+  background: var(--hairline);
+}
+
+.f-editor-body {
+  display: flex;
+  flex: 1;
+  min-height: 0;
+}
+
+.f-editor-rail {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2px;
+  flex: none;
+  width: 48px;
+  padding: var(--s-2) 0;
+  overflow-y: auto;
+  scrollbar-width: none;
+}
+.f-editor-rail > .f-editor-sep { width: 16px; height: 1px; margin: var(--s-1) 0; }
+
+/* A tool: the tab of the design language, large enough to aim at. */
+.f-editor-tool.tab.icon { width: 32px; height: 32px; }
+.f-editor-tool.tab.on { color: var(--accent); }
+
+/* The stage: the canvas in its frame. */
+.f-editor-stage {
+  position: relative;
+  flex: 1;
+  min-width: 0;
+  margin: var(--s-2) var(--s-2) 0 0;
+  overflow: hidden;
+  border-radius: var(--r-sm);
+  background: var(--bg);
+  box-shadow: inset 0 0 0 1px var(--hairline);
+}
+.f-editor-view {
+  display: block;
+  width: 100%;
+  height: 100%;
+  touch-action: none;
+}
+.f-editor-empty {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: var(--s-2);
+  color: var(--dim);
+  font: 400 var(--t-sm) var(--font);
+}
+.f-editor-empty[hidden] { display: none; }
+
+/* The text tool's field: the text as it will be, with only a caret and a hairline around it. */
+.f-editor-text {
+  position: absolute;
+  z-index: 2;
+  min-width: 1ch;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 1px dashed color-mix(in srgb, var(--accent) 70%, transparent);
+  outline-offset: 3px;
+  background: transparent;
+  font-family: var(--font);
+  font-weight: 600;
+  line-height: 1.25;
+  white-space: pre;
+  overflow: hidden;
+  resize: none;
+  field-sizing: content;
+  caret-color: var(--accent);
+}
+
+/* The crop's own bar, over the bottom of the stage. */
+.f-editor-crop {
+  position: absolute;
+  left: 50%;
+  bottom: var(--s-3);
+  display: flex;
+  align-items: center;
+  gap: var(--s-1);
+  padding: var(--s-1) var(--s-1) var(--s-1) var(--s-3);
+  border-radius: var(--r-md);
+  background: var(--panel);
+  box-shadow: inset 0 0 0 1px var(--outline), var(--shadow-win);
+  transform: translateX(-50%);
+}
+.f-editor-crop[hidden] { display: none; }
+.f-editor-crop > .f-editor-dims { margin-right: var(--s-2); }
+
+.f-editor-foot {
+  display: flex;
+  align-items: center;
+  gap: var(--s-1);
+  flex: none;
+  height: 44px;
+  padding: 0 var(--s-2) 0 var(--s-3);
+}
+.f-editor-foot > .btn.on { color: var(--accent); }
+.f-editor-foot > .btn.on > svg { color: inherit; }
+
+.f-editor-dims,
+.f-editor-note,
+.f-editor-rows {
+  color: var(--dim);
+  font: 400 var(--t-sm) var(--font);
+  font-variant-numeric: tabular-nums;
+  white-space: nowrap;
+}
+.f-editor-note {
+  min-width: 0;
+  margin-right: var(--s-2);
+  overflow: hidden;
+  color: var(--ink-2);
+  text-overflow: ellipsis;
+}
+.f-editor-zoom.btn { min-width: 52px; font-variant-numeric: tabular-nums; }
+
+/* ── Colours and line widths (both pages) ──────────────────────────────── */
+
+.f-editor-swatches {
+  display: flex;
+  align-items: center;
+  gap: 2px;
+  flex: none;
+}
+.f-editor-swatch {
+  position: relative;
+  flex: none;
+  width: 22px;
+  height: 22px;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  border-radius: var(--r-pill);
+  background: transparent;
+  cursor: pointer;
+  outline: 2px solid transparent;
+  outline-offset: -1px;
+  transition: outline-color var(--d-fast) var(--ease-out);
+}
+/* The dot, with a hairline so black and white both show on the panel. */
+.f-editor-swatch::after {
+  content: "";
+  position: absolute;
+  inset: 4px;
+  border-radius: inherit;
+  background: var(--c);
+  box-shadow: inset 0 0 0 1px var(--outline);
+  transition: transform var(--d-fast) var(--ease-out);
+}
+.f-editor-swatch:hover::after { transform: scale(1.15); }
+.f-editor-swatch.on { outline-color: var(--ink-2); }
+.f-editor-swatch:focus-visible { outline-color: color-mix(in srgb, var(--accent) 50%, transparent); }
+
+/* A line width, drawn as thick as it is. */
+.f-editor-size > i {
+  width: 14px;
+  border-radius: var(--r-pill);
+  background: currentColor;
+}
+.f-editor-size.tab.on { color: var(--accent); }
+
+/* ── The panels over the foot: backdrop, watermark ─────────────────────── */
+
+.f-editor-panel {
+  position: absolute;
+  z-index: 3;
+  display: flex;
+  flex-direction: column;
+  gap: var(--s-3);
+  width: 252px;
+  padding: var(--s-3);
+  border-radius: var(--r-md);
+  background: var(--panel);
+  box-shadow: inset 0 0 0 1px var(--outline), var(--shadow-win);
+}
+.f-editor-option {
+  display: grid;
+  grid-template-columns: 64px minmax(0, 1fr);
+  align-items: center;
+  gap: var(--s-2);
+  color: var(--dim);
+  font: 400 var(--t-sm) var(--font);
+}
+.f-editor-fills {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: var(--s-2);
+}
+.f-editor-fill {
+  height: 30px;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  border-radius: var(--r-xs);
+  background: linear-gradient(135deg, var(--a), var(--b));
+  box-shadow: inset 0 0 0 1px var(--hairline);
+  cursor: pointer;
+  outline: 2px solid transparent;
+  outline-offset: 2px;
+  transition: outline-color var(--d-fast) var(--ease-out);
+}
+/* No backdrop: an empty tile with a stroke through it. */
+.f-editor-fill.none {
+  background: linear-gradient(to top right, transparent calc(50% - 1px), var(--dim-2) calc(50% - 1px), var(--dim-2) calc(50% + 1px), transparent calc(50% + 1px)), var(--card);
+}
+.f-editor-fill.on { outline-color: var(--ink-2); }
+.f-editor-fill:focus-visible { outline-color: color-mix(in srgb, var(--accent) 50%, transparent); }
+
+/* The nine places a watermark can take, as a small picture of the picture. */
+.f-editor-places {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2px;
+  width: 78px;
+  padding: 3px;
+  border-radius: var(--r-xs);
+  background: var(--card);
+  box-shadow: inset 0 0 0 1px var(--hairline);
+}
+.f-editor-place {
+  display: grid;
+  place-items: center;
+  height: 16px;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  border-radius: var(--r-xs);
+  background: transparent;
+  cursor: pointer;
+}
+.f-editor-place::after {
+  content: "";
+  width: 4px;
+  height: 4px;
+  border-radius: var(--r-pill);
+  background: var(--dim-2);
+  transition: background-color var(--d-fast) var(--ease-out), transform var(--d-fast) var(--ease-out);
+}
+.f-editor-place:hover { background: var(--card-2); }
+.f-editor-place.on::after { background: var(--accent); transform: scale(1.75); }
+
+/* ── Drawing on the screen ─────────────────────────────────────────────── */
+
+.f-editor-draw {
+  position: relative;
+  height: 100%;
+}
+.f-editor-draw > canvas {
+  display: block;
+  width: 100%;
+  height: 100%;
+  cursor: crosshair;
+  touch-action: none;
+}
+/* The tool bar: a piece of the island, under the top edge of the display. */
+.f-editor-bar {
+  position: absolute;
+  top: var(--s-4);
+  left: 50%;
+  display: flex;
+  align-items: center;
+  gap: 2px;
+  padding: var(--s-1) var(--s-2);
+  border-radius: var(--r-md);
+  background: var(--bg);
+  box-shadow: inset 0 0 0 1px var(--outline), var(--shadow-win);
+  color: var(--ink);
+  translate: -50% 0;
+  transition: opacity var(--d-base) var(--ease-out);
+}
+/* Clicks go through the drawing: the bar steps back until the pointer is on it. */
+.f-editor-draw.through > .f-editor-bar:not(:hover) { opacity: .55; }
+.f-editor-draw > .f-editor-text { text-shadow: 0 1px 2px color-mix(in srgb, var(--bg) 60%, transparent); }
+
+/* ── Scrolling capture: the selector, then the bar ─────────────────────── */
+
+.f-editor-scroll {
+  position: relative;
+  height: 100%;
+  overflow: hidden;
+  background: color-mix(in srgb, var(--bg) 40%, transparent);
+  cursor: crosshair;
+  user-select: none;
+}
+/* While a region is dragged the dark is the region's own shadow: what is inside stays clear. */
+.f-editor-scroll.picking,
+.f-editor-scroll.running { background: transparent; }
+.f-editor-pick {
+  position: absolute;
+  box-shadow: 0 0 0 1px var(--accent), 0 0 0 200vmax color-mix(in srgb, var(--bg) 40%, transparent);
+}
+.f-editor-hint {
+  position: absolute;
+  top: 18%;
+  left: 50%;
+  display: flex;
+  align-items: center;
+  gap: var(--s-2);
+  padding: var(--s-2) var(--s-3);
+  border-radius: var(--r-md);
+  background: var(--bg);
+  box-shadow: inset 0 0 0 1px var(--outline), var(--shadow-win);
+  color: var(--ink);
+  font: 500 var(--t-md) var(--font);
+  white-space: nowrap;
+  translate: -50% 0;
+  pointer-events: none;
+}
+.f-editor-scroll.picking > .f-editor-hint { display: none; }
+.f-editor-hint > svg,
+.f-editor-hud > svg { color: var(--accent); flex: none; }
+
+/* The bar is all there is of the window once the grabs have begun. */
+.f-editor-scroll.running { cursor: default; }
+.f-editor-hud {
+  display: flex;
+  align-items: center;
+  gap: var(--s-2);
+  box-sizing: border-box;
+  /* The size Rust gives the window (lib.rs, scroll_start), so the bar is never larger than it for a moment. */
+  width: min(380px, 100%);
+  height: 44px;
+  padding: 0 var(--s-2) 0 var(--s-3);
+  border-radius: var(--r-md);
+  background: var(--bg);
+  box-shadow: inset 0 0 0 1px var(--outline);
+  color: var(--ink);
+}
+.f-editor-hud > b {
+  font: 600 var(--t-sm) var(--font);
+  white-space: nowrap;
+}
+
+/* ── Settings ──────────────────────────────────────────────────────────── */
+
+.f-editor-about {
+  margin: var(--s-3) 0 0;
+  color: var(--dim);
+  font: 400 var(--t-sm) var(--font);
+}

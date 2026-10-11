@@ -1,0 +1,65 @@
+/* Lyrics. The column the media feature makes room for in the Music section (.f-media-lyric);
+   the line on the strip row is drawn there too (src/features/media/style.css).
+   Every selector starts with .f-lyrics and uses the tokens of src/ui/tokens.css. */
+
+.f-lyrics {
+  position: relative;
+  flex: 1;
+  min-height: 0;
+  overflow: hidden;
+  /* The lines above and below go out softly at the edges. */
+  mask-image: linear-gradient(transparent, black var(--s-4), black calc(100% - var(--s-4)), transparent);
+}
+
+/* Every line of the song, laid out once and hung from the middle of the column: a line change
+   moves the column as one, and a line that wraps differently changes nothing in the others. */
+.f-lyrics-track {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  gap: var(--s-2);
+  transition: transform var(--d-slow) var(--ease-out);
+}
+
+/* One weight and one size for every line, sung or not: becoming the current line reflows nothing.
+   Out of the three, a line is not seen: it fades as it lifts out, and fades in as it comes up. */
+.f-lyrics-track > div {
+  display: -webkit-box;
+  flex: none;
+  overflow: hidden;
+  color: var(--dim);
+  font: 500 var(--t-md) var(--font);
+  opacity: 0;
+  overflow-wrap: anywhere;
+  transition: opacity var(--d-base) var(--ease-out), color var(--d-base) var(--ease-out);
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+}
+.f-lyrics-track > .near { opacity: 1; }
+.f-lyrics-track > .on { color: var(--ink); opacity: 1; }
+
+/* Drawn as it stands: the section just came up, or another song. */
+.f-lyrics.still .f-lyrics-track,
+.f-lyrics.still .f-lyrics-track > div { transition: none; }
+
+/* What there is to say instead of a text. */
+.f-lyrics-note {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: var(--s-2);
+  color: var(--dim);
+  font: 400 var(--t-sm) var(--font);
+  text-align: center;
+}
+.f-lyrics-note:empty { display: none; }
+
+@media (prefers-reduced-motion: reduce) {
+  .f-lyrics-track { transition: none; }
+}

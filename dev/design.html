@@ -1,0 +1,570 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Lintel · design language</title>
+<!-- Opens from disk: no build step, no network. The two product stylesheets are linked as shipped. -->
+<link rel="stylesheet" href="../src/ui/tokens.css">
+<link rel="stylesheet" href="../src/ui/components.css">
+<link rel="stylesheet" href="design.css">
+</head>
+<body>
+<div class="dl-shell">
+
+<nav class="dl-toc" aria-label="Contents">
+  <a class="dl-brand" href="#top"><i></i><span><b>Lintel</b><small>Design language</small></span></a>
+  <div class="list" id="toc">
+    <a class="list-item" href="#foundations"><span>Foundations</span><small>01</small></a>
+    <a class="list-item" href="#components"><span>Components</span><small>02</small></a>
+    <a class="list-item" href="#island"><span>The island, live</span><small>03</small></a>
+    <a class="list-item" href="#windows"><span>Windows</span><small>04</small></a>
+    <a class="list-item" href="#mascot"><span>Mascot candidates</span><small>05</small></a>
+  </div>
+  <p class="dl-toc-note">Rendered from <code>src/ui/tokens.css</code> and <code>src/ui/components.css</code>, the stylesheets the app ships.</p>
+</nav>
+
+<main id="top">
+
+<header class="dl-hero">
+  <span class="dl-eyebrow">Design language preview</span>
+  <h1>One island, one look.</h1>
+  <p class="dl-lead">Every colour, size, curve and part the product is built from. The island, its sections, the floating windows and settings are dark everywhere and share one set of tokens and one set of components.</p>
+</header>
+
+<!-- ───────────────────────────── 01 Foundations ───────────────────────────── -->
+<section class="dl-sec" id="foundations">
+  <header><span class="dl-eyebrow">01</span><h2>Foundations</h2>
+    <p class="dl-lead">The tokens are the only colours, sizes and curves anyone uses. Values below are read from the stylesheet at load, so this page cannot drift from it.</p></header>
+
+  <div class="dl-block">
+    <h3>Colour</h3>
+    <div class="dl-swgroups" id="swatches"></div>
+    <div class="dl-specs">
+      <article class="dl-spec">
+        <div class="dl-spec-h"><h4>Ink on surfaces</h4><code>WCAG contrast ratio</code></div>
+        <div class="dl-contrast" id="contrast"></div>
+      </article>
+      <article class="dl-spec island">
+        <div class="dl-spec-h"><h4>Pill colours</h4><code>from the pill catalogue</code></div>
+        <p class="dl-note">An agent's pill colour paints its mascot and its dot. A sample of the catalogue, on the island's black.</p>
+        <div class="dl-pills" id="pills"></div>
+      </article>
+    </div>
+  </div>
+
+  <div class="dl-block">
+    <h3>Type</h3>
+    <article class="dl-spec">
+      <div class="dl-types" id="types"></div>
+    </article>
+  </div>
+
+  <div class="dl-block">
+    <h3>Spacing and radius</h3>
+    <div class="dl-specs">
+      <article class="dl-spec">
+        <div class="dl-spec-h"><h4>Spacing</h4><code>4 px grid</code></div>
+        <div class="dl-spacing" id="spacing"></div>
+        <p class="dl-note">Island side inset <code>--island-inset</code> 16, header <code>--island-header</code> 36. A section's content budget is its height − 36 − 16.</p>
+      </article>
+      <article class="dl-spec">
+        <div class="dl-spec-h"><h4>Radius</h4><code>--r-*</code></div>
+        <div class="dl-radii" id="radii"></div>
+      </article>
+    </div>
+  </div>
+
+  <div class="dl-block">
+    <div class="dl-block-h"><h3>Motion</h3><button class="btn sm secondary" id="replay-all"><i data-i="replay"></i>Replay all</button></div>
+    <div class="dl-specs" id="motion"></div>
+    <div class="dl-specs">
+      <article class="dl-spec wide">
+        <div class="dl-spec-h"><h4>Growth spring</h4><code>Spring(response 0.5, damping 0.72)</code></div>
+        <p class="dl-note">The island grows on the spring and shrinks on <code>--d-slow</code> <code>--ease-in-out</code>. Its shell is the one thing allowed to animate width and height.</p>
+        <div class="dl-spring">
+          <div class="dl-curve" id="spring-plot"></div>
+          <div class="dl-spring-main">
+            <div class="dl-run-row"><span class="dl-run-name">Spring</span><div class="dl-track" id="spring-track"><span><i></i></span></div><button class="btn sm ghost icon" id="spring-replay" title="Replay"><i data-i="replay"></i></button></div>
+            <div class="dl-grow"><div class="dl-grow-shell" id="grow-shell"></div></div>
+            <div class="dl-flow"><button class="btn sm secondary" id="grow-btn">Grow</button><span class="dl-note" id="grow-note">288 × 32, the peek strip</span></div>
+          </div>
+        </div>
+      </article>
+      <article class="dl-spec island">
+        <div class="dl-spec-h"><h4>Content cross-fade</h4><code>.fx-in · --d-base</code></div>
+        <p class="dl-note">Opacity, a 4 px rise and blur 4 → 0. Sections and views enter this way.</p>
+        <div class="dl-fx"><div class="dl-fx-box" id="fx-a"></div></div>
+        <div><button class="btn sm secondary" data-fx="a"><i data-i="replay"></i>Replay</button></div>
+      </article>
+      <article class="dl-spec island">
+        <div class="dl-spec-h"><h4>Notice in and out</h4><code>.fx-drop · .fx-out</code></div>
+        <p class="dl-note">In 120 ms with a 4 px drop and blur; out 220 ms. A same-kind notice only refits.</p>
+        <div class="dl-fx"><div class="dl-fx-box" id="fx-b"></div></div>
+        <div><button class="btn sm secondary" data-fx="b"><i data-i="replay"></i>Replay</button></div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ───────────────────────────── 02 Components ────────────────────────────── -->
+<section class="dl-sec" id="components">
+  <header><span class="dl-eyebrow">02</span><h2>Components</h2>
+    <p class="dl-lead">The only buttons, switches, rows and cards. Each is shown at rest and in its forced states; everything is also live, so hover, press and tab through them.</p></header>
+
+  <div class="dl-specs">
+
+    <article class="dl-spec wide">
+      <div class="dl-spec-h"><h4>Card</h4><code>.card · .card.wash · tone .ok .warn .bad .info</code></div>
+      <div class="dl-cards">
+        <div class="card"><div class="dl-card-h"><i data-i="timer" data-s="16"></i><b>Focus timer</b><span>18:42 left</span></div><p>Notifications are held until 14:30. Two are waiting.</p></div>
+        <div class="card wash"><div class="dl-card-h"><i data-i="download" data-s="16"></i><b>Update ready</b><span>0.4.2</span></div><p>The update is downloaded. Restart Lintel to install it.</p></div>
+        <div class="card wash warn"><div class="dl-card-h"><i data-i="terminal" data-s="16"></i><b>Approval</b><span>Codex</span></div><p>Wants to run <code>cargo test -p svc-audio</code> in svc-audio.</p></div>
+        <div class="card wash info"><div class="dl-card-h"><i data-i="question" data-s="16"></i><b>Question</b><span>Claude Code</span></div><p>Should the volume notice also name the output device?</p></div>
+        <div class="card wash ok"><div class="dl-card-h"><i data-i="checkc" data-s="16"></i><b>Finished</b><span>OpenCode</span></div><p>Rebuilt the settings page. 3 files changed, 41 lines added.</p></div>
+        <div class="card wash bad"><div class="dl-card-h"><i data-i="alert" data-s="16"></i><b>Error</b><span>Gemini CLI</span></div><p>The API key was rejected. Paste a new key in Settings › Agents.</p></div>
+      </div>
+    </article>
+
+    <article class="dl-spec wide">
+      <div class="dl-spec-h"><h4>Button</h4><code>.btn.primary · .secondary · .ghost · .danger · .sm · .icon</code></div>
+      <div class="dl-matrix" id="btn-matrix" style="--cols:5"></div>
+      <div class="dl-rows">
+        <code>.sm</code><div class="dl-flow"><button class="btn sm primary">Allow</button><button class="btn sm secondary">Always</button><button class="btn sm ghost">Show diff</button><button class="btn sm danger">Deny</button><button class="btn sm secondary"><i data-i="share"></i>Share</button></div>
+        <code>.icon</code><div class="dl-flow"><button class="btn primary"><i data-i="share"></i>Share</button><button class="btn secondary"><i data-i="zip"></i>Zip</button><button class="btn secondary icon" title="Keep on top"><i data-i="pin"></i></button><button class="btn ghost icon" title="Search"><i data-i="search"></i></button><button class="btn sm secondary icon" title="Add"><i data-i="plus"></i></button><button class="btn sm ghost icon" title="Close"><i data-i="close"></i></button></div>
+        <code>.kbd</code><div class="dl-flow"><button class="btn primary">Allow<span class="kbd">Y</span></button><button class="btn danger">Deny<span class="kbd">N</span></button><button class="btn secondary">All sections<span class="kbd">Ctrl</span><span class="kbd">K</span></button><button class="btn ghost">Back<span class="kbd">Esc</span></button></div>
+      </div>
+    </article>
+
+    <article class="dl-spec">
+      <div class="dl-spec-h"><h4>Switch</h4><code>.switch · .switch.on</code></div>
+      <div class="dl-matrix" style="--cols:4">
+        <span></span><span class="dl-cap">Default</span><span class="dl-cap">Hover</span><span class="dl-cap">Focus</span><span class="dl-cap">Disabled</span>
+        <code>off</code><button class="switch" role="switch" aria-checked="false" aria-label="Off"></button><button class="switch is-hover" role="switch" aria-checked="false" aria-label="Off, hover"></button><button class="switch is-focus" role="switch" aria-checked="false" aria-label="Off, focus"></button><button class="switch" role="switch" aria-checked="false" aria-label="Off, disabled" disabled></button>
+        <code>.on</code><button class="switch on" role="switch" aria-checked="true" aria-label="On"></button><button class="switch on is-hover" role="switch" aria-checked="true" aria-label="On, hover"></button><button class="switch on is-focus" role="switch" aria-checked="true" aria-label="On, focus"></button><button class="switch on" role="switch" aria-checked="true" aria-label="On, disabled" disabled></button>
+      </div>
+    </article>
+
+    <article class="dl-spec island">
+      <div class="dl-spec-h"><h4>Tab</h4><code>.tab · .tab.on · .tab.icon</code></div>
+      <div class="dl-flow">
+        <span class="dl-cell"><button class="tab"><i data-i="chat" data-s="13"></i>Chat</button><span class="dl-cap">Default</span></span>
+        <span class="dl-cell"><button class="tab is-hover"><i data-i="chat" data-s="13"></i>Chat</button><span class="dl-cap">Hover</span></span>
+        <span class="dl-cell"><button class="tab on"><i data-i="chat" data-s="13"></i>Chat</button><span class="dl-cap">On</span></span>
+        <span class="dl-cell"><button class="tab is-focus"><i data-i="chat" data-s="13"></i>Chat</button><span class="dl-cap">Focus</span></span>
+        <span class="dl-cell"><button class="tab" disabled><i data-i="chat" data-s="13"></i>Chat</button><span class="dl-cap">Disabled</span></span>
+      </div>
+      <div class="dl-flow" data-pick>
+        <button class="tab on"><i data-i="home" data-s="13"></i>Home</button><button class="tab"><i data-i="chat" data-s="13"></i>Chat</button><button class="tab"><i data-i="shelf" data-s="13"></i>Shelf</button><button class="tab"><i data-i="music" data-s="13"></i>Player</button><button class="tab icon" title="Controls"><i data-i="sliders" data-s="13"></i></button><button class="tab icon" title="Settings"><i data-i="gear" data-s="13"></i></button>
+      </div>
+    </article>
+
+    <article class="dl-spec wide">
+      <div class="dl-spec-h"><h4>Field</h4><code>.field · .field textarea · .field.invalid</code></div>
+      <div class="dl-fields">
+        <span class="dl-cell"><label class="field"><input placeholder="Search history" aria-label="Default"></label><span class="dl-cap">Default</span></span>
+        <span class="dl-cell"><label class="field is-hover"><input value="arbiter.ts" aria-label="Hover"></label><span class="dl-cap">Hover</span></span>
+        <span class="dl-cell"><label class="field is-focus"><input value="arbiter.ts" aria-label="Focus"></label><span class="dl-cap">Focus</span></span>
+        <span class="dl-cell"><label class="field invalid"><input value="240" aria-label="Invalid"></label><span class="dl-cap">Invalid · 5 to 120</span></span>
+        <span class="dl-cell"><label class="field"><input value="C:\dev\lintel" disabled aria-label="Disabled"></label><span class="dl-cap">Disabled</span></span>
+        <span class="dl-cell"><label class="field"><i data-i="search"></i><input placeholder="Search settings" aria-label="With icon"></label><span class="dl-cap">With icon</span></span>
+        <span class="dl-cell"><label class="field"><select aria-label="Select"><option>Primary display</option><option>Display 2 · 1920 × 1080</option></select><i data-i="chevd"></i></label><span class="dl-cap">Select</span></span>
+        <span class="dl-cell"><label class="field"><input value="15" inputmode="numeric" aria-label="Number"><span>s</span></label><span class="dl-cap">With unit</span></span>
+        <span class="dl-cell dl-span2"><label class="field"><textarea aria-label="Textarea" rows="3">Pick up oat milk on the way back.
+Reply to Kavita about the lease draft.</textarea></label><span class="dl-cap">Textarea</span></span>
+      </div>
+    </article>
+
+    <article class="dl-spec">
+      <div class="dl-spec-h"><h4>Row</h4><code>.row · .row-label · .row-hint</code></div>
+      <div class="card">
+        <div class="row"><span class="row-label">Open on hover</span><button class="switch on" role="switch" aria-checked="true" aria-label="Open on hover"></button><span class="row-hint">Rest the pointer on the strip for 250 ms.</span></div>
+        <div class="row"><span class="row-label">Close after</span><label class="field" style="width:72px"><input value="15" inputmode="numeric" aria-label="Close after, seconds"><span>s</span></label><span class="row-hint">Click-opened islands, 5 to 120 seconds.</span></div>
+        <div class="row"><span class="row-label">Sound pack</span><button class="btn sm secondary">Choose</button></div>
+        <div class="row disabled"><span class="row-label">Fan control</span><button class="switch" role="switch" aria-checked="false" aria-label="Fan control" disabled></button><span class="row-hint">Turn on the hardware helper first.</span></div>
+      </div>
+    </article>
+
+    <article class="dl-spec">
+      <div class="dl-spec-h"><h4>List</h4><code>.list · .list-item · .on</code></div>
+      <div class="list" data-pick>
+        <button class="list-item"><i data-i="terminal" data-s="16"></i><span>npm run tauri dev</span><small>2 min</small></button>
+        <button class="list-item is-hover"><i data-i="link" data-s="16"></i><span>learn.microsoft.com/windows/win32/api/winuser</span><small>hover</small></button>
+        <button class="list-item on"><i data-i="image" data-s="16"></i><span>Screenshot 1920 × 1080</span><small>selected</small></button>
+        <button class="list-item is-focus"><i data-i="text" data-s="16"></i><span>The lease draft is attached. Section 4 changed.</span><small>focus</small></button>
+        <button class="list-item" disabled><i data-i="file" data-s="16"></i><span>Q3-roadmap.pdf</span><small>disabled</small></button>
+        <button class="list-item"><i data-i="code" data-s="16"></i><span>git rebase --onto main feat/arbiter</span><span class="kbd">7</span></button>
+      </div>
+    </article>
+
+    <article class="dl-spec">
+      <div class="dl-spec-h"><h4>Meter</h4><code>.meter · --v · .dragging</code></div>
+      <div class="dl-meters">
+        <span class="dl-cap">0</span><div class="meter" style="--v:0"></div>
+        <span class="dl-cap">38 %</span><div class="meter" style="--v:.38"></div>
+        <span class="dl-cap">Full</span><div class="meter" style="--v:1"></div>
+        <span class="dl-cap">.ok</span><div class="meter ok" style="--v:.72"></div>
+        <span class="dl-cap">.warn</span><div class="meter warn" style="--v:.86"></div>
+        <span class="dl-cap">.bad</span><div class="meter bad" style="--v:.94"></div>
+        <span class="dl-cap">Dragged</span><div class="meter is-active" style="--v:.62"></div>
+        <span class="dl-cap">Live</span><div class="dl-slide" data-slide><div class="meter" role="slider" tabindex="0" aria-label="Volume" aria-valuemin="0" aria-valuemax="100" aria-valuenow="62" style="--v:.62"></div><output>62</output></div>
+      </div>
+    </article>
+
+    <article class="dl-spec island">
+      <div class="dl-spec-h"><h4>Capsule</h4><code>.capsule · .bars</code></div>
+      <div class="dl-flow">
+        <span class="capsule"><i data-i="timer"></i>18:42</span>
+        <span class="capsule warn"><i data-i="timer"></i>Focus · 18:42</span>
+        <span class="capsule"><i data-i="volume"></i><span class="meter" style="--v:.62"></span>62</span>
+        <span class="capsule"><i data-i="music"></i>Low Tide<span class="bars"><i></i><i></i><i></i><i></i></span></span>
+        <span class="capsule">5h<span class="meter" style="--v:.38"></span>38%</span>
+        <span class="capsule bad"><i data-i="record"></i>Recording · 00:47</span>
+        <span class="capsule ok"><i data-i="checkc"></i>Saved to Downloads</span>
+        <span class="capsule"><i data-i="music"></i>Paused<span class="bars paused"><i></i><i></i><i></i><i></i></span></span>
+      </div>
+    </article>
+
+    <article class="dl-spec island wide">
+      <div class="dl-spec-h"><h4>Tile</h4><code>.tile · tone .ok .warn .bad</code></div>
+      <div class="dl-flow">
+        <span class="dl-cell"><button class="tile"><i data-i="shot" data-s="20"></i><span>Screenshot</span></button><span class="dl-cap">Default</span></span>
+        <span class="dl-cell"><button class="tile is-hover"><i data-i="shot" data-s="20"></i><span>Screenshot</span></button><span class="dl-cap">Hover</span></span>
+        <span class="dl-cell"><button class="tile is-hover is-active"><i data-i="shot" data-s="20"></i><span>Screenshot</span></button><span class="dl-cap">Active</span></span>
+        <span class="dl-cell"><button class="tile is-focus"><i data-i="shot" data-s="20"></i><span>Screenshot</span></button><span class="dl-cap">Focus</span></span>
+        <span class="dl-cell"><button class="tile ok"><i data-i="coffee" data-s="20"></i><span>Keep awake</span></button><span class="dl-cap">.ok · on</span></span>
+        <span class="dl-cell"><button class="tile warn"><i data-i="timer" data-s="20"></i><span>18:42</span></button><span class="dl-cap">.warn · timer</span></span>
+        <span class="dl-cell"><button class="tile bad"><i data-i="record" data-s="20"></i><span>Recording</span></button><span class="dl-cap">.bad</span></span>
+        <span class="dl-cell"><button class="tile" disabled><i data-i="bluetooth" data-s="20"></i><span>Bluetooth</span></button><span class="dl-cap">Disabled</span></span>
+      </div>
+    </article>
+
+    <article class="dl-spec">
+      <div class="dl-spec-h"><h4>Menu</h4><code>.menu · hr · .danger</code></div>
+      <div class="dl-menu-stage">
+        <div class="menu" role="menu">
+          <button role="menuitem"><i data-i="clipboard"></i>Paste<span class="kbd">↵</span></button>
+          <button role="menuitem" class="is-hover"><i data-i="text"></i>Paste as plain text<span class="kbd">Shift</span><span class="kbd">↵</span></button>
+          <button role="menuitem"><i data-i="pin"></i>Pin<span class="kbd">Ctrl</span><span class="kbd">P</span></button>
+          <button role="menuitem" disabled><i data-i="link"></i>Open link</button>
+          <hr>
+          <button role="menuitem" class="danger"><i data-i="trash"></i>Remove<span class="kbd">Del</span></button>
+        </div>
+      </div>
+    </article>
+
+    <article class="dl-spec">
+      <div class="dl-spec-h"><h4>Kbd and section title</h4><code>.kbd · .section-title</code></div>
+      <div class="dl-flow">
+        <span class="kbd">Ctrl</span><span class="kbd">K</span><span class="kbd">Alt</span><span class="kbd">Space</span><span class="kbd">Esc</span><span class="kbd">↵</span><span class="kbd">Shift</span><span class="kbd">F13</span><span class="kbd">Win</span><span class="kbd">V</span>
+      </div>
+      <div>
+        <div class="section-title">Behaviour</div>
+        <div class="card"><div class="row"><span class="row-label">Keep live activities on screen</span><button class="switch" role="switch" aria-checked="false" aria-label="Keep live activities on screen"></button></div></div>
+      </div>
+      <p class="dl-note">The settings shell (<code>.sidebar</code>, <code>.page</code>) and window chrome (<code>.win</code>, <code>.win-bar</code>) are shown at full size under <a href="#windows">Windows</a>.</p>
+    </article>
+
+  </div>
+</section>
+
+<!-- ───────────────────────────── 03 The island ────────────────────────────── -->
+<section class="dl-sec" id="island">
+  <header><span class="dl-eyebrow">03</span><h2>The island, live</h2>
+    <p class="dl-lead">At its real pixel sizes. Hidden until needed is the only mode: move the pointer to the top edge of the screen to peek it, rest on the strip for 250 ms or click to open, and leave to let it fold away. The buttons hold a state so it can be looked at.</p></header>
+
+  <div class="dl-ctl" id="isl-ctl">
+    <div class="dl-ctl-group"><span class="dl-cap">Strip</span><div class="dl-seg">
+      <button class="tab" data-st="hidden">Hidden</button><button class="tab" data-st="peek">Peek</button></div></div>
+    <div class="dl-ctl-group"><span class="dl-cap">Live activity</span><div class="dl-seg">
+      <button class="tab" data-st="music">Now playing</button><button class="tab" data-st="timer">Timer</button></div></div>
+    <div class="dl-ctl-group"><span class="dl-cap">Notice</span><div class="dl-seg">
+      <button class="tab" data-st="volume">Volume</button><button class="tab" data-st="track">Track changed</button><button class="tab" data-st="download">Download finished</button></div></div>
+    <div class="dl-ctl-group"><span class="dl-cap">Open</span><div class="dl-seg">
+      <button class="tab" data-st="open:overview">Overview</button><button class="tab" data-st="open:approval">Approval</button><button class="tab" data-st="open:chat">Chat</button><button class="tab" data-st="open:player">Player</button><button class="tab" data-st="open:shelf">Shelf</button><button class="tab" data-st="open:controls">Controls</button></div></div>
+  </div>
+
+  <div class="dl-scroll">
+    <div class="dl-screen">
+      <div class="dl-wake" id="wake"></div>
+      <div class="dl-desk">
+        <div class="dl-wake-guide"></div>
+
+        <div class="isl" id="isl" data-mode="hidden">
+          <div class="isl-strip" id="isl-strip"></div>
+
+          <div class="isl-open">
+            <div class="isl-head">
+              <button class="tab on" data-sec="overview" title="Home"><i data-i="home" data-s="13"></i><span>Home</span></button>
+              <button class="tab" data-sec="chat" title="Chat"><i data-i="chat" data-s="13"></i><span>Chat</span></button>
+              <button class="tab" data-sec="shelf" title="Shelf"><i data-i="shelf" data-s="13"></i><span>Shelf</span></button>
+              <button class="tab" data-sec="player" title="Now playing"><i data-i="music" data-s="13"></i><span>Now playing</span></button>
+              <button class="tab" data-sec="controls" title="Controls"><i data-i="sliders" data-s="13"></i><span>Controls</span></button>
+              <span class="isl-gap"></span>
+              <button class="tab icon" title="All sections (Ctrl+K)"><i data-i="grid" data-s="13"></i></button>
+              <span class="capsule" title="Plan usage, resets in 2 h 14 min">5h<span class="meter" style="--v:.38"></span>38%</span>
+              <button class="tab icon" title="Settings"><i data-i="gear" data-s="13"></i></button>
+              <button class="tab icon" title="Mute sounds"><i data-i="bell" data-s="13"></i></button>
+            </div>
+
+            <!-- Overview: the focused agent and the 2×2 pill grid -->
+            <div class="isl-sec isl-overview on" data-sec="overview">
+              <div class="isl-focus" id="isl-focus">
+                <span class="mascot" data-d="58" data-state="working" data-color="#E07950"></span>
+                <b>Claude Code</b>
+                <span>Editing arbiter.ts</span>
+                <small>Lintel · 4 min 12 s</small>
+              </div>
+              <div class="isl-pills" data-pick>
+                <button class="card isl-pill on" data-name="Claude Code" data-task="Editing arbiter.ts" data-meta="Lintel · 4 min 12 s" data-state="working" data-color="#E07950"><span class="mascot" data-d="22" data-state="working" data-color="#E07950"></span><b>Claude Code</b><small>4 min</small><span>Editing arbiter.ts</span></button>
+                <button class="card isl-pill" data-name="Codex" data-task="Wants to run a command" data-meta="svc-audio · asked 12 s ago" data-state="approval" data-color="#2DD4BF"><span class="mascot" data-d="22" data-state="approval" data-color="#2DD4BF"></span><b>Codex</b><small>12 s</small><span class="warn">Needs approval</span></button>
+                <button class="card isl-pill" data-name="Gemini CLI" data-task="Reading ARCHITECTURE.md" data-meta="docs · 1 min 03 s" data-state="thinking" data-color="#8AB4F8"><span class="mascot" data-d="22" data-state="thinking" data-color="#8AB4F8"></span><b>Gemini CLI</b><small>1 min</small><span>Reading ARCHITECTURE.md</span></button>
+                <button class="card isl-pill" data-name="OpenCode" data-task="Finished, 3 files changed" data-meta="site · 6 min ago" data-state="finished" data-color="#4ADE80"><span class="mascot" data-d="22" data-state="finished" data-color="#4ADE80"></span><b>OpenCode</b><small>6 min</small><span class="ok">Finished, 3 files changed</span></button>
+              </div>
+            </div>
+
+            <!-- Approval card -->
+            <div class="isl-sec" data-sec="approval">
+              <div class="card wash warn isl-approval">
+                <div class="isl-row">
+                  <span class="mascot" id="approval-mascot" data-d="22" data-state="approval" data-color="#2DD4BF"></span>
+                  <b>Codex wants to run a command</b>
+                  <span class="isl-gap"></span>
+                  <span class="isl-meta">svc-audio · asked 12 s ago</span>
+                </div>
+                <div class="isl-code"><code>cargo test -p svc-audio -- --nocapture</code><span>C:\dev\lintel\crates\svc-audio</span></div>
+                <div class="isl-row">
+                  <button class="btn primary" data-emote="happy">Allow<span class="kbd">Y</span></button>
+                  <button class="btn secondary" data-emote="proud">Always<span class="kbd">A</span></button>
+                  <span class="isl-gap"></span>
+                  <button class="btn danger" data-emote="surprised">Deny<span class="kbd">N</span></button>
+                </div>
+              </div>
+            </div>
+
+            <!-- Chat -->
+            <div class="isl-sec isl-chat" data-sec="chat">
+              <div class="isl-msgs" id="isl-msgs">
+                <p class="me">Why does the island flicker when I hold the volume key?</p>
+                <div class="bot"><span class="mascot" data-d="22" data-state="idle" data-color="#E07950"></span><p>Each key repeat sends a new volume notice, and every notice re-ran the enter animation. A same-kind notice now only refits the width.</p></div>
+                <p class="tool"><i data-i="code" data-s="13"></i>Edited <code>src/island/arbiter.ts</code><b class="add">+9</b><b class="del">−3</b></p>
+                <p class="me">Does mute still report inside the quiet window?</p>
+                <div class="bot"><span class="mascot" data-d="22" data-state="idle" data-color="#E07950"></span><p>Yes. Mute always reports, even within 2 s of the last key step.</p></div>
+              </div>
+              <form class="isl-compose" id="isl-compose">
+                <label class="field"><input placeholder="Message Claude Code" aria-label="Message" autocomplete="off"></label>
+                <button class="btn primary icon" title="Send"><i data-i="send"></i></button>
+              </form>
+            </div>
+
+            <!-- Now playing -->
+            <div class="isl-sec isl-player" data-sec="player">
+              <div class="dl-art a1"></div>
+              <div class="isl-player-main">
+                <div class="isl-row">
+                  <div class="isl-track"><b>Low Tide</b><span>Halden Fjord · Slow Weather</span></div>
+                  <span class="isl-gap"></span>
+                  <span class="bars" data-bars><i></i><i></i><i></i><i></i></span>
+                </div>
+                <div class="isl-progress"><span data-pos>1:47</span><div class="dl-slide" data-seek><div class="meter" role="slider" tabindex="0" aria-label="Position" style="--v:.4246"></div></div><span>4:12</span></div>
+                <div class="isl-row">
+                  <button class="btn ghost icon" title="Shuffle"><i data-i="shuffle"></i></button>
+                  <button class="btn ghost icon" title="Previous"><i data-i="prev"></i></button>
+                  <button class="btn primary icon" id="play" title="Pause"><i data-i="pause"></i></button>
+                  <button class="btn ghost icon" title="Next"><i data-i="next"></i></button>
+                  <button class="btn ghost icon" title="Repeat"><i data-i="repeat"></i></button>
+                  <span class="isl-gap"></span>
+                  <i data-i="volume" class="isl-dim"></i>
+                  <div class="dl-slide isl-vol" data-slide><div class="meter" role="slider" tabindex="0" aria-label="Volume" style="--v:.62"></div></div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Shelf -->
+            <div class="isl-sec isl-shelf" data-sec="shelf">
+              <div class="isl-files">
+                <button class="isl-file"><span class="isl-thumb bad"><i data-i="file" data-s="20"></i></span><b>Q3-roadmap.pdf</b><small>2.4 MB</small></button>
+                <button class="isl-file on"><span class="isl-thumb dl-art a3"></span><b>island-states.png</b><small>1.1 MB</small></button>
+                <button class="isl-file"><span class="isl-thumb"><i data-i="text" data-s="20"></i></span><b>release-notes.md</b><small>6 KB</small></button>
+                <button class="isl-file"><span class="isl-thumb ok"><i data-i="grid" data-s="20"></i></span><b>invoice-0417.xlsx</b><small>48 KB</small></button>
+                <button class="isl-file"><span class="isl-thumb dl-art a4"><i data-i="play" data-s="20"></i></span><b>screen-recording.mp4</b><small>57.8 MB</small></button>
+              </div>
+              <div class="isl-row">
+                <span class="isl-meta">5 items · 61.4 MB · drag one out to move it</span>
+                <span class="isl-gap"></span>
+                <button class="btn sm secondary"><i data-i="share"></i>Share</button>
+                <button class="btn sm secondary"><i data-i="zip"></i>Zip</button>
+                <button class="btn sm ghost">Clear</button>
+              </div>
+            </div>
+
+            <!-- Controls -->
+            <div class="isl-sec isl-controls" data-sec="controls">
+              <button class="tile ok" data-tone="ok"><i data-i="wifi" data-s="20"></i><span>Wi-Fi</span></button>
+              <button class="tile ok" data-tone="ok"><i data-i="bluetooth" data-s="20"></i><span>Bluetooth</span></button>
+              <button class="tile" data-tone="ok"><i data-i="moon" data-s="20"></i><span>Focus</span></button>
+              <button class="tile" data-tone="ok"><i data-i="sun" data-s="20"></i><span>Night light</span></button>
+              <button class="tile ok" data-tone="ok"><i data-i="coffee" data-s="20"></i><span>Keep awake</span></button>
+              <button class="tile warn" data-tone="warn"><i data-i="timer" data-s="20"></i><span data-timer>18:42</span></button>
+              <button class="tile bad" data-tone="bad"><i data-i="record" data-s="20"></i><span>Recording</span></button>
+              <button class="tile"><i data-i="shot" data-s="20"></i><span>Screenshot</span></button>
+              <button class="tile"><i data-i="drop" data-s="20"></i><span>Colour picker</span></button>
+              <button class="tile"><i data-i="clipboard" data-s="20"></i><span>Clipboard</span></button>
+              <button class="tile" data-tone="bad"><i data-i="mic" data-s="20"></i><span>Mute mic</span></button>
+              <button class="tile"><i data-i="monitor" data-s="20"></i><span>Project</span></button>
+              <button class="tile" data-tone="ok"><i data-i="plane" data-s="20"></i><span>Airplane</span></button>
+              <button class="tile"><i data-i="lock" data-s="20"></i><span>Lock</span></button>
+            </div>
+          </div>
+        </div>
+
+        <p class="dl-desk-hint"><i data-i="up"></i>Move the pointer to the top edge</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="dl-ctl dl-ctl-foot">
+    <div class="dl-ctl-group"><span class="dl-cap">Mascot</span><div class="dl-seg" id="isl-kind">
+      <button class="tab on" data-mk="A">A</button><button class="tab" data-mk="B">B</button><button class="tab" data-mk="C">C</button><button class="tab" data-mk="dot">Hidden (dot)</button></div></div>
+    <label class="dl-toggle"><button class="switch" role="switch" aria-checked="false" id="isl-outline" aria-label="Outline"></button>Outline, 1.5 px</label>
+    <label class="dl-toggle"><button class="switch" role="switch" aria-checked="false" id="isl-auto" aria-label="Product timing"></button>Hide on the product's timings</label>
+    <code class="dl-readout" id="readout"></code>
+  </div>
+</section>
+
+<!-- ───────────────────────────── 04 Windows ───────────────────────────────── -->
+<section class="dl-sec" id="windows">
+  <header><span class="dl-eyebrow">04</span><h2>Windows</h2>
+    <p class="dl-lead">Every secondary window comes from one factory and draws the same chrome: a dark panel, radius 12, a hairline border and a 36 px drag row with a title and a close button.</p></header>
+
+  <div class="dl-block">
+    <h3>Floating window</h3>
+    <div class="dl-scroll">
+      <div class="dl-floor">
+        <div class="win dl-win-clip">
+          <div class="win-bar"><i data-i="clipboard"></i><span>Clipboard</span><button title="Keep on top"><i data-i="pin"></i></button><button class="close" title="Close"><i data-i="close"></i></button></div>
+          <div class="dl-win-pad"><label class="field"><i data-i="search"></i><input placeholder="Search history" aria-label="Search history"></label></div>
+          <div class="dl-win-list" data-pick>
+            <div class="section-title">Pinned</div>
+            <div class="list">
+              <button class="list-item"><i data-i="terminal" data-s="16"></i><span>ssh deploy@build-02.internal</span><span class="kbd">1</span></button>
+              <button class="list-item"><i class="dl-chip"></i><span>#8ea2ff</span><span class="kbd">2</span></button>
+            </div>
+            <div class="section-title">Today</div>
+            <div class="list">
+              <button class="list-item on"><i data-i="terminal" data-s="16"></i><span>npm run tauri dev</span><small>2 min</small></button>
+              <button class="list-item"><i data-i="link" data-s="16"></i><span>learn.microsoft.com/windows/win32/api/winuser</span><small>9 min</small></button>
+              <button class="list-item"><i data-i="image" data-s="16"></i><span>Screenshot 1920 × 1080</span><small>14 min</small></button>
+              <button class="list-item"><i data-i="text" data-s="16"></i><span>The lease draft is attached. Section 4 changed.</span><small>31 min</small></button>
+              <button class="list-item"><i data-i="file" data-s="16"></i><span>Q3-roadmap.pdf</span><small>1 h</small></button>
+              <button class="list-item"><i data-i="text" data-s="16"></i><span>TKT-2291 volume notice repeats on key hold</span><small>2 h</small></button>
+              <button class="list-item"><i data-i="code" data-s="16"></i><span>git rebase --onto main feat/arbiter</span><small>3 h</small></button>
+            </div>
+          </div>
+          <div class="dl-win-foot"><span><span class="kbd">↵</span>Paste</span><span><span class="kbd">Ctrl</span><span class="kbd">P</span>Pin</span><span><span class="kbd">Del</span>Remove</span><span class="isl-gap"></span><span>48 of 200</span></div>
+        </div>
+
+        <div class="menu dl-ctx" role="menu">
+          <button role="menuitem"><i data-i="clipboard"></i>Paste<span class="kbd">↵</span></button>
+          <button role="menuitem"><i data-i="text"></i>Paste as plain text<span class="kbd">Shift</span><span class="kbd">↵</span></button>
+          <button role="menuitem"><i data-i="copy"></i>Copy again<span class="kbd">Ctrl</span><span class="kbd">C</span></button>
+          <button role="menuitem"><i data-i="pin"></i>Pin<span class="kbd">Ctrl</span><span class="kbd">P</span></button>
+          <hr>
+          <button role="menuitem"><i data-i="terminal"></i>Run in terminal</button>
+          <button role="menuitem"><i data-i="shelf"></i>Add to shelf</button>
+          <hr>
+          <button role="menuitem" class="danger"><i data-i="trash"></i>Remove<span class="kbd">Del</span></button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="dl-block">
+    <h3>Settings window</h3>
+    <div class="dl-scroll">
+      <div class="dl-floor">
+        <div class="win dl-win-settings">
+          <div class="win-bar"><i data-i="gear"></i><span>Settings</span><button class="close" title="Close"><i data-i="close"></i></button></div>
+          <div class="win-body">
+            <aside class="sidebar">
+              <label class="field"><i data-i="search"></i><input placeholder="Search settings" aria-label="Search settings"></label>
+              <div class="list">
+                <button class="list-item"><i data-i="gear" data-s="16"></i><span>General</span></button>
+                <button class="list-item on"><i data-i="island" data-s="16"></i><span>Island</span></button>
+                <button class="list-item"><i data-i="sparkle" data-s="16"></i><span>Mascot</span></button>
+                <button class="list-item"><i data-i="volume" data-s="16"></i><span>Sounds</span></button>
+                <button class="list-item"><i data-i="keyboard" data-s="16"></i><span>Shortcuts</span></button>
+              </div>
+              <div class="section-title">Features</div>
+              <div class="list">
+                <button class="list-item"><i data-i="terminal" data-s="16"></i><span>Agents</span><small>4</small></button>
+                <button class="list-item"><i data-i="music" data-s="16"></i><span>Media</span></button>
+                <button class="list-item"><i data-i="shelf" data-s="16"></i><span>Shelf</span></button>
+                <button class="list-item"><i data-i="clipboard" data-s="16"></i><span>Clipboard</span></button>
+                <button class="list-item"><i data-i="timer" data-s="16"></i><span>Timers</span></button>
+                <button class="list-item"><i data-i="sliders" data-s="16"></i><span>Controls</span></button>
+              </div>
+              <div class="section-title">App</div>
+              <div class="list">
+                <button class="list-item"><i data-i="shield" data-s="16"></i><span>Privacy</span></button>
+                <button class="list-item"><i data-i="info" data-s="16"></i><span>About</span><small>0.4.2</small></button>
+              </div>
+            </aside>
+            <div class="page">
+              <h1>Island</h1>
+              <p>How the island wakes, opens and folds away.</p>
+
+              <div class="section-title">Behaviour</div>
+              <div class="card">
+                <div class="row"><span class="row-label">Open on hover</span><button class="switch on" role="switch" aria-checked="true" aria-label="Open on hover"></button><span class="row-hint">Rest the pointer on the strip for 250 ms to open it.</span></div>
+                <div class="row"><span class="row-label">Close after</span><label class="field" style="width:72px"><input value="15" inputmode="numeric" aria-label="Close after, seconds"><span>s</span></label><span class="row-hint">How long a click-opened island stays once the pointer leaves, 5 to 120 seconds.</span></div>
+                <div class="row"><span class="row-label">Keep live activities on screen</span><button class="switch" role="switch" aria-checked="false" aria-label="Keep live activities on screen"></button><span class="row-hint">A running timer or a playing track holds the strip instead of showing for 3 seconds.</span></div>
+                <div class="row"><span class="row-label">Wheel on the strip</span><button class="switch on" role="switch" aria-checked="true" aria-label="Wheel on the strip"></button><span class="row-hint">Scroll down to open, up to close.</span></div>
+              </div>
+
+              <div class="section-title">Appearance</div>
+              <div class="card">
+                <div class="row"><span class="row-label">Display</span><label class="field"><select aria-label="Display"><option>Primary · 2560 × 1440</option><option>Display 2 · 1920 × 1080</option><option>Follow the pointer</option></select><i data-i="chevd"></i></label><span class="row-hint">The island hangs from the top centre of this display.</span></div>
+                <div class="row"><span class="row-label">Outline</span><button class="switch" role="switch" aria-checked="false" aria-label="Outline"></button><span class="row-hint">A 1.5 px edge that keeps the island visible on dark wallpapers.</span></div>
+              </div>
+
+              <div class="section-title">Sections</div>
+              <div class="card">
+                <div class="row disabled"><span class="row-label">Home</span><button class="switch on" role="switch" aria-checked="true" aria-label="Home" disabled></button><span class="row-hint">Always first.</span></div>
+                <div class="row"><span class="row-label">Chat</span><button class="switch on" role="switch" aria-checked="true" aria-label="Chat"></button></div>
+                <div class="row"><span class="row-label">Shelf</span><button class="switch on" role="switch" aria-checked="true" aria-label="Shelf"></button></div>
+                <div class="row"><span class="row-label">Now playing</span><button class="switch on" role="switch" aria-checked="true" aria-label="Now playing"></button></div>
+                <div class="row"><span class="row-label">Controls</span><button class="switch on" role="switch" aria-checked="true" aria-label="Controls"></button></div>
+                <div class="row"><span class="row-label">System monitor</span><button class="switch" role="switch" aria-checked="false" aria-label="System monitor"></button><span class="row-hint">Samples only while its section is open.</span></div>
+              </div>
+
+              <div class="dl-page-foot"><button class="btn secondary">Reset island settings</button><button class="btn ghost">Open settings file</button></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ───────────────────────────── 05 Mascot ────────────────────────────────── -->
+<section class="dl-sec" id="mascot">
+  <header><span class="dl-eyebrow">05</span><h2>Mascot candidates</h2>
+    <p class="dl-lead">Three original directions, drawn in Canvas 2D at the display's pixel ratio. Each takes the pill colour, follows the pointer, and has to stay readable at 22 px on the island's black. The controls drive the left three sizes of every candidate at once; the strip on the right holds each state still at 28 px.</p></header>
+
+  <div class="dl-ctl" id="m-ctl">
+    <div class="dl-ctl-group"><span class="dl-cap">State</span><div class="dl-seg" id="m-states"></div></div>
+    <div class="dl-ctl-group"><span class="dl-cap">Emote</span><div class="dl-flow" id="m-emotes"></div></div>
+    <div class="dl-ctl-group"><span class="dl-cap">Pill colour</span><div class="dl-flow" id="m-colors"></div></div>
+  </div>
+
+  <div class="dl-cands" id="cands"></div>
+</section>
+
+<footer class="dl-foot">Lintel design language · tokens and components in <code>src/ui/</code> · this page in <code>dev/</code></footer>
+
+</main>
+</div>
+<script src="design.js"></script>
+</body>
+</html>

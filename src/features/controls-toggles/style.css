@@ -1,0 +1,50 @@
+/* Controls toggles. Every selector starts with .f-controls-toggles- and uses the tokens of src/ui/tokens.css. */
+.f-controls-toggles-page { position: relative; display: flex; flex-direction: column; gap: var(--s-3); height: 100%; }
+.f-controls-toggles-page [hidden], .f-controls-toggles-pad [hidden] { display: none !important; }
+.f-controls-toggles-slide { display: flex; align-items: center; gap: var(--s-3); }
+.f-controls-toggles-slide .meter { flex: 1; }
+.f-controls-toggles-ico { display: grid; place-items: center; width: 28px; color: var(--dim); }
+.f-controls-toggles-rail {
+  /* Spaced like the gallery: the columns share what the scrollbar leaves, so nothing is cut at the sides. */
+  display: grid; grid-template-columns: repeat(7, 76px); grid-auto-rows: 74px; row-gap: var(--s-2);
+  justify-content: space-between; align-content: start; flex: 1; min-height: 0; overflow-y: auto;
+  scrollbar-width: thin; scrollbar-color: var(--card-2) transparent;
+}
+.f-controls-toggles-ask {
+  position: absolute; inset: 0; display: flex; align-items: center; justify-content: center; gap: var(--s-3);
+  padding: var(--s-4); background: color-mix(in srgb, var(--panel) 92%, transparent);
+  font: 400 var(--t-sm) var(--font); color: var(--ink);
+}
+
+.f-controls-toggles-pad { display: flex; flex-direction: column; gap: var(--s-2); height: 100%; }
+.f-controls-toggles-bar { display: flex; align-items: center; gap: var(--s-2); }
+.f-controls-toggles-tabs {
+  display: flex; flex: 1; align-items: center; gap: var(--s-1); min-width: 0; overflow-x: auto;
+  scrollbar-width: thin; scrollbar-color: var(--card-2) transparent;
+}
+.f-controls-toggles-tab {
+  flex: none; max-width: 120px; padding: 0 var(--s-3); height: 26px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;
+  border: 0; border-radius: var(--r-sm); background: transparent; color: var(--dim);
+  font: 400 var(--t-sm) var(--font); cursor: pointer;
+}
+.f-controls-toggles-tab:hover { background: var(--card); color: var(--ink-2); }
+.f-controls-toggles-tab.on { background: var(--card-2); color: var(--ink); }
+.f-controls-toggles-rename, .f-controls-toggles-find {
+  width: 90px; height: 26px; padding: 0 var(--s-2); border: 1px solid var(--hairline); border-radius: var(--r-sm);
+  background: var(--card); color: var(--ink); font: 400 var(--t-sm) var(--font);
+}
+.f-controls-toggles-rename { width: 100%; }
+.f-controls-toggles-area, .f-controls-toggles-md {
+  flex: 1; min-height: 0; padding: var(--s-3); border: 1px solid var(--hairline); border-radius: var(--r-sm);
+  background: var(--card); color: var(--ink); resize: none; overflow: auto; outline: none;
+  scrollbar-width: thin; scrollbar-color: var(--card-2) transparent;
+}
+.f-controls-toggles-area { font: 400 var(--t-sm) ui-monospace, Consolas, monospace; }
+.f-controls-toggles-md { font: 400 var(--t-sm) var(--font); }
+.f-controls-toggles-md :is(h1, h2, h3, p, ul, ol, pre, blockquote) { margin: 0 0 var(--s-2); }
+.f-controls-toggles-md :is(code, pre) { font-family: ui-monospace, Consolas, monospace; background: var(--card-2); border-radius: var(--r-xs); }
+.f-controls-toggles-md pre { padding: var(--s-2); overflow-x: auto; }
+.f-controls-toggles-md a { color: var(--accent); }
+.f-controls-toggles-md blockquote { padding-left: var(--s-3); border-left: 2px solid var(--hairline); color: var(--dim); }
+.f-controls-toggles-note { display: flex; align-items: center; gap: var(--s-2); color: var(--dim); font: 400 var(--t-xs) var(--font); }
+.f-controls-toggles-note:empty { display: none; }

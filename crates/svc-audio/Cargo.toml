@@ -1,0 +1,24 @@
+[package]
+name = "svc-audio"
+description = "Lintel shared service: Audio"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+
+[dependencies]
+# List the Win32 API sets this service calls; Cargo unifies them across the workspace.
+windows = { version = "0.61", features = [
+  "Win32_Devices_FunctionDiscovery",
+  "Win32_Foundation",
+  "Win32_Media_Audio",
+  "Win32_Media_Audio_Endpoints",
+  "Win32_Security",
+  "Win32_System_Com",
+  "Win32_System_Com_StructuredStorage",
+  "Win32_System_Threading",
+  "Win32_System_Variant",
+  "Win32_UI_Shell_PropertiesSystem",
+] }
+# The `#[implement]` and `#[interface]` macros of `windows` name this crate by
+# path; it is the one `windows` 0.61 already builds.
+windows-core = "0.61"

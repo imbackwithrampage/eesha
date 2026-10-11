@@ -1,0 +1,1141 @@
+{
+  "strings": {
+    "Compress": {
+      "en": "Compress",
+      "zh-Hans": "压缩",
+      "hi": "कंप्रेस करें",
+      "es": "Comprimir",
+      "ar": "ضغط",
+      "fr": "Compresser",
+      "bn": "কমপ্রেস",
+      "pt-BR": "Comprimir",
+      "ru": "Сжатие",
+      "id": "Kompres"
+    },
+    "GIF": {
+      "en": "GIF",
+      "zh-Hans": "GIF",
+      "hi": "GIF",
+      "es": "GIF",
+      "ar": "GIF",
+      "fr": "GIF",
+      "bn": "GIF",
+      "pt-BR": "GIF",
+      "ru": "GIF",
+      "id": "GIF"
+    },
+    "Pictures": {
+      "en": "Pictures",
+      "zh-Hans": "图片",
+      "hi": "चित्र",
+      "es": "Imágenes",
+      "ar": "الصور",
+      "fr": "Images",
+      "bn": "ছবি",
+      "pt-BR": "Imagens",
+      "ru": "Изображения",
+      "id": "Gambar"
+    },
+    "Text": {
+      "en": "Text",
+      "zh-Hans": "文字",
+      "hi": "टेक्स्ट",
+      "es": "Texto",
+      "ar": "النص",
+      "fr": "Texte",
+      "bn": "টেক্সট",
+      "pt-BR": "Texto",
+      "ru": "Текст",
+      "id": "Teks"
+    },
+    "From (s)": {
+      "en": "From (s)",
+      "zh-Hans": "起始（秒）",
+      "hi": "से (सेकंड)",
+      "es": "Desde (s)",
+      "ar": "من (ث)",
+      "fr": "De (s)",
+      "bn": "শুরু (সে.)",
+      "pt-BR": "De (s)",
+      "ru": "С (с)",
+      "id": "Dari (dtk)"
+    },
+    "To (s)": {
+      "en": "To (s)",
+      "zh-Hans": "结束（秒）",
+      "hi": "तक (सेकंड)",
+      "es": "Hasta (s)",
+      "ar": "إلى (ث)",
+      "fr": "À (s)",
+      "bn": "শেষ (সে.)",
+      "pt-BR": "Até (s)",
+      "ru": "До (с)",
+      "id": "Sampai (dtk)"
+    },
+    "Sizing": {
+      "en": "Sizing",
+      "zh-Hans": "尺寸方式",
+      "hi": "आकार तय करना",
+      "es": "Tamaño",
+      "ar": "تحديد الحجم",
+      "fr": "Dimensionnement",
+      "bn": "আকার নির্ধারণ",
+      "pt-BR": "Dimensionamento",
+      "ru": "Размер",
+      "id": "Ukuran"
+    },
+    "Resolution": {
+      "en": "Resolution",
+      "zh-Hans": "分辨率",
+      "hi": "रिज़ॉल्यूशन",
+      "es": "Resolución",
+      "ar": "الدقة",
+      "fr": "Résolution",
+      "bn": "রেজোলিউশন",
+      "pt-BR": "Resolução",
+      "ru": "Разрешение",
+      "id": "Resolusi"
+    },
+    "File size": {
+      "en": "File size",
+      "zh-Hans": "文件大小",
+      "hi": "फ़ाइल का आकार",
+      "es": "Tamaño del archivo",
+      "ar": "حجم الملف",
+      "fr": "Taille du fichier",
+      "bn": "ফাইলের আকার",
+      "pt-BR": "Tamanho do arquivo",
+      "ru": "Размер файла",
+      "id": "Ukuran file"
+    },
+    "Target": {
+      "en": "Target",
+      "zh-Hans": "目标",
+      "hi": "लक्ष्य",
+      "es": "Objetivo",
+      "ar": "الهدف",
+      "fr": "Cible",
+      "bn": "লক্ষ্য",
+      "pt-BR": "Alvo",
+      "ru": "Цель",
+      "id": "Target"
+    },
+    "Longest side": {
+      "en": "Longest side",
+      "zh-Hans": "长边",
+      "hi": "सबसे लंबी भुजा",
+      "es": "Lado más largo",
+      "ar": "الضلع الأطول",
+      "fr": "Plus grand côté",
+      "bn": "দীর্ঘতম প্রান্ত",
+      "pt-BR": "Maior lado",
+      "ru": "Длинная сторона",
+      "id": "Sisi terpanjang"
+    },
+    "Compression": {
+      "en": "Compression",
+      "zh-Hans": "压缩率",
+      "hi": "कंप्रेशन",
+      "es": "Compresión",
+      "ar": "الضغط",
+      "fr": "Compression",
+      "bn": "কমপ্রেশন",
+      "pt-BR": "Compressão",
+      "ru": "Сжатие",
+      "id": "Kompresi"
+    },
+    "Low": {
+      "en": "Low",
+      "zh-Hans": "低",
+      "hi": "कम",
+      "es": "Baja",
+      "ar": "منخفض",
+      "fr": "Faible",
+      "bn": "কম",
+      "pt-BR": "Baixa",
+      "ru": "Низкое",
+      "id": "Rendah"
+    },
+    "Medium": {
+      "en": "Medium",
+      "zh-Hans": "中",
+      "hi": "मध्यम",
+      "es": "Media",
+      "ar": "متوسط",
+      "fr": "Moyenne",
+      "bn": "মাঝারি",
+      "pt-BR": "Média",
+      "ru": "Среднее",
+      "id": "Sedang"
+    },
+    "High": {
+      "en": "High",
+      "zh-Hans": "高",
+      "hi": "ज़्यादा",
+      "es": "Alta",
+      "ar": "مرتفع",
+      "fr": "Élevée",
+      "bn": "বেশি",
+      "pt-BR": "Alta",
+      "ru": "Высокое",
+      "id": "Tinggi"
+    },
+    "Frames per second": {
+      "en": "Frames per second",
+      "zh-Hans": "每秒帧数",
+      "hi": "फ़्रेम प्रति सेकंड",
+      "es": "Fotogramas por segundo",
+      "ar": "الإطارات في الثانية",
+      "fr": "Images par seconde",
+      "bn": "প্রতি সেকেন্ডে ফ্রেম",
+      "pt-BR": "Quadros por segundo",
+      "ru": "Кадров в секунду",
+      "id": "Frame per detik"
+    },
+    "Width": {
+      "en": "Width",
+      "zh-Hans": "宽度",
+      "hi": "चौड़ाई",
+      "es": "Ancho",
+      "ar": "العرض",
+      "fr": "Largeur",
+      "bn": "প্রস্থ",
+      "pt-BR": "Largura",
+      "ru": "Ширина",
+      "id": "Lebar"
+    },
+    "Watermark text": {
+      "en": "Watermark text",
+      "zh-Hans": "水印文字",
+      "hi": "वॉटरमार्क टेक्स्ट",
+      "es": "Texto de la marca de agua",
+      "ar": "نص العلامة المائية",
+      "fr": "Texte du filigrane",
+      "bn": "ওয়াটারমার্কের লেখা",
+      "pt-BR": "Texto da marca d’água",
+      "ru": "Текст водяного знака",
+      "id": "Teks watermark"
+    },
+    "Format": {
+      "en": "Format",
+      "zh-Hans": "格式",
+      "hi": "फ़ॉर्मैट",
+      "es": "Formato",
+      "ar": "التنسيق",
+      "fr": "Format",
+      "bn": "ফরম্যাট",
+      "pt-BR": "Formato",
+      "ru": "Формат",
+      "id": "Format"
+    },
+    "Watermark": {
+      "en": "Watermark",
+      "zh-Hans": "水印",
+      "hi": "वॉटरमार्क",
+      "es": "Marca de agua",
+      "ar": "علامة مائية",
+      "fr": "Filigrane",
+      "bn": "ওয়াটারমার্ক",
+      "pt-BR": "Marca d’água",
+      "ru": "Водяной знак",
+      "id": "Watermark"
+    },
+    "Add files": {
+      "en": "Add files",
+      "zh-Hans": "添加文件",
+      "hi": "फ़ाइलें जोड़ें",
+      "es": "Añadir archivos",
+      "ar": "إضافة ملفات",
+      "fr": "Ajouter des fichiers",
+      "bn": "ফাইল যোগ করুন",
+      "pt-BR": "Adicionar arquivos",
+      "ru": "Добавить файлы",
+      "id": "Tambah file"
+    },
+    "Drop files here, or choose them": {
+      "en": "Drop files here, or choose them",
+      "zh-Hans": "将文件拖到这里，或选择文件",
+      "hi": "फ़ाइलें यहाँ छोड़ें, या चुनें",
+      "es": "Suelta los archivos aquí o elígelos",
+      "ar": "أسقط الملفات هنا أو اخترها",
+      "fr": "Déposez les fichiers ici ou choisissez-les",
+      "bn": "ফাইল এখানে ছাড়ুন, বা বেছে নিন",
+      "pt-BR": "Solte os arquivos aqui ou escolha-os",
+      "ru": "Перетащите файлы сюда или выберите их",
+      "id": "Jatuhkan file di sini, atau pilih file"
+    },
+    "Cancel": {
+      "en": "Cancel",
+      "zh-Hans": "取消",
+      "hi": "रद्द करें",
+      "es": "Cancelar",
+      "ar": "إلغاء",
+      "fr": "Annuler",
+      "bn": "বাতিল",
+      "pt-BR": "Cancelar",
+      "ru": "Отмена",
+      "id": "Batal"
+    },
+    "Make GIF": {
+      "en": "Make GIF",
+      "zh-Hans": "生成 GIF",
+      "hi": "GIF बनाएँ",
+      "es": "Crear GIF",
+      "ar": "إنشاء GIF",
+      "fr": "Créer un GIF",
+      "bn": "GIF বানান",
+      "pt-BR": "Criar GIF",
+      "ru": "Создать GIF",
+      "id": "Buat GIF"
+    },
+    "Convert": {
+      "en": "Convert",
+      "zh-Hans": "转换",
+      "hi": "कन्वर्ट करें",
+      "es": "Convertir",
+      "ar": "تحويل",
+      "fr": "Convertir",
+      "bn": "কনভার্ট করুন",
+      "pt-BR": "Converter",
+      "ru": "Конвертировать",
+      "id": "Konversi"
+    },
+    "Read text": {
+      "en": "Read text",
+      "zh-Hans": "识别文字",
+      "hi": "टेक्स्ट पढ़ें",
+      "es": "Leer texto",
+      "ar": "قراءة النص",
+      "fr": "Lire le texte",
+      "bn": "টেক্সট পড়ুন",
+      "pt-BR": "Ler texto",
+      "ru": "Распознать текст",
+      "id": "Baca teks"
+    },
+    "Copy": {
+      "en": "Copy",
+      "zh-Hans": "复制",
+      "hi": "कॉपी करें",
+      "es": "Copiar",
+      "ar": "نسخ",
+      "fr": "Copier",
+      "bn": "কপি করুন",
+      "pt-BR": "Copiar",
+      "ru": "Копировать",
+      "id": "Salin"
+    },
+    "Copied": {
+      "en": "Copied",
+      "zh-Hans": "已复制",
+      "hi": "कॉपी हो गया",
+      "es": "Copiado",
+      "ar": "تم النسخ",
+      "fr": "Copié",
+      "bn": "কপি হয়েছে",
+      "pt-BR": "Copiado",
+      "ru": "Скопировано",
+      "id": "Tersalin"
+    },
+    "Reading…": {
+      "en": "Reading…",
+      "zh-Hans": "正在识别…",
+      "hi": "पढ़ रहे हैं…",
+      "es": "Leyendo…",
+      "ar": "جارٍ القراءة…",
+      "fr": "Lecture…",
+      "bn": "পড়া হচ্ছে…",
+      "pt-BR": "Lendo…",
+      "ru": "Распознавание…",
+      "id": "Membaca…"
+    },
+    "No text found.": {
+      "en": "No text found.",
+      "zh-Hans": "未找到文字。",
+      "hi": "कोई टेक्स्ट नहीं मिला।",
+      "es": "No se encontró texto.",
+      "ar": "لم يُعثر على نص.",
+      "fr": "Aucun texte trouvé.",
+      "bn": "কোনো টেক্সট পাওয়া যায়নি।",
+      "pt-BR": "Nenhum texto encontrado.",
+      "ru": "Текст не найден.",
+      "id": "Teks tidak ditemukan."
+    },
+    "The text could not be read.": {
+      "en": "The text could not be read.",
+      "zh-Hans": "无法识别文字。",
+      "hi": "टेक्स्ट पढ़ा नहीं जा सका।",
+      "es": "No se pudo leer el texto.",
+      "ar": "تعذّرت قراءة النص.",
+      "fr": "Le texte n’a pas pu être lu.",
+      "bn": "টেক্সট পড়া যায়নি।",
+      "pt-BR": "Não foi possível ler o texto.",
+      "ru": "Не удалось распознать текст.",
+      "id": "Teks tidak dapat dibaca."
+    },
+    "The job could not start.": {
+      "en": "The job could not start.",
+      "zh-Hans": "任务无法启动。",
+      "hi": "कार्य शुरू नहीं हो सका।",
+      "es": "No se pudo iniciar la tarea.",
+      "ar": "تعذّر بدء المهمة.",
+      "fr": "La tâche n’a pas pu démarrer.",
+      "bn": "কাজটি শুরু করা যায়নি।",
+      "pt-BR": "Não foi possível iniciar a tarefa.",
+      "ru": "Не удалось запустить задачу.",
+      "id": "Tugas tidak dapat dimulai."
+    },
+    "larger than the original": {
+      "en": "larger than the original",
+      "zh-Hans": "比原文件大",
+      "hi": "मूल फ़ाइल से बड़ी",
+      "es": "más grande que el original",
+      "ar": "أكبر من الأصل",
+      "fr": "plus grand que l’original",
+      "bn": "মূল ফাইলের চেয়ে বড়",
+      "pt-BR": "maior que o original",
+      "ru": "больше оригинала",
+      "id": "lebih besar dari aslinya"
+    },
+    "Cancelled": {
+      "en": "Cancelled",
+      "zh-Hans": "已取消",
+      "hi": "रद्द किया गया",
+      "es": "Cancelado",
+      "ar": "تم الإلغاء",
+      "fr": "Annulé",
+      "bn": "বাতিল করা হয়েছে",
+      "pt-BR": "Cancelado",
+      "ru": "Отменено",
+      "id": "Dibatalkan"
+    },
+    "Windows has no text recognition for your languages installed.": {
+      "en": "Windows has no text recognition for your languages installed.",
+      "zh-Hans": "Windows 中没有安装适用于你的语言的文字识别功能。",
+      "hi": "आपकी भाषाओं के लिए Windows में टेक्स्ट पहचान इंस्टॉल नहीं है।",
+      "es": "Windows no tiene instalado el reconocimiento de texto para tus idiomas.",
+      "ar": "لا يتوفر في Windows التعرّف على النص للغاتك المثبّتة.",
+      "fr": "Windows n’a pas de reconnaissance de texte installée pour vos langues.",
+      "bn": "আপনার ভাষাগুলোর জন্য Windows-এ টেক্সট শনাক্তকরণ ইনস্টল করা নেই।",
+      "pt-BR": "O Windows não tem reconhecimento de texto instalado para os seus idiomas.",
+      "ru": "В Windows не установлено распознавание текста для ваших языков.",
+      "id": "Windows belum memasang pengenalan teks untuk bahasa Anda."
+    },
+    "Where it runs": {
+      "en": "Where it runs",
+      "zh-Hans": "运行位置",
+      "hi": "यह कहाँ चलता है",
+      "es": "Dónde se ejecuta",
+      "ar": "مكان التشغيل",
+      "fr": "Où cela s’exécute",
+      "bn": "কোথায় চলে",
+      "pt-BR": "Onde é executado",
+      "ru": "Где выполняется",
+      "id": "Tempat berjalan"
+    },
+    "On this computer": {
+      "en": "On this computer",
+      "zh-Hans": "在这台电脑上",
+      "hi": "इसी कंप्यूटर पर",
+      "es": "En este equipo",
+      "ar": "على هذا الكمبيوتر",
+      "fr": "Sur cet ordinateur",
+      "bn": "এই কম্পিউটারেই",
+      "pt-BR": "Neste computador",
+      "ru": "На этом компьютере",
+      "id": "Di komputer ini"
+    },
+    "Nothing is downloaded and nothing is sent anywhere. Videos and GIFs use the media components of Windows (on N editions of Windows they need the Media Feature Pack); text is read by the text recognition of Windows, in the languages you have installed.": {
+      "en": "Nothing is downloaded and nothing is sent anywhere. Videos and GIFs use the media components of Windows (on N editions of Windows they need the Media Feature Pack); text is read by the text recognition of Windows, in the languages you have installed.",
+      "zh-Hans": "不会下载任何内容，也不会向任何地方发送数据。视频和 GIF 使用 Windows 的媒体组件（Windows N 版本需要安装媒体功能包）；文字由 Windows 的文字识别功能按你已安装的语言识别。",
+      "hi": "कुछ डाउनलोड नहीं होता और कुछ कहीं नहीं भेजा जाता। वीडियो और GIF Windows के मीडिया घटकों का उपयोग करते हैं (Windows के N संस्करणों में इनके लिए Media Feature Pack चाहिए); टेक्स्ट आपकी इंस्टॉल की हुई भाषाओं में Windows की टेक्स्ट पहचान से पढ़ा जाता है।",
+      "es": "No se descarga nada ni se envía nada a ningún sitio. Los vídeos y los GIF usan los componentes multimedia de Windows (en las ediciones N de Windows necesitan el Media Feature Pack); el texto lo lee el reconocimiento de texto de Windows, en los idiomas que tengas instalados.",
+      "ar": "لا يُنزَّل شيء ولا يُرسل شيء إلى أي مكان. تستخدم مقاطع الفيديو وملفات GIF مكونات الوسائط في Windows (وفي إصدارات N من Windows تحتاج إلى Media Feature Pack)؛ ويُقرأ النص بواسطة التعرّف على النص في Windows بحسب اللغات المثبّتة لديك.",
+      "fr": "Rien n’est téléchargé et rien n’est envoyé nulle part. Les vidéos et les GIF utilisent les composants multimédias de Windows (sur les éditions N de Windows, ils nécessitent le Media Feature Pack) ; le texte est lu par la reconnaissance de texte de Windows, dans les langues que vous avez installées.",
+      "bn": "কিছু ডাউনলোড হয় না, কোথাও কিছু পাঠানোও হয় না। ভিডিও ও GIF Windows-এর মিডিয়া উপাদান ব্যবহার করে (Windows-এর N সংস্করণে এজন্য Media Feature Pack লাগে); টেক্সট পড়া হয় আপনার ইনস্টল করা ভাষায় Windows-এর টেক্সট শনাক্তকরণ দিয়ে।",
+      "pt-BR": "Nada é baixado e nada é enviado a lugar nenhum. Vídeos e GIFs usam os componentes de mídia do Windows (nas edições N do Windows eles precisam do Media Feature Pack); o texto é lido pelo reconhecimento de texto do Windows, nos idiomas instalados.",
+      "ru": "Ничего не загружается и никуда не отправляется. Видео и GIF используют мультимедийные компоненты Windows (в выпусках Windows N нужен Media Feature Pack); текст распознаётся средствами Windows на установленных у вас языках.",
+      "id": "Tidak ada yang diunduh dan tidak ada yang dikirim ke mana pun. Video dan GIF memakai komponen media Windows (di Windows edisi N perlu Media Feature Pack); teks dibaca oleh pengenalan teks Windows dalam bahasa yang terpasang."
+    },
+    "Video: sizing": {
+      "en": "Video: sizing",
+      "zh-Hans": "视频：尺寸方式",
+      "hi": "वीडियो: आकार तय करना",
+      "es": "Vídeo: tamaño",
+      "ar": "الفيديو: تحديد الحجم",
+      "fr": "Vidéo : dimensionnement",
+      "bn": "ভিডিও: আকার নির্ধারণ",
+      "pt-BR": "Vídeo: dimensionamento",
+      "ru": "Видео: размер",
+      "id": "Video: ukuran"
+    },
+    "Video: longest side": {
+      "en": "Video: longest side",
+      "zh-Hans": "视频：长边",
+      "hi": "वीडियो: सबसे लंबी भुजा",
+      "es": "Vídeo: lado más largo",
+      "ar": "الفيديو: الضلع الأطول",
+      "fr": "Vidéo : plus grand côté",
+      "bn": "ভিডিও: দীর্ঘতম প্রান্ত",
+      "pt-BR": "Vídeo: maior lado",
+      "ru": "Видео: длинная сторона",
+      "id": "Video: sisi terpanjang"
+    },
+    "Video: compression": {
+      "en": "Video: compression",
+      "zh-Hans": "视频：压缩率",
+      "hi": "वीडियो: कंप्रेशन",
+      "es": "Vídeo: compresión",
+      "ar": "الفيديو: الضغط",
+      "fr": "Vidéo : compression",
+      "bn": "ভিডিও: কমপ্রেশন",
+      "pt-BR": "Vídeo: compressão",
+      "ru": "Видео: сжатие",
+      "id": "Video: kompresi"
+    },
+    "Video: frames per second": {
+      "en": "Video: frames per second",
+      "zh-Hans": "视频：每秒帧数",
+      "hi": "वीडियो: फ़्रेम प्रति सेकंड",
+      "es": "Vídeo: fotogramas por segundo",
+      "ar": "الفيديو: الإطارات في الثانية",
+      "fr": "Vidéo : images par seconde",
+      "bn": "ভিডিও: প্রতি সেকেন্ডে ফ্রেম",
+      "pt-BR": "Vídeo: quadros por segundo",
+      "ru": "Видео: кадров в секунду",
+      "id": "Video: frame per detik"
+    },
+    "Video: target size": {
+      "en": "Video: target size",
+      "zh-Hans": "视频：目标大小",
+      "hi": "वीडियो: लक्षित आकार",
+      "es": "Vídeo: tamaño objetivo",
+      "ar": "الفيديو: الحجم المستهدف",
+      "fr": "Vidéo : taille cible",
+      "bn": "ভিডিও: লক্ষ্য আকার",
+      "pt-BR": "Vídeo: tamanho alvo",
+      "ru": "Видео: целевой размер",
+      "id": "Video: ukuran target"
+    },
+    "Video: keep the sound": {
+      "en": "Video: keep the sound",
+      "zh-Hans": "视频：保留声音",
+      "hi": "वीडियो: आवाज़ रखें",
+      "es": "Vídeo: conservar el sonido",
+      "ar": "الفيديو: الاحتفاظ بالصوت",
+      "fr": "Vidéo : conserver le son",
+      "bn": "ভিডিও: শব্দ রাখুন",
+      "pt-BR": "Vídeo: manter o som",
+      "ru": "Видео: сохранить звук",
+      "id": "Video: pertahankan suara"
+    },
+    "GIF: sizing": {
+      "en": "GIF: sizing",
+      "zh-Hans": "GIF：尺寸方式",
+      "hi": "GIF: आकार तय करना",
+      "es": "GIF: tamaño",
+      "ar": "GIF: تحديد الحجم",
+      "fr": "GIF : dimensionnement",
+      "bn": "GIF: আকার নির্ধারণ",
+      "pt-BR": "GIF: dimensionamento",
+      "ru": "GIF: размер",
+      "id": "GIF: ukuran"
+    },
+    "GIF: frames per second": {
+      "en": "GIF: frames per second",
+      "zh-Hans": "GIF：每秒帧数",
+      "hi": "GIF: फ़्रेम प्रति सेकंड",
+      "es": "GIF: fotogramas por segundo",
+      "ar": "GIF: الإطارات في الثانية",
+      "fr": "GIF : images par seconde",
+      "bn": "GIF: প্রতি সেকেন্ডে ফ্রেম",
+      "pt-BR": "GIF: quadros por segundo",
+      "ru": "GIF: кадров в секунду",
+      "id": "GIF: frame per detik"
+    },
+    "GIF: width": {
+      "en": "GIF: width",
+      "zh-Hans": "GIF：宽度",
+      "hi": "GIF: चौड़ाई",
+      "es": "GIF: ancho",
+      "ar": "GIF: العرض",
+      "fr": "GIF : largeur",
+      "bn": "GIF: প্রস্থ",
+      "pt-BR": "GIF: largura",
+      "ru": "GIF: ширина",
+      "id": "GIF: lebar"
+    },
+    "GIF: target size": {
+      "en": "GIF: target size",
+      "zh-Hans": "GIF：目标大小",
+      "hi": "GIF: लक्षित आकार",
+      "es": "GIF: tamaño objetivo",
+      "ar": "GIF: الحجم المستهدف",
+      "fr": "GIF : taille cible",
+      "bn": "GIF: লক্ষ্য আকার",
+      "pt-BR": "GIF: tamanho alvo",
+      "ru": "GIF: целевой размер",
+      "id": "GIF: ukuran target"
+    },
+    "GIF: repeat": {
+      "en": "GIF: repeat",
+      "zh-Hans": "GIF：循环播放",
+      "hi": "GIF: दोहराएँ",
+      "es": "GIF: repetir",
+      "ar": "GIF: التكرار",
+      "fr": "GIF : répéter",
+      "bn": "GIF: পুনরাবৃত্তি",
+      "pt-BR": "GIF: repetir",
+      "ru": "GIF: повтор",
+      "id": "GIF: ulangi"
+    },
+    "Pictures: format": {
+      "en": "Pictures: format",
+      "zh-Hans": "图片：格式",
+      "hi": "चित्र: फ़ॉर्मैट",
+      "es": "Imágenes: formato",
+      "ar": "الصور: التنسيق",
+      "fr": "Images : format",
+      "bn": "ছবি: ফরম্যাট",
+      "pt-BR": "Imagens: formato",
+      "ru": "Изображения: формат",
+      "id": "Gambar: format"
+    },
+    "Pictures: quality": {
+      "en": "Pictures: quality",
+      "zh-Hans": "图片：质量",
+      "hi": "चित्र: गुणवत्ता",
+      "es": "Imágenes: calidad",
+      "ar": "الصور: الجودة",
+      "fr": "Images : qualité",
+      "bn": "ছবি: মান",
+      "pt-BR": "Imagens: qualidade",
+      "ru": "Изображения: качество",
+      "id": "Gambar: kualitas"
+    },
+    "Pictures: resize": {
+      "en": "Pictures: resize",
+      "zh-Hans": "图片：调整大小",
+      "hi": "चित्र: आकार बदलें",
+      "es": "Imágenes: cambiar tamaño",
+      "ar": "الصور: تغيير الحجم",
+      "fr": "Images : redimensionner",
+      "bn": "ছবি: আকার বদলান",
+      "pt-BR": "Imagens: redimensionar",
+      "ru": "Изображения: изменение размера",
+      "id": "Gambar: ubah ukuran"
+    },
+    "Keep the size": {
+      "en": "Keep the size",
+      "zh-Hans": "保持尺寸",
+      "hi": "आकार वही रखें",
+      "es": "Mantener el tamaño",
+      "ar": "الإبقاء على الحجم",
+      "fr": "Conserver la taille",
+      "bn": "আকার একই রাখুন",
+      "pt-BR": "Manter o tamanho",
+      "ru": "Сохранить размер",
+      "id": "Pertahankan ukuran"
+    },
+    "Height": {
+      "en": "Height",
+      "zh-Hans": "高度",
+      "hi": "ऊँचाई",
+      "es": "Alto",
+      "ar": "الارتفاع",
+      "fr": "Hauteur",
+      "bn": "উচ্চতা",
+      "pt-BR": "Altura",
+      "ru": "Высота",
+      "id": "Tinggi"
+    },
+    "Exact size": {
+      "en": "Exact size",
+      "zh-Hans": "精确尺寸",
+      "hi": "सटीक आकार",
+      "es": "Tamaño exacto",
+      "ar": "حجم دقيق",
+      "fr": "Taille exacte",
+      "bn": "নির্দিষ্ট আকার",
+      "pt-BR": "Tamanho exato",
+      "ru": "Точный размер",
+      "id": "Ukuran persis"
+    },
+    "Pictures: longest side": {
+      "en": "Pictures: longest side",
+      "zh-Hans": "图片：长边",
+      "hi": "चित्र: सबसे लंबी भुजा",
+      "es": "Imágenes: lado más largo",
+      "ar": "الصور: الضلع الأطول",
+      "fr": "Images : plus grand côté",
+      "bn": "ছবি: দীর্ঘতম প্রান্ত",
+      "pt-BR": "Imagens: maior lado",
+      "ru": "Изображения: длинная сторона",
+      "id": "Gambar: sisi terpanjang"
+    },
+    "Pictures: width": {
+      "en": "Pictures: width",
+      "zh-Hans": "图片：宽度",
+      "hi": "चित्र: चौड़ाई",
+      "es": "Imágenes: ancho",
+      "ar": "الصور: العرض",
+      "fr": "Images : largeur",
+      "bn": "ছবি: প্রস্থ",
+      "pt-BR": "Imagens: largura",
+      "ru": "Изображения: ширина",
+      "id": "Gambar: lebar"
+    },
+    "Pictures: height": {
+      "en": "Pictures: height",
+      "zh-Hans": "图片：高度",
+      "hi": "चित्र: ऊँचाई",
+      "es": "Imágenes: alto",
+      "ar": "الصور: الارتفاع",
+      "fr": "Images : hauteur",
+      "bn": "ছবি: উচ্চতা",
+      "pt-BR": "Imagens: altura",
+      "ru": "Изображения: высота",
+      "id": "Gambar: tinggi"
+    },
+    "Pictures: exact size": {
+      "en": "Pictures: exact size",
+      "zh-Hans": "图片：精确尺寸",
+      "hi": "चित्र: सटीक आकार",
+      "es": "Imágenes: tamaño exacto",
+      "ar": "الصور: حجم دقيق",
+      "fr": "Images : taille exacte",
+      "bn": "ছবি: নির্দিষ্ট আকার",
+      "pt-BR": "Imagens: tamanho exato",
+      "ru": "Изображения: точный размер",
+      "id": "Gambar: ukuran persis"
+    },
+    "Fit inside": {
+      "en": "Fit inside",
+      "zh-Hans": "适应范围",
+      "hi": "अंदर फ़िट करें",
+      "es": "Ajustar dentro",
+      "ar": "احتواء داخل الإطار",
+      "fr": "Ajuster à l’intérieur",
+      "bn": "ভেতরে ফিট করুন",
+      "pt-BR": "Ajustar dentro",
+      "ru": "Вписать",
+      "id": "Muat di dalam"
+    },
+    "Fill and crop": {
+      "en": "Fill and crop",
+      "zh-Hans": "填充并裁剪",
+      "hi": "भरें और क्रॉप करें",
+      "es": "Rellenar y recortar",
+      "ar": "ملء وقص",
+      "fr": "Remplir et rogner",
+      "bn": "ভরাট করে ক্রপ করুন",
+      "pt-BR": "Preencher e cortar",
+      "ru": "Заполнить и обрезать",
+      "id": "Isi dan pangkas"
+    },
+    "Stretch": {
+      "en": "Stretch",
+      "zh-Hans": "拉伸",
+      "hi": "खींचें",
+      "es": "Estirar",
+      "ar": "تمديد",
+      "fr": "Étirer",
+      "bn": "টেনে বাড়ান",
+      "pt-BR": "Esticar",
+      "ru": "Растянуть",
+      "id": "Regangkan"
+    },
+    "Pictures: background": {
+      "en": "Pictures: background",
+      "zh-Hans": "图片：背景",
+      "hi": "चित्र: बैकग्राउंड",
+      "es": "Imágenes: fondo",
+      "ar": "الصور: الخلفية",
+      "fr": "Images : arrière-plan",
+      "bn": "ছবি: ব্যাকগ্রাউন্ড",
+      "pt-BR": "Imagens: fundo",
+      "ru": "Изображения: фон",
+      "id": "Gambar: latar belakang"
+    },
+    "White": {
+      "en": "White",
+      "zh-Hans": "白色",
+      "hi": "सफ़ेद",
+      "es": "Blanco",
+      "ar": "أبيض",
+      "fr": "Blanc",
+      "bn": "সাদা",
+      "pt-BR": "Branco",
+      "ru": "Белый",
+      "id": "Putih"
+    },
+    "Black": {
+      "en": "Black",
+      "zh-Hans": "黑色",
+      "hi": "काला",
+      "es": "Negro",
+      "ar": "أسود",
+      "fr": "Noir",
+      "bn": "কালো",
+      "pt-BR": "Preto",
+      "ru": "Чёрный",
+      "id": "Hitam"
+    },
+    "Behind transparent parts, for JPEG and PDF.": {
+      "en": "Behind transparent parts, for JPEG and PDF.",
+      "zh-Hans": "用于透明部分的背后，适用于 JPEG 和 PDF。",
+      "hi": "पारदर्शी हिस्सों के पीछे, JPEG और PDF के लिए।",
+      "es": "Detrás de las zonas transparentes, para JPEG y PDF.",
+      "ar": "خلف الأجزاء الشفافة، لملفات JPEG وPDF.",
+      "fr": "Derrière les zones transparentes, pour JPEG et PDF.",
+      "bn": "স্বচ্ছ অংশের পেছনে, JPEG ও PDF-এর জন্য।",
+      "pt-BR": "Atrás das partes transparentes, para JPEG e PDF.",
+      "ru": "За прозрачными областями, для JPEG и PDF.",
+      "id": "Di balik bagian transparan, untuk JPEG dan PDF."
+    },
+    "Pictures: save in a subfolder named Converted": {
+      "en": "Pictures: save in a subfolder named Converted"
+    },
+    "Pictures: name": {
+      "en": "Pictures: name",
+      "zh-Hans": "图片：名称",
+      "hi": "चित्र: नाम",
+      "es": "Imágenes: nombre",
+      "ar": "الصور: الاسم",
+      "fr": "Images : nom",
+      "bn": "ছবি: নাম",
+      "pt-BR": "Imagens: nome",
+      "ru": "Изображения: имя",
+      "id": "Gambar: nama"
+    },
+    "Same name": {
+      "en": "Same name",
+      "zh-Hans": "相同名称",
+      "hi": "वही नाम",
+      "es": "Mismo nombre",
+      "ar": "الاسم نفسه",
+      "fr": "Même nom",
+      "bn": "একই নাম",
+      "pt-BR": "Mesmo nome",
+      "ru": "То же имя",
+      "id": "Nama sama"
+    },
+    "Name and size": {
+      "en": "Name and size",
+      "zh-Hans": "名称和尺寸",
+      "hi": "नाम और आकार",
+      "es": "Nombre y tamaño",
+      "ar": "الاسم والحجم",
+      "fr": "Nom et taille",
+      "bn": "নাম ও আকার",
+      "pt-BR": "Nome e tamanho",
+      "ru": "Имя и размер",
+      "id": "Nama dan ukuran"
+    },
+    "Name and date": {
+      "en": "Name and date",
+      "zh-Hans": "名称和日期",
+      "hi": "नाम और तारीख़",
+      "es": "Nombre y fecha",
+      "ar": "الاسم والتاريخ",
+      "fr": "Nom et date",
+      "bn": "নাম ও তারিখ",
+      "pt-BR": "Nome e data",
+      "ru": "Имя и дата",
+      "id": "Nama dan tanggal"
+    },
+    "Number": {
+      "en": "Number",
+      "zh-Hans": "编号",
+      "hi": "संख्या",
+      "es": "Número",
+      "ar": "رقم",
+      "fr": "Numéro",
+      "bn": "নম্বর",
+      "pt-BR": "Número",
+      "ru": "Номер",
+      "id": "Nomor"
+    },
+    "Metadata (place, camera) is not copied to the new file.": {
+      "en": "Metadata (place, camera) is not copied to the new file.",
+      "zh-Hans": "元数据（位置、相机）不会复制到新文件。",
+      "hi": "मेटाडेटा (स्थान, कैमरा) नई फ़ाइल में कॉपी नहीं होता।",
+      "es": "Los metadatos (lugar, cámara) no se copian al archivo nuevo.",
+      "ar": "لا تُنسخ البيانات الوصفية (الموقع، الكاميرا) إلى الملف الجديد.",
+      "fr": "Les métadonnées (lieu, appareil photo) ne sont pas copiées dans le nouveau fichier.",
+      "bn": "মেটাডেটা (স্থান, ক্যামেরা) নতুন ফাইলে কপি হয় না।",
+      "pt-BR": "Os metadados (local, câmera) não são copiados para o novo arquivo.",
+      "ru": "Метаданные (место, камера) в новый файл не копируются.",
+      "id": "Metadata (lokasi, kamera) tidak disalin ke file baru."
+    },
+    "Watermark: position": {
+      "en": "Watermark: position",
+      "zh-Hans": "水印：位置",
+      "hi": "वॉटरमार्क: स्थिति",
+      "es": "Marca de agua: posición",
+      "ar": "العلامة المائية: الموضع",
+      "fr": "Filigrane : position",
+      "bn": "ওয়াটারমার্ক: অবস্থান",
+      "pt-BR": "Marca d’água: posição",
+      "ru": "Водяной знак: положение",
+      "id": "Watermark: posisi"
+    },
+    "Top left": {
+      "en": "Top left",
+      "zh-Hans": "左上",
+      "hi": "ऊपर बाएँ",
+      "es": "Arriba a la izquierda",
+      "ar": "أعلى اليسار",
+      "fr": "En haut à gauche",
+      "bn": "উপরে বাঁয়ে",
+      "pt-BR": "Superior esquerdo",
+      "ru": "Вверху слева",
+      "id": "Kiri atas"
+    },
+    "Top right": {
+      "en": "Top right",
+      "zh-Hans": "右上",
+      "hi": "ऊपर दाएँ",
+      "es": "Arriba a la derecha",
+      "ar": "أعلى اليمين",
+      "fr": "En haut à droite",
+      "bn": "উপরে ডানে",
+      "pt-BR": "Superior direito",
+      "ru": "Вверху справа",
+      "id": "Kanan atas"
+    },
+    "Bottom left": {
+      "en": "Bottom left",
+      "zh-Hans": "左下",
+      "hi": "नीचे बाएँ",
+      "es": "Abajo a la izquierda",
+      "ar": "أسفل اليسار",
+      "fr": "En bas à gauche",
+      "bn": "নিচে বাঁয়ে",
+      "pt-BR": "Inferior esquerdo",
+      "ru": "Внизу слева",
+      "id": "Kiri bawah"
+    },
+    "Bottom right": {
+      "en": "Bottom right",
+      "zh-Hans": "右下",
+      "hi": "नीचे दाएँ",
+      "es": "Abajo a la derecha",
+      "ar": "أسفل اليمين",
+      "fr": "En bas à droite",
+      "bn": "নিচে ডানে",
+      "pt-BR": "Inferior direito",
+      "ru": "Внизу справа",
+      "id": "Kanan bawah"
+    },
+    "Center": {
+      "en": "Center",
+      "zh-Hans": "居中",
+      "hi": "केंद्र",
+      "es": "Centro",
+      "ar": "المنتصف",
+      "fr": "Centre",
+      "bn": "কেন্দ্র",
+      "pt-BR": "Centro",
+      "ru": "По центру",
+      "id": "Tengah"
+    },
+    "Watermark: strength": {
+      "en": "Watermark: strength",
+      "zh-Hans": "水印：浓度",
+      "hi": "वॉटरमार्क: तीव्रता",
+      "es": "Marca de agua: intensidad",
+      "ar": "العلامة المائية: الشدة",
+      "fr": "Filigrane : intensité",
+      "bn": "ওয়াটারমার্ক: তীব্রতা",
+      "pt-BR": "Marca d’água: intensidade",
+      "ru": "Водяной знак: интенсивность",
+      "id": "Watermark: kekuatan"
+    },
+    "Watermark: size": {
+      "en": "Watermark: size",
+      "zh-Hans": "水印：大小",
+      "hi": "वॉटरमार्क: आकार",
+      "es": "Marca de agua: tamaño",
+      "ar": "العلامة المائية: الحجم",
+      "fr": "Filigrane : taille",
+      "bn": "ওয়াটারমার্ক: আকার",
+      "pt-BR": "Marca d’água: tamanho",
+      "ru": "Водяной знак: размер",
+      "id": "Watermark: ukuran"
+    },
+    "Results are saved beside the original under a new name, never over it, and added to the shelf.": {
+      "en": "Results are saved beside the original under a new name, never over it, and added to the shelf.",
+      "zh-Hans": "结果会以新名称保存在原文件旁边，绝不会覆盖原文件，并添加到暂存架。",
+      "hi": "नतीजे नए नाम से मूल फ़ाइल के बगल में सहेजे जाते हैं, उसके ऊपर कभी नहीं, और शेल्फ़ में जोड़े जाते हैं।",
+      "es": "Los resultados se guardan junto al original con un nombre nuevo, nunca encima, y se añaden al estante.",
+      "ar": "تُحفظ النتائج بجوار الأصل باسم جديد، وليس فوقه أبدًا، وتُضاف إلى الرف.",
+      "fr": "Les résultats sont enregistrés à côté de l’original sous un nouveau nom, jamais par-dessus, et ajoutés à l’étagère.",
+      "bn": "ফলাফল মূল ফাইলের পাশে নতুন নামে সংরক্ষিত হয়, কখনও তার ওপরে নয়, এবং শেলফে যোগ হয়।",
+      "pt-BR": "Os resultados são salvos ao lado do original com um novo nome, nunca sobre ele, e adicionados à prateleira.",
+      "ru": "Результаты сохраняются рядом с оригиналом под новым именем, никогда поверх него, и добавляются на полку.",
+      "id": "Hasil disimpan di samping file asli dengan nama baru, tidak pernah menimpanya, dan ditambahkan ke rak."
+    },
+    "Saved": {
+      "en": "Saved",
+      "zh-Hans": "已保存",
+      "hi": "सहेजा गया",
+      "es": "Guardado",
+      "ar": "تم الحفظ",
+      "fr": "Enregistré",
+      "bn": "সংরক্ষিত হয়েছে",
+      "pt-BR": "Salvo",
+      "ru": "Сохранено",
+      "id": "Tersimpan"
+    },
+    "{count} files": {
+      "en": {
+        "one": "{count} file",
+        "other": "{count} files"
+      },
+      "zh-Hans": {
+        "other": "{count} 个文件"
+      },
+      "hi": {
+        "one": "{count} फ़ाइल",
+        "other": "{count} फ़ाइलें"
+      },
+      "es": {
+        "one": "{count} archivo",
+        "other": "{count} archivos"
+      },
+      "ar": {
+        "zero": "{count} ملف",
+        "one": "ملف واحد ({count})",
+        "two": "ملفان ({count})",
+        "few": "{count} ملفات",
+        "many": "{count} ملفًا",
+        "other": "{count} ملف"
+      },
+      "fr": {
+        "one": "{count} fichier",
+        "other": "{count} fichiers"
+      },
+      "bn": {
+        "one": "{count}টি ফাইল",
+        "other": "{count}টি ফাইল"
+      },
+      "pt-BR": {
+        "one": "{count} arquivo",
+        "other": "{count} arquivos"
+      },
+      "ru": {
+        "one": "{count} файл",
+        "few": "{count} файла",
+        "many": "{count} файлов",
+        "other": "{count} файла"
+      },
+      "id": {
+        "other": "{count} file"
+      }
+    },
+    "{count} saved, {failed} failed": {
+      "en": {
+        "one": "{count} saved, {failed} failed",
+        "other": "{count} saved, {failed} failed"
+      },
+      "zh-Hans": {
+        "other": "已保存 {count} 个，失败 {failed} 个"
+      },
+      "hi": {
+        "one": "{count} सहेजा गया, {failed} विफल",
+        "other": "{count} सहेजे गए, {failed} विफल"
+      },
+      "es": {
+        "one": "{count} guardado, {failed} fallidos",
+        "other": "{count} guardados, {failed} fallidos"
+      },
+      "ar": {
+        "zero": "تم حفظ {count}، وفشل {failed}",
+        "one": "تم حفظ {count}، وفشل {failed}",
+        "two": "تم حفظ {count}، وفشل {failed}",
+        "few": "تم حفظ {count}، وفشل {failed}",
+        "many": "تم حفظ {count}، وفشل {failed}",
+        "other": "تم حفظ {count}، وفشل {failed}"
+      },
+      "fr": {
+        "one": "{count} enregistré, {failed} en échec",
+        "other": "{count} enregistrés, {failed} en échec"
+      },
+      "bn": {
+        "one": "{count}টি সংরক্ষিত, {failed}টি ব্যর্থ",
+        "other": "{count}টি সংরক্ষিত, {failed}টি ব্যর্থ"
+      },
+      "pt-BR": {
+        "one": "{count} salvo, {failed} com falha",
+        "other": "{count} salvos, {failed} com falha"
+      },
+      "ru": {
+        "one": "Сохранено: {count}, с ошибкой: {failed}",
+        "few": "Сохранено: {count}, с ошибкой: {failed}",
+        "many": "Сохранено: {count}, с ошибкой: {failed}",
+        "other": "Сохранено: {count}, с ошибкой: {failed}"
+      },
+      "id": {
+        "other": "{count} tersimpan, {failed} gagal"
+      }
+    },
+    "{count} files saved": {
+      "en": {
+        "one": "{count} file saved",
+        "other": "{count} files saved"
+      },
+      "zh-Hans": {
+        "other": "已保存 {count} 个文件"
+      },
+      "hi": {
+        "one": "{count} फ़ाइल सहेजी गई",
+        "other": "{count} फ़ाइलें सहेजी गईं"
+      },
+      "es": {
+        "one": "{count} archivo guardado",
+        "other": "{count} archivos guardados"
+      },
+      "ar": {
+        "zero": "تم حفظ {count} ملف",
+        "one": "تم حفظ ملف واحد ({count})",
+        "two": "تم حفظ ملفين ({count})",
+        "few": "تم حفظ {count} ملفات",
+        "many": "تم حفظ {count} ملفًا",
+        "other": "تم حفظ {count} ملف"
+      },
+      "fr": {
+        "one": "{count} fichier enregistré",
+        "other": "{count} fichiers enregistrés"
+      },
+      "bn": {
+        "one": "{count}টি ফাইল সংরক্ষিত হয়েছে",
+        "other": "{count}টি ফাইল সংরক্ষিত হয়েছে"
+      },
+      "pt-BR": {
+        "one": "{count} arquivo salvo",
+        "other": "{count} arquivos salvos"
+      },
+      "ru": {
+        "one": "Сохранён {count} файл",
+        "few": "Сохранено {count} файла",
+        "many": "Сохранено {count} файлов",
+        "other": "Сохранено {count} файла"
+      },
+      "id": {
+        "other": "{count} file tersimpan"
+      }
+    },
+    "Media tools": {
+      "en": "Media tools",
+      "zh-Hans": "媒体工具",
+      "hi": "मीडिया टूल",
+      "es": "Herramientas multimedia",
+      "ar": "أدوات الوسائط",
+      "fr": "Outils multimédias",
+      "bn": "মিডিয়া টুল",
+      "pt-BR": "Ferramentas de mídia",
+      "ru": "Медиаинструменты",
+      "id": "Alat media"
+    }
+  }
+}

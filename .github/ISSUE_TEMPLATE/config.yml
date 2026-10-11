@@ -1,0 +1,11 @@
+blank_issues_enabled: true
+contact_links:
+  - name: Guide and documentation
+    url: https://lintel.thisissbk.com
+    about: The website has the guide for every feature. Please look there first.
+  - name: Question or idea
+    url: https://github.com/shakibbinkabir/lintel/discussions
+    about: Ask how something works or talk an idea through in Discussions.
+  - name: Report a vulnerability
+    url: https://github.com/shakibbinkabir/lintel/security/advisories/new
+    about: Please report security problems privately, not in a public issue.

@@ -1,0 +1,52 @@
+[package]
+name = "svc-capture"
+description = "Lintel shared service: Capture"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+
+[dependencies]
+# The clipboard, opened the careful way.
+svc-inject = { path = "../svc-inject" }
+# Both already in the tree's lock file (the app's icons); the QR reader is the one new crate.
+png = "0.17"
+rqrr = { version = "0.11", default-features = false }
+# List the Win32 API sets this service calls; Cargo unifies them across the workspace.
+windows = { version = "0.61", features = [
+  "Foundation",
+  "Foundation_Collections",
+  "Globalization",
+  "Graphics_Capture",
+  "Graphics_DirectX_Direct3D11",
+  "Graphics_Imaging",
+  "Media_Ocr",
+  "Security_Authorization_AppCapabilityAccess",
+  "Storage_Streams",
+  "Win32_Foundation",
+  "Win32_Graphics_Direct3D",
+  "Win32_Graphics_Direct3D11",
+  "Win32_Graphics_Dwm",
+  "Win32_Graphics_Dxgi_Common",
+  "Win32_Graphics_Gdi",
+  "Win32_Storage_Xps",
+  "Win32_System_Com",
+  "Win32_System_Threading",
+  "Win32_System_WinRT_Direct3D11",
+  "Win32_System_WinRT_Graphics_Capture",
+  "Win32_UI_HiDpi",
+  "Win32_UI_WindowsAndMessaging",
+] }
+
+[dev-dependencies]
+# The probe draws a code of its own to read back.
+qrcode = { version = "0.14", default-features = false }
+windows = { version = "0.61", features = [
+  "Win32_System_LibraryLoader",
+  "Win32_UI_Input_KeyboardAndMouse",
+] }
+
+# Every example of the workspace is linked into target/<profile>/examples/ under
+# its own name, so a name several crates use is whichever was built last.
+[[example]]
+name = "capture-probe"
+path = "examples/probe.rs"

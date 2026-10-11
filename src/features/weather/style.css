@@ -1,0 +1,22 @@
+/* Weather. Every selector starts with .f-weather- and uses the tokens of src/ui/tokens.css. */
+.f-weather-page { display: flex; flex-direction: column; gap: var(--s-3); height: 100%; justify-content: center; padding: 0 var(--s-1); }
+.f-weather-msg { margin: 0; text-align: center; font: 400 var(--t-sm) var(--font); color: var(--dim); }
+.f-weather-main { display: flex; align-items: center; gap: var(--s-4); }
+.f-weather-main > svg { color: var(--accent); flex: none; }
+.f-weather-temp { font: 600 32px/36px var(--font); font-variant-numeric: tabular-nums; color: var(--ink); }
+.f-weather-cond { display: flex; flex-direction: column; gap: 2px; min-width: 0; }
+.f-weather-city { font: 500 var(--t-md) var(--font); color: var(--ink); overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.f-weather-sub { font: 400 var(--t-sm) var(--font); color: var(--dim); font-variant-numeric: tabular-nums; }
+.f-weather-age { margin-left: auto; text-align: right; font: 400 var(--t-xs) var(--font); color: var(--dim-2); max-width: 200px; }
+.f-weather-age.bad { color: var(--warn); }
+.f-weather-hours { display: flex; justify-content: space-between; padding: var(--s-1) var(--s-2); }
+.f-weather-hour { display: flex; flex-direction: column; align-items: center; gap: var(--s-1); font: 400 var(--t-xs) var(--font); color: var(--dim); font-variant-numeric: tabular-nums; }
+.f-weather-hour svg { color: var(--ink-2); }
+.f-weather-hour b { font: 500 var(--t-sm) var(--font); color: var(--ink); }
+.f-weather-results { display: flex; flex-direction: column; gap: var(--s-1); margin-top: var(--s-2); }
+.f-weather-results .btn { justify-content: flex-start; }
+.f-weather-set { display: flex; flex-direction: column; gap: var(--s-2); }
+.f-weather-search { display: flex; gap: var(--s-2); margin-top: var(--s-2); }
+.f-weather-place { max-width: 240px; text-align: right; color: var(--ink-2); font: 500 var(--t-sm) var(--font); }
+.f-weather-unit { margin-top: var(--s-3); border-top: 1px solid var(--hairline); }
+.f-weather-search .field { flex: 1; }

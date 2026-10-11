@@ -1,0 +1,148 @@
+/* Levels and battery (docs/ARCHITECTURE.md §7): tokens only, every selector starts with .f-huds-power-. */
+
+/* ── The battery glyph: a strip mark (22 px) whose fill is the charge ──── */
+
+.f-huds-power-batt {
+  position: relative;
+  flex: none;
+  box-sizing: border-box;
+  width: 22px;
+  height: 11px;
+  margin-right: 2px; /* room for the terminal */
+  border: 1.5px solid var(--dim);
+  border-radius: 3.5px;
+  color: var(--ink);
+}
+.f-huds-power-batt.ok { color: var(--ok); }
+.f-huds-power-batt.warn { color: var(--warn); }
+.f-huds-power-batt.bad { color: var(--bad); }
+
+.f-huds-power-batt::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: -4px;
+  width: 2px;
+  height: 4px;
+  border-radius: 0 1px 1px 0;
+  background: var(--dim);
+  transform: translateY(-50%);
+}
+
+.f-huds-power-batt > i {
+  position: absolute;
+  inset: 1px;
+  border-radius: 1.5px;
+  background: currentColor;
+  /* A nearly empty battery still shows a sliver. */
+  transform: scaleX(max(var(--v, 0), .06));
+  transform-origin: left center;
+  transition: transform var(--d-base) var(--ease-out);
+}
+
+.f-huds-power-batt.large {
+  width: 40px;
+  height: 20px;
+  margin-right: var(--s-1);
+  border-width: 2px;
+  border-radius: var(--r-xs);
+}
+.f-huds-power-batt.large::after {
+  right: -6px;
+  width: 3px;
+  height: 8px;
+  border-radius: 0 2px 2px 0;
+}
+.f-huds-power-batt.large > i {
+  inset: 2px;
+  border-radius: 2.5px;
+}
+
+/* ── The Battery section ───────────────────────────────────────────────── */
+
+.f-huds-power-page {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: var(--s-4);
+  box-sizing: border-box;
+}
+
+.f-huds-power-head {
+  display: flex;
+  align-items: center;
+  gap: var(--s-3);
+  min-width: 0;
+}
+
+.f-huds-power-pct {
+  color: var(--ink);
+  font: 600 var(--t-xl) var(--font);
+  font-variant-numeric: tabular-nums;
+}
+
+.f-huds-power-status {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+}
+.f-huds-power-status > span { color: var(--ink); font: 500 var(--t-md) var(--font); }
+.f-huds-power-status > small { color: var(--dim); font: 400 var(--t-sm) var(--font); }
+
+.f-huds-power-facts {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--s-2);
+}
+.f-huds-power-facts > .card {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  min-width: 0;
+  padding-block: var(--s-2);
+}
+.f-huds-power-facts > .card > span { color: var(--dim); font: 400 var(--t-xs) var(--font); }
+.f-huds-power-facts > .card > b {
+  overflow: hidden;
+  color: var(--ink);
+  font: 500 var(--t-md) var(--font);
+  font-variant-numeric: tabular-nums;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+/* ── Settings: laid out like the page it sits in ───────────────────────── */
+
+.f-huds-power-settings {
+  display: flex;
+  flex-direction: column;
+  gap: var(--s-3);
+}
+.f-huds-power-settings > .section-title { margin: var(--s-3) 0 calc(var(--s-1) * -1); }
+
+/* ── The microphone dot: 10 px, with a ring that breathes ──────────────── */
+
+.f-huds-power-mic {
+  position: relative;
+  display: block;
+  flex: none;
+  width: 10px;
+  height: 10px;
+  border-radius: var(--r-pill);
+  background: var(--bad);
+}
+.f-huds-power-mic::after {
+  content: "";
+  position: absolute;
+  inset: -4px;
+  border: 2px solid var(--bad);
+  border-radius: var(--r-pill);
+  animation: f-huds-power-pulse 1.2s var(--ease-in-out) infinite alternate;
+}
+@keyframes f-huds-power-pulse {
+  from { opacity: .7; transform: scale(.8); }
+  to { opacity: 0; transform: scale(1.15); }
+}
+@media (prefers-reduced-motion: reduce) {
+  .f-huds-power-mic::after { animation: none; opacity: .4; }
+}

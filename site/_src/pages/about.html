@@ -1,0 +1,42 @@
+<div class="page-head wrap">
+  <h1 class="rise">Why Lintel exists.</h1>
+  <p class="lede rise">The Mac has many good notch apps. Windows has very few. So I built one for Windows, on the shoulders of three projects I admire.</p>
+</div>
+
+<section class="wrap">
+  <div class="prose">
+    <h2>The gap</h2>
+    <p>On a Mac, the notch became a place where things happen. NotchNook, The Boring Notch, Alcove, DynamicLake, MediaMate, TopNotch, NotchBar, NotchFlow, DropNotch, Coucou and Vorssaint each do it in their own way. They are good work, and they showed what a notch can do.</p>
+    <p>Windows has a handful of such apps, like DynamicWin, Notchify, Venu and Dynamic Edge. They are mostly about media and widgets. None of them brings coding agents, chat, media, system tools, capture and a voice assistant together in one place. I wanted that on my own PC, so I built it.</p>
+    <p>A lintel is the beam across the top of a door or a window. Lintel sits at the top of your Windows.</p>
+
+    <h2>What it cares about</h2>
+    <ul>
+      <li><strong>Efficiency.</strong> The core is Rust, with a light web view for the interface. Hidden and idle, the optimised build used 0.49 % of one processor core over two minutes in the audit of this release.</li>
+      <li><strong>Optimisation.</strong> A feature that is switched off loads nothing: no hooks, no timers, no threads, no windows. Event-driven Windows APIs come before polling.</li>
+      <li><strong>Privacy.</strong> No telemetry and no account. Network calls go only to what you turned on. Secrets live in Windows Credential Manager. Nothing is approved, sent or deleted without your click.</li>
+      <li><strong>Necessity.</strong> Every feature can be turned off, so you carry only what you need.</li>
+    </ul>
+    <p>And it is Windows first: made for Windows 10 and 11, not a port waiting for attention.</p>
+
+    <h2>Who made it</h2>
+    <p>Lintel is made by <a href="https://github.com/shakibbinkabir">Shakib Bin Kabir</a>. The source is at <a href="{REPO}">github.com/shakibbinkabir/lintel</a>.</p>
+    <p>It is free and open source under the <a href="{REPO}/blob/main/LICENSE">GNU General Public License, version 3 or (at your option) any later version</a>. You may use it, study it, change it and share it. If you share a changed version, you share its source under the same licence.</p>
+
+    <h2>The three projects it grew from</h2>
+    <p>Lintel is an independent project. It is not affiliated with, or endorsed by, any of the projects below. It owes them a great deal, and says so gladly.</p>
+    <div class="credits">
+      <div><h3><a href="https://github.com/Louis-CFM/coucou">Coucou</a></h3><p>By Louis Raillé, under the MIT License. Lintel started as a fork of the Windows edition of Coucou. Fixes from its open pull requests were carried over too, with thanks to their authors: w1w4, morg1z, Ohualtex, arreina, Totopo27, hieudepzai14122007-ship-it, JhoanG956 and Edurique. Lintel has its own name, character, icon and sounds.</p></div>
+      <div><h3><a href="https://github.com/vorssaint/vorssaint-utils">Vorssaint</a></h3><p>By Vorssaint, under GPL-3.0-or-later. Several of Lintel's utilities are Windows re-implementations of features of Vorssaint, a Mac app, written with reference to its source code.</p></div>
+      <div><h3><a href="https://github.com/TheBoredTeam/boring.notch">Boring Notch</a></h3><p>By TheBoredTeam, under GPL-3.0. Several of Lintel's island features are Windows re-implementations of features of Boring Notch, a Mac app, written with reference to its source code.</p></div>
+    </div>
+    <p>Lintel also stands on other open work: the Poppins typeface, LibreHardwareMonitor, sherpa-onnx and Kokoro, llama.cpp and Qwen, the Needle engine and Whistle model from Cactus Compute, Tauri, and many Rust crates. The exact credits and licences are in <a href="{REPO}/blob/main/NOTICE.md">NOTICE.md</a>. This site is set in Geist.</p>
+
+    <h2>Report a problem, or help</h2>
+    <ul>
+      <li><strong>Something is broken.</strong> Open an issue on the <a href="{REPO}/issues">issues page</a>. Say what you did, what you expected and what happened.</li>
+      <li><strong>You want to help.</strong> Everyone is welcome. The <a href="contribute.html">Contribute</a> page says how to start, and the <a href="{REPO}/blob/main/docs/ROADMAP.md">roadmap</a> lists what is left open. Questions and ideas are welcome in the <a href="{REPO}/discussions">discussions</a>.</li>
+      <li><strong>What changed.</strong> Each version is described in the <a href="{REPO}/blob/main/CHANGELOG.md">changelog</a>, and the files are on the <a href="{REPO}/releases">releases page</a>.</li>
+    </ul>
+  </div>
+</section>

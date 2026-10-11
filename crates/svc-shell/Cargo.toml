@@ -1,0 +1,46 @@
+[package]
+name = "svc-shell"
+description = "Lintel shared service: Shell"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+
+[dependencies]
+notch-core = { path = "../core" }
+# Part of windows-rs, and what `windows` 0.61 itself builds on: the WinRT list type the Share sheet takes.
+windows-collections = "0.2"
+# Also part of windows-rs and already what `windows` 0.61 is built on: the code its `implement` macro writes names this crate.
+windows-core = "0.61"
+# List the Win32 API sets this service calls; Cargo unifies them across the workspace.
+windows = { version = "0.61", features = [
+  "ApplicationModel_DataTransfer",
+  "Foundation",
+  "Foundation_Collections",
+  "Storage",
+  "Storage_Streams",
+  "Win32_Foundation",
+  "Win32_Graphics_Dwm",
+  "Win32_Graphics_Gdi",
+  "Win32_Graphics_Imaging",
+  "Win32_Security",
+  "Win32_Storage_FileSystem",
+  "Win32_System_Com",
+  "Win32_System_Com_StructuredStorage",
+  "Win32_System_DataExchange",
+  "Win32_System_LibraryLoader",
+  "Win32_System_Memory",
+  "Win32_System_Ole",
+  "Win32_System_Registry",
+  "Win32_System_Threading",
+  "Win32_UI_HiDpi",
+  "Win32_UI_Input_KeyboardAndMouse",
+  "Win32_UI_Shell",
+  "Win32_UI_Shell_Common",
+  "Win32_UI_WindowsAndMessaging",
+] }
+
+# Every example of the workspace is linked into target/<profile>/examples/ under
+# its own name, so a name several crates use is whichever was built last.
+[[example]]
+name = "shell-probe"
+path = "examples/probe.rs"

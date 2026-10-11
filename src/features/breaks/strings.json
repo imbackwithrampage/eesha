@@ -1,0 +1,832 @@
+{
+  "strings": {
+    "Breaks and screen time": {
+      "en": "Breaks and screen time",
+      "zh-Hans": "休息与屏幕使用时间",
+      "hi": "ब्रेक और स्क्रीन टाइम",
+      "es": "Descansos y tiempo de pantalla",
+      "ar": "الاستراحات ووقت الشاشة",
+      "fr": "Pauses et temps d’écran",
+      "bn": "বিরতি ও স্ক্রিন টাইম",
+      "pt-BR": "Pausas e tempo de tela",
+      "ru": "Перерывы и экранное время",
+      "id": "Istirahat dan waktu layar"
+    },
+    "Look at something far away": {
+      "en": "Look at something far away",
+      "zh-Hans": "看看远处",
+      "hi": "दूर किसी चीज़ को देखें",
+      "es": "Mira algo lejano",
+      "ar": "انظر إلى شيء بعيد",
+      "fr": "Regardez au loin",
+      "bn": "দূরের কিছুর দিকে তাকান",
+      "pt-BR": "Olhe para algo distante",
+      "ru": "Посмотрите вдаль",
+      "id": "Lihat sesuatu yang jauh"
+    },
+    "Stand up and stretch": {
+      "en": "Stand up and stretch",
+      "zh-Hans": "起身伸展一下",
+      "hi": "उठें और स्ट्रेच करें",
+      "es": "Levántate y estírate",
+      "ar": "قف وتمدّد",
+      "fr": "Levez-vous et étirez-vous",
+      "bn": "উঠে দাঁড়ান ও শরীর টানুন",
+      "pt-BR": "Levante-se e se alongue",
+      "ru": "Встаньте и разомнитесь",
+      "id": "Berdiri dan regangkan badan"
+    },
+    "Esc or click to skip": {
+      "en": "Esc or click to skip",
+      "zh-Hans": "按 Esc 或点击跳过",
+      "hi": "छोड़ने के लिए Esc दबाएँ या क्लिक करें",
+      "es": "Esc o clic para omitir",
+      "ar": "اضغط Esc أو انقر للتخطي",
+      "fr": "Échap ou clic pour passer",
+      "bn": "এড়াতে Esc চাপুন বা ক্লিক করুন",
+      "pt-BR": "Esc ou clique para pular",
+      "ru": "Esc или щелчок — пропустить",
+      "id": "Esc atau klik untuk lewati"
+    },
+    "Rest your eyes": {
+      "en": "Rest your eyes",
+      "zh-Hans": "让眼睛休息一下",
+      "hi": "अपनी आँखों को आराम दें",
+      "es": "Descansa la vista",
+      "ar": "أرح عينيك",
+      "fr": "Reposez vos yeux",
+      "bn": "চোখকে বিশ্রাম দিন",
+      "pt-BR": "Descanse os olhos",
+      "ru": "Дайте глазам отдых",
+      "id": "Istirahatkan mata Anda"
+    },
+    "Time to move": {
+      "en": "Time to move",
+      "zh-Hans": "该活动一下了",
+      "hi": "चलने-फिरने का समय",
+      "es": "Hora de moverse",
+      "ar": "حان وقت الحركة",
+      "fr": "C’est l’heure de bouger",
+      "bn": "নড়াচড়ার সময়",
+      "pt-BR": "Hora de se mexer",
+      "ru": "Пора подвигаться",
+      "id": "Waktunya bergerak"
+    },
+    "Eye breaks": {
+      "en": "Eye breaks",
+      "zh-Hans": "护眼休息",
+      "hi": "आँखों के ब्रेक",
+      "es": "Descansos visuales",
+      "ar": "استراحات العين",
+      "fr": "Pauses pour les yeux",
+      "bn": "চোখের বিরতি",
+      "pt-BR": "Pausas para os olhos",
+      "ru": "Перерывы для глаз",
+      "id": "Istirahat mata"
+    },
+    "Movement breaks": {
+      "en": "Movement breaks",
+      "zh-Hans": "活动休息",
+      "hi": "चलने-फिरने के ब्रेक",
+      "es": "Descansos de movimiento",
+      "ar": "استراحات الحركة",
+      "fr": "Pauses mouvement",
+      "bn": "নড়াচড়ার বিরতি",
+      "pt-BR": "Pausas para se movimentar",
+      "ru": "Перерывы на движение",
+      "id": "Istirahat bergerak"
+    },
+    "Development": {
+      "en": "Development",
+      "zh-Hans": "开发",
+      "hi": "डेवलपमेंट",
+      "es": "Desarrollo",
+      "ar": "التطوير",
+      "fr": "Développement",
+      "bn": "ডেভেলপমেন্ট",
+      "pt-BR": "Desenvolvimento",
+      "ru": "Разработка",
+      "id": "Pengembangan"
+    },
+    "Communication": {
+      "en": "Communication",
+      "zh-Hans": "通讯",
+      "hi": "संचार",
+      "es": "Comunicación",
+      "ar": "التواصل",
+      "fr": "Communication",
+      "bn": "যোগাযোগ",
+      "pt-BR": "Comunicação",
+      "ru": "Общение",
+      "id": "Komunikasi"
+    },
+    "Browsing": {
+      "en": "Browsing",
+      "zh-Hans": "浏览",
+      "hi": "ब्राउज़िंग",
+      "es": "Navegación",
+      "ar": "التصفح",
+      "fr": "Navigation web",
+      "bn": "ব্রাউজিং",
+      "pt-BR": "Navegação",
+      "ru": "Браузеры",
+      "id": "Penelusuran"
+    },
+    "Entertainment": {
+      "en": "Entertainment",
+      "zh-Hans": "娱乐",
+      "hi": "मनोरंजन",
+      "es": "Entretenimiento",
+      "ar": "الترفيه",
+      "fr": "Divertissement",
+      "bn": "বিনোদন",
+      "pt-BR": "Entretenimento",
+      "ru": "Развлечения",
+      "id": "Hiburan"
+    },
+    "Productivity": {
+      "en": "Productivity",
+      "zh-Hans": "效率",
+      "hi": "उत्पादकता",
+      "es": "Productividad",
+      "ar": "الإنتاجية",
+      "fr": "Productivité",
+      "bn": "উৎপাদনশীলতা",
+      "pt-BR": "Produtividade",
+      "ru": "Продуктивность",
+      "id": "Produktivitas"
+    },
+    "Design": {
+      "en": "Design",
+      "zh-Hans": "设计",
+      "hi": "डिज़ाइन",
+      "es": "Diseño",
+      "ar": "التصميم",
+      "fr": "Design",
+      "bn": "ডিজাইন",
+      "pt-BR": "Design",
+      "ru": "Дизайн",
+      "id": "Desain"
+    },
+    "Utilities": {
+      "en": "Utilities",
+      "zh-Hans": "工具",
+      "hi": "उपयोगिताएँ",
+      "es": "Utilidades",
+      "ar": "الأدوات المساعدة",
+      "fr": "Utilitaires",
+      "bn": "ইউটিলিটি",
+      "pt-BR": "Utilitários",
+      "ru": "Утилиты",
+      "id": "Utilitas"
+    },
+    "Other": {
+      "en": "Other",
+      "zh-Hans": "其他",
+      "hi": "अन्य",
+      "es": "Otros",
+      "ar": "أخرى",
+      "fr": "Autres",
+      "bn": "অন্যান্য",
+      "pt-BR": "Outros",
+      "ru": "Другое",
+      "id": "Lainnya"
+    },
+    "{count} min": {
+      "en": "{count} min",
+      "zh-Hans": "{count} 分钟",
+      "hi": "{count} मिनट",
+      "es": "{count} min",
+      "ar": "{count} د",
+      "fr": "{count} min",
+      "bn": "{count} মিনিট",
+      "pt-BR": "{count} min",
+      "ru": "{count} мин",
+      "id": "{count} mnt"
+    },
+    "{count} s": {
+      "en": "{count} s",
+      "zh-Hans": "{count} 秒",
+      "hi": "{count} से.",
+      "es": "{count} s",
+      "ar": "{count} ث",
+      "fr": "{count} s",
+      "bn": "{count} সে.",
+      "pt-BR": "{count} s",
+      "ru": "{count} с",
+      "id": "{count} dtk"
+    },
+    "{h} h {m} min": {
+      "en": "{h} h {m} min",
+      "zh-Hans": "{h} 小时 {m} 分钟",
+      "hi": "{h} घं. {m} मि.",
+      "es": "{h} h {m} min",
+      "ar": "{h} س {m} د",
+      "fr": "{h} h {m} min",
+      "bn": "{h} ঘ. {m} মি.",
+      "pt-BR": "{h} h {m} min",
+      "ru": "{h} ч {m} мин",
+      "id": "{h} j {m} mnt"
+    },
+    "{count}%": {
+      "en": "{count}%",
+      "zh-Hans": "{count}%",
+      "hi": "{count}%",
+      "es": "{count} %",
+      "ar": "{count}%",
+      "fr": "{count} %",
+      "bn": "{count}%",
+      "pt-BR": "{count}%",
+      "ru": "{count} %",
+      "id": "{count}%"
+    },
+    "Breaks": {
+      "en": "Breaks",
+      "zh-Hans": "休息",
+      "hi": "ब्रेक",
+      "es": "Descansos",
+      "ar": "الاستراحات",
+      "fr": "Pauses",
+      "bn": "বিরতি",
+      "pt-BR": "Pausas",
+      "ru": "Перерывы",
+      "id": "Istirahat"
+    },
+    "Skip": {
+      "en": "Skip",
+      "zh-Hans": "跳过",
+      "hi": "छोड़ें",
+      "es": "Omitir",
+      "ar": "تخطي",
+      "fr": "Passer",
+      "bn": "এড়িয়ে যান",
+      "pt-BR": "Pular",
+      "ru": "Пропустить",
+      "id": "Lewati"
+    },
+    "Snooze": {
+      "en": "Snooze",
+      "zh-Hans": "稍后提醒",
+      "hi": "स्नूज़ करें",
+      "es": "Posponer",
+      "ar": "غفوة",
+      "fr": "Reporter",
+      "bn": "স্নুজ",
+      "pt-BR": "Soneca",
+      "ru": "Отложить",
+      "id": "Tunda"
+    },
+    "Screen time": {
+      "en": "Screen time",
+      "zh-Hans": "屏幕使用时间",
+      "hi": "स्क्रीन टाइम",
+      "es": "Tiempo de pantalla",
+      "ar": "وقت الشاشة",
+      "fr": "Temps d’écran",
+      "bn": "স্ক্রিন টাইম",
+      "pt-BR": "Tempo de tela",
+      "ru": "Экранное время",
+      "id": "Waktu layar"
+    },
+    "The screens will fade": {
+      "en": "The screens will fade",
+      "zh-Hans": "屏幕将渐暗",
+      "hi": "स्क्रीन धुँधली हो जाएँगी",
+      "es": "Las pantallas se atenuarán",
+      "ar": "ستتلاشى الشاشات",
+      "fr": "Les écrans vont s’éteindre progressivement",
+      "bn": "স্ক্রিন ধীরে ধীরে অন্ধকার হবে",
+      "pt-BR": "As telas vão escurecer",
+      "ru": "Экраны погаснут",
+      "id": "Layar akan memudar"
+    },
+    "Off": {
+      "en": "Off",
+      "zh-Hans": "关",
+      "hi": "बंद",
+      "es": "Desactivado",
+      "ar": "إيقاف",
+      "fr": "Désactivé",
+      "bn": "বন্ধ",
+      "pt-BR": "Desativado",
+      "ru": "Выкл.",
+      "id": "Mati"
+    },
+    "Waiting for a call or a full-screen app to end": {
+      "en": "Waiting for a call or a full-screen app to end",
+      "zh-Hans": "正在等待通话或全屏应用结束",
+      "hi": "कॉल या फ़ुल-स्क्रीन ऐप के खत्म होने का इंतज़ार है",
+      "es": "Esperando a que termine una llamada o una app a pantalla completa",
+      "ar": "في انتظار انتهاء مكالمة أو تطبيق بملء الشاشة",
+      "fr": "En attente de la fin d’un appel ou d’une application plein écran",
+      "bn": "কল বা ফুল-স্ক্রিন অ্যাপ শেষ হওয়ার অপেক্ষা",
+      "pt-BR": "Aguardando o fim de uma chamada ou de um app em tela cheia",
+      "ru": "Ожидание завершения звонка или полноэкранного приложения",
+      "id": "Menunggu panggilan atau aplikasi layar penuh selesai"
+    },
+    "Next after {count} min at the PC": {
+      "en": "Next after {count} min at the PC",
+      "zh-Hans": "在电脑前再用 {count} 分钟后提醒下一次",
+      "hi": "पीसी पर {count} मिनट बाद अगला",
+      "es": "Siguiente tras {count} min en el PC",
+      "ar": "التالي بعد {count} د أمام الكمبيوتر",
+      "fr": "Prochaine après {count} min sur le PC",
+      "bn": "পিসিতে {count} মিনিট পর পরেরটি",
+      "pt-BR": "Próxima após {count} min no PC",
+      "ru": "Следующий через {count} мин за ПК",
+      "id": "Berikutnya setelah {count} mnt di PC"
+    },
+    "Take one now": {
+      "en": "Take one now",
+      "zh-Hans": "现在就休息",
+      "hi": "अभी ब्रेक लें",
+      "es": "Tomar uno ahora",
+      "ar": "خذ استراحة الآن",
+      "fr": "En prendre une maintenant",
+      "bn": "এখনই একটি নিন",
+      "pt-BR": "Fazer uma agora",
+      "ru": "Сделать перерыв сейчас",
+      "id": "Istirahat sekarang"
+    },
+    "Clear everything?": {
+      "en": "Clear everything?",
+      "zh-Hans": "全部清除？",
+      "hi": "सब कुछ साफ़ करें?",
+      "es": "¿Borrar todo?",
+      "ar": "مسح كل شيء؟",
+      "fr": "Tout effacer ?",
+      "bn": "সব মুছবেন?",
+      "pt-BR": "Limpar tudo?",
+      "ru": "Очистить всё?",
+      "id": "Hapus semuanya?"
+    },
+    "Clear": {
+      "en": "Clear",
+      "zh-Hans": "清除",
+      "hi": "साफ़ करें",
+      "es": "Borrar",
+      "ar": "مسح",
+      "fr": "Effacer",
+      "bn": "মুছুন",
+      "pt-BR": "Limpar",
+      "ru": "Очистить",
+      "id": "Hapus"
+    },
+    "Screen time is off": {
+      "en": "Screen time is off",
+      "zh-Hans": "屏幕使用时间已关闭",
+      "hi": "स्क्रीन टाइम बंद है",
+      "es": "El tiempo de pantalla está desactivado",
+      "ar": "وقت الشاشة متوقف",
+      "fr": "Le temps d’écran est désactivé",
+      "bn": "স্ক্রিন টাইম বন্ধ আছে",
+      "pt-BR": "O tempo de tela está desativado",
+      "ru": "Экранное время выключено",
+      "id": "Waktu layar mati"
+    },
+    "It counts the time each app is in front: app names and durations only, kept on this PC, never window titles.": {
+      "en": "It counts the time each app is in front: app names and durations only, kept on this PC, never window titles.",
+      "zh-Hans": "统计每个应用位于前台的时间：仅记录应用名称和时长，保存在此电脑上，绝不记录窗口标题。",
+      "hi": "यह गिनता है कि हर ऐप कितनी देर सामने रहा: केवल ऐप के नाम और अवधि, इसी पीसी पर रखे जाते हैं, विंडो के शीर्षक कभी नहीं।",
+      "es": "Cuenta el tiempo que cada app está en primer plano: solo nombres de apps y duraciones, guardados en este PC, nunca títulos de ventana.",
+      "ar": "يحسب الوقت الذي يكون فيه كل تطبيق في المقدمة: أسماء التطبيقات والمدد فقط، تُحفظ على هذا الكمبيوتر، ولا تُسجَّل عناوين النوافذ أبدًا.",
+      "fr": "Il compte le temps pendant lequel chaque application est au premier plan : noms d’applications et durées uniquement, conservés sur ce PC, jamais les titres de fenêtres.",
+      "bn": "এটি প্রতিটি অ্যাপ কতক্ষণ সামনে ছিল তা গোনে: শুধু অ্যাপের নাম ও সময়কাল, এই পিসিতেই থাকে, উইন্ডোর শিরোনাম কখনও নয়।",
+      "pt-BR": "Conta o tempo em que cada app fica na frente: apenas nomes de apps e durações, guardados neste PC, nunca títulos de janelas.",
+      "ru": "Считает, сколько времени каждое приложение находится на переднем плане: только названия приложений и длительность, хранятся на этом ПК, заголовки окон — никогда.",
+      "id": "Menghitung berapa lama tiap aplikasi ada di depan: hanya nama aplikasi dan durasi, disimpan di PC ini, tidak pernah judul jendela."
+    },
+    "Turn on": {
+      "en": "Turn on",
+      "zh-Hans": "开启",
+      "hi": "चालू करें",
+      "es": "Activar",
+      "ar": "تشغيل",
+      "fr": "Activer",
+      "bn": "চালু করুন",
+      "pt-BR": "Ativar",
+      "ru": "Включить",
+      "id": "Aktifkan"
+    },
+    "today": {
+      "en": "today",
+      "zh-Hans": "今天",
+      "hi": "आज",
+      "es": "hoy",
+      "ar": "اليوم",
+      "fr": "aujourd’hui",
+      "bn": "আজ",
+      "pt-BR": "hoje",
+      "ru": "сегодня",
+      "id": "hari ini"
+    },
+    "Apps": {
+      "en": "Apps",
+      "zh-Hans": "应用",
+      "hi": "ऐप्स",
+      "es": "Apps",
+      "ar": "التطبيقات",
+      "fr": "Applications",
+      "bn": "অ্যাপ",
+      "pt-BR": "Apps",
+      "ru": "Приложения",
+      "id": "Aplikasi"
+    },
+    "Nothing counted yet today.": {
+      "en": "Nothing counted yet today.",
+      "zh-Hans": "今天还没有统计到任何内容。",
+      "hi": "आज अभी तक कुछ नहीं गिना गया।",
+      "es": "Hoy todavía no se ha contado nada.",
+      "ar": "لم يُحتسب شيء اليوم بعد.",
+      "fr": "Rien n’a encore été compté aujourd’hui.",
+      "bn": "আজ এখনও কিছু গণনা হয়নি।",
+      "pt-BR": "Nada contado ainda hoje.",
+      "ru": "Сегодня пока ничего не посчитано.",
+      "id": "Belum ada yang dihitung hari ini."
+    },
+    "Last 7 days": {
+      "en": "Last 7 days",
+      "zh-Hans": "最近 7 天",
+      "hi": "पिछले 7 दिन",
+      "es": "Últimos 7 días",
+      "ar": "آخر 7 أيام",
+      "fr": "7 derniers jours",
+      "bn": "গত ৭ দিন",
+      "pt-BR": "Últimos 7 dias",
+      "ru": "Последние 7 дней",
+      "id": "7 hari terakhir"
+    },
+    "The 20-20-20 habit: every 20 minutes, look at something far away for 20 seconds.": {
+      "en": "The 20-20-20 habit: every 20 minutes, look at something far away for 20 seconds.",
+      "zh-Hans": "20-20-20 法则：每 20 分钟，看远处 20 秒。",
+      "hi": "20-20-20 की आदत: हर 20 मिनट में 20 सेकंड के लिए दूर किसी चीज़ को देखें।",
+      "es": "El hábito 20-20-20: cada 20 minutos, mira algo lejano durante 20 segundos.",
+      "ar": "عادة 20-20-20: كل 20 دقيقة، انظر إلى شيء بعيد لمدة 20 ثانية.",
+      "fr": "L’habitude 20-20-20 : toutes les 20 minutes, regardez au loin pendant 20 secondes.",
+      "bn": "২০-২০-২০ অভ্যাস: প্রতি ২০ মিনিটে ২০ সেকেন্ড দূরের কিছুর দিকে তাকান।",
+      "pt-BR": "O hábito 20-20-20: a cada 20 minutos, olhe para algo distante por 20 segundos.",
+      "ru": "Правило 20-20-20: каждые 20 минут смотрите вдаль 20 секунд.",
+      "id": "Kebiasaan 20-20-20: setiap 20 menit, lihat sesuatu yang jauh selama 20 detik."
+    },
+    "Break every": {
+      "en": "Break every"
+    },
+    "Only time at the PC counts. Being away for as long as a break counts as having taken it.": {
+      "en": "Only time at the PC counts. Being away for as long as a break counts as having taken it."
+    },
+    "Break lasts": {
+      "en": "Break lasts"
+    },
+    "A reminder to stand up, on its own interval.": {
+      "en": "A reminder to stand up, on its own interval.",
+      "zh-Hans": "提醒你起身活动，使用独立的间隔。",
+      "hi": "उठने की याद दिलाने वाला रिमाइंडर, अपने अलग अंतराल पर।",
+      "es": "Un recordatorio para levantarte, con su propio intervalo.",
+      "ar": "تذكير بالوقوف، بفاصل زمني خاص به.",
+      "fr": "Un rappel pour se lever, avec son propre intervalle.",
+      "bn": "উঠে দাঁড়ানোর একটি রিমাইন্ডার, নিজস্ব ব্যবধানে।",
+      "pt-BR": "Um lembrete para se levantar, com seu próprio intervalo.",
+      "ru": "Напоминание встать с собственным интервалом.",
+      "id": "Pengingat untuk berdiri, dengan interval tersendiri."
+    },
+    "During a break": {
+      "en": "During a break",
+      "zh-Hans": "休息期间",
+      "hi": "ब्रेक के दौरान",
+      "es": "Durante un descanso",
+      "ar": "أثناء الاستراحة",
+      "fr": "Pendant une pause",
+      "bn": "বিরতির সময়",
+      "pt-BR": "Durante uma pausa",
+      "ru": "Во время перерыва",
+      "id": "Saat istirahat"
+    },
+    "Fade the screens": {
+      "en": "Fade the screens",
+      "zh-Hans": "屏幕渐暗",
+      "hi": "स्क्रीन धुँधली करें",
+      "es": "Atenuar las pantallas",
+      "ar": "تخفيت الشاشات",
+      "fr": "Atténuer les écrans",
+      "bn": "স্ক্রিন অন্ধকার করুন",
+      "pt-BR": "Escurecer as telas",
+      "ru": "Затемнять экраны",
+      "id": "Redupkan layar"
+    },
+    "Every screen fades to black with the countdown, after a 10-second notice on the island. Esc or a click ends it at once.": {
+      "en": "Every screen fades to black with the countdown, after a 10-second notice on the island. Esc or a click ends it at once.",
+      "zh-Hans": "在灵动岛提示 10 秒后，所有屏幕随倒计时渐变为黑色。按 Esc 或点击可立即结束。",
+      "hi": "आइलैंड पर 10 सेकंड की सूचना के बाद हर स्क्रीन काउंटडाउन के साथ काली हो जाती है। Esc या क्लिक से यह तुरंत खत्म हो जाता है।",
+      "es": "Tras un aviso de 10 segundos en la isla, cada pantalla se funde a negro con la cuenta atrás. Esc o un clic lo termina al instante.",
+      "ar": "بعد إشعار لمدة 10 ثوانٍ في الجزيرة، تتحول كل شاشة تدريجيًا إلى الأسود مع العدّ التنازلي. ينهيه Esc أو النقر فورًا.",
+      "fr": "Après un préavis de 10 secondes sur l’îlot, chaque écran passe progressivement au noir avec le compte à rebours. Échap ou un clic y met fin aussitôt.",
+      "bn": "আইল্যান্ডে ১০ সেকেন্ডের নোটিসের পর প্রতিটি স্ক্রিন কাউন্টডাউনসহ কালো হয়ে যায়। Esc বা ক্লিকে তা তখনই শেষ হয়।",
+      "pt-BR": "Após um aviso de 10 segundos na ilha, cada tela escurece até ficar preta com a contagem regressiva. Esc ou um clique encerra na hora.",
+      "ru": "После 10-секундного уведомления на острове каждый экран гаснет до чёрного с обратным отсчётом. Esc или щелчок прекращают это сразу.",
+      "id": "Setelah pemberitahuan 10 detik di island, setiap layar memudar menjadi hitam dengan hitung mundur. Esc atau klik mengakhirinya seketika."
+    },
+    "Sound": {
+      "en": "Sound",
+      "zh-Hans": "声音",
+      "hi": "ध्वनि",
+      "es": "Sonido",
+      "ar": "الصوت",
+      "fr": "Son",
+      "bn": "শব্দ",
+      "pt-BR": "Som",
+      "ru": "Звук",
+      "id": "Suara"
+    },
+    "A soft tone when a break starts and when it ends.": {
+      "en": "A soft tone when a break starts and when it ends.",
+      "zh-Hans": "休息开始和结束时播放轻柔的提示音。",
+      "hi": "ब्रेक शुरू और खत्म होने पर हल्की ध्वनि।",
+      "es": "Un tono suave al empezar y al terminar un descanso.",
+      "ar": "نغمة هادئة عند بدء الاستراحة وعند انتهائها.",
+      "fr": "Un son doux au début et à la fin d’une pause.",
+      "bn": "বিরতি শুরু ও শেষ হলে একটি মৃদু শব্দ।",
+      "pt-BR": "Um som suave quando uma pausa começa e quando termina.",
+      "ru": "Мягкий сигнал в начале и конце перерыва.",
+      "id": "Nada lembut saat istirahat dimulai dan berakhir."
+    },
+    "Snooze for": {
+      "en": "Snooze for",
+      "zh-Hans": "稍后提醒时长",
+      "hi": "स्नूज़ की अवधि",
+      "es": "Posponer durante",
+      "ar": "مدة الغفوة",
+      "fr": "Reporter de",
+      "bn": "স্নুজের সময়",
+      "pt-BR": "Soneca de",
+      "ru": "Отложить на",
+      "id": "Tunda selama"
+    },
+    "Wait while on a call": {
+      "en": "Wait while on a call",
+      "zh-Hans": "通话时等待",
+      "hi": "कॉल के दौरान रुकें",
+      "es": "Esperar durante una llamada",
+      "ar": "الانتظار أثناء مكالمة",
+      "fr": "Attendre pendant un appel",
+      "bn": "কলের সময় অপেক্ষা করুন",
+      "pt-BR": "Esperar durante uma chamada",
+      "ru": "Ждать во время звонка",
+      "id": "Tunggu saat panggilan"
+    },
+    "A break waits while an app has the microphone open.": {
+      "en": "A break waits while an app has the microphone open.",
+      "zh-Hans": "当应用正在使用麦克风时，休息会等待。",
+      "hi": "जब किसी ऐप ने माइक्रोफ़ोन खोल रखा हो तब ब्रेक रुका रहता है।",
+      "es": "Un descanso espera mientras una app tiene el micrófono abierto.",
+      "ar": "تنتظر الاستراحة طالما أن تطبيقًا يستخدم الميكروفون.",
+      "fr": "Une pause attend tant qu’une application utilise le microphone.",
+      "bn": "কোনো অ্যাপ মাইক্রোফোন খোলা রাখলে বিরতি অপেক্ষা করে।",
+      "pt-BR": "Uma pausa espera enquanto um app estiver com o microfone aberto.",
+      "ru": "Перерыв ждёт, пока приложение использует микрофон.",
+      "id": "Istirahat menunggu selama ada aplikasi yang membuka mikrofon."
+    },
+    "Wait while something is full screen": {
+      "en": "Wait while something is full screen",
+      "zh-Hans": "全屏时等待",
+      "hi": "फ़ुल-स्क्रीन के दौरान रुकें",
+      "es": "Esperar mientras algo esté a pantalla completa",
+      "ar": "الانتظار أثناء وجود شيء بملء الشاشة",
+      "fr": "Attendre pendant qu’une application est en plein écran",
+      "bn": "কিছু ফুল-স্ক্রিনে থাকলে অপেক্ষা করুন",
+      "pt-BR": "Esperar enquanto algo estiver em tela cheia",
+      "ru": "Ждать, пока что-то открыто на весь экран",
+      "id": "Tunggu saat ada yang layar penuh"
+    },
+    "A film, a game or a presentation is not interrupted.": {
+      "en": "A film, a game or a presentation is not interrupted.",
+      "zh-Hans": "不会打断电影、游戏或演示文稿。",
+      "hi": "फ़िल्म, गेम या प्रेज़ेंटेशन में रुकावट नहीं डाली जाती।",
+      "es": "No se interrumpe una película, un juego ni una presentación.",
+      "ar": "لا تُقاطَع مشاهدة فيلم أو لعبة أو عرض تقديمي.",
+      "fr": "Un film, un jeu ou une présentation n’est pas interrompu.",
+      "bn": "সিনেমা, গেম বা প্রেজেন্টেশনে বাধা দেওয়া হয় না।",
+      "pt-BR": "Um filme, um jogo ou uma apresentação não é interrompido.",
+      "ru": "Фильм, игра или презентация не прерываются.",
+      "id": "Film, game, atau presentasi tidak diganggu."
+    },
+    "Try it": {
+      "en": "Try it",
+      "zh-Hans": "试一试",
+      "hi": "आज़माकर देखें",
+      "es": "Probar",
+      "ar": "جرّبه",
+      "fr": "Essayer",
+      "bn": "চেষ্টা করে দেখুন",
+      "pt-BR": "Experimentar",
+      "ru": "Попробовать",
+      "id": "Coba"
+    },
+    "Eye break": {
+      "en": "Eye break",
+      "zh-Hans": "护眼休息",
+      "hi": "आँखों का ब्रेक",
+      "es": "Descanso visual",
+      "ar": "استراحة للعين",
+      "fr": "Pause pour les yeux",
+      "bn": "চোখের বিরতি",
+      "pt-BR": "Pausa para os olhos",
+      "ru": "Перерыв для глаз",
+      "id": "Istirahat mata"
+    },
+    "Movement break": {
+      "en": "Movement break",
+      "zh-Hans": "活动休息",
+      "hi": "चलने-फिरने का ब्रेक",
+      "es": "Descanso de movimiento",
+      "ar": "استراحة حركة",
+      "fr": "Pause mouvement",
+      "bn": "নড়াচড়ার বিরতি",
+      "pt-BR": "Pausa para se movimentar",
+      "ru": "Перерыв на движение",
+      "id": "Istirahat bergerak"
+    },
+    "Counts the time each app is in front and shows it on the island. App names and durations only, kept on this PC, never window titles.": {
+      "en": "Counts the time each app is in front and shows it on the island. App names and durations only, kept on this PC, never window titles.",
+      "zh-Hans": "统计每个应用位于前台的时间并显示在灵动岛上。仅记录应用名称和时长，保存在此电脑上，绝不记录窗口标题。",
+      "hi": "हर ऐप कितनी देर सामने रहा यह गिनकर आइलैंड पर दिखाता है। केवल ऐप के नाम और अवधि, इसी पीसी पर रखे जाते हैं, विंडो के शीर्षक कभी नहीं।",
+      "es": "Cuenta el tiempo que cada app está en primer plano y lo muestra en la isla. Solo nombres de apps y duraciones, guardados en este PC, nunca títulos de ventana.",
+      "ar": "يحسب الوقت الذي يكون فيه كل تطبيق في المقدمة ويعرضه في الجزيرة. أسماء التطبيقات والمدد فقط، تُحفظ على هذا الكمبيوتر، ولا تُسجَّل عناوين النوافذ أبدًا.",
+      "fr": "Compte le temps pendant lequel chaque application est au premier plan et l’affiche sur l’îlot. Noms d’applications et durées uniquement, conservés sur ce PC, jamais les titres de fenêtres.",
+      "bn": "প্রতিটি অ্যাপ কতক্ষণ সামনে ছিল তা গুনে আইল্যান্ডে দেখায়। শুধু অ্যাপের নাম ও সময়কাল, এই পিসিতেই থাকে, উইন্ডোর শিরোনাম কখনও নয়।",
+      "pt-BR": "Conta o tempo em que cada app fica na frente e mostra na ilha. Apenas nomes de apps e durações, guardados neste PC, nunca títulos de janelas.",
+      "ru": "Считает, сколько времени каждое приложение находится на переднем плане, и показывает это на острове. Только названия приложений и длительность, хранятся на этом ПК, заголовки окон — никогда.",
+      "id": "Menghitung berapa lama tiap aplikasi ada di depan dan menampilkannya di island. Hanya nama aplikasi dan durasi, disimpan di PC ini, tidak pernah judul jendela."
+    },
+    "History": {
+      "en": "History",
+      "zh-Hans": "历史记录",
+      "hi": "इतिहास",
+      "es": "Historial",
+      "ar": "السجل",
+      "fr": "Historique",
+      "bn": "ইতিহাস",
+      "pt-BR": "Histórico",
+      "ru": "История",
+      "id": "Riwayat"
+    },
+    "Today and the six days before it.": {
+      "en": "Today and the six days before it.",
+      "zh-Hans": "今天及之前的六天。",
+      "hi": "आज और उससे पहले के छह दिन।",
+      "es": "Hoy y los seis días anteriores.",
+      "ar": "اليوم والأيام الستة السابقة له.",
+      "fr": "Aujourd’hui et les six jours précédents.",
+      "bn": "আজ এবং তার আগের ছয় দিন।",
+      "pt-BR": "Hoje e os seis dias anteriores.",
+      "ru": "Сегодня и шесть предыдущих дней.",
+      "id": "Hari ini dan enam hari sebelumnya."
+    },
+    "Break in {count} seconds": {
+      "en": {
+        "one": "Break in {count} second",
+        "other": "Break in {count} seconds"
+      },
+      "zh-Hans": {
+        "other": "{count} 秒后休息"
+      },
+      "hi": {
+        "one": "{count} सेकंड में ब्रेक",
+        "other": "{count} सेकंड में ब्रेक"
+      },
+      "es": {
+        "one": "Descanso en {count} segundo",
+        "many": "Descanso en {count} segundos",
+        "other": "Descanso en {count} segundos"
+      },
+      "ar": {
+        "zero": "استراحة بعد {count} ثانية",
+        "one": "استراحة بعد {count} ثانية",
+        "two": "استراحة بعد {count} ثانيتين",
+        "few": "استراحة بعد {count} ثوانٍ",
+        "many": "استراحة بعد {count} ثانية",
+        "other": "استراحة بعد {count} ثانية"
+      },
+      "fr": {
+        "one": "Pause dans {count} seconde",
+        "many": "Pause dans {count} secondes",
+        "other": "Pause dans {count} secondes"
+      },
+      "bn": {
+        "one": "{count} সেকেন্ড পরে বিরতি",
+        "other": "{count} সেকেন্ড পরে বিরতি"
+      },
+      "pt-BR": {
+        "one": "Pausa em {count} segundo",
+        "many": "Pausa em {count} segundos",
+        "other": "Pausa em {count} segundos"
+      },
+      "ru": {
+        "one": "Перерыв через {count} секунду",
+        "few": "Перерыв через {count} секунды",
+        "many": "Перерыв через {count} секунд",
+        "other": "Перерыв через {count} секунды"
+      },
+      "id": {
+        "other": "Istirahat dalam {count} detik"
+      }
+    },
+    "{count} other apps": {
+      "en": {
+        "one": "{count} other app",
+        "other": "{count} other apps"
+      },
+      "zh-Hans": {
+        "other": "另外 {count} 个应用"
+      },
+      "hi": {
+        "one": "{count} अन्य ऐप",
+        "other": "{count} अन्य ऐप"
+      },
+      "es": {
+        "one": "{count} app más",
+        "many": "{count} apps más",
+        "other": "{count} apps más"
+      },
+      "ar": {
+        "zero": "{count} تطبيق آخر",
+        "one": "{count} تطبيق آخر",
+        "two": "{count} تطبيقان آخران",
+        "few": "{count} تطبيقات أخرى",
+        "many": "{count} تطبيقًا آخر",
+        "other": "{count} تطبيق آخر"
+      },
+      "fr": {
+        "one": "{count} autre application",
+        "many": "{count} autres applications",
+        "other": "{count} autres applications"
+      },
+      "bn": {
+        "one": "আরও {count}টি অ্যাপ",
+        "other": "আরও {count}টি অ্যাপ"
+      },
+      "pt-BR": {
+        "one": "{count} outro app",
+        "many": "{count} outros apps",
+        "other": "{count} outros apps"
+      },
+      "ru": {
+        "one": "Ещё {count} приложение",
+        "few": "Ещё {count} приложения",
+        "many": "Ещё {count} приложений",
+        "other": "Ещё {count} приложения"
+      },
+      "id": {
+        "other": "{count} aplikasi lain"
+      }
+    },
+    "{count} switches": {
+      "en": {
+        "one": "{count} switch",
+        "other": "{count} switches"
+      },
+      "zh-Hans": {
+        "other": "切换 {count} 次"
+      },
+      "hi": {
+        "one": "{count} बार स्विच",
+        "other": "{count} बार स्विच"
+      },
+      "es": {
+        "one": "{count} cambio",
+        "many": "{count} cambios",
+        "other": "{count} cambios"
+      },
+      "ar": {
+        "zero": "{count} تبديل",
+        "one": "{count} تبديل",
+        "two": "{count} تبديلان",
+        "few": "{count} تبديلات",
+        "many": "{count} تبديلًا",
+        "other": "{count} تبديل"
+      },
+      "fr": {
+        "one": "{count} changement",
+        "many": "{count} changements",
+        "other": "{count} changements"
+      },
+      "bn": {
+        "one": "{count} বার পরিবর্তন",
+        "other": "{count} বার পরিবর্তন"
+      },
+      "pt-BR": {
+        "one": "{count} alternância",
+        "many": "{count} alternâncias",
+        "other": "{count} alternâncias"
+      },
+      "ru": {
+        "one": "{count} переключение",
+        "few": "{count} переключения",
+        "many": "{count} переключений",
+        "other": "{count} переключения"
+      },
+      "id": {
+        "other": "{count} kali beralih"
+      }
+    }
+  }
+}

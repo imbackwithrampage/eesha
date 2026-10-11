@@ -1,0 +1,1930 @@
+{
+  "strings": {
+    "{n} W": {
+      "en": "{n} W",
+      "zh-Hans": "{n} W",
+      "hi": "{n} W",
+      "es": "{n} W",
+      "ar": "{n} W",
+      "fr": "{n} W",
+      "bn": "{n} W",
+      "pt-BR": "{n} W",
+      "ru": "{n} W",
+      "id": "{n} W"
+    },
+    "{n} Wh": {
+      "en": "{n} Wh",
+      "zh-Hans": "{n} Wh",
+      "hi": "{n} Wh",
+      "es": "{n} Wh",
+      "ar": "{n} Wh",
+      "fr": "{n} Wh",
+      "bn": "{n} Wh",
+      "pt-BR": "{n} Wh",
+      "ru": "{n} Wh",
+      "id": "{n} Wh"
+    },
+    "{used} of {total}": {
+      "en": "{used} of {total}",
+      "zh-Hans": "{used} / {total}",
+      "hi": "{total} में से {used}",
+      "es": "{used} de {total}",
+      "ar": "{used} من {total}",
+      "fr": "{used} sur {total}",
+      "bn": "{total}-এর মধ্যে {used}",
+      "pt-BR": "{used} de {total}",
+      "ru": "{used} из {total}",
+      "id": "{used} dari {total}"
+    },
+    "CPU": {
+      "en": "CPU",
+      "zh-Hans": "CPU",
+      "hi": "CPU",
+      "es": "CPU",
+      "ar": "CPU",
+      "fr": "CPU",
+      "bn": "CPU",
+      "pt-BR": "CPU",
+      "ru": "CPU",
+      "id": "CPU"
+    },
+    "GPU": {
+      "en": "GPU",
+      "zh-Hans": "GPU",
+      "hi": "GPU",
+      "es": "GPU",
+      "ar": "GPU",
+      "fr": "GPU",
+      "bn": "GPU",
+      "pt-BR": "GPU",
+      "ru": "GPU",
+      "id": "GPU"
+    },
+    "Memory": {
+      "en": "Memory",
+      "zh-Hans": "内存",
+      "hi": "मेमोरी",
+      "es": "Memoria",
+      "ar": "الذاكرة",
+      "fr": "Mémoire",
+      "bn": "মেমরি",
+      "pt-BR": "Memória",
+      "ru": "Память",
+      "id": "Memori"
+    },
+    "Network": {
+      "en": "Network",
+      "zh-Hans": "网络",
+      "hi": "नेटवर्क",
+      "es": "Red",
+      "ar": "الشبكة",
+      "fr": "Réseau",
+      "bn": "নেটওয়ার্ক",
+      "pt-BR": "Rede",
+      "ru": "Сеть",
+      "id": "Jaringan"
+    },
+    "Disk": {
+      "en": "Disk",
+      "zh-Hans": "磁盘",
+      "hi": "डिस्क",
+      "es": "Disco",
+      "ar": "القرص",
+      "fr": "Disque",
+      "bn": "ডিস্ক",
+      "pt-BR": "Disco",
+      "ru": "Диск",
+      "id": "Disk"
+    },
+    "Battery": {
+      "en": "Battery",
+      "zh-Hans": "电池",
+      "hi": "बैटरी",
+      "es": "Batería",
+      "ar": "البطارية",
+      "fr": "Batterie",
+      "bn": "ব্যাটারি",
+      "pt-BR": "Bateria",
+      "ru": "Батарея",
+      "id": "Baterai"
+    },
+    "Temperature": {
+      "en": "Temperature",
+      "zh-Hans": "温度",
+      "hi": "तापमान",
+      "es": "Temperatura",
+      "ar": "درجة الحرارة",
+      "fr": "Température",
+      "bn": "তাপমাত্রা",
+      "pt-BR": "Temperatura",
+      "ru": "Температура",
+      "id": "Suhu"
+    },
+    "USB devices": {
+      "en": "USB devices",
+      "zh-Hans": "USB 设备",
+      "hi": "USB डिवाइस",
+      "es": "Dispositivos USB",
+      "ar": "أجهزة USB",
+      "fr": "Périphériques USB",
+      "bn": "USB ডিভাইস",
+      "pt-BR": "Dispositivos USB",
+      "ru": "USB-устройства",
+      "id": "Perangkat USB"
+    },
+    "↓ {rate}": {
+      "en": "↓ {rate}",
+      "zh-Hans": "↓ {rate}",
+      "hi": "↓ {rate}",
+      "es": "↓ {rate}",
+      "ar": "↓ {rate}",
+      "fr": "↓ {rate}",
+      "bn": "↓ {rate}",
+      "pt-BR": "↓ {rate}",
+      "ru": "↓ {rate}",
+      "id": "↓ {rate}"
+    },
+    "↑ {rate}": {
+      "en": "↑ {rate}",
+      "zh-Hans": "↑ {rate}",
+      "hi": "↑ {rate}",
+      "es": "↑ {rate}",
+      "ar": "↑ {rate}",
+      "fr": "↑ {rate}",
+      "bn": "↑ {rate}",
+      "pt-BR": "↑ {rate}",
+      "ru": "↑ {rate}",
+      "id": "↑ {rate}"
+    },
+    "free on {drive}": {
+      "en": "free on {drive}",
+      "zh-Hans": "{drive} 可用",
+      "hi": "{drive} पर खाली",
+      "es": "libres en {drive}",
+      "ar": "متاح على {drive}",
+      "fr": "libres sur {drive}",
+      "bn": "{drive}-এ ফাঁকা",
+      "pt-BR": "livres em {drive}",
+      "ru": "свободно на {drive}",
+      "id": "kosong di {drive}"
+    },
+    "Charging": {
+      "en": "Charging",
+      "zh-Hans": "正在充电",
+      "hi": "चार्ज हो रहा है",
+      "es": "Cargando",
+      "ar": "قيد الشحن",
+      "fr": "En charge",
+      "bn": "চার্জ হচ্ছে",
+      "pt-BR": "Carregando",
+      "ru": "Зарядка",
+      "id": "Mengisi daya"
+    },
+    "Plugged in": {
+      "en": "Plugged in",
+      "zh-Hans": "已接通电源",
+      "hi": "प्लग इन है",
+      "es": "Conectado",
+      "ar": "موصول بالطاقة",
+      "fr": "Branché",
+      "bn": "প্লাগ ইন করা",
+      "pt-BR": "Na tomada",
+      "ru": "Подключено к сети",
+      "id": "Tersambung ke listrik"
+    },
+    "{time} left": {
+      "en": "{time} left",
+      "zh-Hans": "剩余 {time}",
+      "hi": "{time} शेष",
+      "es": "{time} restantes",
+      "ar": "متبقي {time}",
+      "fr": "{time} restant",
+      "bn": "{time} বাকি",
+      "pt-BR": "{time} restantes",
+      "ru": "Осталось {time}",
+      "id": "Sisa {time}"
+    },
+    "On battery": {
+      "en": "On battery",
+      "zh-Hans": "使用电池",
+      "hi": "बैटरी पर",
+      "es": "Con batería",
+      "ar": "على البطارية",
+      "fr": "Sur batterie",
+      "bn": "ব্যাটারিতে",
+      "pt-BR": "Na bateria",
+      "ru": "От батареи",
+      "id": "Memakai baterai"
+    },
+    "System sensor": {
+      "en": "System sensor",
+      "zh-Hans": "系统传感器",
+      "hi": "सिस्टम सेंसर",
+      "es": "Sensor del sistema",
+      "ar": "مستشعر النظام",
+      "fr": "Capteur système",
+      "bn": "সিস্টেম সেন্সর",
+      "pt-BR": "Sensor do sistema",
+      "ru": "Датчик системы",
+      "id": "Sensor sistem"
+    },
+    "{n} °C": {
+      "en": "{n} °C",
+      "zh-Hans": "{n} °C",
+      "hi": "{n} °C",
+      "es": "{n} °C",
+      "ar": "{n} °C",
+      "fr": "{n} °C",
+      "bn": "{n} °C",
+      "pt-BR": "{n} °C",
+      "ru": "{n} °C",
+      "id": "{n} °C"
+    },
+    "{name}: {n} °C": {
+      "en": "{name}: {n} °C",
+      "zh-Hans": "{name}: {n} °C",
+      "hi": "{name}: {n} °C",
+      "es": "{name}: {n} °C",
+      "ar": "{name}: {n} °C",
+      "fr": "{name}: {n} °C",
+      "bn": "{name}: {n} °C",
+      "pt-BR": "{name}: {n} °C",
+      "ru": "{name}: {n} °C",
+      "id": "{name}: {n} °C"
+    },
+    "Back": {
+      "en": "Back",
+      "zh-Hans": "返回",
+      "hi": "वापस",
+      "es": "Atrás",
+      "ar": "رجوع",
+      "fr": "Retour",
+      "bn": "পিছনে",
+      "pt-BR": "Voltar",
+      "ru": "Назад",
+      "id": "Kembali"
+    },
+    "{name}: {result}": {
+      "en": "{name}: {result}",
+      "zh-Hans": "{name}: {result}",
+      "hi": "{name}: {result}",
+      "es": "{name}: {result}",
+      "ar": "{name}: {result}",
+      "fr": "{name}: {result}",
+      "bn": "{name}: {result}",
+      "pt-BR": "{name}: {result}",
+      "ru": "{name}: {result}",
+      "id": "{name}: {result}"
+    },
+    "Reading…": {
+      "en": "Reading…",
+      "zh-Hans": "正在读取…",
+      "hi": "पढ़ा जा रहा है…",
+      "es": "Leyendo…",
+      "ar": "جارٍ القراءة…",
+      "fr": "Lecture…",
+      "bn": "পড়া হচ্ছে…",
+      "pt-BR": "Lendo…",
+      "ru": "Чтение…",
+      "id": "Membaca…"
+    },
+    "Measuring…": {
+      "en": "Measuring…",
+      "zh-Hans": "正在测量…",
+      "hi": "मापा जा रहा है…",
+      "es": "Midiendo…",
+      "ar": "جارٍ القياس…",
+      "fr": "Mesure…",
+      "bn": "মাপা হচ্ছে…",
+      "pt-BR": "Medindo…",
+      "ru": "Измерение…",
+      "id": "Mengukur…"
+    },
+    "Nothing is using the GPU.": {
+      "en": "Nothing is using the GPU.",
+      "zh-Hans": "没有程序在使用 GPU。",
+      "hi": "कुछ भी GPU इस्तेमाल नहीं कर रहा।",
+      "es": "Nada está usando la GPU.",
+      "ar": "لا شيء يستخدم وحدة GPU.",
+      "fr": "Rien n’utilise le GPU.",
+      "bn": "কিছুই GPU ব্যবহার করছে না।",
+      "pt-BR": "Nada está usando a GPU.",
+      "ru": "GPU сейчас ничем не используется.",
+      "id": "Tidak ada yang memakai GPU."
+    },
+    "Nothing to list.": {
+      "en": "Nothing to list.",
+      "zh-Hans": "没有可列出的内容。",
+      "hi": "सूचीबद्ध करने को कुछ नहीं।",
+      "es": "Nada que mostrar.",
+      "ar": "لا شيء لعرضه.",
+      "fr": "Rien à afficher.",
+      "bn": "তালিকাভুক্ত করার কিছু নেই।",
+      "pt-BR": "Nada para listar.",
+      "ru": "Список пуст.",
+      "id": "Tidak ada yang ditampilkan."
+    },
+    "End": {
+      "en": "End",
+      "zh-Hans": "结束",
+      "hi": "समाप्त करें",
+      "es": "Finalizar",
+      "ar": "إنهاء",
+      "fr": "Terminer",
+      "bn": "শেষ করুন",
+      "pt-BR": "Encerrar",
+      "ru": "Завершить",
+      "id": "Akhiri"
+    },
+    "×{count}": {
+      "en": "×{count}",
+      "zh-Hans": "×{count}",
+      "hi": "×{count}",
+      "es": "×{count}",
+      "ar": "×{count}",
+      "fr": "×{count}",
+      "bn": "×{count}",
+      "pt-BR": "×{count}",
+      "ru": "×{count}",
+      "id": "×{count}"
+    },
+    "This computer's addresses": {
+      "en": "This computer's addresses",
+      "zh-Hans": "本机地址",
+      "hi": "इस कंप्यूटर के पते",
+      "es": "Direcciones de este equipo",
+      "ar": "عناوين هذا الكمبيوتر",
+      "fr": "Adresses de cet ordinateur",
+      "bn": "এই কম্পিউটারের ঠিকানা",
+      "pt-BR": "Endereços deste computador",
+      "ru": "Адреса этого компьютера",
+      "id": "Alamat komputer ini"
+    },
+    "Speed test": {
+      "en": "Speed test",
+      "zh-Hans": "网速测试",
+      "hi": "स्पीड टेस्ट",
+      "es": "Prueba de velocidad",
+      "ar": "اختبار السرعة",
+      "fr": "Test de débit",
+      "bn": "স্পিড টেস্ট",
+      "pt-BR": "Teste de velocidade",
+      "ru": "Тест скорости",
+      "id": "Tes kecepatan"
+    },
+    "Cancel": {
+      "en": "Cancel",
+      "zh-Hans": "取消",
+      "hi": "रद्द करें",
+      "es": "Cancelar",
+      "ar": "إلغاء",
+      "fr": "Annuler",
+      "bn": "বাতিল",
+      "pt-BR": "Cancelar",
+      "ru": "Отмена",
+      "id": "Batal"
+    },
+    "Run test": {
+      "en": "Run test",
+      "zh-Hans": "开始测试",
+      "hi": "टेस्ट चलाएँ",
+      "es": "Iniciar prueba",
+      "ar": "بدء الاختبار",
+      "fr": "Lancer le test",
+      "bn": "টেস্ট চালান",
+      "pt-BR": "Iniciar teste",
+      "ru": "Запустить тест",
+      "id": "Mulai tes"
+    },
+    "Exchanges test data with {host} for about ten seconds: up to a few hundred megabytes on a fast line. Nothing of yours is sent.": {
+      "en": "Exchanges test data with {host} for about ten seconds: up to a few hundred megabytes on a fast line. Nothing of yours is sent.",
+      "zh-Hans": "与 {host} 交换测试数据约十秒：高速网络下最多几百兆字节。不会发送您的任何数据。",
+      "hi": "लगभग दस सेकंड तक {host} के साथ टेस्ट डेटा का आदान-प्रदान होता है: तेज़ कनेक्शन पर कुछ सौ मेगाबाइट तक। आपका कुछ भी नहीं भेजा जाता।",
+      "es": "Intercambia datos de prueba con {host} durante unos diez segundos: hasta unos cientos de megabytes en una línea rápida. No se envía nada tuyo.",
+      "ar": "يتبادل بيانات الاختبار مع {host} لمدة عشر ثوانٍ تقريباً: حتى بضع مئات من الميغابايت على خط سريع. لا يُرسل شيء من بياناتك.",
+      "fr": "Échange des données de test avec {host} pendant une dizaine de secondes : jusqu’à quelques centaines de mégaoctets sur une ligne rapide. Rien de vous n’est envoyé.",
+      "bn": "প্রায় দশ সেকেন্ড {host}-এর সাথে টেস্ট ডেটা আদানপ্রদান হয়: দ্রুত লাইনে কয়েকশো মেগাবাইট পর্যন্ত। আপনার কিছুই পাঠানো হয় না।",
+      "pt-BR": "Troca dados de teste com {host} por cerca de dez segundos: até algumas centenas de megabytes em uma conexão rápida. Nada seu é enviado.",
+      "ru": "В течение примерно десяти секунд обменивается тестовыми данными с {host}: до нескольких сотен мегабайт на быстром канале. Ваши данные не отправляются.",
+      "id": "Bertukar data uji dengan {host} selama sekitar sepuluh detik: hingga beberapa ratus megabyte di jaringan cepat. Tidak ada data Anda yang dikirim."
+    },
+    "Contacting {host}…": {
+      "en": "Contacting {host}…",
+      "zh-Hans": "正在连接 {host}…",
+      "hi": "{host} से संपर्क हो रहा है…",
+      "es": "Contactando con {host}…",
+      "ar": "جارٍ الاتصال بـ {host}…",
+      "fr": "Connexion à {host}…",
+      "bn": "{host}-এর সাথে যোগাযোগ হচ্ছে…",
+      "pt-BR": "Contatando {host}…",
+      "ru": "Подключение к {host}…",
+      "id": "Menghubungi {host}…"
+    },
+    "Downloading: {n} Mbps": {
+      "en": "Downloading: {n} Mbps",
+      "zh-Hans": "下载中：{n} Mbps",
+      "hi": "डाउनलोड: {n} Mbps",
+      "es": "Descarga: {n} Mbps",
+      "ar": "التنزيل: {n} Mbps",
+      "fr": "Téléchargement : {n} Mbps",
+      "bn": "ডাউনলোড: {n} Mbps",
+      "pt-BR": "Download: {n} Mbps",
+      "ru": "Загрузка: {n} Мбит/с",
+      "id": "Unduh: {n} Mbps"
+    },
+    "Uploading: {n} Mbps": {
+      "en": "Uploading: {n} Mbps",
+      "zh-Hans": "上传中：{n} Mbps",
+      "hi": "अपलोड: {n} Mbps",
+      "es": "Subida: {n} Mbps",
+      "ar": "الرفع: {n} Mbps",
+      "fr": "Envoi : {n} Mbps",
+      "bn": "আপলোড: {n} Mbps",
+      "pt-BR": "Upload: {n} Mbps",
+      "ru": "Отдача: {n} Мбит/с",
+      "id": "Unggah: {n} Mbps"
+    },
+    "↓ {down} Mbps   ↑ {up} Mbps   {ms} ms": {
+      "en": "↓ {down} Mbps   ↑ {up} Mbps   {ms} ms",
+      "zh-Hans": "↓ {down} Mbps   ↑ {up} Mbps   {ms} ms",
+      "hi": "↓ {down} Mbps   ↑ {up} Mbps   {ms} ms",
+      "es": "↓ {down} Mbps   ↑ {up} Mbps   {ms} ms",
+      "ar": "↓ {down} Mbps   ↑ {up} Mbps   {ms} ms",
+      "fr": "↓ {down} Mbps   ↑ {up} Mbps   {ms} ms",
+      "bn": "↓ {down} Mbps   ↑ {up} Mbps   {ms} ms",
+      "pt-BR": "↓ {down} Mbps   ↑ {up} Mbps   {ms} ms",
+      "ru": "↓ {down} Mbps   ↑ {up} Mbps   {ms} ms",
+      "id": "↓ {down} Mbps   ↑ {up} Mbps   {ms} ms"
+    },
+    "The test could not finish. Check the connection and try again.": {
+      "en": "The test could not finish. Check the connection and try again.",
+      "zh-Hans": "测试未能完成。请检查网络连接后重试。",
+      "hi": "टेस्ट पूरा नहीं हो सका। कनेक्शन जाँचें और फिर कोशिश करें।",
+      "es": "La prueba no pudo terminar. Comprueba la conexión e inténtalo de nuevo.",
+      "ar": "تعذّر إكمال الاختبار. تحقق من الاتصال وحاول مرة أخرى.",
+      "fr": "Le test n’a pas pu se terminer. Vérifiez la connexion et réessayez.",
+      "bn": "টেস্ট শেষ করা যায়নি। সংযোগ পরীক্ষা করে আবার চেষ্টা করুন।",
+      "pt-BR": "O teste não pôde terminar. Verifique a conexão e tente novamente.",
+      "ru": "Тест не удалось завершить. Проверьте подключение и повторите попытку.",
+      "id": "Tes tidak dapat selesai. Periksa koneksi dan coba lagi."
+    },
+    "{drive} can be unplugged.": {
+      "en": "{drive} can be unplugged.",
+      "zh-Hans": "可以拔出 {drive}。",
+      "hi": "{drive} को निकाला जा सकता है।",
+      "es": "Ya puedes desconectar {drive}.",
+      "ar": "يمكن فصل {drive} بأمان.",
+      "fr": "{drive} peut être débranché.",
+      "bn": "{drive} খুলে নেওয়া যাবে।",
+      "pt-BR": "{drive} já pode ser removido.",
+      "ru": "{drive} можно извлекать.",
+      "id": "{drive} aman untuk dicabut."
+    },
+    "{drive} is in use. Close what is open on it and try again.": {
+      "en": "{drive} is in use. Close what is open on it and try again.",
+      "zh-Hans": "{drive} 正在使用中。请关闭其上已打开的内容后重试。",
+      "hi": "{drive} उपयोग में है। उस पर जो खुला है उसे बंद करें और फिर कोशिश करें।",
+      "es": "{drive} está en uso. Cierra lo que esté abierto en ella e inténtalo de nuevo.",
+      "ar": "{drive} قيد الاستخدام. أغلق ما هو مفتوح عليه وحاول مرة أخرى.",
+      "fr": "{drive} est en cours d’utilisation. Fermez ce qui y est ouvert et réessayez.",
+      "bn": "{drive} ব্যবহৃত হচ্ছে। এতে যা খোলা আছে তা বন্ধ করে আবার চেষ্টা করুন।",
+      "pt-BR": "{drive} está em uso. Feche o que estiver aberto nele e tente novamente.",
+      "ru": "{drive} используется. Закройте всё, что открыто на нём, и повторите попытку.",
+      "id": "{drive} sedang digunakan. Tutup yang terbuka di dalamnya lalu coba lagi."
+    },
+    "{drive} could not be ejected.": {
+      "en": "{drive} could not be ejected.",
+      "zh-Hans": "无法弹出 {drive}。",
+      "hi": "{drive} को निकाला नहीं जा सका।",
+      "es": "No se pudo expulsar {drive}.",
+      "ar": "تعذّر إخراج {drive}.",
+      "fr": "Impossible d’éjecter {drive}.",
+      "bn": "{drive} বের করা যায়নি।",
+      "pt-BR": "Não foi possível ejetar {drive}.",
+      "ru": "Не удалось извлечь {drive}.",
+      "id": "{drive} tidak dapat dikeluarkan."
+    },
+    "Eject": {
+      "en": "Eject",
+      "zh-Hans": "弹出",
+      "hi": "निकालें",
+      "es": "Expulsar",
+      "ar": "إخراج",
+      "fr": "Éjecter",
+      "bn": "বের করুন",
+      "pt-BR": "Ejetar",
+      "ru": "Извлечь",
+      "id": "Keluarkan"
+    },
+    "{label} ({drive})": {
+      "en": "{label} ({drive})",
+      "zh-Hans": "{label} ({drive})",
+      "hi": "{label} ({drive})",
+      "es": "{label} ({drive})",
+      "ar": "{label} ({drive})",
+      "fr": "{label} ({drive})",
+      "bn": "{label} ({drive})",
+      "pt-BR": "{label} ({drive})",
+      "ru": "{label} ({drive})",
+      "id": "{label} ({drive})"
+    },
+    "{free} free of {total}": {
+      "en": "{free} free of {total}",
+      "zh-Hans": "共 {total}，可用 {free}",
+      "hi": "{total} में से {free} खाली",
+      "es": "{free} libres de {total}",
+      "ar": "{free} متاح من {total}",
+      "fr": "{free} libres sur {total}",
+      "bn": "{total}-এর মধ্যে {free} ফাঁকা",
+      "pt-BR": "{free} livres de {total}",
+      "ru": "Свободно {free} из {total}",
+      "id": "{free} kosong dari {total}"
+    },
+    "Threads": {
+      "en": "Threads",
+      "zh-Hans": "线程",
+      "hi": "थ्रेड",
+      "es": "Subprocesos",
+      "ar": "مسارات المعالجة",
+      "fr": "Threads",
+      "bn": "থ্রেড",
+      "pt-BR": "Threads",
+      "ru": "Потоки",
+      "id": "Thread"
+    },
+    "Performance cores": {
+      "en": "Performance cores",
+      "zh-Hans": "性能核心",
+      "hi": "परफ़ॉर्मेंस कोर",
+      "es": "Núcleos de rendimiento",
+      "ar": "أنوية الأداء",
+      "fr": "Cœurs de performance",
+      "bn": "পারফরম্যান্স কোর",
+      "pt-BR": "Núcleos de desempenho",
+      "ru": "Производительные ядра",
+      "id": "Core performa"
+    },
+    "Efficiency cores": {
+      "en": "Efficiency cores",
+      "zh-Hans": "能效核心",
+      "hi": "एफ़िशिएंसी कोर",
+      "es": "Núcleos de eficiencia",
+      "ar": "أنوية الكفاءة",
+      "fr": "Cœurs d’efficacité",
+      "bn": "এফিশিয়েন্সি কোর",
+      "pt-BR": "Núcleos de eficiência",
+      "ru": "Энергоэффективные ядра",
+      "id": "Core efisiensi"
+    },
+    "Performance": {
+      "en": "Performance",
+      "zh-Hans": "性能",
+      "hi": "परफ़ॉर्मेंस",
+      "es": "Rendimiento",
+      "ar": "الأداء",
+      "fr": "Performance",
+      "bn": "পারফরম্যান্স",
+      "pt-BR": "Desempenho",
+      "ru": "Производительные",
+      "id": "Performa"
+    },
+    "Efficiency": {
+      "en": "Efficiency",
+      "zh-Hans": "能效",
+      "hi": "एफ़िशिएंसी",
+      "es": "Eficiencia",
+      "ar": "الكفاءة",
+      "fr": "Efficacité",
+      "bn": "এফিশিয়েন্সি",
+      "pt-BR": "Eficiência",
+      "ru": "Энергоэффективные",
+      "id": "Efisiensi"
+    },
+    "Adapter": {
+      "en": "Adapter",
+      "zh-Hans": "适配器",
+      "hi": "एडाप्टर",
+      "es": "Adaptador",
+      "ar": "المحوّل",
+      "fr": "Adaptateur",
+      "bn": "অ্যাডাপ্টার",
+      "pt-BR": "Adaptador",
+      "ru": "Адаптер",
+      "id": "Adaptor"
+    },
+    "Memory in use": {
+      "en": "Memory in use",
+      "zh-Hans": "已用内存",
+      "hi": "उपयोग में मेमोरी",
+      "es": "Memoria en uso",
+      "ar": "الذاكرة المستخدمة",
+      "fr": "Mémoire utilisée",
+      "bn": "ব্যবহৃত মেমরি",
+      "pt-BR": "Memória em uso",
+      "ru": "Используемая память",
+      "id": "Memori terpakai"
+    },
+    "Dedicated": {
+      "en": "Dedicated",
+      "zh-Hans": "专用",
+      "hi": "समर्पित",
+      "es": "Dedicada",
+      "ar": "مخصصة",
+      "fr": "Dédiée",
+      "bn": "ডেডিকেটেড",
+      "pt-BR": "Dedicada",
+      "ru": "Выделенная",
+      "id": "Khusus"
+    },
+    "In use": {
+      "en": "In use",
+      "zh-Hans": "使用中",
+      "hi": "उपयोग में",
+      "es": "En uso",
+      "ar": "قيد الاستخدام",
+      "fr": "Utilisée",
+      "bn": "ব্যবহৃত",
+      "pt-BR": "Em uso",
+      "ru": "Используется",
+      "id": "Terpakai"
+    },
+    "Available": {
+      "en": "Available",
+      "zh-Hans": "可用",
+      "hi": "उपलब्ध",
+      "es": "Disponible",
+      "ar": "المتاحة",
+      "fr": "Disponible",
+      "bn": "উপলব্ধ",
+      "pt-BR": "Disponível",
+      "ru": "Доступно",
+      "id": "Tersedia"
+    },
+    "Committed": {
+      "en": "Committed",
+      "zh-Hans": "已提交",
+      "hi": "कमिट की गई",
+      "es": "Confirmada",
+      "ar": "المخصصة",
+      "fr": "Allouée",
+      "bn": "কমিটেড",
+      "pt-BR": "Confirmada",
+      "ru": "Выделено",
+      "id": "Dikomit"
+    },
+    "Cached": {
+      "en": "Cached",
+      "zh-Hans": "已缓存",
+      "hi": "कैश्ड",
+      "es": "En caché",
+      "ar": "المخزّنة مؤقتاً",
+      "fr": "En cache",
+      "bn": "ক্যাশ করা",
+      "pt-BR": "Em cache",
+      "ru": "В кэше",
+      "id": "Tercache"
+    },
+    "Download": {
+      "en": "Download",
+      "zh-Hans": "下载",
+      "hi": "डाउनलोड",
+      "es": "Descarga",
+      "ar": "التنزيل",
+      "fr": "Téléchargement",
+      "bn": "ডাউনলোড",
+      "pt-BR": "Download",
+      "ru": "Загрузка",
+      "id": "Unduh"
+    },
+    "Upload": {
+      "en": "Upload",
+      "zh-Hans": "上传",
+      "hi": "अपलोड",
+      "es": "Subida",
+      "ar": "الرفع",
+      "fr": "Envoi",
+      "bn": "আপলোড",
+      "pt-BR": "Upload",
+      "ru": "Отдача",
+      "id": "Unggah"
+    },
+    "Received": {
+      "en": "Received",
+      "zh-Hans": "已接收",
+      "hi": "प्राप्त",
+      "es": "Recibido",
+      "ar": "المستلَم",
+      "fr": "Reçu",
+      "bn": "প্রাপ্ত",
+      "pt-BR": "Recebido",
+      "ru": "Получено",
+      "id": "Diterima"
+    },
+    "Sent": {
+      "en": "Sent",
+      "zh-Hans": "已发送",
+      "hi": "भेजा गया",
+      "es": "Enviado",
+      "ar": "المُرسَل",
+      "fr": "Envoyé",
+      "bn": "পাঠানো",
+      "pt-BR": "Enviado",
+      "ru": "Отправлено",
+      "id": "Terkirim"
+    },
+    "Not connected": {
+      "en": "Not connected",
+      "zh-Hans": "未连接",
+      "hi": "कनेक्ट नहीं है",
+      "es": "Sin conexión",
+      "ar": "غير متصل",
+      "fr": "Non connecté",
+      "bn": "সংযুক্ত নয়",
+      "pt-BR": "Não conectado",
+      "ru": "Не подключено",
+      "id": "Tidak terhubung"
+    },
+    "Read": {
+      "en": "Read",
+      "zh-Hans": "读取",
+      "hi": "पढ़ना",
+      "es": "Lectura",
+      "ar": "القراءة",
+      "fr": "Lecture",
+      "bn": "পড়া",
+      "pt-BR": "Leitura",
+      "ru": "Чтение",
+      "id": "Baca"
+    },
+    "Write": {
+      "en": "Write",
+      "zh-Hans": "写入",
+      "hi": "लिखना",
+      "es": "Escritura",
+      "ar": "الكتابة",
+      "fr": "Écriture",
+      "bn": "লেখা",
+      "pt-BR": "Gravação",
+      "ru": "Запись",
+      "id": "Tulis"
+    },
+    "{size} free": {
+      "en": "{size} free",
+      "zh-Hans": "可用 {size}",
+      "hi": "{size} खाली",
+      "es": "{size} libres",
+      "ar": "{size} متاح",
+      "fr": "{size} libres",
+      "bn": "{size} ফাঁকা",
+      "pt-BR": "{size} livres",
+      "ru": "Свободно {size}",
+      "id": "{size} kosong"
+    },
+    "Status": {
+      "en": "Status",
+      "zh-Hans": "状态",
+      "hi": "स्थिति",
+      "es": "Estado",
+      "ar": "الحالة",
+      "fr": "État",
+      "bn": "অবস্থা",
+      "pt-BR": "Status",
+      "ru": "Состояние",
+      "id": "Status"
+    },
+    "Time left": {
+      "en": "Time left",
+      "zh-Hans": "剩余时间",
+      "hi": "बचा हुआ समय",
+      "es": "Tiempo restante",
+      "ar": "الوقت المتبقي",
+      "fr": "Temps restant",
+      "bn": "বাকি সময়",
+      "pt-BR": "Tempo restante",
+      "ru": "Осталось времени",
+      "id": "Sisa waktu"
+    },
+    "Charging at": {
+      "en": "Charging at",
+      "zh-Hans": "充电功率",
+      "hi": "चार्ज की गति",
+      "es": "Carga a",
+      "ar": "الشحن بقدرة",
+      "fr": "Charge à",
+      "bn": "চার্জের হার",
+      "pt-BR": "Carregando a",
+      "ru": "Мощность зарядки",
+      "id": "Daya pengisian"
+    },
+    "Power draw": {
+      "en": "Power draw",
+      "zh-Hans": "耗电功率",
+      "hi": "बिजली खपत",
+      "es": "Consumo de energía",
+      "ar": "استهلاك الطاقة",
+      "fr": "Consommation",
+      "bn": "বিদ্যুৎ খরচ",
+      "pt-BR": "Consumo de energia",
+      "ru": "Потребление энергии",
+      "id": "Konsumsi daya"
+    },
+    "Energy saver": {
+      "en": "Energy saver",
+      "zh-Hans": "节能模式",
+      "hi": "एनर्जी सेवर",
+      "es": "Ahorro de energía",
+      "ar": "توفير الطاقة",
+      "fr": "Économiseur d’énergie",
+      "bn": "এনার্জি সেভার",
+      "pt-BR": "Economia de energia",
+      "ru": "Режим энергосбережения",
+      "id": "Penghemat daya"
+    },
+    "On": {
+      "en": "On",
+      "zh-Hans": "开",
+      "hi": "चालू",
+      "es": "Activado",
+      "ar": "مفعّل",
+      "fr": "Activé",
+      "bn": "চালু",
+      "pt-BR": "Ativado",
+      "ru": "Вкл.",
+      "id": "Aktif"
+    },
+    "Off": {
+      "en": "Off",
+      "zh-Hans": "关",
+      "hi": "बंद",
+      "es": "Desactivado",
+      "ar": "معطّل",
+      "fr": "Désactivé",
+      "bn": "বন্ধ",
+      "pt-BR": "Desativado",
+      "ru": "Выкл.",
+      "id": "Nonaktif"
+    },
+    "Health": {
+      "en": "Health",
+      "zh-Hans": "健康度",
+      "hi": "स्वास्थ्य",
+      "es": "Salud",
+      "ar": "الصحة",
+      "fr": "État de santé",
+      "bn": "স্বাস্থ্য",
+      "pt-BR": "Saúde",
+      "ru": "Состояние",
+      "id": "Kesehatan"
+    },
+    "Full charge": {
+      "en": "Full charge",
+      "zh-Hans": "满电容量",
+      "hi": "पूर्ण चार्ज",
+      "es": "Carga completa",
+      "ar": "الشحن الكامل",
+      "fr": "Charge complète",
+      "bn": "পূর্ণ চার্জ",
+      "pt-BR": "Carga total",
+      "ru": "Полный заряд",
+      "id": "Pengisian penuh"
+    },
+    "When new": {
+      "en": "When new",
+      "zh-Hans": "全新时",
+      "hi": "नए होने पर",
+      "es": "Cuando era nueva",
+      "ar": "عندما كانت جديدة",
+      "fr": "À l’état neuf",
+      "bn": "নতুন অবস্থায়",
+      "pt-BR": "Quando nova",
+      "ru": "В новом состоянии",
+      "id": "Saat baru"
+    },
+    "Processes": {
+      "en": "Processes",
+      "zh-Hans": "进程",
+      "hi": "प्रक्रियाएँ",
+      "es": "Procesos",
+      "ar": "العمليات",
+      "fr": "Processus",
+      "bn": "প্রসেস",
+      "pt-BR": "Processos",
+      "ru": "Процессы",
+      "id": "Proses"
+    },
+    "Open ports": {
+      "en": "Open ports",
+      "zh-Hans": "开放端口",
+      "hi": "खुले पोर्ट",
+      "es": "Puertos abiertos",
+      "ar": "المنافذ المفتوحة",
+      "fr": "Ports ouverts",
+      "bn": "খোলা পোর্ট",
+      "pt-BR": "Portas abertas",
+      "ru": "Открытые порты",
+      "id": "Port terbuka"
+    },
+    "Alerts": {
+      "en": "Alerts",
+      "zh-Hans": "提醒",
+      "hi": "अलर्ट",
+      "es": "Alertas",
+      "ar": "التنبيهات",
+      "fr": "Alertes",
+      "bn": "সতর্কতা",
+      "pt-BR": "Alertas",
+      "ru": "Оповещения",
+      "id": "Peringatan"
+    },
+    "An alert that is on keeps its reading going in the background, every two seconds. Each alert shows at most once in fifteen minutes. A low battery is announced by Battery and power.": {
+      "en": "An alert that is on keeps its reading going in the background, every two seconds. Each alert shows at most once in fifteen minutes. A low battery is announced by Battery and power.",
+      "zh-Hans": "开启的提醒会在后台每两秒读取一次数据。每条提醒每十五分钟最多显示一次。电量不足由“电池与电源”负责通知。",
+      "hi": "चालू अलर्ट पृष्ठभूमि में हर दो सेकंड में अपनी रीडिंग लेता रहता है। हर अलर्ट पंद्रह मिनट में अधिकतम एक बार दिखता है। कम बैटरी की सूचना बैटरी और पावर देता है।",
+      "es": "Una alerta activada sigue leyendo en segundo plano, cada dos segundos. Cada alerta aparece como máximo una vez cada quince minutos. La batería baja la avisa Batería y energía.",
+      "ar": "التنبيه المفعّل يواصل القراءة في الخلفية كل ثانيتين. يظهر كل تنبيه مرة واحدة على الأكثر كل خمس عشرة دقيقة. ينبّه «البطارية والطاقة» إلى انخفاض البطارية.",
+      "fr": "Une alerte activée continue de lire en arrière-plan, toutes les deux secondes. Chaque alerte s’affiche au plus une fois toutes les quinze minutes. Une batterie faible est signalée par Batterie et alimentation.",
+      "bn": "চালু থাকা সতর্কতা ব্যাকগ্রাউন্ডে প্রতি দুই সেকেন্ডে রিডিং নিতে থাকে। প্রতিটি সতর্কতা পনেরো মিনিটে সর্বোচ্চ একবার দেখায়। ব্যাটারি কমে গেলে ব্যাটারি ও পাওয়ার জানায়।",
+      "pt-BR": "Um alerta ativado continua lendo em segundo plano, a cada dois segundos. Cada alerta aparece no máximo uma vez a cada quinze minutos. Bateria fraca é avisada por Bateria e energia.",
+      "ru": "Включённое оповещение продолжает считывать данные в фоне каждые две секунды. Каждое оповещение показывается не чаще раза в пятнадцать минут. О низком заряде сообщает «Батарея и питание».",
+      "id": "Peringatan yang aktif terus membaca di latar belakang, setiap dua detik. Tiap peringatan tampil paling banyak sekali per lima belas menit. Baterai lemah diumumkan oleh Baterai dan daya."
+    },
+    "See what runs, end what hangs": {
+      "en": "See what runs, end what hangs",
+      "zh-Hans": "查看运行的程序，结束卡住的程序",
+      "hi": "देखें क्या चल रहा है, जो अटका है उसे बंद करें",
+      "es": "Ve lo que se ejecuta, cierra lo que se cuelga",
+      "ar": "اعرف ما يعمل وأنهِ ما توقف عن الاستجابة",
+      "fr": "Voyez ce qui tourne, fermez ce qui plante",
+      "bn": "দেখুন কী চলছে, যা আটকে গেছে তা বন্ধ করুন",
+      "pt-BR": "Veja o que está rodando, encerre o que travou",
+      "ru": "Смотрите, что запущено, и завершайте зависшее",
+      "id": "Lihat yang berjalan, akhiri yang macet"
+    },
+    "What listens on this computer": {
+      "en": "What listens on this computer",
+      "zh-Hans": "查看本机在监听什么",
+      "hi": "इस कंप्यूटर पर क्या सुन रहा है",
+      "es": "Qué escucha en este equipo",
+      "ar": "ما الذي يستمع على هذا الكمبيوتر",
+      "fr": "Ce qui écoute sur cet ordinateur",
+      "bn": "এই কম্পিউটারে কী শুনছে",
+      "pt-BR": "O que escuta neste computador",
+      "ru": "Что слушает на этом компьютере",
+      "id": "Apa yang mendengarkan di komputer ini"
+    },
+    "CPU load is high": {
+      "en": "CPU load is high",
+      "zh-Hans": "CPU 负载过高",
+      "hi": "CPU लोड ज़्यादा है",
+      "es": "La carga de CPU es alta",
+      "ar": "حِمل CPU مرتفع",
+      "fr": "La charge CPU est élevée",
+      "bn": "CPU লোড বেশি",
+      "pt-BR": "A carga da CPU está alta",
+      "ru": "Высокая нагрузка CPU",
+      "id": "Beban CPU tinggi"
+    },
+    "{percent}% for a while": {
+      "en": "{percent}% for a while",
+      "zh-Hans": "已持续一段时间达到 {percent}%",
+      "hi": "कुछ समय से {percent}%",
+      "es": "{percent} % desde hace un rato",
+      "ar": "{percent}% منذ فترة",
+      "fr": "{percent} % depuis un moment",
+      "bn": "কিছুক্ষণ ধরে {percent}%",
+      "pt-BR": "{percent}% há um tempo",
+      "ru": "{percent}% уже некоторое время",
+      "id": "{percent}% selama beberapa saat"
+    },
+    "Memory is nearly full": {
+      "en": "Memory is nearly full",
+      "zh-Hans": "内存几乎已满",
+      "hi": "मेमोरी लगभग भर गई है",
+      "es": "La memoria está casi llena",
+      "ar": "الذاكرة شبه ممتلئة",
+      "fr": "La mémoire est presque pleine",
+      "bn": "মেমরি প্রায় পূর্ণ",
+      "pt-BR": "A memória está quase cheia",
+      "ru": "Память почти заполнена",
+      "id": "Memori hampir penuh"
+    },
+    "{drive} is nearly full": {
+      "en": "{drive} is nearly full",
+      "zh-Hans": "{drive} 几乎已满",
+      "hi": "{drive} लगभग भर गया है",
+      "es": "{drive} está casi llena",
+      "ar": "{drive} شبه ممتلئ",
+      "fr": "{drive} est presque plein",
+      "bn": "{drive} প্রায় পূর্ণ",
+      "pt-BR": "{drive} está quase cheio",
+      "ru": "{drive} почти заполнен",
+      "id": "{drive} hampir penuh"
+    },
+    "High CPU load": {
+      "en": "High CPU load",
+      "zh-Hans": "CPU 负载过高",
+      "hi": "उच्च CPU लोड",
+      "es": "Carga alta de CPU",
+      "ar": "حِمل CPU مرتفع",
+      "fr": "Charge CPU élevée",
+      "bn": "উচ্চ CPU লোড",
+      "pt-BR": "Carga alta da CPU",
+      "ru": "Высокая нагрузка CPU",
+      "id": "Beban CPU tinggi"
+    },
+    "A notice when the load stays over the limit for twelve seconds.": {
+      "en": "A notice when the load stays over the limit for twelve seconds.",
+      "zh-Hans": "负载超过上限并持续十二秒时发出通知。",
+      "hi": "लोड बारह सेकंड तक सीमा से ऊपर रहने पर सूचना।",
+      "es": "Un aviso cuando la carga supera el límite durante doce segundos.",
+      "ar": "إشعار عندما يظل الحِمل فوق الحد لمدة اثنتي عشرة ثانية.",
+      "fr": "Une notification lorsque la charge reste au-dessus de la limite pendant douze secondes.",
+      "bn": "লোড বারো সেকেন্ড সীমার উপরে থাকলে একটি বিজ্ঞপ্তি।",
+      "pt-BR": "Um aviso quando a carga fica acima do limite por doze segundos.",
+      "ru": "Уведомление, если нагрузка выше предела в течение двенадцати секунд.",
+      "id": "Pemberitahuan saat beban melewati batas selama dua belas detik."
+    },
+    "CPU limit": {
+      "en": "CPU limit",
+      "zh-Hans": "CPU 上限",
+      "hi": "CPU सीमा",
+      "es": "Límite de CPU",
+      "ar": "حد CPU",
+      "fr": "Limite CPU",
+      "bn": "CPU সীমা",
+      "pt-BR": "Limite da CPU",
+      "ru": "Порог CPU",
+      "id": "Batas CPU"
+    },
+    "Memory nearly full": {
+      "en": "Memory nearly full",
+      "zh-Hans": "内存几乎已满",
+      "hi": "मेमोरी लगभग भरी",
+      "es": "Memoria casi llena",
+      "ar": "الذاكرة شبه ممتلئة",
+      "fr": "Mémoire presque pleine",
+      "bn": "মেমরি প্রায় পূর্ণ",
+      "pt-BR": "Memória quase cheia",
+      "ru": "Память почти заполнена",
+      "id": "Memori hampir penuh"
+    },
+    "A notice when Windows has promised programs nearly all the memory it has.": {
+      "en": "A notice when Windows has promised programs nearly all the memory it has.",
+      "zh-Hans": "当 Windows 已将几乎全部内存承诺给程序时发出通知。",
+      "hi": "जब Windows अपनी लगभग पूरी मेमोरी प्रोग्रामों को देने का वादा कर चुका हो तब सूचना।",
+      "es": "Un aviso cuando Windows ha prometido a los programas casi toda la memoria que tiene.",
+      "ar": "إشعار عندما يَعِد Windows البرامج بكل الذاكرة التي لديه تقريباً.",
+      "fr": "Une notification lorsque Windows a promis aux programmes presque toute la mémoire dont il dispose.",
+      "bn": "Windows প্রায় সব মেমরি প্রোগ্রামগুলোকে দেওয়ার প্রতিশ্রুতি দিয়ে ফেললে একটি বিজ্ঞপ্তি।",
+      "pt-BR": "Um aviso quando o Windows prometeu aos programas quase toda a memória que tem.",
+      "ru": "Уведомление, когда Windows уже пообещал программам почти всю имеющуюся память.",
+      "id": "Pemberitahuan saat Windows sudah menjanjikan hampir seluruh memori kepada program."
+    },
+    "Low disk space": {
+      "en": "Low disk space",
+      "zh-Hans": "磁盘空间不足",
+      "hi": "डिस्क जगह कम",
+      "es": "Poco espacio en disco",
+      "ar": "مساحة القرص منخفضة",
+      "fr": "Espace disque faible",
+      "bn": "ডিস্কে জায়গা কম",
+      "pt-BR": "Pouco espaço em disco",
+      "ru": "Мало места на диске",
+      "id": "Ruang disk menipis"
+    },
+    "A notice when a drive has less free space than the limit.": {
+      "en": "A notice when a drive has less free space than the limit.",
+      "zh-Hans": "当某个驱动器的可用空间低于上限时发出通知。",
+      "hi": "किसी ड्राइव में खाली जगह सीमा से कम होने पर सूचना।",
+      "es": "Un aviso cuando una unidad tiene menos espacio libre que el límite.",
+      "ar": "إشعار عندما تقل المساحة الحرة في محرك عن الحد.",
+      "fr": "Une notification lorsqu’un lecteur a moins d’espace libre que la limite.",
+      "bn": "কোনো ড্রাইভের ফাঁকা জায়গা সীমার কম হলে একটি বিজ্ঞপ্তি।",
+      "pt-BR": "Um aviso quando uma unidade tem menos espaço livre que o limite.",
+      "ru": "Уведомление, когда на диске свободного места меньше порога.",
+      "id": "Pemberitahuan saat ruang kosong drive kurang dari batas."
+    },
+    "Free space limit": {
+      "en": "Free space limit",
+      "zh-Hans": "可用空间下限",
+      "hi": "खाली जगह सीमा",
+      "es": "Límite de espacio libre",
+      "ar": "حد المساحة الحرة",
+      "fr": "Limite d’espace libre",
+      "bn": "ফাঁকা জায়গার সীমা",
+      "pt-BR": "Limite de espaço livre",
+      "ru": "Порог свободного места",
+      "id": "Batas ruang kosong"
+    },
+    "{n} %": {
+      "en": "{n} %",
+      "zh-Hans": "{n} %",
+      "hi": "{n} %",
+      "es": "{n} %",
+      "ar": "{n} %",
+      "fr": "{n} %",
+      "bn": "{n} %",
+      "pt-BR": "{n} %",
+      "ru": "{n} %",
+      "id": "{n} %"
+    },
+    "It could not be ended.": {
+      "en": "It could not be ended.",
+      "zh-Hans": "无法结束。",
+      "hi": "इसे समाप्त नहीं किया जा सका।",
+      "es": "No se pudo finalizar.",
+      "ar": "تعذّر إنهاؤها.",
+      "fr": "Impossible de le terminer.",
+      "bn": "এটি শেষ করা যায়নি।",
+      "pt-BR": "Não foi possível encerrar.",
+      "ru": "Не удалось завершить.",
+      "id": "Tidak dapat diakhiri."
+    },
+    "Asked to close.": {
+      "en": "Asked to close.",
+      "zh-Hans": "已请求关闭。",
+      "hi": "बंद करने को कहा गया।",
+      "es": "Se le pidió que se cierre.",
+      "ar": "طُلب منها الإغلاق.",
+      "fr": "Fermeture demandée.",
+      "bn": "বন্ধ করতে বলা হয়েছে।",
+      "pt-BR": "Pedido para fechar enviado.",
+      "ru": "Запрос на закрытие отправлен.",
+      "id": "Sudah diminta untuk menutup."
+    },
+    "Ended.": {
+      "en": "Ended.",
+      "zh-Hans": "已结束。",
+      "hi": "समाप्त किया गया।",
+      "es": "Finalizado.",
+      "ar": "تم إنهاؤها.",
+      "fr": "Terminé.",
+      "bn": "শেষ করা হয়েছে।",
+      "pt-BR": "Encerrado.",
+      "ru": "Завершено.",
+      "id": "Telah diakhiri."
+    },
+    "Windows needs it.": {
+      "en": "Windows needs it.",
+      "zh-Hans": "Windows 需要它。",
+      "hi": "Windows को इसकी ज़रूरत है।",
+      "es": "Windows lo necesita.",
+      "ar": "يحتاجها Windows.",
+      "fr": "Windows en a besoin.",
+      "bn": "Windows-এর এটি দরকার।",
+      "pt-BR": "O Windows precisa dele.",
+      "ru": "Он нужен Windows.",
+      "id": "Windows membutuhkannya."
+    },
+    "It had already ended.": {
+      "en": "It had already ended.",
+      "zh-Hans": "它已经结束了。",
+      "hi": "यह पहले ही समाप्त हो चुका था।",
+      "es": "Ya había finalizado.",
+      "ar": "كانت قد انتهت بالفعل.",
+      "fr": "Il était déjà terminé.",
+      "bn": "এটি আগেই শেষ হয়ে গিয়েছিল।",
+      "pt-BR": "Ele já havia sido encerrado.",
+      "ru": "Он уже был завершён.",
+      "id": "Sudah berakhir sebelumnya."
+    },
+    "It runs as administrator or as another user.": {
+      "en": "It runs as administrator or as another user.",
+      "zh-Hans": "它以管理员身份或其他用户身份运行。",
+      "hi": "यह व्यवस्थापक या किसी अन्य उपयोगकर्ता के रूप में चलता है।",
+      "es": "Se ejecuta como administrador o como otro usuario.",
+      "ar": "يعمل كمسؤول أو كمستخدم آخر.",
+      "fr": "Il s’exécute en tant qu’administrateur ou qu’un autre utilisateur.",
+      "bn": "এটি অ্যাডমিনিস্ট্রেটর বা অন্য ব্যবহারকারী হিসেবে চলে।",
+      "pt-BR": "Ele é executado como administrador ou como outro usuário.",
+      "ru": "Он запущен от имени администратора или другого пользователя.",
+      "id": "Berjalan sebagai administrator atau pengguna lain."
+    },
+    "It has no window to ask. Use End now.": {
+      "en": "It has no window to ask. Use End now.",
+      "zh-Hans": "它没有可询问的窗口。请使用“立即结束”。",
+      "hi": "इसके पास पूछने के लिए कोई विंडो नहीं है। अभी समाप्त करें का उपयोग करें।",
+      "es": "No tiene ventana a la que preguntar. Usa Finalizar ahora.",
+      "ar": "ليست لها نافذة لتُسأل. استخدم «إنهاء الآن».",
+      "fr": "Il n’a pas de fenêtre à qui demander. Utilisez Terminer maintenant.",
+      "bn": "এর জিজ্ঞাসা করার মতো কোনো উইন্ডো নেই। এখনই শেষ করুন ব্যবহার করুন।",
+      "pt-BR": "Ele não tem janela para perguntar. Use Encerrar agora.",
+      "ru": "У него нет окна, которому можно отправить запрос. Используйте «Завершить сейчас».",
+      "id": "Tidak ada jendela untuk diminta. Gunakan Akhiri sekarang."
+    },
+    "Windows refused.": {
+      "en": "Windows refused.",
+      "zh-Hans": "Windows 拒绝了。",
+      "hi": "Windows ने मना कर दिया।",
+      "es": "Windows lo rechazó.",
+      "ar": "رفض Windows.",
+      "fr": "Windows a refusé.",
+      "bn": "Windows প্রত্যাখ্যান করেছে।",
+      "pt-BR": "O Windows recusou.",
+      "ru": "Windows отказал.",
+      "id": "Windows menolak."
+    },
+    "End {name}?": {
+      "en": "End {name}?",
+      "zh-Hans": "结束 {name}？",
+      "hi": "{name} समाप्त करें?",
+      "es": "¿Finalizar {name}?",
+      "ar": "إنهاء {name}؟",
+      "fr": "Terminer {name} ?",
+      "bn": "{name} শেষ করবেন?",
+      "pt-BR": "Encerrar {name}?",
+      "ru": "Завершить {name}?",
+      "id": "Akhiri {name}?"
+    },
+    "Ask to close": {
+      "en": "Ask to close",
+      "zh-Hans": "请求关闭",
+      "hi": "बंद करने को कहें",
+      "es": "Pedir que se cierre",
+      "ar": "طلب الإغلاق",
+      "fr": "Demander la fermeture",
+      "bn": "বন্ধ করতে বলুন",
+      "pt-BR": "Pedir para fechar",
+      "ru": "Закрыть мягко",
+      "id": "Minta menutup"
+    },
+    "End now": {
+      "en": "End now",
+      "zh-Hans": "立即结束",
+      "hi": "अभी समाप्त करें",
+      "es": "Finalizar ahora",
+      "ar": "إنهاء الآن",
+      "fr": "Terminer maintenant",
+      "bn": "এখনই শেষ করুন",
+      "pt-BR": "Encerrar agora",
+      "ru": "Завершить сейчас",
+      "id": "Akhiri sekarang"
+    },
+    "Search": {
+      "en": "Search",
+      "zh-Hans": "搜索",
+      "hi": "खोजें",
+      "es": "Buscar",
+      "ar": "بحث",
+      "fr": "Rechercher",
+      "bn": "খুঁজুন",
+      "pt-BR": "Pesquisar",
+      "ru": "Поиск",
+      "id": "Cari"
+    },
+    "One row per app": {
+      "en": "One row per app",
+      "zh-Hans": "每个应用一行",
+      "hi": "हर ऐप के लिए एक पंक्ति",
+      "es": "Una fila por aplicación",
+      "ar": "صف واحد لكل تطبيق",
+      "fr": "Une ligne par application",
+      "bn": "প্রতি অ্যাপে একটি সারি",
+      "pt-BR": "Uma linha por aplicativo",
+      "ru": "Одна строка на приложение",
+      "id": "Satu baris per aplikasi"
+    },
+    "Name": {
+      "en": "Name",
+      "zh-Hans": "名称",
+      "hi": "नाम",
+      "es": "Nombre",
+      "ar": "الاسم",
+      "fr": "Nom",
+      "bn": "নাম",
+      "pt-BR": "Nome",
+      "ru": "Имя",
+      "id": "Nama"
+    },
+    "PID": {
+      "en": "PID",
+      "zh-Hans": "PID",
+      "hi": "PID",
+      "es": "PID",
+      "ar": "PID",
+      "fr": "PID",
+      "bn": "PID",
+      "pt-BR": "PID",
+      "ru": "PID",
+      "id": "PID"
+    },
+    "No process matches.": {
+      "en": "No process matches.",
+      "zh-Hans": "没有匹配的进程。",
+      "hi": "कोई प्रक्रिया मेल नहीं खाती।",
+      "es": "Ningún proceso coincide.",
+      "ar": "لا توجد عملية مطابقة.",
+      "fr": "Aucun processus ne correspond.",
+      "bn": "কোনো প্রসেস মেলেনি।",
+      "pt-BR": "Nenhum processo corresponde.",
+      "ru": "Подходящих процессов нет.",
+      "id": "Tidak ada proses yang cocok."
+    },
+    "Port": {
+      "en": "Port",
+      "zh-Hans": "端口",
+      "hi": "पोर्ट",
+      "es": "Puerto",
+      "ar": "المنفذ",
+      "fr": "Port",
+      "bn": "পোর্ট",
+      "pt-BR": "Porta",
+      "ru": "Порт",
+      "id": "Port"
+    },
+    "Address": {
+      "en": "Address",
+      "zh-Hans": "地址",
+      "hi": "पता",
+      "es": "Dirección",
+      "ar": "العنوان",
+      "fr": "Adresse",
+      "bn": "ঠিকানা",
+      "pt-BR": "Endereço",
+      "ru": "Адрес",
+      "id": "Alamat"
+    },
+    "Process": {
+      "en": "Process",
+      "zh-Hans": "进程",
+      "hi": "प्रक्रिया",
+      "es": "Proceso",
+      "ar": "العملية",
+      "fr": "Processus",
+      "bn": "প্রসেস",
+      "pt-BR": "Processo",
+      "ru": "Процесс",
+      "id": "Proses"
+    },
+    "Open in the browser": {
+      "en": "Open in the browser",
+      "zh-Hans": "在浏览器中打开",
+      "hi": "ब्राउज़र में खोलें",
+      "es": "Abrir en el navegador",
+      "ar": "فتح في المتصفح",
+      "fr": "Ouvrir dans le navigateur",
+      "bn": "ব্রাউজারে খুলুন",
+      "pt-BR": "Abrir no navegador",
+      "ru": "Открыть в браузере",
+      "id": "Buka di browser"
+    },
+    "Ended": {
+      "en": "Ended",
+      "zh-Hans": "已结束",
+      "hi": "समाप्त",
+      "es": "Finalizado",
+      "ar": "تم الإنهاء",
+      "fr": "Terminé",
+      "bn": "শেষ হয়েছে",
+      "pt-BR": "Encerrado",
+      "ru": "Завершено",
+      "id": "Diakhiri"
+    },
+    "Listens on every network: other devices can reach it unless a firewall stops them.": {
+      "en": "Listens on every network: other devices can reach it unless a firewall stops them.",
+      "zh-Hans": "监听所有网络：除非防火墙拦截，其他设备都可以访问它。",
+      "hi": "हर नेटवर्क पर सुनता है: फ़ायरवॉल न रोके तो अन्य डिवाइस इस तक पहुँच सकते हैं।",
+      "es": "Escucha en todas las redes: otros dispositivos pueden acceder a él salvo que un cortafuegos lo impida.",
+      "ar": "يستمع على كل الشبكات: يمكن للأجهزة الأخرى الوصول إليه ما لم يمنعها جدار حماية.",
+      "fr": "Écoute sur tous les réseaux : d’autres appareils peuvent l’atteindre sauf si un pare-feu les bloque.",
+      "bn": "সব নেটওয়ার্কে শোনে: ফায়ারওয়াল আটকে না দিলে অন্য ডিভাইস এতে পৌঁছাতে পারে।",
+      "pt-BR": "Escuta em todas as redes: outros dispositivos podem alcançá-lo, a menos que um firewall os bloqueie.",
+      "ru": "Слушает во всех сетях: другие устройства могут подключиться, если их не остановит брандмауэр.",
+      "id": "Mendengarkan di semua jaringan: perangkat lain dapat mengaksesnya kecuali firewall menghentikannya."
+    },
+    "Every network": {
+      "en": "Every network",
+      "zh-Hans": "所有网络",
+      "hi": "हर नेटवर्क",
+      "es": "Todas las redes",
+      "ar": "كل الشبكات",
+      "fr": "Tous les réseaux",
+      "bn": "সব নেটওয়ার্ক",
+      "pt-BR": "Todas as redes",
+      "ru": "Все сети",
+      "id": "Semua jaringan"
+    },
+    "{name}, port {port}": {
+      "en": "{name}, port {port}",
+      "zh-Hans": "{name}，端口 {port}",
+      "hi": "{name}, पोर्ट {port}",
+      "es": "{name}, puerto {port}",
+      "ar": "{name}، المنفذ {port}",
+      "fr": "{name}, port {port}",
+      "bn": "{name}, পোর্ট {port}",
+      "pt-BR": "{name}, porta {port}",
+      "ru": "{name}, порт {port}",
+      "id": "{name}, port {port}"
+    },
+    "The ports could not be listed. Try again.": {
+      "en": "The ports could not be listed. Try again.",
+      "zh-Hans": "无法列出端口。请重试。",
+      "hi": "पोर्ट सूचीबद्ध नहीं हो सके। फिर कोशिश करें।",
+      "es": "No se pudieron listar los puertos. Inténtalo de nuevo.",
+      "ar": "تعذّر عرض المنافذ. حاول مرة أخرى.",
+      "fr": "Impossible de lister les ports. Réessayez.",
+      "bn": "পোর্ট তালিকাভুক্ত করা যায়নি। আবার চেষ্টা করুন।",
+      "pt-BR": "Não foi possível listar as portas. Tente novamente.",
+      "ru": "Не удалось получить список портов. Повторите попытку.",
+      "id": "Port tidak dapat ditampilkan. Coba lagi."
+    },
+    "No port matches.": {
+      "en": "No port matches.",
+      "zh-Hans": "没有匹配的端口。",
+      "hi": "कोई पोर्ट मेल नहीं खाता।",
+      "es": "Ningún puerto coincide.",
+      "ar": "لا يوجد منفذ مطابق.",
+      "fr": "Aucun port ne correspond.",
+      "bn": "কোনো পোর্ট মেলেনি।",
+      "pt-BR": "Nenhuma porta corresponde.",
+      "ru": "Подходящих портов нет.",
+      "id": "Tidak ada port yang cocok."
+    },
+    "Refresh": {
+      "en": "Refresh",
+      "zh-Hans": "刷新",
+      "hi": "रीफ़्रेश करें",
+      "es": "Actualizar",
+      "ar": "تحديث",
+      "fr": "Actualiser",
+      "bn": "রিফ্রেশ",
+      "pt-BR": "Atualizar",
+      "ru": "Обновить",
+      "id": "Segarkan"
+    },
+    "{n} B": {
+      "en": "{n} B",
+      "zh-Hans": "{n} B",
+      "hi": "{n} B",
+      "es": "{n} B",
+      "ar": "{n} B",
+      "fr": "{n} B",
+      "bn": "{n} B",
+      "pt-BR": "{n} B",
+      "ru": "{n} B",
+      "id": "{n} B"
+    },
+    "{n} KB": {
+      "en": "{n} KB",
+      "zh-Hans": "{n} KB",
+      "hi": "{n} KB",
+      "es": "{n} KB",
+      "ar": "{n} KB",
+      "fr": "{n} KB",
+      "bn": "{n} KB",
+      "pt-BR": "{n} KB",
+      "ru": "{n} KB",
+      "id": "{n} KB"
+    },
+    "{n} MB": {
+      "en": "{n} MB",
+      "zh-Hans": "{n} MB",
+      "hi": "{n} MB",
+      "es": "{n} MB",
+      "ar": "{n} MB",
+      "fr": "{n} MB",
+      "bn": "{n} MB",
+      "pt-BR": "{n} MB",
+      "ru": "{n} MB",
+      "id": "{n} MB"
+    },
+    "{n} GB": {
+      "en": "{n} GB",
+      "zh-Hans": "{n} GB",
+      "hi": "{n} GB",
+      "es": "{n} GB",
+      "ar": "{n} GB",
+      "fr": "{n} GB",
+      "bn": "{n} GB",
+      "pt-BR": "{n} GB",
+      "ru": "{n} GB",
+      "id": "{n} GB"
+    },
+    "{n} TB": {
+      "en": "{n} TB",
+      "zh-Hans": "{n} TB",
+      "hi": "{n} TB",
+      "es": "{n} TB",
+      "ar": "{n} TB",
+      "fr": "{n} TB",
+      "bn": "{n} TB",
+      "pt-BR": "{n} TB",
+      "ru": "{n} TB",
+      "id": "{n} TB"
+    },
+    "{size}/s": {
+      "en": "{size}/s",
+      "zh-Hans": "{size}/s",
+      "hi": "{size}/s",
+      "es": "{size}/s",
+      "ar": "{size}/s",
+      "fr": "{size}/s",
+      "bn": "{size}/s",
+      "pt-BR": "{size}/s",
+      "ru": "{size}/s",
+      "id": "{size}/s"
+    },
+    "{percent}%": {
+      "en": "{percent}%",
+      "zh-Hans": "{percent}%",
+      "hi": "{percent}%",
+      "es": "{percent}%",
+      "ar": "{percent}%",
+      "fr": "{percent}%",
+      "bn": "{percent}%",
+      "pt-BR": "{percent}%",
+      "ru": "{percent}%",
+      "id": "{percent}%"
+    },
+    "{m} min": {
+      "en": "{m} min",
+      "zh-Hans": "{m} 分钟",
+      "hi": "{m} मिनट",
+      "es": "{m} min",
+      "ar": "{m} د",
+      "fr": "{m} min",
+      "bn": "{m} মিনিট",
+      "pt-BR": "{m} min",
+      "ru": "{m} мин",
+      "id": "{m} mnt"
+    },
+    "{h} h {m} min": {
+      "en": "{h} h {m} min",
+      "zh-Hans": "{h} 小时 {m} 分钟",
+      "hi": "{h} घंटे {m} मिनट",
+      "es": "{h} h {m} min",
+      "ar": "{h} س {m} د",
+      "fr": "{h} h {m} min",
+      "bn": "{h} ঘণ্টা {m} মিনিট",
+      "pt-BR": "{h} h {m} min",
+      "ru": "{h} ч {m} мин",
+      "id": "{h} j {m} mnt"
+    },
+    "System monitor": {
+      "en": "System monitor",
+      "zh-Hans": "系统监视器",
+      "hi": "सिस्टम मॉनिटर",
+      "es": "Monitor del sistema",
+      "ar": "مراقب النظام",
+      "fr": "Moniteur système",
+      "bn": "সিস্টেম মনিটর",
+      "pt-BR": "Monitor do sistema",
+      "ru": "Монитор системы",
+      "id": "Monitor sistem"
+    },
+    "System": {
+      "en": "System",
+      "zh-Hans": "系统",
+      "hi": "सिस्टम",
+      "es": "Sistema",
+      "ar": "النظام",
+      "fr": "Système",
+      "bn": "সিস্টেম",
+      "pt-BR": "Sistema",
+      "ru": "Система",
+      "id": "Sistem"
+    },
+    "Processes and ports": {
+      "en": "Processes and ports",
+      "zh-Hans": "进程与端口",
+      "hi": "प्रक्रियाएँ और पोर्ट",
+      "es": "Procesos y puertos",
+      "ar": "العمليات والمنافذ",
+      "fr": "Processus et ports",
+      "bn": "প্রসেস ও পোর্ট",
+      "pt-BR": "Processos e portas",
+      "ru": "Процессы и порты",
+      "id": "Proses dan port"
+    },
+    "{count} sensors": {
+      "en": {
+        "one": "{count} sensor",
+        "other": "{count} sensors"
+      },
+      "zh-Hans": {
+        "other": "{count} 个传感器"
+      },
+      "hi": {
+        "one": "{count} सेंसर",
+        "other": "{count} सेंसर"
+      },
+      "es": {
+        "one": "{count} sensor",
+        "other": "{count} sensores"
+      },
+      "ar": {
+        "zero": "{count} مستشعر",
+        "one": "{count} مستشعر",
+        "two": "{count} مستشعران",
+        "few": "{count} مستشعرات",
+        "many": "{count} مستشعراً",
+        "other": "{count} مستشعر"
+      },
+      "fr": {
+        "one": "{count} capteur",
+        "other": "{count} capteurs"
+      },
+      "bn": {
+        "one": "{count}টি সেন্সর",
+        "other": "{count}টি সেন্সর"
+      },
+      "pt-BR": {
+        "one": "{count} sensor",
+        "other": "{count} sensores"
+      },
+      "ru": {
+        "one": "{count} датчик",
+        "few": "{count} датчика",
+        "many": "{count} датчиков",
+        "other": "{count} датчика"
+      },
+      "id": {
+        "other": "{count} sensor"
+      }
+    },
+    "{count} were left running.": {
+      "en": {
+        "one": "{count} was left running.",
+        "other": "{count} were left running."
+      },
+      "zh-Hans": {
+        "other": "{count} 个仍在运行。"
+      },
+      "hi": {
+        "one": "{count} चलता रह गया।",
+        "other": "{count} चलते रह गए।"
+      },
+      "es": {
+        "one": "{count} sigue en ejecución.",
+        "other": "{count} siguen en ejecución."
+      },
+      "ar": {
+        "zero": "بقي {count} قيد التشغيل.",
+        "one": "بقي {count} قيد التشغيل.",
+        "two": "بقي {count} قيد التشغيل.",
+        "few": "بقيت {count} قيد التشغيل.",
+        "many": "بقي {count} قيد التشغيل.",
+        "other": "بقي {count} قيد التشغيل."
+      },
+      "fr": {
+        "one": "{count} est resté actif.",
+        "other": "{count} sont restés actifs."
+      },
+      "bn": {
+        "one": "{count}টি চলমান রয়ে গেছে।",
+        "other": "{count}টি চলমান রয়ে গেছে।"
+      },
+      "pt-BR": {
+        "one": "{count} continua em execução.",
+        "other": "{count} continuam em execução."
+      },
+      "ru": {
+        "one": "{count} продолжает работать.",
+        "few": "{count} продолжают работать.",
+        "many": "{count} продолжают работать.",
+        "other": "{count} продолжают работать."
+      },
+      "id": {
+        "other": "{count} masih berjalan."
+      }
+    },
+    "End {name} ({count} processes)?": {
+      "en": {
+        "one": "End {name} ({count} process)?",
+        "other": "End {name} ({count} processes)?"
+      },
+      "zh-Hans": {
+        "other": "结束 {name}（{count} 个进程）？"
+      },
+      "hi": {
+        "one": "{name} ({count} प्रक्रिया) समाप्त करें?",
+        "other": "{name} ({count} प्रक्रियाएँ) समाप्त करें?"
+      },
+      "es": {
+        "one": "¿Finalizar {name} ({count} proceso)?",
+        "other": "¿Finalizar {name} ({count} procesos)?"
+      },
+      "ar": {
+        "zero": "إنهاء {name} ({count} عملية)؟",
+        "one": "إنهاء {name} ({count} عملية)؟",
+        "two": "إنهاء {name} ({count} عمليتان)؟",
+        "few": "إنهاء {name} ({count} عمليات)؟",
+        "many": "إنهاء {name} ({count} عملية)؟",
+        "other": "إنهاء {name} ({count} عملية)؟"
+      },
+      "fr": {
+        "one": "Terminer {name} ({count} processus) ?",
+        "other": "Terminer {name} ({count} processus) ?"
+      },
+      "bn": {
+        "one": "{name} ({count}টি প্রসেস) শেষ করবেন?",
+        "other": "{name} ({count}টি প্রসেস) শেষ করবেন?"
+      },
+      "pt-BR": {
+        "one": "Encerrar {name} ({count} processo)?",
+        "other": "Encerrar {name} ({count} processos)?"
+      },
+      "ru": {
+        "one": "Завершить {name} ({count} процесс)?",
+        "few": "Завершить {name} ({count} процесса)?",
+        "many": "Завершить {name} ({count} процессов)?",
+        "other": "Завершить {name} ({count} процесса)?"
+      },
+      "id": {
+        "other": "Akhiri {name} ({count} proses)?"
+      }
+    },
+    "{count} processes": {
+      "en": {
+        "one": "{count} process",
+        "other": "{count} processes"
+      },
+      "zh-Hans": {
+        "other": "{count} 个进程"
+      },
+      "hi": {
+        "one": "{count} प्रक्रिया",
+        "other": "{count} प्रक्रियाएँ"
+      },
+      "es": {
+        "one": "{count} proceso",
+        "other": "{count} procesos"
+      },
+      "ar": {
+        "zero": "{count} عملية",
+        "one": "{count} عملية",
+        "two": "{count} عمليتان",
+        "few": "{count} عمليات",
+        "many": "{count} عملية",
+        "other": "{count} عملية"
+      },
+      "fr": {
+        "one": "{count} processus",
+        "other": "{count} processus"
+      },
+      "bn": {
+        "one": "{count}টি প্রসেস",
+        "other": "{count}টি প্রসেস"
+      },
+      "pt-BR": {
+        "one": "{count} processo",
+        "other": "{count} processos"
+      },
+      "ru": {
+        "one": "{count} процесс",
+        "few": "{count} процесса",
+        "many": "{count} процессов",
+        "other": "{count} процесса"
+      },
+      "id": {
+        "other": "{count} proses"
+      }
+    },
+    "{count} ports open": {
+      "en": {
+        "one": "{count} port open",
+        "other": "{count} ports open"
+      },
+      "zh-Hans": {
+        "other": "{count} 个端口开放"
+      },
+      "hi": {
+        "one": "{count} पोर्ट खुला",
+        "other": "{count} पोर्ट खुले"
+      },
+      "es": {
+        "one": "{count} puerto abierto",
+        "other": "{count} puertos abiertos"
+      },
+      "ar": {
+        "zero": "{count} منفذ مفتوح",
+        "one": "{count} منفذ مفتوح",
+        "two": "{count} منفذان مفتوحان",
+        "few": "{count} منافذ مفتوحة",
+        "many": "{count} منفذاً مفتوحاً",
+        "other": "{count} منفذ مفتوح"
+      },
+      "fr": {
+        "one": "{count} port ouvert",
+        "other": "{count} ports ouverts"
+      },
+      "bn": {
+        "one": "{count}টি পোর্ট খোলা",
+        "other": "{count}টি পোর্ট খোলা"
+      },
+      "pt-BR": {
+        "one": "{count} porta aberta",
+        "other": "{count} portas abertas"
+      },
+      "ru": {
+        "one": "{count} открытый порт",
+        "few": "{count} открытых порта",
+        "many": "{count} открытых портов",
+        "other": "{count} открытого порта"
+      },
+      "id": {
+        "other": "{count} port terbuka"
+      }
+    },
+    "{n} rpm": {
+      "en": "{n} rpm",
+      "zh-Hans": "{n} rpm",
+      "hi": "{n} rpm",
+      "es": "{n} rpm",
+      "ar": "{n} rpm",
+      "fr": "{n} rpm",
+      "bn": "{n} rpm",
+      "pt-BR": "{n} rpm",
+      "ru": "{n} rpm",
+      "id": "{n} rpm"
+    },
+    "Package": {
+      "en": "Package",
+      "zh-Hans": "封装",
+      "hi": "पैकेज",
+      "es": "Paquete",
+      "ar": "الحزمة",
+      "fr": "Boîtier",
+      "bn": "প্যাকেজ",
+      "pt-BR": "Pacote",
+      "ru": "Корпус",
+      "id": "Paket"
+    },
+    "Processor": {
+      "en": "Processor",
+      "zh-Hans": "处理器",
+      "hi": "प्रोसेसर",
+      "es": "Procesador",
+      "ar": "المعالج",
+      "fr": "Processeur",
+      "bn": "প্রসেসর",
+      "pt-BR": "Processador",
+      "ru": "Процессор",
+      "id": "Prosesor"
+    },
+    "Health {percent}": {
+      "en": "Health {percent}",
+      "zh-Hans": "健康度 {percent}",
+      "hi": "स्वास्थ्य {percent}",
+      "es": "Salud {percent}",
+      "ar": "الصحة {percent}",
+      "fr": "Santé {percent}",
+      "bn": "স্বাস্থ্য {percent}",
+      "pt-BR": "Saúde {percent}",
+      "ru": "Состояние {percent}",
+      "id": "Kesehatan {percent}"
+    },
+    "Fans": {
+      "en": {
+        "one": "Fan",
+        "other": "Fans"
+      },
+      "zh-Hans": {
+        "other": "风扇"
+      },
+      "hi": {
+        "one": "पंखा",
+        "other": "पंखे"
+      },
+      "es": {
+        "one": "Ventilador",
+        "other": "Ventiladores"
+      },
+      "ar": {
+        "zero": "المراوح",
+        "one": "مروحة",
+        "two": "مروحتان",
+        "few": "المراوح",
+        "many": "المراوح",
+        "other": "المراوح"
+      },
+      "fr": {
+        "one": "Ventilateur",
+        "other": "Ventilateurs"
+      },
+      "bn": {
+        "one": "ফ্যান",
+        "other": "ফ্যান"
+      },
+      "pt-BR": {
+        "one": "Ventoinha",
+        "other": "Ventoinhas"
+      },
+      "ru": {
+        "one": "Вентилятор",
+        "few": "Вентиляторы",
+        "many": "Вентиляторы",
+        "other": "Вентиляторы"
+      },
+      "id": {
+        "other": "Kipas"
+      }
+    },
+    "Needs the PawnIO driver": {
+      "en": "Needs the PawnIO driver"
+    },
+    "Not reported by this PC": {
+      "en": "Not reported by this PC"
+    }
+  }
+}

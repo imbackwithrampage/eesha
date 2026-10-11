@@ -1,0 +1,484 @@
+{
+  "strings": {
+    "Voice": {
+      "en": "Voice"
+    },
+    "Talk to the assistant": {
+      "en": "Talk to the assistant"
+    },
+    "Listen for the wake phrase": {
+      "en": "Listen for the wake phrase"
+    },
+    "Listening": {
+      "en": "Listening"
+    },
+    "Thinking": {
+      "en": "Thinking"
+    },
+    "Speaking": {
+      "en": "Speaking"
+    },
+    "On this keyboard Right Alt types characters. Pick another key.": {
+      "en": "On this keyboard Right Alt types characters. Pick another key."
+    },
+    "Use Right Ctrl, Right Shift, Right Alt, Scroll Lock, Pause, Insert or a function key.": {
+      "en": "Use Right Ctrl, Right Shift, Right Alt, Scroll Lock, Pause, Insert or a function key."
+    },
+    "Yes": {
+      "en": "Yes"
+    },
+    "Hello. This is the voice I answer with.": {
+      "en": "Hello. This is the voice I answer with."
+    },
+    "Undo": {
+      "en": "Undo"
+    },
+    "Stop": {
+      "en": "Stop"
+    },
+    "Listening…": {
+      "en": "Listening…"
+    },
+    "Click, then press a key": {
+      "en": "Click, then press a key"
+    },
+    "Clear": {
+      "en": "Clear"
+    },
+    "Not set": {
+      "en": "Not set"
+    },
+    "Press a key…": {
+      "en": "Press a key…"
+    },
+    "Press the key, then let go. Esc cancels, Backspace removes it.": {
+      "en": "Press the key, then let go. Esc cancels, Backspace removes it."
+    },
+    "The download did not start. Try again in a moment.": {
+      "en": "The download did not start. Try again in a moment."
+    },
+    "Remove": {
+      "en": "Remove"
+    },
+    "Remove it?": {
+      "en": "Remove it?"
+    },
+    "Starting…": {
+      "en": "Starting…"
+    },
+    "Download": {
+      "en": "Download"
+    },
+    "Checking the files…": {
+      "en": "Checking the files…"
+    },
+    "Ready": {
+      "en": "Ready"
+    },
+    "Try again": {
+      "en": "Try again"
+    },
+    "Always on": {
+      "en": "Always on"
+    },
+    "The microphone opens only when you press the talk key.": {
+      "en": "The microphone opens only when you press the talk key."
+    },
+    "The microphone stays open to hear “{phrase}”. A bar of light at the top of the screen says so.": {
+      "en": "The microphone stays open to hear “{phrase}”. A bar of light at the top of the screen says so."
+    },
+    "Listens for “{phrase}” on mains power only. On battery, only the talk key.": {
+      "en": "Listens for “{phrase}” on mains power only. On battery, only the talk key."
+    },
+    "Talk key only": {
+      "en": "Talk key only"
+    },
+    "Talk key and “{phrase}”": {
+      "en": "Talk key and “{phrase}”"
+    },
+    "“{phrase}” when plugged in": {
+      "en": "“{phrase}” when plugged in"
+    },
+    "How listening starts": {
+      "en": "How listening starts"
+    },
+    "Talk key": {
+      "en": "Talk key"
+    },
+    "Tap it to start a turn. Or hold it and talk: it listens until you let go. The key still does what it always does, so pick one that does nothing on its own.": {
+      "en": "Tap it to start a turn. Or hold it and talk: it listens until you let go. The key still does what it always does, so pick one that does nothing on its own."
+    },
+    "natural": {
+      "en": "natural"
+    },
+    "Automatic": {
+      "en": "Automatic"
+    },
+    "Try the voice": {
+      "en": "Try the voice"
+    },
+    "A key is saved": {
+      "en": "A key is saved"
+    },
+    "Paste your key": {
+      "en": "Paste your key"
+    },
+    "Save": {
+      "en": "Save"
+    },
+    "Could not save: {error}": {
+      "en": "Could not save: {error}"
+    },
+    "Could not remove: {error}": {
+      "en": "Could not remove: {error}"
+    },
+    "3 minutes": {
+      "en": "3 minutes"
+    },
+    "10 minutes": {
+      "en": "10 minutes"
+    },
+    "30 minutes": {
+      "en": "30 minutes"
+    },
+    "1 hour": {
+      "en": "1 hour"
+    },
+    "3. A free online model": {
+      "en": "3. A free online model"
+    },
+    "Off until you turn it on. Then the words of your question, and of the few before it, go to OpenRouter's free models or Google's free tier, with the key you saved under Chat. Never the sound of your voice, never your files. A free service may keep what it is sent.": {
+      "en": "Off until you turn it on. Then the words of your question, and of the few before it, go to OpenRouter's free models or Google's free tier, with the key you saved under Chat. Never the sound of your voice, never your files. A free service may keep what it is sent."
+    },
+    "4. Claude, with my own key": {
+      "en": "4. Claude, with my own key"
+    },
+    "Off until you turn it on, even when a key is saved for chat. Then the words of your question, and of the few before it, go to Anthropic and are paid for with your key.": {
+      "en": "Off until you turn it on, even when a key is saved for chat. Then the words of your question, and of the few before it, go to Anthropic and are paid for with your key."
+    },
+    "No OpenRouter or Google key is saved yet: add one under Chat.": {
+      "en": "No OpenRouter or Google key is saved yet: add one under Chat."
+    },
+    "No Claude key is saved yet: add one under Chat.": {
+      "en": "No Claude key is saved yet: add one under Chat."
+    },
+    "Your city": {
+      "en": "Your city"
+    },
+    "No city by that name was found.": {
+      "en": "No city by that name was found."
+    },
+    "The city could not be looked up just now.": {
+      "en": "The city could not be looked up just now."
+    },
+    "Talk to {name} and it answers out loud. The sound of your voice stays in this computer's memory: it is never saved and never sent anywhere.": {
+      "en": "Talk to {name} and it answers out loud. The sound of your voice stays in this computer's memory: it is never saved and never sent anywhere."
+    },
+    "Speech recognition": {
+      "en": "Speech recognition"
+    },
+    "Turns what you say into text, on this computer. About 19 MB. Voice needs it before anything else.": {
+      "en": "Turns what you say into text, on this computer. About 19 MB. Voice needs it before anything else."
+    },
+    "Command model": {
+      "en": "Command model"
+    },
+    "Understands a command said in your own words, on this computer. About 35 MB.": {
+      "en": "Understands a command said in your own words, on this computer. About 35 MB."
+    },
+    "Speak answers": {
+      "en": "Speak answers"
+    },
+    "Off: answers are only shown, in the caption.": {
+      "en": "Off: answers are only shown, in the caption."
+    },
+    "Automatic is the natural voice once it is downloaded, and a Windows voice until then.": {
+      "en": "Automatic is the natural voice once it is downloaded, and a Windows voice until then."
+    },
+    "Natural voice": {
+      "en": "Natural voice"
+    },
+    "Kokoro, on this computer. About {size}; every file is checked before it is used.": {
+      "en": "Kokoro, on this computer. About {size}; every file is checked before it is used."
+    },
+    "ElevenLabs voice": {
+      "en": "ElevenLabs voice"
+    },
+    "Off until you turn it on, and it needs your own key. Then every sentence it speaks is sent to ElevenLabs.": {
+      "en": "Off until you turn it on, and it needs your own key. Then every sentence it speaks is sent to ElevenLabs."
+    },
+    "ElevenLabs key": {
+      "en": "ElevenLabs key"
+    },
+    "Kept in Windows Credential Manager, never in a file.": {
+      "en": "Kept in Windows Credential Manager, never in a file."
+    },
+    "Hear it": {
+      "en": "Hear it"
+    },
+    "Says one sentence with the voice chosen above.": {
+      "en": "Says one sentence with the voice chosen above."
+    },
+    "Captions": {
+      "en": "Captions"
+    },
+    "What was heard and the answer, in a small capsule under the island. Off: only its microphone dot and stop button.": {
+      "en": "What was heard and the answer, in a small capsule under the island. Off: only its microphone dot and stop button."
+    },
+    "Lower the music while it talks": {
+      "en": "Lower the music while it talks"
+    },
+    "Read chat answers aloud": {
+      "en": "Read chat answers aloud"
+    },
+    "Answers": {
+      "en": "Answers"
+    },
+    "A command never leaves this computer. An open question goes to the first of these that is switched on and ready, in this order.": {
+      "en": "A command never leaves this computer. An open question goes to the first of these that is switched on and ready, in this order."
+    },
+    "1. Built-in model": {
+      "en": "1. Built-in model"
+    },
+    "Qwen3.5-4B, on this computer. About 2.7 GB to download, and about 4.3 GB of memory while it is loaded.": {
+      "en": "Qwen3.5-4B, on this computer. About 2.7 GB to download, and about 4.3 GB of memory while it is loaded."
+    },
+    "Keep it loaded": {
+      "en": "Keep it loaded"
+    },
+    "It loads with the first question and leaves memory this long after the last one.": {
+      "en": "It loads with the first question and leaves memory this long after the last one."
+    },
+    "2. My local server from chat": {
+      "en": "2. My local server from chat"
+    },
+    "The Ollama, LM Studio or other server you set up under Chat. Nothing leaves this computer.": {
+      "en": "The Ollama, LM Studio or other server you set up under Chat. Nothing leaves this computer."
+    },
+    "From the internet": {
+      "en": "From the internet"
+    },
+    "Weather by voice": {
+      "en": "Weather by voice"
+    },
+    "Off until you turn it on. Then the name of your city, and nothing else, goes to Open-Meteo, a free weather service.": {
+      "en": "Off until you turn it on. Then the name of your city, and nothing else, goes to Open-Meteo, a free weather service."
+    },
+    "City": {
+      "en": "City"
+    },
+    "Can be set once weather by voice is on. Type it and press Enter.": {
+      "en": "Can be set once weather by voice is on. Type it and press Enter."
+    },
+    "Look up facts": {
+      "en": "Look up facts"
+    },
+    "Off until you turn it on. Then the words of a question such as “who was Ada Lovelace” are sent to Wikipedia, and the answer begins “According to Wikipedia”.": {
+      "en": "Off until you turn it on. Then the words of a question such as “who was Ada Lovelace” are sent to Wikipedia, and the answer begins “According to Wikipedia”."
+    },
+    "Stopping it": {
+      "en": "Stopping it"
+    },
+    "Esc": {
+      "en": "Esc"
+    },
+    "Ends the turn at once, whatever it is doing. The key still reaches the window you are in.": {
+      "en": "Ends the turn at once, whatever it is doing. The key still reaches the window you are in."
+    },
+    "The talk key": {
+      "en": "The talk key"
+    },
+    "Stops what it is saying and listens again.": {
+      "en": "Stops what it is saying and listens again."
+    },
+    "Say “stop”": {
+      "en": "Say “stop”"
+    },
+    "Works while it is talking.": {
+      "en": "Works while it is talking."
+    },
+    "What voice never does": {
+      "en": "What voice never does"
+    },
+    "Approve or deny a permission. It reads the request aloud and says to click.": {
+      "en": "Approve or deny a permission. It reads the request aloud and says to click."
+    },
+    "Send an email. It gets the message ready; Send is your click.": {
+      "en": "Send an email. It gets the message ready; Send is your click."
+    },
+    "Delete files, or clear or empty anything.": {
+      "en": "Delete files, or clear or empty anything."
+    },
+    "Spend your plan. It never prompts or starts a coding agent.": {
+      "en": "Spend your plan. It never prompts or starts a coding agent."
+    },
+    "I can't approve or deny by voice. Click the button on the card.": {
+      "en": "I can't approve or deny by voice. Click the button on the card."
+    },
+    "I can't send by voice. It's ready: click Send.": {
+      "en": "I can't send by voice. It's ready: click Send."
+    },
+    "I can't delete, clear or empty anything by voice. That takes a click.": {
+      "en": "I can't delete, clear or empty anything by voice. That takes a click."
+    },
+    "I can't prompt an agent by voice: that would spend your plan.": {
+      "en": "I can't prompt an agent by voice: that would spend your plan."
+    },
+    "I can't do that by voice. That takes a click.": {
+      "en": "I can't do that by voice. That takes a click."
+    },
+    "I only paste after a yes.": {
+      "en": "I only paste after a yes."
+    },
+    "I can't unmute the microphones by voice. Press Ctrl+Alt+U.": {
+      "en": "I can't unmute the microphones by voice. Press Ctrl+Alt+U."
+    },
+    "I can't approve by voice. Click Allow.": {
+      "en": "I can't approve by voice. Click Allow."
+    },
+    "I can't deny by voice. Click Deny.": {
+      "en": "I can't deny by voice. Click Deny."
+    },
+    "I can't answer an agent for you. Click an option on the card.": {
+      "en": "I can't answer an agent for you. Click an option on the card."
+    },
+    "I can't send mail by voice. It's ready: click Send.": {
+      "en": "I can't send mail by voice. It's ready: click Send."
+    },
+    "I can't delete files by voice. Do it yourself, with a click.": {
+      "en": "I can't delete files by voice. Do it yourself, with a click."
+    },
+    "I can't prompt an agent by voice: that would spend your plan. Type it in the terminal.": {
+      "en": "I can't prompt an agent by voice: that would spend your plan. Type it in the terminal."
+    },
+    "Shall I go ahead?": {
+      "en": "Shall I go ahead?"
+    },
+    "Done: {what}.": {
+      "en": "Done: {what}."
+    },
+    "That didn't work.": {
+      "en": "That didn't work."
+    },
+    "It's ready. Click to finish.": {
+      "en": "It's ready. Click to finish."
+    },
+    "Done.": {
+      "en": "Done."
+    },
+    "Say undo to take it back.": {
+      "en": "Say undo to take it back."
+    },
+    "Sorry, say that again?": {
+      "en": "Sorry, say that again?"
+    },
+    "I can't answer that on this PC yet. You can add a text model in Settings, Voice.": {
+      "en": "I can't answer that on this PC yet. You can add a text model in Settings, Voice."
+    },
+    "Which one?": {
+      "en": "Which one?"
+    },
+    "Here it is.": {
+      "en": "Here it is."
+    },
+    "Settings are open.": {
+      "en": "Settings are open."
+    },
+    "No agent session is open.": {
+      "en": "No agent session is open."
+    },
+    "I couldn't open it.": {
+      "en": "I couldn't open it."
+    },
+    "Opening {name}.": {
+      "en": "Opening {name}."
+    },
+    "It's in your browser.": {
+      "en": "It's in your browser."
+    },
+    "I haven't said anything yet.": {
+      "en": "I haven't said anything yet."
+    },
+    "Undone.": {
+      "en": "Undone."
+    },
+    "There is nothing to undo.": {
+      "en": "There is nothing to undo."
+    },
+    "I'll only listen when you press the key.": {
+      "en": "I'll only listen when you press the key."
+    },
+    "Turn off {name}?": {
+      "en": "Turn off {name}?"
+    },
+    "It's off.": {
+      "en": "It's off."
+    },
+    "I couldn't turn it off.": {
+      "en": "I couldn't turn it off."
+    },
+    "Settings are open: switch {name} on there.": {
+      "en": "Settings are open: switch {name} on there."
+    },
+    "Which section?": {
+      "en": "Which section?"
+    },
+    "Which app?": {
+      "en": "Which app?"
+    },
+    "What should I search for?": {
+      "en": "What should I search for?"
+    },
+    "Which feature?": {
+      "en": "Which feature?"
+    },
+    "An agent": {
+      "en": "An agent"
+    },
+    "{who} asks: {question}": {
+      "en": "{who} asks: {question}"
+    },
+    "{who} wants to use {tool}.": {
+      "en": "{who} wants to use {tool}."
+    },
+    "I can't send it by voice. Press Send when you are ready.": {
+      "en": "I can't send it by voice. Press Send when you are ready."
+    },
+    "The email is ready. Press Send when you are ready.": {
+      "en": "The email is ready. Press Send when you are ready."
+    },
+    "I couldn't get the address, so nothing is open.": {
+      "en": "I couldn't get the address, so nothing is open."
+    },
+    "Okay, I won't open it.": {
+      "en": "Okay, I won't open it."
+    },
+    "I couldn't open the mail window. Is email switched on?": {
+      "en": "I couldn't open the mail window. Is email switched on?"
+    },
+    "Drop the file on the island now.": {
+      "en": "Drop the file on the island now."
+    },
+    "Email ready": {
+      "en": "Email ready"
+    },
+    "Say the address again, like name at example dot com.": {
+      "en": "Say the address again, like name at example dot com."
+    },
+    "Who is it for? Say the email address.": {
+      "en": "Who is it for? Say the email address."
+    },
+    "What is it about?": {
+      "en": "What is it about?"
+    },
+    "What should it say?": {
+      "en": "What should it say?"
+    },
+    "No file came, so it is open without one. Press Send when you are ready.": {
+      "en": "No file came, so it is open without one. Press Send when you are ready."
+    },
+    "What should I look up?": {
+      "en": "What should I look up?"
+    }
+  }
+}

@@ -1,0 +1,85 @@
+[package]
+name = "notch-feat-voice"
+description = "Lintel feature: Voice"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+
+# Everything the voice packages of docs/VOICE.md §10 need is declared here, once, so that none of them
+# edits this file. An example is found by its file name: examples/voice-<package>-probe.rs needs no entry.
+
+[dependencies]
+notch-core = { path = "../core" }
+# The wake phrase is "OK " + the app's name.
+notch-brand = { path = "../brand" }
+# Whistle (engine, model, their download and hashes) is the dictation feature's: stt.rs runs it.
+notch-feat-dictation = { path = "../dictation" }
+# The default device changing or going away, the microphones' mute.
+svc-audio = { path = "../svc-audio" }
+# The talk key: Right Ctrl on its own, through the low-level keyboard hook, only while voice is on.
+svc-input = { path = "../svc-input" }
+# Is something playing (the deaf-engine count, the wake's second pass).
+svc-media = { path = "../svc-media" }
+# Opening a Start Menu program.
+svc-shell = { path = "../svc-shell" }
+# Lock, sleep, display off, energy saver, the window in front: the guards.
+svc-sysevents = { path = "../svc-sysevents" }
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+tauri = { version = "2", features = [] }
+# Model checksums.
+sha2 = "0.10"
+# HTTP: `reqwest::blocking` for the loopback servers (needle, llama-server) from a thread of our own,
+# the async client through `notch_core::net` and `tauri::async_runtime::block_on` for downloads,
+# Open-Meteo and ElevenLabs.
+reqwest = { version = "0.12", default-features = false, features = ["blocking", "json", "rustls-tls"] }
+# The `#[implement]` macro of `windows` names this crate by path; it is the one `windows` 0.61 already builds.
+windows-core = "0.61"
+# List the Win32 API sets this feature calls; Cargo unifies them across the workspace.
+windows = { version = "0.61", features = [
+  # Windows voices (Windows.Media.SpeechSynthesis) and reading their stream; SAPI as the other way in.
+  "Foundation",
+  "Foundation_Collections",
+  "Globalization",
+  "Media",
+  "Media_Core",
+  "Media_SpeechSynthesis",
+  "Storage_Streams",
+  "Win32_Media_Speech",
+  "Win32_System_WinRT",
+  # WASAPI capture and render, the endpoint's meter and mute.
+  "Win32_Devices_FunctionDiscovery",
+  "Win32_Foundation",
+  "Win32_Media_Audio",
+  "Win32_Media_Audio_Endpoints",
+  "Win32_Media_KernelStreaming",
+  "Win32_Media_Multimedia",
+  "Win32_Security",
+  "Win32_System_Com",
+  "Win32_System_Com_StructuredStorage",
+  "Win32_System_Variant",
+  "Win32_UI_Shell_PropertiesSystem",
+  # Child processes: the job, priority and cores, pipes, who listens on a port (proc.rs).
+  "Win32_NetworkManagement_IpHelper",
+  "Win32_NetworkManagement_Ndis",
+  "Win32_Networking_WinSock",
+  "Win32_System_Console",
+  "Win32_System_Diagnostics_ToolHelp",
+  "Win32_System_IO",
+  "Win32_System_JobObjects",
+  "Win32_System_Kernel",
+  "Win32_System_Pipes",
+  "Win32_System_Power",
+  "Win32_System_SystemInformation",
+  "Win32_System_Threading",
+  # The talk key and Esc, the capsule's window, the Start Menu.
+  "Win32_Graphics_Dwm",
+  "Win32_Graphics_Gdi",
+  "Win32_Storage_FileSystem",
+  "Win32_System_LibraryLoader",
+  "Win32_UI_HiDpi",
+  "Win32_UI_Input_KeyboardAndMouse",
+  "Win32_UI_Shell",
+  "Win32_UI_Shell_Common",
+  "Win32_UI_WindowsAndMessaging",
+] }

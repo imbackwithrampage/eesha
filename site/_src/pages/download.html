@@ -1,0 +1,63 @@
+<div class="page-head wrap">
+  <h1 class="rise">Download Lintel.</h1>
+  <p class="lede rise">Free, for Windows 10 and 11. It installs for your account only, so it never asks for administrator rights.</p>
+</div>
+
+<section class="wrap">
+  <div class="get">
+    <div class="get-card rise-late">
+      <div class="get-in">
+        <h2>Lintel for Windows</h2>
+        <a class="btn btn-solid" href="{REPO}/releases/download/v1.0.0/lintel-1.0.0-setup.exe"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 4v11M7 10.5l5 5 5-5M5 19.5h14"/></svg>Download for Windows</a>
+        <dl class="facts">
+          <div><dt>Version</dt><dd>1.0.0</dd></div>
+          <div><dt>Size</dt><dd>39.8 MB</dd></div>
+          <div><dt>Needs</dt><dd>Windows 10 or 11</dd></div>
+        </dl>
+        <p class="fine" style="margin-top:22px">The file is <code>lintel-1.0.0-setup.exe</code>, from the project's <a href="{REPO}/releases">releases page on GitHub</a>, where older and newer versions are listed too.</p>
+      </div>
+    </div>
+
+    <div class="prose">
+      <h2>What Windows will ask</h2>
+      <p>Lintel is not code-signed yet. A signing certificate costs money every year, and this is a free project. So Windows does not know the file, and SmartScreen shows a blue warning: <strong>"Windows protected your PC"</strong>.</p>
+      <ol class="steps">
+        <li><strong>Open the file you downloaded.</strong>Your browser may also warn you. Choose Keep.</li>
+        <li><strong>Click "More info".</strong>It is the small link in the blue window.</li>
+        <li><strong>Click "Run anyway".</strong>The installer starts. It does not ask for an administrator.</li>
+        <li><strong>Finish the installer.</strong>Lintel starts, and the island greets you at the top of the screen.</li>
+      </ol>
+      <p>If you would rather not run an unsigned file, that is a fair choice. The whole source is public, and you can build it yourself with the commands below.</p>
+    </div>
+  </div>
+</section>
+
+<section class="wrap" style="padding-top:0">
+  <div class="prose">
+    <h2>What you need</h2>
+    <ul>
+      <li><strong>Windows 10 or Windows 11, 64-bit.</strong> Lintel does not run on macOS or Linux.</li>
+      <li><strong>The WebView2 runtime.</strong> Windows 11 has it. On Windows 10 the installer fetches it if it is missing.</li>
+      <li><strong>No account.</strong> Lintel has no sign-up and no server of its own.</li>
+      <li><strong>Nothing else to start.</strong> A few features need something extra, and each one says so: a key of your own for chat, a download for the voice assistant and dictation, one administrator prompt for hardware sensors.</li>
+    </ul>
+
+    <h2>Updates</h2>
+    <p>Lintel never checks for updates by itself. In Settings, open Apps and click "Check for updates" when you want to look.</p>
+
+    <h2>How to remove it</h2>
+    <ol class="steps">
+      <li><strong>Open Windows Settings.</strong>Go to Apps, then Installed apps.</li>
+      <li><strong>Find Lintel and choose Uninstall.</strong>The uninstaller takes Lintel's entries out of your agents' settings. It leaves your own data unless you tick the box to delete it.</li>
+    </ol>
+
+    <h2>Build it from source</h2>
+    <p>You need Node.js, the Rust toolchain and the WebView2 runtime on Windows. Then:</p>
+<pre><code>git clone {REPO}
+cd lintel
+npm install
+npm run build
+npm run tauri dev</code></pre>
+    <p><code>npm run pack</code> makes the installer into the <code>release</code> folder. It also builds the hardware helper, which needs the .NET 8 SDK. More detail is in the <a href="docs.html#build">documentation</a> and on the <a href="contribute.html">Contribute</a> page.</p>
+  </div>
+</section>

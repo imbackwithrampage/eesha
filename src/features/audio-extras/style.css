@@ -1,0 +1,14 @@
+/* Audio extras. Every selector starts with .f-audio-extras- and uses the tokens of src/ui/tokens.css. */
+
+/* Bars that follow the music: their own keyframes stop, each height is set from
+   the sound thirty times a second (index.ts) and eased to the next. */
+.f-audio-extras-live.bars > i {
+  animation: none;
+  transition: transform 66ms linear;
+}
+
+.f-audio-extras-note {
+  margin: var(--s-2) var(--s-1) 0;
+  color: var(--dim);
+  font: 400 var(--t-sm) var(--font);
+}

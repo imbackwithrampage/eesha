@@ -1,0 +1,193 @@
+<div class="page-head wrap">
+  <h1 class="rise">Documentation.</h1>
+  <p class="lede rise">The detail, for people who want it: how the island decides, every default key, what leaves your computer, and how it is built.</p>
+</div>
+
+<section class="wrap">
+  <div class="split">
+    <nav class="toc" aria-label="On this page">
+      <a href="#island">The island's rules</a>
+      <a href="#keys">Keyboard and shortcuts</a>
+      <a href="#settings">Settings by group</a>
+      <a href="#privacy">Privacy</a>
+      <a href="#helper">Hardware sensors</a>
+      <a href="#voice">Voice assistant</a>
+      <a href="#limits">Known limits</a>
+      <a href="#build">Build from source</a>
+      <a href="#architecture">Architecture</a>
+    </nav>
+
+    <div class="prose">
+      <h2 id="island">The island's rules</h2>
+      <p>Hidden until needed is the only mode. The island has three states: hidden, the small island (a strip 32 pixels tall) and open.</p>
+      <div class="table"><table>
+        <thead><tr><th scope="col">What happens</th><th scope="col">What the island does</th></tr></thead>
+        <tbody>
+          <tr><th scope="row">The pointer touches the top-centre edge</th><td>The small island comes out, once the pointer has stayed for a twentieth of a second. A pointer that only crosses the edge brings nothing out.</td></tr>
+          <tr><th scope="row">The pointer rests on it for a quarter of a second, or clicks</th><td>It opens. Opening on hover can be turned off in Settings, Island.</td></tr>
+          <tr><th scope="row">The pointer leaves</th><td>Opened by hover, it folds after 0.6 seconds. Opened by a click, after 15 seconds (you can set 5 to 120). The small island hides after 2 seconds.</td></tr>
+          <tr><th scope="row">A click outside</th><td>The open island folds at once, unless a card is waiting for your answer or you pinned it.</td></tr>
+          <tr><th scope="row">A notice, an activity or an agent starting work</th><td>The small island shows for a moment, then hides again.</td></tr>
+          <tr><th scope="row">A permission card or a question</th><td>The island opens on it and stays until you answer.</td></tr>
+          <tr><th scope="row">A full-screen app is in front</th><td>The island stays away and notices wait.</td></tr>
+          <tr><th scope="row">Pause, in the tray menu</th><td>The island hides and its edge stops reacting until you resume.</td></tr>
+        </tbody>
+      </table></div>
+      <p>In Settings, Island you can keep the small island out "for a moment" (the default), "while an agent is working" or "until I dismiss it". You can also choose the display, drag the island anywhere, and turn off the wheel gesture.</p>
+      <p><strong>The island never takes the keyboard by appearing.</strong> Its window cannot be activated by a hover, a notice or a card. Your own window keeps the keyboard until you click the island or press one of its shortcuts.</p>
+
+      <h2 id="keys">Keyboard and shortcuts</h2>
+      <p>Every global shortcut can be changed or turned off in Settings, Shortcuts. These are the defaults in version 1.0.0.</p>
+      <h3>The app</h3>
+      <div class="table"><table>
+        <thead><tr><th scope="col">Keys</th><th scope="col">Action</th></tr></thead>
+        <tbody>
+          <tr><td class="keys"><kbd>Ctrl</kbd> <kbd>Alt</kbd> <kbd>Space</kbd></td><td>Open the chat</td></tr>
+          <tr><td class="keys"><kbd>Ctrl</kbd> <kbd>Alt</kbd> <kbd>A</kbd></td><td>Go to the waiting permission or question</td></tr>
+          <tr><td class="keys"><kbd>Ctrl</kbd> <kbd>Alt</kbd> <kbd>T</kbd></td><td>Open the terminal of the agent's session</td></tr>
+          <tr><td class="keys"><kbd>Ctrl</kbd> <kbd>Alt</kbd> <kbd>→</kbd> / <kbd>←</kbd></td><td>Next pill, previous pill</td></tr>
+          <tr><td class="keys"><kbd>Ctrl</kbd> <kbd>Alt</kbd> <kbd>S</kbd></td><td>Mute or unmute the mascot</td></tr>
+          <tr><td class="keys"><kbd>Ctrl</kbd> <kbd>Alt</kbd> <kbd>N</kbd></td><td>Open or close the island. This one is off until you turn it on.</td></tr>
+          <tr><td class="keys">No key yet</td><td>Next tab of the island. Give it a key if you want one.</td></tr>
+        </tbody>
+      </table></div>
+      <h3>Features</h3>
+      <div class="table"><table>
+        <thead><tr><th scope="col">Keys</th><th scope="col">Action</th><th scope="col">Feature</th></tr></thead>
+        <tbody>
+          <tr><td class="keys"><kbd>Ctrl</kbd> <kbd>Alt</kbd> <kbd>Shift</kbd> <kbd>4</kbd></td><td>Take a screenshot</td><td>Capture</td></tr>
+          <tr><td class="keys"><kbd>Ctrl</kbd> <kbd>Alt</kbd> <kbd>Shift</kbd> <kbd>3</kbd></td><td>Capture the whole screen</td><td>Capture</td></tr>
+          <tr><td class="keys"><kbd>Ctrl</kbd> <kbd>Alt</kbd> <kbd>Shift</kbd> <kbd>5</kbd></td><td>Start or stop a screen recording</td><td>Screen recorder</td></tr>
+          <tr><td class="keys"><kbd>Ctrl</kbd> <kbd>Alt</kbd> <kbd>V</kbd></td><td>Open the clipboard history</td><td>Clipboard</td></tr>
+          <tr><td class="keys"><kbd>Ctrl</kbd> <kbd>Alt</kbd> <kbd>Shift</kbd> <kbd>V</kbd></td><td>Paste as plain text</td><td>Clipboard</td></tr>
+          <tr><td class="keys"><kbd>Ctrl</kbd> <kbd>Alt</kbd> <kbd>O</kbd></td><td>Switch to the next sound output</td><td>Audio mixer</td></tr>
+          <tr><td class="keys"><kbd>Ctrl</kbd> <kbd>Alt</kbd> <kbd>U</kbd></td><td>Mute or unmute all microphones</td><td>Audio mixer</td></tr>
+          <tr><td class="keys"><kbd>Ctrl</kbd> <kbd>Alt</kbd> <kbd>PgUp</kbd> / <kbd>PgDn</kbd></td><td>Brighter, dimmer (the display under the pointer)</td><td>Displays</td></tr>
+          <tr><td class="keys"><kbd>Ctrl</kbd> <kbd>Space</kbd></td><td>Open the command bar</td><td>Command bar (off by default)</td></tr>
+          <tr><td class="keys"><kbd>Ctrl</kbd> <kbd>Alt</kbd> <kbd>L</kbd></td><td>Open the snippet library</td><td>Input tools (off by default)</td></tr>
+          <tr><td class="keys"><kbd>Ctrl</kbd> <kbd>Alt</kbd> <kbd>R</kbd></td><td>Open the first wheel</td><td>Radial menu (off by default)</td></tr>
+          <tr><td class="keys"><kbd>Ctrl</kbd> <kbd>Alt</kbd> <kbd>B</kbd></td><td>Send the companion home or out</td><td>Companion (off by default)</td></tr>
+          <tr><td class="keys">Right <kbd>Ctrl</kbd>, alone</td><td>Talk to the assistant: tap, or hold</td><td>Voice (off by default)</td></tr>
+        </tbody>
+      </table></div>
+      <p>Other actions have no key until you give them one: pick a colour, copy text from the screen, measure, draw on the screen, capture a scrolling page, record the window in front, pause a recording, start the timer, keep awake, add a reminder.</p>
+      <h3>Inside the island</h3>
+      <div class="table"><table>
+        <thead><tr><th scope="col">Keys</th><th scope="col">Action</th></tr></thead>
+        <tbody>
+          <tr><td class="keys"><kbd>Esc</kbd></td><td>One step back: a layer, the tab, then the small island</td></tr>
+          <tr><td class="keys"><kbd>Ctrl</kbd> <kbd>K</kbd></td><td>The gallery of all tabs</td></tr>
+          <tr><td class="keys"><kbd>Alt</kbd> + a letter</td><td>Jump to a tab by its letter</td></tr>
+          <tr><td class="keys"><kbd>Ctrl</kbd> <kbd>Tab</kbd></td><td>Next tab (<kbd>Shift</kbd> for the one before)</td></tr>
+          <tr><td class="keys"><kbd>Ctrl</kbd> <kbd>P</kbd></td><td>Pin the island open</td></tr>
+          <tr><td class="keys">Mouse wheel on the small island</td><td>Down opens, up closes</td></tr>
+        </tbody>
+      </table></div>
+
+      <h2 id="settings">Settings</h2>
+      <p>Right-click the tray icon and choose Settings. The window has a search field and a list of pages on the left: General, Island, Mascot, Pills, Sounds, Shortcuts and Features. Under them is one page for each feature that is on, in the same groups as the <a href="features.html">feature list</a>: Island, Agents, Chat, Media and the rest.</p>
+      <ul>
+        <li><strong>Features.</strong> One switch for each feature. A feature that is off shows as "Off" in the list of pages.</li>
+        <li><strong>Island.</strong> The tab the island opens on, the Dashboard cards, open on hover, auto-close (15 seconds unless you change it), how long the small island stays, keeping live activities on screen, the wheel on the strip, and keyboard jumps.</li>
+        <li><strong>Shortcuts.</strong> Every global shortcut, each with its keys and a switch.</li>
+        <li><strong>Coding agents.</strong> Connect or disconnect an agent. Lintel shows the change to the agent's settings file and waits for your confirmation.</li>
+        <li><strong>Each feature's own page.</strong> Its options, and its keys or downloads where it has them.</li>
+      </ul>
+      <p>Settings can be exported to a file and imported again. When you import, your previous settings are kept in a file beside them.</p>
+
+      <h2 id="privacy">Privacy: what leaves your computer</h2>
+      <p>Lintel has no account and no server of its own. <strong>On a fresh install with default settings it makes no call to any host.</strong> There is no analytics, no crash reporting and no usage counter. This table lists every host the app can call.</p>
+      <div class="table"><table>
+        <thead><tr><th scope="col">Host</th><th scope="col">What turns it on</th><th scope="col">What is sent</th></tr></thead>
+        <tbody>
+          <tr><th scope="row">lrclib.net</th><td>Turning on the lyrics lookup, then a song playing</td><td>Song title, artist, album and length</td></tr>
+          <tr><th scope="row">open-meteo.com</th><td>Turning Weather on and choosing a city</td><td>The city name you typed, then its coordinates</td></tr>
+          <tr><th scope="row">speed.cloudflare.com</th><td>Clicking the speed test button</td><td>Random test data. Nothing about you.</td></tr>
+          <tr><th scope="row">github.com</th><td>Clicking "Check for updates"</td><td>A plain request for the release feed</td></tr>
+          <tr><th scope="row">winget sources</th><td>Clicking a check, a search or an install in Apps</td><td>What winget itself sends. Run by winget, not by Lintel.</td></tr>
+          <tr><th scope="row">huggingface.co</th><td>Clicking a download button for a speech, voice or text model</td><td>A plain download request for pinned files</td></tr>
+          <tr><th scope="row">Anthropic, OpenAI, Google, OpenRouter, or your own server</th><td>Saving a key or an address for chat, then sending a message</td><td>Your key (only to its own host), your message and the context you chose</td></tr>
+          <tr><th scope="row">GitHub, Stripe, Vercel, Resend, Notion, Cal.com, your n8n</th><td>Saving a key for that integration</td><td>Your key and a read request. An email also needs your click.</td></tr>
+          <tr><th scope="row">Your calendar link</th><td>Adding a calendar link</td><td>A plain request for the .ics file</td></tr>
+        </tbody>
+      </table></div>
+      <p>If you use a command-line agent for chat, that program makes its own calls. Lintel does not control them. Links that open in your browser when you click are not calls made by Lintel.</p>
+      <h3>The rules it keeps</h3>
+      <ul>
+        <li><strong>Keys</strong> live in Windows Credential Manager. A key is sent only to the one host it belongs to.</li>
+        <li><strong>Agents are never approved automatically.</strong> A decision is tied to the card it was made on.</li>
+        <li><strong>An agent is never blocked.</strong> If Lintel does not answer, the hook exits at once and the agent goes on.</li>
+        <li><strong>Other programs' settings files</strong> are changed only after showing you the difference, with a dated backup, on your click.</li>
+        <li><strong>Deleting</strong> always shows a list first and goes to the Recycle Bin.</li>
+        <li><strong>The clipboard history</strong> skips passwords, password managers and anything an app marks as private.</li>
+        <li><strong>The camera</strong> starts only from a click. <strong>The microphone</strong> opens only for a recording you start, or for the wake phrase if you turned that on, and an indicator is on screen the whole time.</li>
+        <li><strong>System settings</strong> that Lintel changes are written down first and restored when it quits.</li>
+      </ul>
+      <p>The full page is <a href="{REPO}/blob/main/docs/PRIVACY.md">docs/PRIVACY.md</a> in the repository.</p>
+
+      <h2 id="helper">Hardware sensors and the one administrator prompt</h2>
+      <p>Lintel itself runs without administrator rights, always. Reading processor temperatures, fans and drive health needs more than that, so a separate small program does it: the hardware helper.</p>
+      <ul>
+        <li>It is off by default. It starts only when you turn on Hardware sensors and agree.</li>
+        <li>Windows then shows <strong>one administrator prompt</strong>, for the helper only.</li>
+        <li>It reads sensors with LibreHardwareMonitor and the PawnIO driver. The driver is not bundled. Lintel offers to install it with winget, on your click, and never removes it.</li>
+        <li>The helper talks only to the Lintel that started it, over a private pipe, and checks who is on the other end.</li>
+        <li>Fan control is a beta. Use it with care. On some laptops the sensor library cannot read the fans.</li>
+      </ul>
+
+      <h2 id="voice">The voice assistant</h2>
+      <p>English only, off by default. Sound never leaves your PC. Text leaves only to a service you switched on, and only for the turns that need it.</p>
+      <div class="table"><table>
+        <thead><tr><th scope="col">Part</th><th scope="col">What it does</th><th scope="col">Download</th></tr></thead>
+        <tbody>
+          <tr><th scope="row">Speech model (Whistle)</th><td>Turns what you say into text. Required.</td><td>about 19 MB</td></tr>
+          <tr><th scope="row">Action model (Needle)</th><td>Understands a command said in your own words.</td><td>about 35 MB</td></tr>
+          <tr><th scope="row">Natural voice (Kokoro)</th><td>Speaks the answers. Until it is downloaded, a Windows voice speaks.</td><td>about 370 MB</td></tr>
+          <tr><th scope="row">Text model (Qwen3.5-4B)</th><td>Answers open questions on your PC. About 4.3 GB of memory while loaded.</td><td>about 2.7 GB</td></tr>
+        </tbody>
+      </table></div>
+      <p>Every file is downloaded only on your click, from a pinned version, and checked before it is kept and before it runs.</p>
+      <ul>
+        <li><strong>Two ways in.</strong> The talk key (right <kbd>Ctrl</kbd> alone: tap or hold), or a wake phrase, "OK Lintel", behind its own switch that starts off. While the wake phrase is on, a thin bar of light at the top of the screen shows that the microphone is open.</li>
+        <li><strong>Speed.</strong> A command such as a timer is answered in a few seconds. An open question to the local text model took 9 to 15 seconds to start speaking on a laptop when measured, and about half a minute when the model was not yet loaded.</li>
+        <li><strong>Online options.</strong> A free online model, your Claude key, an ElevenLabs voice and weather are each a switch that starts off.</li>
+        <li><strong>It can never:</strong> allow a permission or answer an agent's question, send an email, delete or empty anything, start the camera, unmute the microphones, start an agent, install or uninstall, or paste without a yes.</li>
+        <li><strong>Known limits.</strong> Voice is new and has had little testing. It was tested with recorded clips more than with live speech, and the wake phrase has not been measured with many voices. There is no echo cancelling, so over loudspeakers it also hears its own voice.</li>
+      </ul>
+
+      <h2 id="limits">Known limits of version 1.0.0</h2>
+      <ul>
+        <li>The voice assistant understands English only, and it has had little testing with live speech.</li>
+        <li>An answer from the local text model is slow on a laptop: 9 to 15 seconds before the first word, and about half a minute the first time after a start.</li>
+        <li>Mirroring the notifications of other apps is not available. Windows allows it only to a signed and packaged app.</li>
+        <li>The installer is not code-signed, so SmartScreen warns.</li>
+        <li>The interface is translated into ten languages, but some newer lines are English only.</li>
+        <li>With "The small island stays" on and the mascot shown, the resting island uses about 10 % of one processor core. With the mascot hidden it is about 1 %.</li>
+        <li>The island lives on one display at a time.</li>
+        <li>On some laptops the sensor library cannot read the fans.</li>
+      </ul>
+      <p>The <a href="{REPO}/blob/main/docs/ROADMAP.md">roadmap</a> has the full list of what is left open.</p>
+
+      <h2 id="build">Build from source</h2>
+      <p>You need Windows 10 or 11, Node.js, the Rust toolchain and the WebView2 runtime.</p>
+<pre><code>npm install
+npm run build            # type-check and vite build (also builds the hook relay)
+npm test                 # the node --test suites
+cargo check --workspace  # needs dist/ to exist, so run `npm run build` first
+npm run tauri dev        # run the app
+npm run pack             # make the installer, into release/
+npm run fake-session     # a pretend agent session, while the app runs</code></pre>
+      <p><code>npm run pack</code> also builds the hardware helper in <code>helper/</code>, which needs the .NET 8 SDK. Nothing else needs it.</p>
+
+      <h2 id="architecture">Architecture in brief</h2>
+      <ul>
+        <li><strong>A Tauri 2 app.</strong> The core is Rust. The interface is plain TypeScript, the DOM and Canvas in a light web view, with no UI framework.</li>
+        <li><strong>One crate per feature.</strong> Each feature is a Rust crate in <code>crates/</code> and a TypeScript folder in <code>src/features/</code>. Nothing runs until its <code>start</code> is called, and everything ends in <code>stop</code>.</li>
+        <li><strong>Shared services.</strong> Audio, media, input, system events and the shell are services that features subscribe to. Dropping the handle unsubscribes.</li>
+        <li><strong>The relay.</strong> Agent programs start a tiny relay, <code>hook/</code>, on each event. It talks to the app over a named pipe and exits at once if nobody answers.</li>
+        <li><strong>The island.</strong> One transparent, topmost window that cannot be activated. Hidden, it shrinks to its strip and its drawing loop stops.</li>
+      </ul>
+      <p>Read more in the repository: <a href="{REPO}/blob/main/docs/ARCHITECTURE.md">ARCHITECTURE.md</a>, <a href="{REPO}/blob/main/docs/FEATURES.md">FEATURES.md</a>, <a href="{REPO}/blob/main/docs/VOICE.md">VOICE.md</a>, <a href="{REPO}/blob/main/docs/PRIVACY.md">PRIVACY.md</a>, the <a href="{REPO}/blob/main/docs/ROADMAP.md">roadmap</a> and the <a href="{REPO}/blob/main/CHANGELOG.md">changelog</a>.</p>
+    </div>
+  </div>
+</section>

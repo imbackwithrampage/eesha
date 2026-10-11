@@ -1,0 +1,27 @@
+[package]
+name = "notch-feat-editor"
+description = "Lintel feature: Editor"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+
+[dependencies]
+notch-core = { path = "../core" }
+# Grabs for the scrolling capture, PNG, the clipboard as a picture.
+svc-capture = { path = "../svc-capture" }
+# Already in the tree's lock file: pictures travel to and from the pages as text.
+base64 = "0.22"
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+tauri = { version = "2", features = [] }
+# List the Win32 API sets this feature calls; Cargo unifies them across the workspace.
+windows = { version = "0.61", features = [
+  "Win32_Foundation",
+  "Win32_UI_WindowsAndMessaging",
+] }
+
+# Every example of the workspace is linked into target/<profile>/examples/ under
+# its own name, so it is named after its crate.
+[[example]]
+name = "editor-probe"
+path = "examples/editor-probe.rs"

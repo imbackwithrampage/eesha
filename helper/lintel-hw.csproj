@@ -1,0 +1,43 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <!-- lintel-hw.exe: the one process of Lintel that runs as administrator
+       (docs/ARCHITECTURE.md §11). No window, no console. -->
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <RuntimeIdentifier>win-x64</RuntimeIdentifier>
+    <AssemblyName>lintel-hw</AssemblyName>
+    <RootNamespace>NotchHw</RootNamespace>
+    <Version>1.0.0</Version>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <InvariantGlobalization>true</InvariantGlobalization>
+    <SatelliteResourceLanguages>en</SatelliteResourceLanguages>
+    <!-- One file, with its own runtime: nothing to install beside it. Not
+         trimmed: the sensor library finds its hardware classes by reflection.
+         Nothing is unpacked to disk at start (no IncludeNativeLibrariesForSelfExtract):
+         a process that runs as administrator loads no file from the user's temp folder. -->
+    <SelfContained>true</SelfContained>
+    <PublishSingleFile>true</PublishSingleFile>
+    <EnableCompressionInSingleFile>true</EnableCompressionInSingleFile>
+    <!-- DOTNET_STARTUP_HOOKS names code to load at start: not in this process. -->
+    <StartupHookSupport>false</StartupHookSupport>
+    <DebugType>embedded</DebugType>
+  </PropertyGroup>
+
+  <!-- Only what ships asks for elevation. A Debug build runs as the caller,
+       on made-up sensors, for crates/svc-hw/examples/hw-probe.rs. -->
+  <PropertyGroup Condition="'$(Configuration)' == 'Release'">
+    <ApplicationManifest>app.manifest</ApplicationManifest>
+    <DebugType>none</DebugType>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <!-- Pinned: fan support changes board by board with every release. -->
+    <PackageReference Include="LibreHardwareMonitorLib" Version="[0.9.6]" />
+    <!-- The library's Linux half brings two native files that Windows never loads: left out, so the helper stays one file. -->
+    <PackageReference Include="Mono.Posix.NETStandard" Version="[1.0.0]" ExcludeAssets="native" />
+  </ItemGroup>
+
+</Project>

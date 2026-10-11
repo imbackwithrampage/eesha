@@ -1,0 +1,13 @@
+[package]
+name = "notch-feat-media"
+description = "Lintel feature: Media"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+
+[dependencies]
+notch-core = { path = "../core" }
+svc-media = { path = "../svc-media" }
+serde_json = "1"
+# Already in the tree (Tauri's): the cover travels to the page as a data URL.
+base64 = "0.22"

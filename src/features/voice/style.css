@@ -1,0 +1,188 @@
+/* Voice: the strip row, the capsule and the settings page (docs/VOICE.md §7.5, §9). Package voice-ui.
+   Every selector starts with .f-voice- and uses the tokens of src/ui/tokens.css. */
+
+/* ── The strip row ────────────────────────────────────────────────────── */
+
+/* The Visor as the row's mark: the slot of a mini mascot, or of the dot that stands for a hidden one. */
+.f-voice-visor {
+  width: 22px;
+  height: 22px;
+}
+
+/* ── The capsule: a window of its own, transparent, so this is all of it ── */
+
+.f-voice-cap {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--s-2);
+  box-sizing: border-box;
+  height: 100%;
+  padding: var(--s-1) var(--s-1) var(--s-1) var(--s-3);
+  overflow: hidden;
+  border-radius: var(--r-md);
+  background: color-mix(in srgb, var(--bg) 92%, transparent);
+  box-shadow: inset 0 0 0 1px var(--hairline);
+  color: var(--ink);
+  font: 400 var(--t-sm) var(--font);
+  cursor: default;
+  user-select: none;
+}
+
+/* Calm while the microphone is closed; red and pulsing for as long as it is open. */
+.f-voice-cap-dot {
+  flex: none;
+  width: 8px;
+  height: 8px;
+  margin-top: var(--s-2);
+  border-radius: var(--r-pill);
+  background: var(--dim-2);
+  transition: background-color var(--d-fast) var(--ease-out);
+}
+.f-voice-cap.mic > .f-voice-cap-dot {
+  background: var(--bad);
+  animation: f-voice-pulse 1.1s var(--ease-in-out) infinite alternate;
+}
+@keyframes f-voice-pulse {
+  from { box-shadow: 0 0 0 0 transparent; }
+  to { box-shadow: 0 0 0 4px color-mix(in srgb, var(--bad) 35%, transparent); }
+}
+
+/* A click on the words opens the capsule to all of them. */
+.f-voice-cap-text {
+  flex: 1;
+  min-width: 0;
+  padding-block: var(--s-1);
+  cursor: pointer;
+}
+/* Line 1: what was heard. */
+.f-voice-cap-heard {
+  overflow: hidden;
+  color: var(--dim);
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+/* Lines 2 and 3: the answer, bright from the sentence being said. */
+.f-voice-cap-answer {
+  display: -webkit-box;
+  overflow: hidden;
+  font-weight: 500;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: var(--lines, 2);
+}
+.f-voice-cap-heard:empty,
+.f-voice-cap-answer:empty {
+  display: none;
+}
+.f-voice-cap-answer > span { transition: color var(--d-base) var(--ease-out); }
+.f-voice-cap-answer > .said { color: var(--ink-2); }
+.f-voice-cap-answer > .now { color: var(--ink); }
+.f-voice-cap-answer > .next { color: var(--dim); }
+
+/* Opened by a click: everything that was heard and answered, scrolling when it is long. */
+.f-voice-cap.open > .f-voice-cap-text {
+  align-self: stretch;
+  overflow-y: auto;
+  scrollbar-width: thin;
+  scrollbar-color: var(--card-2) transparent;
+}
+.f-voice-cap.open .f-voice-cap-heard { white-space: normal; }
+.f-voice-cap.open .f-voice-cap-answer { display: block; margin-top: var(--s-1); }
+
+@media (prefers-reduced-motion: reduce) {
+  .f-voice-cap.mic > .f-voice-cap-dot {
+    animation: none;
+    box-shadow: 0 0 0 3px color-mix(in srgb, var(--bad) 22%, transparent);
+  }
+}
+
+/* ── The settings page ────────────────────────────────────────────────── */
+
+.f-voice-settings {
+  display: flex;
+  flex-direction: column;
+  gap: var(--s-3);
+}
+.f-voice-settings > .section-title { margin: var(--s-3) 0 calc(var(--s-1) * -1); }
+/* The longest choice of "How listening starts" in full. */
+.f-voice-settings .row > .f-voice-wide { width: 240px; }
+
+.f-voice-lead {
+  margin: 0;
+  color: var(--dim);
+  font: 400 var(--t-sm) var(--font);
+}
+
+/* The control side of a row that holds more than one thing (the key and Clear, a meter and its count,
+   a field and Save). A fixed width: a note that comes and goes must not make the row's text wrap again. */
+.f-voice-side {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  align-items: center;
+  gap: var(--s-1) var(--s-2);
+  width: 240px;
+}
+.f-voice-side > .field { flex: 1; min-width: 0; }
+.f-voice-side .btn.recording { box-shadow: inset 0 0 0 1.5px var(--accent); color: var(--ink); }
+
+/* Under the control: what to do while the key is picked, why a press was not taken, the city that was found. */
+.f-voice-note-under {
+  flex: 0 0 100%;
+  color: var(--dim);
+  font: 400 var(--t-xs) var(--font);
+  text-align: end;
+}
+.f-voice-note-under:empty { display: none; }
+
+/* A download: its count beside the meter, "Ready" when it is there. */
+.f-voice-count {
+  color: var(--ink-2);
+  font: 400 var(--t-sm) var(--font);
+  font-variant-numeric: tabular-nums;
+  white-space: nowrap;
+}
+.f-voice-count.warn {
+  flex: 0 0 100%;
+  font: 400 var(--t-xs) var(--font);
+  text-align: end;
+  white-space: normal;
+}
+.f-voice-ready {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--s-1);
+  color: var(--ok);
+  font: 500 var(--t-sm) var(--font);
+}
+
+.f-voice-always {
+  color: var(--dim);
+  font: 400 var(--t-sm) var(--font);
+}
+.f-voice-warn,
+.f-voice-note-under.warn,
+.f-voice-count.warn {
+  color: var(--warn);
+}
+
+/* What voice never does: four plain lines. */
+.f-voice-never {
+  display: flex;
+  flex-direction: column;
+  gap: var(--s-2);
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.f-voice-never > li {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--s-2);
+  color: var(--ink-2);
+  font: 400 var(--t-md) var(--font);
+}
+.f-voice-never svg {
+  flex: none;
+  margin-top: 2px;
+  color: var(--dim);
+}

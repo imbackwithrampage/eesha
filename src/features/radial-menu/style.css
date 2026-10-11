@@ -1,0 +1,92 @@
+/* Radial menu. Every selector starts with .f-radial-menu- and uses the tokens of src/ui/tokens.css. */
+
+/* ── The wheel window: transparent, click-through, never focused ───────── */
+.f-radial-menu-wheel { position: relative; width: 100%; height: 100%; overflow: hidden; pointer-events: none; user-select: none; color: var(--ink); font: 400 var(--t-md) var(--font); }
+.f-radial-menu-wheel[data-state="idle"] .f-radial-menu-stage { opacity: 0; }
+.f-radial-menu-stage { position: absolute; inset: 0; transform-origin: 50% 50%; }
+/* Three layers of one size (wheel.ts): the disc and its slices, the highlight, the marks. */
+.f-radial-menu-stage > svg { position: absolute; inset: 0; display: block; overflow: visible; }
+
+.f-radial-menu-disc {
+  fill: var(--panel);
+  fill-opacity: .94;
+  stroke: var(--outline);
+  stroke-width: 1;
+  filter: drop-shadow(0 12px 28px rgb(0 0 0 / .55));
+}
+.f-radial-menu-hub { fill: var(--card); stroke: var(--outline); stroke-width: 1; }
+
+/* A slice rests in the card colour and never changes. The round join of the stroke rounds the corners. */
+.f-radial-menu-slice { transform-origin: 200px 200px; }
+.f-radial-menu-wedge { fill: var(--card); stroke: var(--card); stroke-width: 6; stroke-linejoin: round; }
+
+/* The highlight: one shape in the accent, the wedge of slice 0, on a layer of its own. wheel.ts turns the
+   layer to the slice that is chosen and sets `on`; only its transform and its opacity ever change, so
+   nothing is laid out or painted again while it moves. With `travel` (it comes from another slice) it
+   turns there along the ring; without, it is put in place and fades in. No overshoot: --ease-out. */
+.f-radial-menu-glow { opacity: 0; transform-origin: 50% 50%; will-change: transform, opacity; transition: opacity var(--d-fast) var(--ease-out); }
+.f-radial-menu-glow.on { opacity: 1; }
+.f-radial-menu-glow.travel { transition: opacity var(--d-fast) var(--ease-out), transform var(--d-base) var(--ease-out); }
+.f-radial-menu-glow > path { fill: var(--accent); stroke: var(--accent); stroke-width: 6; stroke-linejoin: round; }
+
+/* The mark of the chosen slice eases a little larger and brighter. */
+.f-radial-menu-mark { transform-box: fill-box; transform-origin: center; transition: transform var(--d-base) var(--ease-out); }
+.f-radial-menu-mark.on { transform: scale(1.12); }
+.f-radial-menu-ico { color: var(--ink-2); transition: color var(--d-fast) var(--ease-out); }
+.f-radial-menu-mark.on .f-radial-menu-ico { color: var(--accent-ink); }
+.f-radial-menu-pic { opacity: .86; clip-path: inset(0 round 6px) fill-box; transition: opacity var(--d-base) var(--ease-out); }
+.f-radial-menu-mark.on .f-radial-menu-pic { opacity: 1; }
+.f-radial-menu-pic.round { clip-path: circle(50%) fill-box; }
+
+/* The hub's words are on two layers (wheel.ts): the one that is `on` shows, and they crossfade. */
+.f-radial-menu-hub-text { position: absolute; left: 50%; top: 50%; display: flex; flex-direction: column; align-items: center; gap: 1px; width: 72px; transform: translate(-50%, -50%); text-align: center; opacity: 0; transition: opacity var(--d-base) var(--ease-out); }
+.f-radial-menu-hub-text.on { opacity: 1; }
+.f-radial-menu-hub-name {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+  max-width: 100%;
+  overflow-wrap: anywhere;
+  font: 500 var(--t-sm) var(--font);
+  color: var(--ink);
+}
+.f-radial-menu-hub-sub { display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 2; overflow: hidden; max-width: 100%; font: 400 var(--t-xs) var(--font); color: var(--dim); }
+.f-radial-menu-hub-back .f-radial-menu-hub-name { color: var(--ink-2); }
+
+/* ── Motion: open --d-base with the slices flying out clockwise, close --d-fast ── */
+.f-radial-menu-wheel[data-state="in"] .f-radial-menu-stage { animation: f-radial-menu-stage-in var(--d-base) var(--ease-out) both; }
+.f-radial-menu-wheel[data-state="in"] .f-radial-menu-slice { animation: f-radial-menu-slice-in var(--d-base) var(--ease-out) both; animation-delay: calc(var(--i) * var(--d-stagger) / 3); }
+.f-radial-menu-wheel[data-state="out"] .f-radial-menu-stage { animation: f-radial-menu-stage-out var(--d-fast) var(--ease-in-out) both; }
+/* A new wheel or level starts clean: the highlight and the hub's old words go at once, not through their fades. */
+.f-radial-menu-wheel[data-state="idle"] :is(.f-radial-menu-glow, .f-radial-menu-hub-text) { transition: none; }
+@keyframes f-radial-menu-stage-in { from { opacity: 0; transform: scale(.94); } }
+@keyframes f-radial-menu-stage-out { to { opacity: 0; transform: scale(.97); } }
+@keyframes f-radial-menu-slice-in { from { opacity: 0; transform: rotate(-16deg) scale(.86); } }
+@media (prefers-reduced-motion: reduce) {
+  .f-radial-menu-wheel[data-state="in"] .f-radial-menu-stage { animation-name: f-radial-menu-fade-in; }
+  .f-radial-menu-wheel[data-state="in"] .f-radial-menu-slice { animation: none; }
+  .f-radial-menu-wheel[data-state="out"] .f-radial-menu-stage { animation-name: f-radial-menu-fade-out; }
+  /* The plain change, at once. */
+  .f-radial-menu-glow, .f-radial-menu-glow.travel, .f-radial-menu-mark, .f-radial-menu-ico, .f-radial-menu-pic, .f-radial-menu-hub-text { transition: none; }
+}
+@keyframes f-radial-menu-fade-in { from { opacity: 0; } }
+@keyframes f-radial-menu-fade-out { to { opacity: 0; } }
+
+/* ── Settings ───────────────────────────────────────────────────────────── */
+.f-radial-menu-page { display: flex; flex-direction: column; gap: var(--s-3); }
+.f-radial-menu-tabs { display: flex; align-items: center; gap: var(--s-1); flex-wrap: wrap; }
+.f-radial-menu-bar { display: flex; align-items: center; gap: var(--s-2); }
+.f-radial-menu-bar .field { flex: 1; min-width: 0; }
+.f-radial-menu-hint { margin: 0; font: 400 var(--t-sm) var(--font); color: var(--dim); }
+.f-radial-menu-list { display: flex; flex-direction: column; gap: var(--s-2); }
+.f-radial-menu-item { display: flex; flex-direction: column; gap: var(--s-2); padding: var(--s-2) var(--s-3); border-radius: var(--r-md); background: var(--card); }
+.f-radial-menu-line { display: flex; align-items: center; gap: var(--s-2); min-width: 0; }
+.f-radial-menu-line .field { min-width: 0; }
+.f-radial-menu-num { flex: none; width: 18px; text-align: center; font: 500 var(--t-xs) var(--font); font-variant-numeric: tabular-nums; color: var(--dim); }
+.f-radial-menu-kind { flex: none; width: 128px; }
+.f-radial-menu-name { flex: 1 1 110px; }
+.f-radial-menu-target { flex: 2 1 150px; }
+.f-radial-menu-sub { margin-left: var(--s-4); padding-left: var(--s-3); border-left: 1px solid var(--hairline); }
+.f-radial-menu-add { display: flex; gap: var(--s-2); align-items: center; }
+.f-radial-menu-empty { padding: var(--s-3); border-radius: var(--r-md); background: var(--card); font: 400 var(--t-sm) var(--font); color: var(--dim); text-align: center; }

@@ -1,0 +1,202 @@
+/* Media. Every selector starts with .f-media- and uses the tokens of src/ui/tokens.css. */
+
+/* The cover's colour (--f-media-tint, set on the root while a cover has one)
+   tints what the components draw with --tone: the bars beside a cover (the
+   strip row and the new song's notice) and the slider. Without one the property
+   is invalid and they fall back to the accent. */
+.f-media-art ~ .bars,
+.f-media-page {
+  --tone: var(--f-media-tint);
+}
+
+/* ── The cover: 22 px on the strip, sized by its parent in the section ── */
+
+.f-media-art {
+  display: grid;
+  flex: none;
+  place-items: center;
+  width: 22px;
+  height: 22px;
+  border-radius: var(--r-xs);
+  background: center / cover no-repeat;
+  box-shadow: inset 0 0 0 1px var(--hairline);
+}
+.f-media-art > svg { display: none; }
+.f-media-art.none { background-color: var(--card-2); color: var(--dim); }
+.f-media-art.none > svg { display: block; }
+
+/* ── The strip row: a line being sung takes the title's place ── */
+
+.strip-row.f-media-row { position: relative; }
+/* The line may take the whole row: there is no artist beside it. */
+.strip-row.f-media-sung > b { flex: 0 1 auto; min-width: 0; max-width: none; }
+/* One line gives way to the next as content does everywhere (the cross-fade of
+   tokens.css): the new one rises in while the one before, drawn once more over
+   it, lifts out. Nothing else in the row moves. */
+.f-media-swap > :is(b, .d) { animation: f-media-line-in var(--d-base) var(--ease-out) var(--f-media-age, 0ms) both; }
+.f-media-ghost {
+  position: absolute;
+  /* From the title's left edge (the cover and the gap) to the bars. */
+  inset: 0 calc(18px + var(--s-2)) 0 calc(22px + var(--s-2));
+  display: flex;
+  align-items: center;
+  gap: var(--s-2);
+  overflow: hidden;
+  pointer-events: none;
+  animation: f-media-line-out var(--d-base) var(--ease-out) var(--f-media-age, 0ms) both;
+}
+.f-media-ghost > b { flex: 0 1 auto; min-width: 0; overflow: hidden; color: var(--ink); font-weight: 500; text-overflow: ellipsis; }
+.f-media-ghost > .d { flex: 0 1000 auto; min-width: 0; overflow: hidden; color: var(--dim); text-overflow: ellipsis; }
+@keyframes f-media-line-in {
+  from { opacity: 0; transform: translateY(var(--fx-shift)); filter: blur(var(--fx-blur)); }
+}
+@keyframes f-media-line-out {
+  to { opacity: 0; transform: translateY(calc(var(--fx-shift) * -1)); filter: blur(var(--fx-blur)); }
+}
+
+/* ── The section: cover left, names, slider and transport right ── */
+
+.f-media-page { position: relative; }
+.f-media-page [hidden] { display: none !important; }
+
+.f-media-player {
+  display: flex;
+  align-items: center;
+  gap: var(--s-4);
+  height: 100%;
+  padding-left: var(--s-1);
+}
+
+/* Paused, the cover steps back; playing, it glows in its own colours. */
+.f-media-cover {
+  position: relative;
+  flex: none;
+  width: 112px;
+  height: 112px;
+  padding: 0;
+  border: 0;
+  border-radius: var(--r-md);
+  background: none;
+  cursor: pointer;
+  opacity: .6;
+  transform: scale(.92);
+  transition: transform var(--d-slow) var(--ease-out), opacity var(--d-base) var(--ease-out);
+}
+.f-media-page.playing .f-media-cover { opacity: 1; transform: none; }
+.f-media-cover:focus-visible { outline: 2px solid color-mix(in srgb, var(--accent) 50%, transparent); outline-offset: 2px; }
+.f-media-cover > .f-media-art {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: inherit;
+}
+.f-media-cover > .f-media-glow {
+  box-shadow: none;
+  filter: blur(18px) saturate(1.4);
+  opacity: 0;
+  transition: opacity var(--d-slow) var(--ease-out);
+}
+.f-media-page.playing .f-media-glow { opacity: .5; }
+.f-media-glow.none { visibility: hidden; }
+
+.f-media-main {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  justify-content: space-between;
+  min-width: 0;
+  height: 112px;
+}
+
+.f-media-head { display: flex; align-items: flex-start; gap: var(--s-3); }
+.f-media-names { flex: 1; min-width: 0; }
+
+.f-media-title {
+  overflow: hidden;
+  color: var(--ink);
+  font: 600 var(--t-lg) var(--font);
+  white-space: nowrap;
+}
+.f-media-title > span { display: inline-block; }
+/* Too long for the line: it glides to its end and back, resting at both. */
+.f-media-title.scroll {
+  mask-image: linear-gradient(90deg, black calc(100% - var(--s-4)), transparent);
+}
+.f-media-title.scroll > span { animation: f-media-glide var(--dur, 8s) var(--ease-in-out) infinite alternate; }
+@keyframes f-media-glide {
+  0%, 20% { transform: translateX(0); }
+  80%, 100% { transform: translateX(var(--shift, 0)); }
+}
+
+.f-media-artist {
+  overflow: hidden;
+  color: var(--f-media-tint, var(--dim));
+  font: 500 var(--t-md) var(--font);
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  transition: color var(--d-slow) var(--ease-out);
+}
+
+/* The song's text, when the lyrics feature shows one: a column of its own right
+   of the player, as tall as the section. Lyrics fills it; empty, it is not there. */
+.f-media-lyric {
+  display: flex;
+  flex: none;
+  flex-direction: column;
+  align-self: stretch;
+  width: 200px;
+  padding-left: var(--s-4);
+  border-left: 1px solid var(--hairline);
+}
+.f-media-lyric:empty { display: none; }
+
+.f-media-source { flex: none; max-width: 180px; overflow: hidden; text-overflow: ellipsis; }
+/* Beside the text the player's name gives way sooner. */
+.f-media-player:has(.f-media-lyric:not(:empty)) .f-media-source { max-width: 96px; }
+/* Shuffle or repeat that is on, a player that is pinned: in the cover's colour. */
+.btn.ghost.f-media-on { color: var(--f-media-tint, var(--accent)); }
+
+.f-media-seek { display: flex; align-items: center; gap: var(--s-2); }
+.f-media-time {
+  flex: none;
+  min-width: 34px;
+  color: var(--dim);
+  font: 400 var(--t-xs) var(--font);
+  font-variant-numeric: tabular-nums;
+}
+.f-media-time:last-child { text-align: right; }
+
+.f-media-controls { display: flex; align-items: center; justify-content: center; gap: var(--s-2); }
+.btn.icon.f-media-play { width: 34px; height: 34px; border-radius: var(--r-pill); color: var(--ink); }
+
+/* Nothing to show: no player, the preferred one closed, or nothing playing. One
+   line says which, and the widgets above are not there. */
+.f-media-empty {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: var(--s-1);
+  height: 100%;
+  color: var(--dim);
+  font: 400 var(--t-sm) var(--font);
+  text-align: center;
+}
+.f-media-empty > b { margin-top: var(--s-1); color: var(--ink-2); font: 500 var(--t-md) var(--font); }
+.f-media-empty > span { max-width: 560px; }
+.f-media-empty > .btn { margin-top: var(--s-2); }
+
+@media (prefers-reduced-motion: reduce) {
+  .f-media-cover { transition: none; }
+  .f-media-title.scroll { mask-image: none; text-overflow: ellipsis; }
+  .f-media-title.scroll > span { display: inline; animation: none; }
+}
+
+/* ── What the switches in Settings and the player shown decide ── */
+
+/* "Glow behind the cover" off. */
+.f-media-noglow .f-media-glow { display: none; }
+
+/* A player that cannot seek: the bar still shows where the track is, and steps back. */
+.f-media-seek > .meter[aria-disabled="true"] { opacity: .5; }

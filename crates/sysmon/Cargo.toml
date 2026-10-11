@@ -1,0 +1,31 @@
+[package]
+name = "notch-feat-sysmon"
+description = "Lintel feature: System monitor"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+
+[dependencies]
+notch-core = { path = "../core" }
+svc-sysmon = { path = "../svc-sysmon" }
+# A device plugged in or pulled out, while the section is on screen.
+svc-sysevents = { path = "../svc-sysevents" }
+# The rows the hardware helper adds (temperatures, fans, power, drive health), when it runs.
+svc-hw = { path = "../svc-hw" }
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+tauri = { version = "2", features = [] }
+# The time boxes of the speed test.
+tokio = { version = "1", features = ["time"] }
+# List the Win32 API sets this feature calls; Cargo unifies them across the workspace.
+windows = { version = "0.61", features = [
+  "Win32_Foundation",
+  "Win32_System_Threading",
+  "Win32_System_WindowsProgramming",
+] }
+
+# Every example of the workspace is linked into target/<profile>/examples/ under
+# its own name, so a name several crates use is whichever was built last.
+[[example]]
+name = "sysmon-probe"
+path = "examples/sysmon-probe.rs"

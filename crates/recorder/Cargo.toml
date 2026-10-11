@@ -1,0 +1,52 @@
+[package]
+name = "notch-feat-recorder"
+description = "Lintel feature: Recorder"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+
+[dependencies]
+notch-core = { path = "../core" }
+# The folder under Videos carries the app's name.
+notch-brand = { path = "../brand" }
+# The frames (Windows Graphics Capture), the displays, and the island left out of them.
+svc-capture = { path = "../svc-capture" }
+# The computer's sound (loopback) and the list of microphones.
+svc-audio = { path = "../svc-audio" }
+# Open and show in folder, as the captures do them.
+svc-shell = { path = "../svc-shell" }
+# Lock and sleep end a recording.
+svc-sysevents = { path = "../svc-sysevents" }
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+tauri = { version = "2", features = [] }
+# List the Win32 API sets this feature calls; Cargo unifies them across the workspace.
+windows = { version = "0.61", features = [
+  "Win32_Foundation",
+  "Win32_Graphics_Direct3D11",
+  "Win32_Graphics_Dxgi_Common",
+  "Win32_Media_Audio",
+  "Win32_Media_MediaFoundation",
+  "Win32_Storage_FileSystem",
+  "Win32_System_Com",
+  "Win32_System_Performance",
+  "Win32_UI_Shell",
+  "Win32_UI_WindowsAndMessaging",
+] }
+
+[dev-dependencies]
+# The probe has a window of its own to film and reads the file back.
+windows = { version = "0.61", features = [
+  "Win32_Graphics_Dwm",
+  "Win32_Graphics_Gdi",
+  "Win32_System_Com_StructuredStorage",
+  "Win32_System_LibraryLoader",
+  "Win32_System_Variant",
+  "Win32_UI_HiDpi",
+] }
+
+# Every example of the workspace is linked into target/<profile>/examples/ under
+# its own name, so a name several crates use is whichever was built last.
+[[example]]
+name = "recorder-probe"
+path = "examples/recorder-probe.rs"

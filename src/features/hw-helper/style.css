@@ -1,0 +1,31 @@
+/* Hardware sensors (docs/ARCHITECTURE.md §7): tokens only, every selector starts with .f-hw-helper-. */
+
+.f-hw-helper-page { display: flex; flex-direction: column; gap: var(--s-3); }
+.f-hw-helper-page [hidden] { display: none !important; }
+.f-hw-helper-page > .section-title { margin: var(--s-2) 0 calc(-1 * var(--s-1)); }
+.f-hw-helper-page > .hint { margin: 0; }
+
+/* What the helper is, before anything is asked. */
+.f-hw-helper-about { margin: 0; color: var(--ink-2); font: 400 var(--t-md) var(--font); }
+
+/* "Start the helper as administrator?" */
+.f-hw-helper-ask { display: flex; align-items: center; gap: var(--s-2); }
+.f-hw-helper-ask > span { flex: 1; min-width: 0; color: var(--ink); font: 500 var(--t-md) var(--font); }
+
+/* A reading and, beside it, its switch or button. */
+.f-hw-helper-slot { display: flex; align-items: center; gap: var(--s-3); }
+.f-hw-helper-slot > b { color: var(--ink-2); font: 500 var(--t-md) var(--font); font-variant-numeric: tabular-nums; white-space: nowrap; }
+/* A temperature near the limit its own hardware names. */
+.f-hw-helper-slot > b.warn { color: var(--warn); }
+.f-hw-helper-slot > b.bad { color: var(--bad); }
+.f-hw-helper-ok { color: var(--ok); font: 500 var(--t-sm) var(--font); }
+.f-hw-helper-busy { color: var(--dim); font: 500 var(--t-sm) var(--font); }
+.f-hw-helper-bad { color: var(--bad) !important; }
+
+/* Every temperature of the machine can be many rows. */
+.f-hw-helper-list { max-height: 264px; overflow-y: auto; scrollbar-width: thin; scrollbar-color: var(--card-2) transparent; }
+.f-hw-helper-list .row { min-height: 40px; }
+
+.f-hw-helper-range { display: flex; align-items: center; gap: var(--s-2); width: 200px; }
+.f-hw-helper-pct { flex: none; width: 40px; color: var(--dim); font: 400 var(--t-sm) var(--font); font-variant-numeric: tabular-nums; text-align: right; }
+.f-hw-helper-note { margin: 0; color: var(--ink-2); font: 400 var(--t-sm) var(--font); }

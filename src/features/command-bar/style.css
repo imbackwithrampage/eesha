@@ -1,0 +1,70 @@
+/* Command bar. Every selector starts with .f-command-bar- and uses the tokens of src/ui/tokens.css. */
+
+/* The window is larger than the panel: the room around it is for the panel's
+   shadow, and a click there closes the bar. */
+.f-command-bar-stage {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  box-sizing: border-box;
+  height: 100%;
+  padding: var(--s-5) calc(var(--s-5) + var(--s-4)) calc(var(--s-5) * 2 + var(--s-2));
+}
+
+/* The panel is the window chrome of components.css (.win): a field, the
+   filters, the list, one line of keys. It grows downward from a fixed top edge. */
+.f-command-bar-panel {
+  box-sizing: border-box;
+  gap: var(--s-2);
+  width: 100%;
+  max-height: 100%;
+  padding: var(--s-3);
+}
+.f-command-bar-panel > .field { flex: none; }
+
+/* In a language with longer words the filters scroll sideways rather than being cut. */
+.f-command-bar-chips { display: flex; flex: none; gap: 2px; min-width: 0; overflow-x: auto; scrollbar-width: none; }
+
+.f-command-bar-rows { flex: 1; min-height: 0; overflow: hidden auto; }
+.f-command-bar-rows > .section-title { margin: var(--s-2) var(--s-3) var(--s-1); }
+.f-command-bar-rows > .section-title:first-child { margin-top: var(--s-1); }
+
+.f-command-bar-row > small { max-width: 46%; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.f-command-bar-row > .kbd { flex: none; }
+
+/* Left end: an app's own picture or an emoji, where other rows have an icon. */
+.f-command-bar-pic { flex: none; width: 16px; height: 16px; object-fit: contain; pointer-events: none; -webkit-user-drag: none; }
+.f-command-bar-glyph { flex: none; width: 16px; font: 400 var(--t-lg) var(--font); font-style: normal; line-height: 16px; text-align: center; }
+
+/* The app has a window open. */
+.f-command-bar-live { flex: none; width: 6px; height: 6px; border-radius: var(--r-pill); background: var(--ok); }
+
+/* An answer (a sum, a conversion, a date) reads larger than a row to run. */
+.f-command-bar-answer { height: 44px; }
+.f-command-bar-answer > span:not(.kbd) { color: var(--ink); font: 600 var(--t-lg) var(--font); font-variant-numeric: tabular-nums; }
+.f-command-bar-answer > small { font: 400 var(--t-sm) var(--font); }
+
+.f-command-bar-empty { padding: var(--s-4) var(--s-3); color: var(--dim); font: 400 var(--t-md) var(--font); }
+
+/* One line under the list: what the keys do, or the question a row asks first. */
+.f-command-bar-foot {
+  display: flex;
+  align-items: center;
+  flex: none;
+  gap: var(--s-3);
+  min-height: 24px;
+  padding-top: var(--s-2);
+  border-top: 1px solid var(--hairline);
+  color: var(--dim);
+  font: 400 var(--t-xs) var(--font);
+}
+.f-command-bar-hint { display: inline-flex; align-items: center; gap: var(--s-1); white-space: nowrap; }
+.f-command-bar-gap { flex: 1; }
+.f-command-bar-asking { gap: var(--s-2); color: var(--ink); font: 500 var(--t-sm) var(--font); }
+.f-command-bar-asking > svg { flex: none; color: var(--warn); }
+
+/* Settings: a line of explanation above a field that takes several lines. */
+.f-command-bar-note { margin: var(--s-2) 0; color: var(--dim); font: 400 var(--t-sm) var(--font); }
+.f-command-bar-settings > .f-command-bar-note { margin-top: 0; }
+.f-command-bar-settings .field { margin-bottom: var(--s-2); }
+.f-command-bar-settings textarea { font: 400 var(--t-sm) var(--mono); }

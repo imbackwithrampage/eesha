@@ -1,0 +1,36 @@
+[package]
+name = "notch-feat-command-bar"
+description = "Lintel feature: Command bar"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+
+[dependencies]
+notch-core = { path = "../core" }
+svc-inject = { path = "../svc-inject" }
+svc-shell = { path = "../svc-shell" }
+svc-windows = { path = "../svc-windows" }
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+tauri = { version = "2", features = [] }
+# Already in the workspace's lock file (tauri and the clipboard use it).
+base64 = "0.22"
+# List the Win32 API sets this feature calls; Cargo unifies them across the workspace.
+windows = { version = "0.61", features = [
+  "Win32_Foundation",
+  "Win32_Globalization",
+  "Win32_Graphics_Gdi",
+  "Win32_Storage_FileSystem",
+  "Win32_System_LibraryLoader",
+  "Win32_System_Power",
+  "Win32_System_Shutdown",
+  "Win32_System_SystemInformation",
+  "Win32_UI_Shell",
+  "Win32_UI_WindowsAndMessaging",
+] }
+
+# Every example of the workspace is linked into target/<profile>/examples/ under
+# its own name, so a name several crates use is whichever was built last.
+[[example]]
+name = "command-bar-probe"
+path = "examples/probe.rs"

@@ -1,0 +1,40 @@
+[package]
+name = "notch-feat-media-tools"
+description = "Lintel feature: Media tools"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+
+[dependencies]
+notch-core = { path = "../core" }
+svc-capture = { path = "../svc-capture" }
+svc-shell = { path = "../svc-shell" }
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+windows-future = "0.2"
+tauri = { version = "2", features = [] }
+# List the Win32 API sets this feature calls; Cargo unifies them across the workspace.
+windows = { version = "0.61", features = [
+  "Foundation",
+  "Foundation_Collections",
+  "Graphics_Imaging",
+  "Media_Core",
+  "Media_Editing",
+  "Media_MediaProperties",
+  "Media_Transcoding",
+  "Storage",
+  "Storage_FileProperties",
+  "Storage_Search",
+  "Storage_Streams",
+  "UI",
+  "Win32_Foundation",
+  "Win32_Graphics_Gdi",
+  "Win32_Graphics_Imaging",
+  "Win32_System_Com",
+  "Win32_System_Com_StructuredStorage",
+  "Win32_System_Variant",
+] }
+
+[[example]]
+name = "media-tools-probe"
+path = "examples/probe.rs"

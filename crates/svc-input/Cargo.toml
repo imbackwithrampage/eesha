@@ -1,0 +1,22 @@
+[package]
+name = "svc-input"
+description = "Lintel shared service: Input"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+
+[dependencies]
+notch-core = { path = "../core" }
+# `is_elevated`, and the mark its own keys carry (recognised here as the app's).
+svc-inject = { path = "../svc-inject" }
+# The window in front, resume, unlock and display changes: when the hooks are looked at again.
+svc-sysevents = { path = "../svc-sysevents" }
+# List the Win32 API sets this service calls; Cargo unifies them across the workspace.
+windows = { version = "0.61", features = [
+  "Win32_Foundation",
+  "Win32_System_LibraryLoader",
+  "Win32_System_SystemInformation",
+  "Win32_System_Threading",
+  "Win32_UI_Input_KeyboardAndMouse",
+  "Win32_UI_WindowsAndMessaging",
+] }

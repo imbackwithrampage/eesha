@@ -1,0 +1,335 @@
+{
+  "strings": {
+    "Agents": {
+      "en": "Agents",
+      "zh-Hans": "代理",
+      "hi": "एजेंट्स",
+      "es": "Agentes",
+      "ar": "الوكلاء",
+      "fr": "Agents",
+      "bn": "এজেন্টস",
+      "pt-BR": "Agentes",
+      "ru": "Агенты",
+      "id": "Agen"
+    },
+    "Today": {
+      "en": "Today",
+      "zh-Hans": "今天",
+      "hi": "आज",
+      "es": "Hoy",
+      "ar": "اليوم",
+      "fr": "Aujourd'hui",
+      "bn": "আজ",
+      "pt-BR": "Hoje",
+      "ru": "Сегодня",
+      "id": "Hari ini"
+    },
+    "This week": {
+      "en": "This week",
+      "zh-Hans": "本周",
+      "hi": "इस सप्ताह",
+      "es": "Esta semana",
+      "ar": "هذا الأسبوع",
+      "fr": "Cette semaine",
+      "bn": "এই সপ্তাহ",
+      "pt-BR": "Esta semana",
+      "ru": "Эта неделя",
+      "id": "Minggu ini"
+    },
+    "tokens": {
+      "en": "tokens",
+      "zh-Hans": "词元",
+      "hi": "टोकन",
+      "es": "tokens",
+      "ar": "رموز",
+      "fr": "jetons",
+      "bn": "টোকেন",
+      "pt-BR": "tokens",
+      "ru": "токены",
+      "id": "token"
+    },
+    "Input": {
+      "en": "Input",
+      "zh-Hans": "输入",
+      "hi": "इनपुट",
+      "es": "Entrada",
+      "ar": "الإدخال",
+      "fr": "Saisie",
+      "bn": "ইনপুট",
+      "pt-BR": "Entrada",
+      "ru": "Ввод",
+      "id": "Input"
+    },
+    "Output": {
+      "en": "Output",
+      "zh-Hans": "输出",
+      "hi": "आउटपुट",
+      "es": "Salida",
+      "ar": "المخرجات",
+      "fr": "Sortie",
+      "bn": "আউটপুট",
+      "pt-BR": "Saída",
+      "ru": "Вывод",
+      "id": "Output"
+    },
+    "Cache read": {
+      "en": "Cache read",
+      "zh-Hans": "缓存读取",
+      "hi": "कैश पढ़ना",
+      "es": "Lectura de caché",
+      "ar": "قراءة الذاكرة المؤقتة",
+      "fr": "Lecture du cache",
+      "bn": "ক্যাশ পড়া",
+      "pt-BR": "Leitura de cache",
+      "ru": "Чтение кэша",
+      "id": "Baca cache"
+    },
+    "Cache write": {
+      "en": "Cache write",
+      "zh-Hans": "缓存写入",
+      "hi": "कैश लिखना",
+      "es": "Escritura de caché",
+      "ar": "كتابة الذاكرة المؤقتة",
+      "fr": "Écriture du cache",
+      "bn": "ক্যাশ লেখা",
+      "pt-BR": "Gravação de cache",
+      "ru": "Запись в кэш",
+      "id": "Tulis cache"
+    },
+    "Models": {
+      "en": "Models",
+      "zh-Hans": "模型",
+      "hi": "मॉडल",
+      "es": "Modelos",
+      "ar": "النماذج",
+      "fr": "Modèles",
+      "bn": "মডেল",
+      "pt-BR": "Modelos",
+      "ru": "Модели",
+      "id": "Model"
+    },
+    "Projects": {
+      "en": "Projects",
+      "zh-Hans": "项目",
+      "hi": "प्रोजेक्ट",
+      "es": "Proyectos",
+      "ar": "المشاريع",
+      "fr": "Projets",
+      "bn": "প্রজেক্ট",
+      "pt-BR": "Projetos",
+      "ru": "Проекты",
+      "id": "Proyek"
+    },
+    "{n} requests": {
+      "en": "{n} requests",
+      "zh-Hans": {
+        "other": "{n} 个请求"
+      },
+      "hi": {
+        "one": "{n} अनुरोध",
+        "other": "{n} अनुरोध"
+      },
+      "es": {
+        "one": "{n} solicitud",
+        "other": "{n} solicitudes"
+      },
+      "ar": {
+        "zero": "{n} طلب",
+        "one": "طلب واحد",
+        "two": "طلبان",
+        "few": "{n} طلبات",
+        "many": "{n} طلبًا",
+        "other": "{n} طلب"
+      },
+      "fr": {
+        "one": "{n} requête",
+        "other": "{n} requêtes"
+      },
+      "bn": {
+        "one": "{n}টি অনুরোধ",
+        "other": "{n}টি অনুরোধ"
+      },
+      "pt-BR": {
+        "one": "{n} solicitação",
+        "other": "{n} solicitações"
+      },
+      "ru": {
+        "one": "{n} запрос",
+        "few": "{n} запроса",
+        "many": "{n} запросов",
+        "other": "{n} запроса"
+      },
+      "id": {
+        "other": "{n} permintaan"
+      }
+    },
+    "5 h limit": {
+      "en": "5 h limit",
+      "zh-Hans": "5 小时限额",
+      "hi": "5 घंटे की सीमा",
+      "es": "Límite de 5 h",
+      "ar": "حد 5 ساعات",
+      "fr": "Limite de 5 h",
+      "bn": "৫ ঘণ্টার সীমা",
+      "pt-BR": "Limite de 5 h",
+      "ru": "Лимит на 5 ч",
+      "id": "Batas 5 jam"
+    },
+    "Weekly limit": {
+      "en": "Weekly limit",
+      "zh-Hans": "每周限额",
+      "hi": "साप्ताहिक सीमा",
+      "es": "Límite semanal",
+      "ar": "الحد الأسبوعي",
+      "fr": "Limite hebdomadaire",
+      "bn": "সাপ্তাহিক সীমা",
+      "pt-BR": "Limite semanal",
+      "ru": "Недельный лимит",
+      "id": "Batas mingguan"
+    },
+    "{n}% used": {
+      "en": "{n}% used",
+      "zh-Hans": "已用 {n}%",
+      "hi": "{n}% उपयोग",
+      "es": "{n} % usado",
+      "ar": "{n}% مستخدم",
+      "fr": "{n} % utilisé",
+      "bn": "{n}% ব্যবহৃত",
+      "pt-BR": "{n}% usado",
+      "ru": "использовано {n}%",
+      "id": "{n}% terpakai"
+    },
+    "Agent finished": {
+      "en": "Agent finished",
+      "zh-Hans": "代理已完成",
+      "hi": "एजेंट पूरा हुआ",
+      "es": "Agente terminado",
+      "ar": "انتهى الوكيل",
+      "fr": "Agent terminé",
+      "bn": "এজেন্ট শেষ",
+      "pt-BR": "Agente concluído",
+      "ru": "Агент завершил работу",
+      "id": "Agen selesai"
+    },
+    "{name} worked for {time}": {
+      "en": "{name} worked for {time}",
+      "zh-Hans": "{name} 工作了 {time}",
+      "hi": "{name} ने {time} तक काम किया",
+      "es": "{name} trabajó durante {time}",
+      "ar": "عمل {name} لمدة {time}",
+      "fr": "{name} a travaillé pendant {time}",
+      "bn": "{name} {time} ধরে কাজ করেছে",
+      "pt-BR": "{name} trabalhou por {time}",
+      "ru": "{name} работал {time}",
+      "id": "{name} bekerja selama {time}"
+    },
+    "No Claude Code or Codex logs found on this PC yet.": {
+      "en": "No Claude Code or Codex logs found on this PC yet.",
+      "zh-Hans": "这台电脑上还没有找到 Claude Code 或 Codex 日志。",
+      "hi": "इस PC पर अभी तक Claude Code या Codex के लॉग नहीं मिले।",
+      "es": "Todavía no se han encontrado registros de Claude Code ni de Codex en este PC.",
+      "ar": "لم تُعثر بعد على سجلات Claude Code أو Codex على هذا الحاسوب.",
+      "fr": "Aucun journal Claude Code ou Codex trouvé sur ce PC pour l'instant.",
+      "bn": "এই PC-তে এখনো Claude Code বা Codex-এর কোনো লগ পাওয়া যায়নি।",
+      "pt-BR": "Nenhum log do Claude Code ou do Codex encontrado neste PC ainda.",
+      "ru": "На этом ПК пока не найдено журналов Claude Code или Codex.",
+      "id": "Belum ada log Claude Code atau Codex di PC ini."
+    },
+    "Reading your logs...": {
+      "en": "Reading your logs...",
+      "zh-Hans": "正在读取你的日志...",
+      "hi": "आपके लॉग पढ़े जा रहे हैं...",
+      "es": "Leyendo tus registros...",
+      "ar": "جارٍ قراءة سجلاتك...",
+      "fr": "Lecture de vos journaux...",
+      "bn": "আপনার লগ পড়া হচ্ছে...",
+      "pt-BR": "Lendo seus logs...",
+      "ru": "Чтение журналов...",
+      "id": "Membaca log Anda..."
+    },
+    "Tell me when a long turn ends": {
+      "en": "Tell me when a long turn ends",
+      "zh-Hans": "长时间任务结束时告诉我",
+      "hi": "लंबा काम खत्म होने पर बताएँ",
+      "es": "Avisarme cuando termine una tarea larga",
+      "ar": "أخبرني عند انتهاء دورة طويلة",
+      "fr": "Me prévenir à la fin d'un long tour",
+      "bn": "দীর্ঘ কাজ শেষ হলে আমাকে জানান",
+      "pt-BR": "Me avisar quando uma tarefa longa terminar",
+      "ru": "Сообщать, когда длинный ход закончится",
+      "id": "Beri tahu saya saat giliran panjang selesai"
+    },
+    "For turns the hooks do not report. Counts come from your local logs, which are only read, never changed.": {
+      "en": "For turns the hooks do not report. Counts come from your local logs, which are only read, never changed.",
+      "zh-Hans": "用于 hook 无法报告的回合。计数来自你本地的日志，这些日志只读取，从不修改。",
+      "hi": "उन टर्न के लिए जिन्हें hooks रिपोर्ट नहीं करते। गिनती आपके स्थानीय लॉग से आती है, जिन्हें केवल पढ़ा जाता है, कभी बदला नहीं जाता।",
+      "es": "Para los turnos que los hooks no informan. Los recuentos vienen de tus registros locales, que solo se leen y nunca se modifican.",
+      "ar": "للأدوار التي لا تُبلغ عنها الخطافات. تأتي الأعداد من سجلاتك المحلية، وهي تُقرأ فقط ولا تُعدَّل أبدًا.",
+      "fr": "Pour les tours que les hooks ne signalent pas. Les compteurs viennent de vos journaux locaux, qui sont seulement lus, jamais modifiés.",
+      "bn": "যে টার্ন hook জানায় না তার জন্য। গণনা আপনার স্থানীয় লগ থেকে আসে, যা শুধু পড়া হয়, কখনো বদলানো হয় না।",
+      "pt-BR": "Para os turnos que os hooks não informam. As contagens vêm dos seus logs locais, que só são lidos, nunca alterados.",
+      "ru": "Для ходов, о которых не сообщают хуки. Счётчики берутся из локальных журналов, которые только читаются и никогда не меняются.",
+      "id": "Untuk giliran yang tidak dilaporkan hook. Hitungan berasal dari log lokal Anda, yang hanya dibaca, tidak pernah diubah."
+    },
+    "Show running turns": {
+      "en": "Show running turns",
+      "zh-Hans": "显示正在运行的回合",
+      "hi": "चल रहे टर्न दिखाएँ",
+      "es": "Mostrar turnos en curso",
+      "ar": "إظهار الأدوار الجارية",
+      "fr": "Afficher les tours en cours",
+      "bn": "চলমান টার্ন দেখান",
+      "pt-BR": "Mostrar turnos em andamento",
+      "ru": "Показывать текущие ходы",
+      "id": "Tampilkan giliran yang berjalan"
+    },
+    "Shows turns of sessions the hooks are not reporting.": {
+      "en": "Shows turns of sessions the hooks are not reporting.",
+      "zh-Hans": "显示 hook 未报告的会话中的回合。",
+      "hi": "उन सत्रों के टर्न दिखाता है जिन्हें hooks रिपोर्ट नहीं कर रहे।",
+      "es": "Muestra los turnos de sesiones que los hooks no informan.",
+      "ar": "يعرض أدوار الجلسات التي لا تُبلغ عنها الخطافات.",
+      "fr": "Affiche les tours des sessions que les hooks ne signalent pas.",
+      "bn": "যে সেশন hook জানাচ্ছে না, তাদের টার্ন দেখায়।",
+      "pt-BR": "Mostra os turnos de sessões que os hooks não informam.",
+      "ru": "Показывает ходы сеансов, о которых не сообщают хуки.",
+      "id": "Menampilkan giliran dari sesi yang tidak dilaporkan hook."
+    },
+    "Shortest turn to tell about (seconds)": {
+      "en": "Shortest turn to tell about (seconds)",
+      "zh-Hans": "需要通知的最短回合（秒）",
+      "hi": "बताने लायक सबसे छोटा टर्न (सेकंड)",
+      "es": "Turno más corto del que avisar (segundos)",
+      "ar": "أقصر دور يُبلَّغ عنه (ثوانٍ)",
+      "fr": "Tour le plus court à signaler (secondes)",
+      "bn": "সবচেয়ে ছোট যে টার্নের খবর দেওয়া হবে (সেকেন্ড)",
+      "pt-BR": "Turno mais curto para avisar (segundos)",
+      "ru": "Самый короткий ход, о котором сообщать (секунды)",
+      "id": "Giliran terpendek untuk diberi tahu (detik)"
+    },
+    "Press Enter to apply.": {
+      "en": "Press Enter to apply.",
+      "zh-Hans": "按 Enter 应用。",
+      "hi": "लागू करने के लिए Enter दबाएँ।",
+      "es": "Pulsa Intro para aplicar.",
+      "ar": "اضغط Enter للتطبيق.",
+      "fr": "Appuyez sur Entrée pour appliquer.",
+      "bn": "প্রয়োগ করতে Enter চাপুন।",
+      "pt-BR": "Pressione Enter para aplicar.",
+      "ru": "Нажмите Enter, чтобы применить.",
+      "id": "Tekan Enter untuk menerapkan."
+    },
+    "Agent usage": {
+      "en": "Agent usage",
+      "zh-Hans": "代理用量",
+      "hi": "एजेंट उपयोग",
+      "es": "Uso de agentes",
+      "ar": "استخدام الوكلاء",
+      "fr": "Utilisation des agents",
+      "bn": "এজেন্ট ব্যবহার",
+      "pt-BR": "Uso de agentes",
+      "ru": "Использование агентов",
+      "id": "Penggunaan agen"
+    }
+  }
+}

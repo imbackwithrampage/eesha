@@ -1,0 +1,28 @@
+/* Displays and keep awake. Every selector starts with .f-displays-keepawake- and uses the tokens of src/ui/tokens.css. */
+.f-displays-keepawake-page { display: flex; flex-direction: column; align-items: center; justify-content: center; gap: var(--s-3); height: 100%; padding: var(--s-2) var(--s-4); }
+.f-displays-keepawake-chips { display: flex; gap: var(--s-2); justify-content: center; flex-wrap: wrap; }
+.f-displays-keepawake-hint { margin: 0; font: 400 var(--t-sm) var(--font); color: var(--dim); text-align: center; }
+.f-displays-keepawake-clock { font-family: var(--mono); font-size: 52px; line-height: 56px; font-variant-numeric: tabular-nums; color: var(--ink); letter-spacing: -.02em; }
+
+.f-displays-keepawake-list { display: flex; flex-direction: column; gap: var(--s-2); height: 100%; padding: var(--s-2) 0; overflow-y: auto; scrollbar-width: thin; scrollbar-color: var(--card-2) transparent; }
+.f-displays-keepawake-disp { display: flex; align-items: center; gap: var(--s-3); min-height: 44px; padding: 0 var(--s-3); border-radius: var(--r-md); background: var(--card); }
+.f-displays-keepawake-ico { display: flex; color: var(--ink-2); }
+.f-displays-keepawake-name { display: flex; flex-direction: column; width: 180px; min-width: 0; }
+.f-displays-keepawake-name b { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; font: 500 var(--t-md) var(--font); color: var(--ink); }
+.f-displays-keepawake-name small { font: 400 var(--t-xs) var(--font); color: var(--dim); }
+.f-displays-keepawake-disp .meter { flex: 1; }
+.f-displays-keepawake-disp > b { min-width: 40px; text-align: right; font: 500 var(--t-sm) var(--font); font-variant-numeric: tabular-nums; color: var(--ink-2); }
+
+.f-displays-keepawake-wall { display: flex; flex-direction: column; gap: var(--s-2); height: 100%; padding: var(--s-1) 0; }
+.f-displays-keepawake-wall-bar { display: flex; align-items: center; justify-content: space-between; }
+.f-displays-keepawake-pager { display: flex; align-items: center; gap: var(--s-2); }
+.f-displays-keepawake-pager small { font: 400 var(--t-xs) var(--font); color: var(--dim); font-variant-numeric: tabular-nums; }
+.f-displays-keepawake-grid { display: grid; grid-template-columns: repeat(6, 1fr); gap: var(--s-2); flex: 1; min-height: 0; }
+.f-displays-keepawake-pic { position: relative; padding: 0; border: 0; border-radius: var(--r-sm); background: var(--card); overflow: hidden; cursor: pointer; box-shadow: inset 0 0 0 1px var(--hairline); transition: box-shadow var(--d-fast) var(--ease-out); }
+.f-displays-keepawake-pic:hover { box-shadow: 0 0 0 2px var(--accent); }
+.f-displays-keepawake-pic.done { box-shadow: 0 0 0 2px var(--ok); }
+.f-displays-keepawake-pic img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
+
+/* The dimming overlay window: only its opacity changes. The window itself is click-through. */
+.f-displays-keepawake-dim { position: fixed; inset: 0; background: var(--bg); opacity: 0; pointer-events: none; }
+@media (prefers-reduced-motion: no-preference) { .f-displays-keepawake-dim { transition: opacity var(--d-fast) var(--ease-out); } }

@@ -1,0 +1,260 @@
+/* The chat view's additions (views/chat.ts): the picker's search field and
+   found servers, Clear chat, the error note, Stop, and the task chip. Made
+   from tokens.css; the rest of the chat is in style.css. */
+
+/* ── The row above the composer ─────────────────────────────────────────── */
+
+.model-row {
+  flex: none;
+  align-items: center;
+  gap: var(--s-2);
+  min-width: 0;
+}
+
+.model-row > .model-gap {
+  flex: 1 1 auto;
+}
+
+.model-btn {
+  flex: 0 1 auto;
+  min-width: 0;
+}
+
+/* Clear chat: as quiet as the model button next to it. */
+.chat-clear {
+  display: inline-flex;
+  flex: none;
+  align-items: center;
+  justify-content: center;
+  width: 22px;
+  height: 22px;
+  padding: 0;
+  border: 0;
+  border-radius: var(--r-pill);
+  background: transparent;
+  color: var(--dim-2);
+  cursor: default;
+  transition: background var(--d-fast) var(--ease-out), color var(--d-fast) var(--ease-out);
+}
+
+.chat-clear:hover:not(:disabled) {
+  background: color-mix(in srgb, var(--ink) 10%, transparent);
+  color: var(--ink);
+}
+
+.chat-clear:disabled {
+  opacity: 0.4;
+}
+
+.chat-clear:focus-visible,
+.task-chip:focus-visible,
+.task-folder:focus-visible {
+  outline: 2px solid color-mix(in srgb, var(--accent) 50%, transparent);
+  outline-offset: 2px;
+}
+
+/* ── Model picker: room for the list, and a search field ─────────────────── */
+
+/* While picking, the composer steps aside: the list gets its height, and the
+   search field takes its place next to the mascot. */
+.chat-body.picking .isl-compose,
+.chat-body.picking .chat-note,
+.chat-body.picking .task-chip,
+.chat-body.picking .task-folder,
+.chat-body.picking .chat-clear {
+  display: none;
+}
+
+.chat-body.picking .model-row {
+  min-height: 28px;
+  padding-left: 30px;
+}
+
+.chat-body.picking .picker {
+  gap: 6px;
+  padding: var(--s-2);
+}
+
+/* One line of chips, however many providers: it scrolls sideways. */
+.chat-body.picking .picker-chips {
+  flex: none;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  scrollbar-width: none;
+}
+
+.picker-chip {
+  flex: none;
+  white-space: nowrap;
+}
+
+/* A server found on this computer, not connected yet: an offer, drawn hollow. */
+.picker-chip.found {
+  border-style: dashed;
+  border-color: color-mix(in srgb, var(--accent) 60%, transparent);
+  background: transparent;
+  color: var(--dim);
+}
+
+.picker-chip.found:hover {
+  background: color-mix(in srgb, var(--accent) 12%, transparent);
+  color: var(--ink-2);
+}
+
+.picker-chip.found .picker-dot {
+  background: transparent;
+  box-shadow: inset 0 0 0 1.5px var(--accent);
+}
+
+/* (Two classes deep, so it holds whichever stylesheet comes first.) */
+.model-row > .picker-search-field {
+  display: none;
+  flex: 1 1 auto;
+  min-width: 0;
+}
+
+.chat-body.picking .model-row > .picker-search-field.on {
+  display: flex;
+}
+
+/* The field takes the row up to the model button. */
+.chat-body.picking .picker-search-field.on ~ .model-gap {
+  display: none;
+}
+
+/* ── The error note: one line, a close button, gone by itself ────────────── */
+
+.chat-note {
+  display: none;
+  flex: none;
+  align-items: center;
+  gap: var(--s-2);
+  min-height: 32px;
+  padding: var(--s-1) var(--s-1) var(--s-1) var(--s-3);
+  border-radius: var(--r-sm);
+  background: color-mix(in srgb, var(--bad) 14%, var(--card));
+  box-shadow: inset 0 0 0 1px color-mix(in srgb, var(--bad) 28%, var(--hairline));
+  color: var(--ink-2);
+  font: 400 var(--t-sm) var(--font);
+}
+
+.chat-note.on {
+  display: flex;
+  animation: chat-note-in var(--d-base) var(--ease-out);
+}
+
+.chat-note > svg {
+  flex: none;
+  color: var(--bad);
+}
+
+.chat-note-text {
+  flex: 1 1 auto;
+  min-width: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  user-select: text;
+}
+
+@keyframes chat-note-in {
+  from { opacity: 0; transform: translateY(var(--fx-shift)); }
+}
+
+/* ── The task chip and its folder ────────────────────────────────────────── */
+
+.task-chip,
+.task-folder {
+  flex: none;
+  height: 22px;
+  border: 0;
+  border-radius: var(--r-pill);
+  background: color-mix(in srgb, var(--ink) 6%, transparent);
+  color: var(--dim-2);
+  font: 500 10.5px var(--font);
+  cursor: default;
+  transition: background var(--d-fast) var(--ease-out), color var(--d-fast) var(--ease-out);
+}
+
+.task-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  padding: 0 var(--s-2);
+}
+
+.task-chip:hover {
+  background: color-mix(in srgb, var(--ink) 10%, transparent);
+  color: var(--ink-2);
+}
+
+.task-chip.on {
+  background: color-mix(in srgb, var(--accent) 22%, transparent);
+  color: var(--ink);
+}
+
+.task-chip.on > svg {
+  color: var(--accent);
+}
+
+.task-folder {
+  display: none;
+  align-items: center;
+  gap: 5px;
+  min-width: 0;
+  max-width: 200px;
+  padding: 0 var(--s-2);
+  outline: 0;
+  color: var(--ink-2);
+}
+
+.task-folder.on {
+  display: inline-flex;
+}
+
+button.task-folder:hover {
+  background: color-mix(in srgb, var(--ink) 10%, transparent);
+  color: var(--ink);
+}
+
+.task-folder-name {
+  min-width: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+input.task-folder {
+  flex: 1 1 auto;
+  max-width: 320px;
+  cursor: text;
+  user-select: text;
+}
+
+input.task-folder.on {
+  display: block;
+}
+
+input.task-folder::placeholder {
+  color: var(--dim-2);
+}
+
+/* A task that is still running: its line, and Cancel next to it. */
+.chat-row.task {
+  align-items: center;
+  gap: var(--s-2);
+}
+
+.chat-row.task .reply {
+  color: var(--dim);
+}
+
+.chat-row.task .btn {
+  flex: none;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .chat-note.on {
+    animation: none;
+  }
+}

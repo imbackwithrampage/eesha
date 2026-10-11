@@ -1,0 +1,375 @@
+/* Settings window: the shell is .sidebar + .page (src/ui/components.css); this file only
+   lays the window out and styles the pieces of the base's sections. Tokens only. */
+
+@import "../ui/tokens.css";
+@import "../ui/components.css";
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  height: 100%;
+  overflow: hidden;
+  background: var(--panel);
+}
+
+body.settings-window {
+  color: var(--ink);
+  font: 400 var(--t-md) var(--font);
+  -webkit-font-smoothing: antialiased;
+}
+
+#settings-root {
+  height: 100vh;
+  display: flex;
+}
+
+.shell {
+  flex: 1;
+}
+
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  gap: var(--s-1);
+}
+
+.sidebar .version {
+  margin-top: auto;
+  padding: var(--s-3) var(--s-3) var(--s-1);
+  color: var(--dim-2);
+  font: 400 var(--t-xs) var(--font);
+}
+
+.page {
+  display: flex;
+  flex-direction: column;
+  gap: var(--s-3);
+}
+
+.page > h1 {
+  margin-bottom: var(--s-1);
+}
+
+.page > .section-title {
+  margin: var(--s-3) 0 calc(var(--s-1) * -1);
+}
+
+.hint {
+  color: var(--dim);
+  font: 400 var(--t-sm) var(--font);
+}
+
+/* A base section: a card with a title, hint lines and `.line` rows. */
+.page section {
+  display: flex;
+  flex-direction: column;
+  gap: var(--s-3);
+  padding: var(--s-4);
+  border-radius: var(--r-md);
+  background: var(--card);
+  box-shadow: inset 0 0 0 1px var(--hairline);
+}
+
+.page section > h2.section-title {
+  display: flex;
+  align-items: center;
+  gap: var(--s-2);
+  margin: 0;
+}
+
+.line {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: var(--s-3);
+}
+
+.line > label {
+  min-width: 132px;
+  color: var(--ink-2);
+  font: 500 var(--t-md) var(--font);
+}
+
+.spacer {
+  flex: 1 1 auto;
+}
+
+.dot {
+  width: 8px;
+  height: 8px;
+  border-radius: var(--r-pill);
+  display: inline-block;
+  flex: 0 0 auto;
+}
+
+code,
+.path {
+  font: 400 var(--t-xs) var(--mono);
+  color: var(--dim);
+  word-break: break-all;
+  user-select: text;
+}
+
+input[type="range"] {
+  -webkit-appearance: none;
+  appearance: none;
+  height: 4px;
+  border-radius: var(--r-xs);
+  background: var(--card-2);
+  width: 120px;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 14px;
+  height: 14px;
+  border-radius: var(--r-pill);
+  background: var(--ink);
+}
+
+/* Bare inputs and selects of the base's sections look like a .field. */
+.page :is(input[type="text"], input[type="password"], input[type="number"], select):not(.field *) {
+  height: 28px;
+  padding: 0 var(--s-2);
+  border: 0;
+  border-radius: var(--r-sm);
+  background: var(--card-2);
+  box-shadow: inset 0 0 0 1px var(--hairline);
+  color: var(--ink);
+  font: 400 var(--t-md) var(--font);
+}
+
+.page :is(input, select):not(.field *):focus {
+  outline: none;
+  box-shadow: inset 0 0 0 1px var(--accent);
+}
+
+input::placeholder {
+  color: var(--dim-2);
+}
+
+select option {
+  background: var(--panel);
+  color: var(--ink);
+}
+
+.diff {
+  font: 400 var(--t-xs) / 1.5 var(--mono);
+  background: var(--bg);
+  box-shadow: inset 0 0 0 1px var(--hairline);
+  border-radius: var(--r-sm);
+  padding: var(--s-3);
+  max-height: 260px;
+  overflow: auto;
+  white-space: pre;
+  user-select: text;
+}
+
+.diff .add {
+  color: var(--ok);
+}
+
+.diff .del {
+  color: var(--bad);
+}
+
+.diff .ctx {
+  color: var(--dim-2);
+}
+
+.notice {
+  font: 400 var(--t-sm) var(--font);
+  border-radius: var(--r-sm);
+  padding: var(--s-2) var(--s-3);
+}
+
+.notice.ok {
+  background: color-mix(in srgb, var(--ok) 14%, transparent);
+  color: var(--ok);
+}
+
+.notice.err {
+  background: color-mix(in srgb, var(--bad) 14%, transparent);
+  color: color-mix(in srgb, var(--bad), var(--ink) 32%);
+}
+
+.notice.warn {
+  background: color-mix(in srgb, var(--warn) 14%, transparent);
+  color: var(--warn);
+}
+
+/* Active pills: one group per catalog category, one row per pill. */
+
+.pill-group {
+  display: flex;
+  flex-direction: column;
+  gap: var(--s-2);
+  padding-top: var(--s-3);
+  border-top: 1px solid var(--hairline);
+}
+
+.pill-group > h3 {
+  color: var(--dim);
+  font: 600 var(--t-xs) var(--font);
+}
+
+.pill-row {
+  display: flex;
+  align-items: center;
+  gap: var(--s-2);
+  min-height: 28px;
+}
+
+.pill-row.full .name {
+  color: var(--dim-2);
+}
+
+.pill-row .state {
+  margin-left: auto;
+  color: var(--dim);
+  font: 400 var(--t-xs) var(--font);
+}
+
+.hint.full {
+  color: var(--warn);
+}
+
+/* The dot of a pill's row opens the colour palette (see ./colors.ts). */
+.color-dot {
+  cursor: pointer;
+}
+
+.color-dot:focus-visible {
+  outline: 2px solid color-mix(in srgb, var(--accent) 50%, transparent);
+  outline-offset: 2px;
+}
+
+.palette {
+  position: fixed;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  gap: var(--s-2);
+  padding: var(--s-2) var(--s-3);
+  background: var(--panel);
+  border-radius: var(--r-sm);
+  box-shadow: inset 0 0 0 1px var(--outline), var(--shadow-win);
+}
+
+.palette .swatch {
+  width: 18px;
+  height: 18px;
+  padding: 0;
+  border: 0;
+  border-radius: var(--r-pill);
+  cursor: pointer;
+}
+
+.palette .swatch.on {
+  box-shadow: 0 0 0 2px var(--panel), 0 0 0 3.5px var(--ink);
+}
+
+.palette .reset {
+  padding: 2px var(--s-2);
+  border: 0;
+  border-radius: var(--r-xs);
+  background: var(--card-2);
+  color: var(--ink-2);
+  font: 500 var(--t-xs) var(--font);
+  cursor: pointer;
+}
+
+/* Shortcuts */
+
+.subhead {
+  color: var(--dim);
+  font: 600 var(--t-xs) var(--font);
+  letter-spacing: var(--caps);
+  text-transform: uppercase;
+}
+
+.shortcut-list {
+  display: flex;
+  flex-direction: column;
+  gap: var(--s-2);
+}
+
+.line.shortcut {
+  flex-wrap: nowrap;
+  gap: var(--s-3);
+}
+
+.line.shortcut.off .shortcut-name {
+  color: var(--dim-2);
+}
+
+.shortcut-name {
+  flex: 1 1 auto;
+  min-width: 0;
+}
+
+.keycap {
+  min-width: 118px;
+  height: 28px;
+  padding: 0 var(--s-3);
+  border: 0;
+  border-radius: var(--r-sm);
+  background: var(--card-2);
+  box-shadow: inset 0 0 0 1px var(--hairline);
+  color: var(--ink);
+  font: 500 var(--t-xs) var(--mono);
+  text-align: center;
+  cursor: pointer;
+  flex: 0 0 auto;
+}
+
+.keycap:hover:not(:disabled) {
+  box-shadow: inset 0 0 0 1px var(--outline);
+}
+
+.keycap.recording {
+  box-shadow: inset 0 0 0 1px var(--accent);
+  color: var(--dim);
+}
+
+.keycap.static {
+  background: transparent;
+  color: var(--dim);
+  cursor: default;
+}
+
+.keycap:disabled {
+  opacity: 0.4;
+  cursor: default;
+}
+
+.tag {
+  padding: 2px var(--s-2);
+  border-radius: var(--r-pill);
+  background: var(--card-2);
+  color: var(--dim);
+  font: 500 var(--t-xs) var(--font);
+  white-space: nowrap;
+  flex: 0 0 auto;
+}
+
+.tag.warn {
+  background: color-mix(in srgb, var(--warn) 14%, transparent);
+  color: var(--warn);
+}
+
+.tag.err {
+  background: color-mix(in srgb, var(--bad) 14%, transparent);
+  color: color-mix(in srgb, var(--bad), var(--ink) 32%);
+}
+
+/* Arabic: the window reads right to left (main.ts sets <html dir="rtl">);
+   diffs, paths, keys and addresses stay left to right. */
+html[dir="rtl"] :is(.diff, .path, .keycap, input[type="password"], input[type="text"]) {
+  direction: ltr;
+}

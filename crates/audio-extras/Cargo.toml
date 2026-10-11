@@ -1,0 +1,31 @@
+[package]
+name = "notch-feat-audio-extras"
+description = "Lintel feature: Audio extras"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+
+[dependencies]
+notch-core = { path = "../core" }
+# The loopback, and the output's level for the volume keys.
+svc-audio = { path = "../svc-audio" }
+# The volume keys, on the shared keyboard hook.
+svc-input = { path = "../svc-input" }
+# Whether music plays and which song, for the beat.
+svc-media = { path = "../svc-media" }
+# Tempo and beat from the sound (Apache-2.0, no dependency of its own).
+taktus = "0.1"
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+tauri = { version = "2", features = [] }
+# List the Win32 API sets this feature calls; Cargo unifies them across the workspace.
+windows = { version = "0.61", features = [
+  "Win32_Foundation",
+  "Win32_UI_Input_KeyboardAndMouse",
+] }
+
+# Every example of the workspace is linked into target/<profile>/examples/ under
+# its own name, so a name several crates use is whichever was built last.
+[[example]]
+name = "audio-extras-probe"
+path = "examples/audio-extras-probe.rs"

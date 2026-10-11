@@ -1,0 +1,94 @@
+/* Poppins (SIL Open Font License 1.1), bundled with the app; scripts it lacks fall back to the system fonts below. */
+@import "@fontsource/poppins/400.css";
+@import "@fontsource/poppins/500.css";
+@import "@fontsource/poppins/600.css";
+/* Other scripts, same licence and same way: Hind Siliguri (Bengali), Montserrat (Cyrillic), Cairo (Arabic). */
+@import "@fontsource/hind-siliguri/bengali-400.css";
+@import "@fontsource/hind-siliguri/bengali-500.css";
+@import "@fontsource/hind-siliguri/bengali-600.css";
+@import "@fontsource/montserrat/cyrillic-400.css";
+@import "@fontsource/montserrat/cyrillic-500.css";
+@import "@fontsource/montserrat/cyrillic-600.css";
+@import "@fontsource/montserrat/cyrillic-ext-400.css";
+@import "@fontsource/montserrat/cyrillic-ext-500.css";
+@import "@fontsource/montserrat/cyrillic-ext-600.css";
+@import "@fontsource/cairo/arabic-400.css";
+@import "@fontsource/cairo/arabic-500.css";
+@import "@fontsource/cairo/arabic-600.css";
+
+/* Lintel design tokens (docs/ARCHITECTURE.md §7).
+   The only colours, sizes and curves anyone uses. Never hard-code a hex outside this file. */
+
+:root {
+  color-scheme: dark;
+
+  /* Colour */
+  --bg: #000;                          /* island body */
+  --panel: #0b0c0e;                    /* windows, settings */
+  --card: #141518;
+  --card-2: #22252c;                   /* hover, tab-on */
+  --hairline: rgba(255, 255, 255, .10);
+  --ink: #f5f6f8;
+  --ink-2: #c9cdd4;
+  --dim: #9398a1;
+  --dim-2: #828791;
+  --accent: #8ea2ff;
+  --accent-ink: #0b0c0e;               /* text on accent */
+  --ok: #34d399;
+  --warn: #f5a524;
+  --bad: #f4505e;
+  --info: #22d3ee;
+  --outline: rgba(255, 255, 255, .14); /* borders of windows and menus; optional 1.5px island outline */
+  --shadow-win: 0 12px 40px rgba(0, 0, 0, .55);
+
+  /* Type. The scale is size/line-height, written for the font shorthand:
+     font: 500 var(--t-sm) var(--font). Weights: 400 body, 500 labels, 600 titles. */
+  --font: "Poppins", "Hind Siliguri", "Montserrat", "Cairo", system-ui, "Segoe UI Variable Text", "Segoe UI", "Segoe UI Emoji", "Nirmala UI",
+    "Microsoft YaHei UI", "Microsoft YaHei", sans-serif;
+  --mono: "Cascadia Mono", "Consolas", ui-monospace, monospace;
+  --t-xs: 11px/14px;
+  --t-sm: 12px/16px;
+  --t-md: 13px/18px;                   /* default */
+  --t-lg: 15px/20px;
+  --t-xl: 20px/24px;
+  --caps: .02em;                       /* letter-spacing of all-caps --t-xs labels; 0 everywhere else */
+
+  /* Spacing */
+  --s-1: 4px;
+  --s-2: 8px;
+  --s-3: 12px;
+  --s-4: 16px;
+  --s-5: 24px;
+
+  /* Radius */
+  --r-xs: 6px;                         /* kbd, meter */
+  --r-sm: 10px;                        /* buttons, fields, tiles */
+  --r-md: 14px;                        /* cards, peek strip bottom corners */
+  --r-lg: 22px;                        /* open island */
+  --r-win: 12px;                       /* floating windows */
+  --r-pill: 999px;
+
+  /* Island metrics */
+  --island-inset: 16px;                /* side and bottom inset of the open island */
+  --island-header: 40px;               /* section content budget = height - 40 - 16 */
+
+  /* Motion */
+  --ease-out: cubic-bezier(.2, .8, .2, 1);
+  --ease-in-out: cubic-bezier(.45, 0, .2, 1);
+  --d-fast: 120ms;                     /* hover, notice in */
+  --d-base: 180ms;                     /* content cross-fade */
+  --d-slow: 340ms;                     /* island shrink, window close */
+  --d-exit: 220ms;                     /* notice out (§5.1) */
+  --d-settle: 200ms;                   /* the island shell has nearly reached its new size: new content may come in */
+  --d-stagger: 40ms;                   /* between two groups of new content (the tabs, then the body) */
+  --fx-shift: 4px;                     /* translateY of the content cross-fade */
+  --fx-blur: 4px;                      /* blur of the content cross-fade */
+}
+
+/* Springs become 180 ms ease in script; blur and translate are removed here. */
+@media (prefers-reduced-motion: reduce) {
+  :root {
+    --fx-shift: 0px;
+    --fx-blur: 0px;
+  }
+}

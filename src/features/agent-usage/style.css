@@ -1,0 +1,28 @@
+/* Agent usage. Every selector starts with .f-agent-usage- and uses the tokens of src/ui/tokens.css. */
+.f-agent-usage-page { display: flex; flex-direction: column; gap: var(--s-2); height: 100%; overflow-y: auto; scrollbar-width: thin; scrollbar-color: var(--card-2) transparent; padding: 0 var(--s-1) var(--s-2); }
+.f-agent-usage-empty { margin: auto; max-width: 70%; text-align: center; font: 400 var(--t-sm) var(--font); color: var(--dim); }
+.f-agent-usage-card { display: flex; flex-direction: column; gap: var(--s-2); }
+.f-agent-usage-head { display: flex; align-items: center; gap: var(--s-2); }
+.f-agent-usage-head b { font: 400 var(--t-md) var(--font); font-weight: 600; color: var(--ink); }
+.f-agent-usage-head small { font: 400 var(--t-xs) var(--font); color: var(--dim); }
+.f-agent-usage-tabs { margin-left: auto; display: flex; gap: var(--s-1); }
+/* Text-only tabs: the icon the shared tab draws is empty here. */
+.f-agent-usage-tabs .tab svg { display: none; }
+.f-agent-usage-big { display: flex; align-items: baseline; gap: var(--s-2); }
+.f-agent-usage-big strong { font: 600 var(--t-xl) var(--font); font-variant-numeric: tabular-nums; color: var(--ink); }
+.f-agent-usage-big span { font: 400 var(--t-sm) var(--font); color: var(--dim); font-variant-numeric: tabular-nums; }
+.f-agent-usage-kinds { display: grid; grid-template-columns: repeat(4, 1fr); gap: var(--s-2); }
+.f-agent-usage-kinds div { display: flex; flex-direction: column; font: 400 var(--t-xs) var(--font); color: var(--dim); }
+.f-agent-usage-kinds b { font: 400 var(--t-md) var(--font); font-weight: 500; color: var(--ink-2); font-variant-numeric: tabular-nums; }
+.f-agent-usage-cols { display: grid; grid-template-columns: 1fr 1fr; gap: var(--s-4); }
+.f-agent-usage-cols h4 { margin: 0 0 var(--s-1); font: 400 var(--t-xs) var(--font); text-transform: uppercase; letter-spacing: var(--caps); color: var(--dim); font-weight: 500; }
+.f-agent-usage-li { display: flex; align-items: center; gap: var(--s-2); height: 20px; font: 400 var(--t-sm) var(--font); color: var(--ink-2); }
+.f-agent-usage-li span { flex: 1; min-width: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.f-agent-usage-li small { font: 400 var(--t-xs) var(--font); color: var(--dim); font-variant-numeric: tabular-nums; }
+.f-agent-usage-li .meter { width: 36px; flex: none; }
+.f-agent-usage-days { display: flex; align-items: flex-end; gap: var(--s-1); height: 30px; }
+.f-agent-usage-days i { flex: 1; min-height: 2px; border-radius: 2px; background: var(--card-2); }
+.f-agent-usage-days i.now { background: var(--accent); }
+.f-agent-usage-limits { display: grid; grid-template-columns: 1fr 1fr; gap: var(--s-4); }
+.f-agent-usage-limits div { display: flex; flex-direction: column; gap: var(--s-1); font: 400 var(--t-xs) var(--font); color: var(--dim); }
+.f-agent-usage-note { margin: 0; font: 400 var(--t-xs) var(--font); color: var(--dim-2); }
