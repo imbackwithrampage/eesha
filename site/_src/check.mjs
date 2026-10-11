@@ -14,8 +14,9 @@ for (const [page, s] of Object.entries(html)) {
   if ((s.match(/<h1/g) || []).length !== 1) fail(page, "not exactly one h1");
   for (const [, attr, raw] of s.matchAll(/\s(href|src)="([^"]*)"/g)) {
     if (/^(https?:|mailto:|data:)/.test(raw) || raw === "") continue;
-    const [file, hash] = raw.replace(/^\//, "").split("#");
-    const target = file || page;
+    const [file, hash] = raw.replace(/^\//, "").replace(/^\.\/$/, "index.html").split("#");
+    // Pages are linked without ".html" (the host adds it back): "download" is download.html.
+    const target = !file ? page : !existsSync(join(site, file)) && existsSync(join(site, file + ".html")) ? file + ".html" : file;
     if (!existsSync(join(site, target))) { fail(page, `${attr} ${raw} does not exist`); continue; }
     if (hash && target.endsWith(".html") && !new RegExp(`id="${hash}"`).test(html[target])) fail(page, `anchor ${raw} does not exist`);
   }

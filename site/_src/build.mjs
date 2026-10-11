@@ -14,7 +14,7 @@ const PAGES = [
   { file: "index.html", frag: "home", title: "Lintel: an island for Windows, hidden until something needs you", desc: "A free, open-source island at the top of your Windows screen: answer your coding agents, control music and reach your tools, then it gets out of the way." },
   { file: "features.html", frag: "features", title: "Features: everything Lintel can do | Lintel", desc: "The whole feature list of Lintel 1.0.0, group by group: coding agents, chat, media, system tools, capture, clipboard, voice and more. Each one has a switch." },
   { file: "screenshots.html", frag: "screenshots", title: "Screenshots of Lintel on Windows | Lintel", desc: "See Lintel at work: the island with a permission card from a coding agent, the player, the clipboard, the mixer, capture tools and the settings window." },
-  { file: "download.html", frag: "download", title: "Download Lintel 1.0.0 for Windows 10 and 11 | Lintel", desc: "Download the free Lintel installer for Windows 10 and 11. No administrator rights needed. What Windows will ask, how to remove it, and how to build it yourself." },
+  { file: "download.html", frag: "download", title: "Download Lintel for Windows 10 and 11 | Lintel", desc: "Download the free Lintel installer for Windows 10 and 11. No administrator rights needed. What Windows will ask, how to remove it, and how to build it yourself." },
   { file: "guide.html", frag: "guide", title: "Guide: your first day with Lintel | Lintel", desc: "A plain guide for new users: bring the island out, connect a coding agent, answer its first request, turn features on and off, and try the voice assistant." },
   { file: "docs.html", frag: "docs", title: "Documentation: the island, shortcuts, privacy, voice | Lintel", desc: "How Lintel works in detail: the island's rules, every default shortcut, what leaves your computer, the hardware helper, the voice assistant and building from source." },
   { file: "contribute.html", frag: "contribute", title: "Contribute to Lintel: start, rules and wanted help | Lintel", desc: "Everyone is welcome. Build Lintel from source in four commands, learn how a feature is one folder, read the rules in plain words and see what help is wanted most." },
@@ -26,7 +26,7 @@ const BOT = `<svg class="bot" viewBox="0 0 58 58" aria-hidden="true"><defs><line
 
 function page(p) {
   const b = p.base ?? "";
-  const url = ORIGIN + (p.file === "index.html" ? "" : p.file);
+  const url = ORIGIN + (p.file === "index.html" ? "" : p.file.replace(/\.html$/, ""));
   const body = readFileSync(join(here, "pages", p.frag + ".html"), "utf8").replaceAll("{REPO}", REPO).replaceAll("{B}", b).split(/(<pre[\s\S]*?<\/pre>|<code[\s\S]*?<\/code>|<[^>]+>)/).map((s, i) => i % 2 ? s : s.replace(/"([^"]*)"/g, "“$1”").replace(/'/g, "’").replace(/(\d) (MB|GB|px)\b/g, "$1 $2")).join("");
   const links = NAV.map(([href, label]) => `<a href="${b}${href}"${href === p.file ? ' aria-current="page"' : ""}>${label}</a>`).join("\n      ");
   const ld = p.file !== "index.html" ? "" : `
@@ -88,7 +88,7 @@ ${body.trim()}
     <a href="${b}download.html#signing">Code signing policy</a>
   </nav>
   <p>Lintel is free to use, to change and to share under the <a href="${REPO}/blob/main/LICENSE">GNU General Public License, version 3 or later</a>. It is an independent project. The work it builds on is credited on the <a href="${b}about.html">About</a> page and in <a href="${REPO}/blob/main/NOTICE.md">NOTICE.md</a>.</p>
-  <p>Made by <a href="https://github.com/shakibbinkabir">Shakib Bin Kabir</a>. This site sets no cookies and loads nothing from anywhere else.</p>
+  <p>Made by <a href="https://github.com/shakibbinkabir">Shakib Bin Kabir</a>. This site sets no cookies. The download page asks GitHub which release is the latest; nothing else is loaded from anywhere else.</p>
 </footer>
 
 </body>
@@ -96,8 +96,11 @@ ${body.trim()}
 `;
 }
 
-for (const p of PAGES) writeFileSync(join(out, p.file), page(p));
+// The pages are served without ".html" (site/.htaccess): the links say so, the files keep their names.
+const clean = (html) =>
+  html.replace(/href="((?:\.\/|\/)?)(index|features|screenshots|download|guide|docs|contribute|about)\.html(#[^"]*)?"/g, (_, pre, name, hash = "") => `href="${name === "index" ? pre || "./" : pre + name}${hash}"`);
+for (const p of PAGES) writeFileSync(join(out, p.file), clean(page(p)));
 writeFileSync(join(out, "robots.txt"), `User-agent: *\nAllow: /\n\nSitemap: ${ORIGIN}sitemap.xml\n`);
-writeFileSync(join(out, "sitemap.xml"), `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${PAGES.filter((p) => !p.noindex).map((p) => `  <url><loc>${ORIGIN}${p.file === "index.html" ? "" : p.file}</loc><lastmod>2026-10-12</lastmod></url>`).join("\n")}\n</urlset>\n`);
+writeFileSync(join(out, "sitemap.xml"), `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${PAGES.filter((p) => !p.noindex).map((p) => `  <url><loc>${ORIGIN}${p.file === "index.html" ? "" : p.file.replace(/\.html$/, "")}</loc><lastmod>2026-10-12</lastmod></url>`).join("\n")}\n</urlset>\n`);
 writeFileSync(join(out, "img", "mark.svg"), `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 58 58"><defs><linearGradient id="b" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#b0beff"/><stop offset=".55" stop-color="#8ea2ff"/><stop offset="1" stop-color="#616ead"/></linearGradient></defs><circle cx="29" cy="29" r="26.7" fill="url(#b)"/><rect x="8.7" y="15.1" width="40.6" height="16.2" rx="8.1" fill="#070708" fill-opacity=".94"/><rect x="20.3" y="21" width="17.4" height="4.4" rx="2.2" fill="#fff"/></svg>\n`);
 console.log("wrote", PAGES.length, "pages");

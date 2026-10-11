@@ -201,3 +201,28 @@
     else { run++; mode("hidden"); }
   }, { threshold: 0.15 }).observe(isl.parentNode);
 })();
+
+// The download card shows the latest release, asked from GitHub. If that fails, what the page was built with stays,
+// and the button's own address already points at the latest installer.
+(() => {
+  const slots = document.querySelectorAll("[data-latest]");
+  if (!slots.length) return;
+  fetch("https://api.github.com/repos/shakibbinkabir/lintel/releases/latest", { headers: { Accept: "application/vnd.github+json" } })
+    .then((r) => (r.ok ? r.json() : Promise.reject(r.status)))
+    .then((release) => {
+      const asset = (release.assets || []).find((a) => /^lintel-\d[\d.]*-setup\.exe$/.test(a.name));
+      if (!asset) return;
+      const text = {
+        version: release.tag_name.replace(/^v/, ""),
+        size: (asset.size / 1048576).toFixed(1) + " MB",
+        date: new Date(release.published_at).toLocaleDateString("en-GB", { day: "numeric", month: "long", year: "numeric" }),
+        file: asset.name,
+      };
+      slots.forEach((el) => {
+        const key = el.dataset.latest;
+        if (key === "installer") el.href = asset.browser_download_url;
+        else if (text[key]) el.textContent = text[key];
+      });
+    })
+    .catch(() => {});
+})();

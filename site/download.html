@@ -4,13 +4,13 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="color-scheme" content="dark">
-<title>Download Lintel 1.0.0 for Windows 10 and 11 | Lintel</title>
+<title>Download Lintel for Windows 10 and 11 | Lintel</title>
 <meta name="description" content="Download the free Lintel installer for Windows 10 and 11. No administrator rights needed. What Windows will ask, how to remove it, and how to build it yourself.">
-<link rel="canonical" href="https://lintel.thisissbk.com/download.html">
+<link rel="canonical" href="https://lintel.thisissbk.com/download">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Lintel">
-<meta property="og:url" content="https://lintel.thisissbk.com/download.html">
-<meta property="og:title" content="Download Lintel 1.0.0 for Windows 10 and 11">
+<meta property="og:url" content="https://lintel.thisissbk.com/download">
+<meta property="og:title" content="Download Lintel for Windows 10 and 11">
 <meta property="og:description" content="Download the free Lintel installer for Windows 10 and 11. No administrator rights needed. What Windows will ask, how to remove it, and how to build it yourself.">
 <meta property="og:image" content="https://lintel.thisissbk.com/img/og.png">
 <meta property="og:image:width" content="1200">
@@ -30,16 +30,16 @@
 
 <header class="nav">
   <nav class="nav-in wrap" aria-label="Main">
-    <a class="wordmark" href="index.html" aria-label="Lintel, home" translate="no"><svg class="bot" viewBox="0 0 58 58" aria-hidden="true"><defs><linearGradient id="bot-body" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#b0beff"/><stop offset=".55" stop-color="#8ea2ff"/><stop offset="1" stop-color="#616ead"/></linearGradient></defs><g id="bot"><circle cx="29" cy="29" r="26.7" fill="url(#bot-body)"/><rect x="8.7" y="15.1" width="40.6" height="16.2" rx="8.1" fill="#070708" fill-opacity=".94"/><rect class="bot-bar" x="20.3" y="21" width="17.4" height="4.4" rx="2.2" fill="#fff"/></g></svg>Lintel</a>
+    <a class="wordmark" href="./" aria-label="Lintel, home" translate="no"><svg class="bot" viewBox="0 0 58 58" aria-hidden="true"><defs><linearGradient id="bot-body" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#b0beff"/><stop offset=".55" stop-color="#8ea2ff"/><stop offset="1" stop-color="#616ead"/></linearGradient></defs><g id="bot"><circle cx="29" cy="29" r="26.7" fill="url(#bot-body)"/><rect x="8.7" y="15.1" width="40.6" height="16.2" rx="8.1" fill="#070708" fill-opacity=".94"/><rect class="bot-bar" x="20.3" y="21" width="17.4" height="4.4" rx="2.2" fill="#fff"/></g></svg>Lintel</a>
     <button type="button" class="nav-toggle" aria-label="Menu" aria-expanded="false" aria-controls="nav-links"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 8.5h16M4 15.5h16"/></svg></button>
     <div class="nav-links" id="nav-links">
-      <a href="features.html">Features</a>
-      <a href="screenshots.html">Screenshots</a>
-      <a href="guide.html">Guide</a>
-      <a href="docs.html">Docs</a>
-      <a href="contribute.html">Contribute</a>
-      <a href="about.html">About</a>
-      <a class="nav-get" href="download.html" aria-current="page">Download</a>
+      <a href="features">Features</a>
+      <a href="screenshots">Screenshots</a>
+      <a href="guide">Guide</a>
+      <a href="docs">Docs</a>
+      <a href="contribute">Contribute</a>
+      <a href="about">About</a>
+      <a class="nav-get" href="download" aria-current="page">Download</a>
     </div>
   </nav>
 </header>
@@ -55,13 +55,17 @@
     <div class="get-card rise-late">
       <div class="get-in">
         <h2>Lintel for Windows</h2>
-        <a class="btn btn-solid" href="https://github.com/shakibbinkabir/lintel/releases/download/v1.0.0/lintel-1.0.0-setup.exe"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 4v11M7 10.5l5 5 5-5M5 19.5h14"/></svg>Download for Windows</a>
+        <a class="btn btn-solid" data-latest="installer" href="https://github.com/shakibbinkabir/lintel/releases/latest/download/lintel-setup.exe"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 4v11M7 10.5l5 5 5-5M5 19.5h14"/></svg>Download for Windows</a>
         <dl class="facts">
-          <div><dt>Version</dt><dd>1.0.0</dd></div>
-          <div><dt>Size</dt><dd>39.8 MB</dd></div>
+          <div><dt>Version</dt><dd data-latest="version">1.0.0</dd></div>
+          <div><dt>Size</dt><dd data-latest="size">39.8 MB</dd></div>
+          <div><dt>Released</dt><dd data-latest="date">12 October 2026</dd></div>
           <div><dt>Needs</dt><dd>Windows 10 or 11</dd></div>
         </dl>
-        <p class="fine" style="margin-top:22px">The file is <code>lintel-1.0.0-setup.exe</code>, from the project’s <a href="https://github.com/shakibbinkabir/lintel/releases">releases page on GitHub</a>, where older and newer versions are listed too.</p>
+        <p class="fine" style="margin-top:22px">The file is <code data-latest="file">lintel-1.0.0-setup.exe</code>, from the project’s <a href="https://github.com/shakibbinkabir/lintel/releases">releases page on GitHub</a>, where older versions are listed too. This card always shows the latest release: the page asks GitHub for it.</p>
+        <h3 style="margin-top:28px">Or with winget</h3>
+<pre><code>winget install lintel</code></pre>
+        <p class="fine">Lintel’s package is in review at Microsoft. Until it is accepted, this command finds nothing: use the button above.</p>
       </div>
     </div>
 
@@ -98,7 +102,7 @@
       <li><strong>Free code signing provided by <a href="https://signpath.io">SignPath.io</a>, certificate by <a href="https://signpath.org">SignPath Foundation</a>.</strong></li>
       <li><strong>Built in the open.</strong> Every signed installer is built from the public repository by its build workflow on GitHub’s own runners, never on a private machine.</li>
       <li><strong>Committers and reviewers:</strong> <a href="https://github.com/shakibbinkabir/lintel/graphs/contributors">the repository’s contributors</a>. <strong>Approvers:</strong> <a href="https://github.com/shakibbinkabir">the repository’s owner</a>.</li>
-      <li><strong>Privacy policy.</strong> This program will not transfer any information to other networked systems unless specifically requested by the user or the person installing or operating it. The <a href="docs.html">documentation</a> lists what can leave your computer and what turns each thing on.</li>
+      <li><strong>Privacy policy.</strong> This program will not transfer any information to other networked systems unless specifically requested by the user or the person installing or operating it. The <a href="docs">documentation</a> lists what can leave your computer and what turns each thing on.</li>
     </ul>
     <p>Until then, each release gives the SHA-256 of its installer, so you can check your download.</p>
 
@@ -115,27 +119,27 @@ cd lintel
 npm install
 npm run build
 npm run tauri dev</code></pre>
-    <p><code>npm run pack</code> makes the installer into the <code>release</code> folder. It also builds the hardware helper, which needs the .NET 8 SDK. More detail is in the <a href="docs.html#build">documentation</a> and on the <a href="contribute.html">Contribute</a> page.</p>
+    <p><code>npm run pack</code> makes the installer into the <code>release</code> folder. It also builds the hardware helper, which needs the .NET 8 SDK. More detail is in the <a href="docs#build">documentation</a> and on the <a href="contribute">Contribute</a> page.</p>
   </div>
 </section>
 </main>
 
 <footer class="footer wrap">
   <nav aria-label="Footer">
-    <a href="index.html">Home</a>
-    <a href="features.html">Features</a>
-    <a href="screenshots.html">Screenshots</a>
-    <a href="guide.html">Guide</a>
-    <a href="docs.html">Documentation</a>
-    <a href="contribute.html">Contribute</a>
-    <a href="about.html">About</a>
-    <a href="download.html">Download</a>
+    <a href="./">Home</a>
+    <a href="features">Features</a>
+    <a href="screenshots">Screenshots</a>
+    <a href="guide">Guide</a>
+    <a href="docs">Documentation</a>
+    <a href="contribute">Contribute</a>
+    <a href="about">About</a>
+    <a href="download">Download</a>
     <a href="https://github.com/shakibbinkabir/lintel">GitHub</a>
     <a href="https://github.com/shakibbinkabir/lintel/releases">Releases</a>
-    <a href="download.html#signing">Code signing policy</a>
+    <a href="download#signing">Code signing policy</a>
   </nav>
-  <p>Lintel is free to use, to change and to share under the <a href="https://github.com/shakibbinkabir/lintel/blob/main/LICENSE">GNU General Public License, version 3 or later</a>. It is an independent project. The work it builds on is credited on the <a href="about.html">About</a> page and in <a href="https://github.com/shakibbinkabir/lintel/blob/main/NOTICE.md">NOTICE.md</a>.</p>
-  <p>Made by <a href="https://github.com/shakibbinkabir">Shakib Bin Kabir</a>. This site sets no cookies and loads nothing from anywhere else.</p>
+  <p>Lintel is free to use, to change and to share under the <a href="https://github.com/shakibbinkabir/lintel/blob/main/LICENSE">GNU General Public License, version 3 or later</a>. It is an independent project. The work it builds on is credited on the <a href="about">About</a> page and in <a href="https://github.com/shakibbinkabir/lintel/blob/main/NOTICE.md">NOTICE.md</a>.</p>
+  <p>Made by <a href="https://github.com/shakibbinkabir">Shakib Bin Kabir</a>. This site sets no cookies. The download page asks GitHub which release is the latest; nothing else is loaded from anywhere else.</p>
 </footer>
 
 </body>

@@ -85,11 +85,14 @@ jobs:
           GH_TOKEN: ${{ github.token }}
         run: |
           file="release/lintel-${{ steps.meta.outputs.version }}-setup.exe"
+          # The same installer under a name that never changes, so that
+          # releases/latest/download/lintel-setup.exe always gives the newest one.
+          same="release/lintel-setup.exe"
           if gh release view "$GITHUB_REF_NAME" >/dev/null 2>&1; then
-            gh release upload "$GITHUB_REF_NAME" "$file" --clobber
+            gh release upload "$GITHUB_REF_NAME" "$file" "$same" --clobber
             gh release edit "$GITHUB_REF_NAME" --notes-file release-notes.md
           else
-            gh release create "$GITHUB_REF_NAME" "$file" --verify-tag --title "Lintel ${{ steps.meta.outputs.version }}" --notes-file release-notes.md
+            gh release create "$GITHUB_REF_NAME" "$file" "$same" --verify-tag --title "Lintel ${{ steps.meta.outputs.version }}" --notes-file release-notes.md
           fi
 
   winget:

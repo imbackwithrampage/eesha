@@ -119,9 +119,11 @@ Every feature has a switch on the Features page, and a page of its own for its o
 
 ## Install
 
-1. Download `lintel-1.0.0-setup.exe` from the [latest release](../../releases/latest).
+1. Download the installer from the [latest release](../../releases/latest), or from [lintel.thisissbk.com/download](https://lintel.thisissbk.com/download).
 2. Run it. It installs for your user only and does not ask for administrator rights.
 3. The installer is not code-signed, so Windows SmartScreen will warn. Choose "More info", then "Run anyway", if you trust the file you downloaded.
+
+With winget: `winget install lintel`. The package is in review at Microsoft, so this works once it has been accepted.
 
 To remove Lintel, use Settings, Apps in Windows. The uninstaller takes Lintel's entries out of your agents' settings and leaves your own data unless you tick the box to delete it.
 
