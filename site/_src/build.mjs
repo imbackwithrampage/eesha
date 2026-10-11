@@ -85,6 +85,7 @@ ${body.trim()}
     <a href="${b}download.html">Download</a>
     <a href="${REPO}">GitHub</a>
     <a href="${REPO}/releases">Releases</a>
+    <a href="${b}download.html#signing">Code signing policy</a>
   </nav>
   <p>Lintel is free to use, to change and to share under the <a href="${REPO}/blob/main/LICENSE">GNU General Public License, version 3 or later</a>. It is an independent project. The work it builds on is credited on the <a href="${b}about.html">About</a> page and in <a href="${REPO}/blob/main/NOTICE.md">NOTICE.md</a>.</p>
   <p>Made by <a href="https://github.com/shakibbinkabir">Shakib Bin Kabir</a>. This site sets no cookies and loads nothing from anywhere else.</p>
