@@ -1,14 +1,11 @@
 # Builds the Windows installer from this repository on GitHub's own runner.
-# Run it by hand (Actions > Build > Run workflow) or by pushing a version tag.
-# The installer it uploads is unsigned. When the SignPath Foundation grants the
-# project a certificate, the signing request is added after the upload step:
-# it takes the uploaded artifact, so what is signed is exactly what was built here.
+# Run it by hand (Actions > Build > Run workflow) to check that a branch builds.
+# It publishes nothing: the installer is kept as an artifact of the run.
+# A release is made by the Release workflow, from a pushed tag (docs/RELEASING.md).
 name: Build
 
 on:
   workflow_dispatch:
-  push:
-    tags: ["v*"]
 
 permissions:
   contents: read

@@ -1,0 +1,113 @@
+# A release, from one pushed tag:
+#   1. builds the Windows installer from this repository on GitHub's own runner,
+#   2. publishes a GitHub release with the installer, its SHA-256 and the changelog entry,
+#   3. sends the new version to winget (when the WINGET_TOKEN secret is set).
+# How to make one: docs/RELEASING.md.
+name: Release
+
+on:
+  push:
+    tags: ["v*.*.*"]
+
+permissions:
+  contents: write
+
+concurrency:
+  group: release-${{ github.ref }}
+  cancel-in-progress: false
+
+jobs:
+  release:
+    name: Build and publish
+    runs-on: windows-latest
+    timeout-minutes: 120
+    outputs:
+      version: ${{ steps.meta.outputs.version }}
+    env:
+      CARGO_TERM_COLOR: always
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 24
+          cache: npm
+
+      - name: The tag must match the version in the tree
+        id: meta
+        shell: bash
+        run: |
+          tag="${GITHUB_REF_NAME#v}"
+          app=$(node -p "require('./src-tauri/tauri.conf.json').version")
+          pkg=$(node -p "require('./package.json').version")
+          if [ "$tag" != "$app" ] || [ "$tag" != "$pkg" ]; then
+            echo "::error::Tag v$tag does not match the tree (tauri.conf.json $app, package.json $pkg). Run scripts/bump-version.mjs, commit, then tag."
+            exit 1
+          fi
+          echo "version=$tag" >> "$GITHUB_OUTPUT"
+
+      - uses: dtolnay/rust-toolchain@stable
+
+      - uses: Swatinem/rust-cache@v2
+
+      - uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: 8.0.x
+
+      - name: Install the packages
+        run: npm ci
+
+      - name: Type-check, bundle and test the page
+        run: |
+          npm run build
+          npm test
+
+      - name: Build the installer
+        run: npm run pack
+
+      - name: Write the release notes
+        shell: bash
+        run: node scripts/release-notes.mjs "${{ steps.meta.outputs.version }}" > release-notes.md
+
+      - name: Keep the installer as a build artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: lintel-installer
+          path: release/lintel-${{ steps.meta.outputs.version }}-setup.exe
+          if-no-files-found: error
+
+      # When the SignPath Foundation grants the project a certificate, the signing request
+      # goes here: it takes the artifact above, and the signed file replaces the one below.
+
+      - name: Publish the GitHub release
+        shell: bash
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          file="release/lintel-${{ steps.meta.outputs.version }}-setup.exe"
+          if gh release view "$GITHUB_REF_NAME" >/dev/null 2>&1; then
+            gh release upload "$GITHUB_REF_NAME" "$file" --clobber
+            gh release edit "$GITHUB_REF_NAME" --notes-file release-notes.md
+          else
+            gh release create "$GITHUB_REF_NAME" "$file" --verify-tag --title "Lintel ${{ steps.meta.outputs.version }}" --notes-file release-notes.md
+          fi
+
+  winget:
+    name: Send the version to winget
+    needs: release
+    runs-on: windows-latest
+    timeout-minutes: 20
+    steps:
+      - name: Open the pull request on microsoft/winget-pkgs
+        shell: pwsh
+        env:
+          WINGET_TOKEN: ${{ secrets.WINGET_TOKEN }}
+        run: |
+          if (-not $env:WINGET_TOKEN) {
+            Write-Host "::notice::The WINGET_TOKEN secret is not set, so winget was not updated. See docs/RELEASING.md."
+            exit 0
+          }
+          $version = "${{ needs.release.outputs.version }}"
+          $url = "https://github.com/${{ github.repository }}/releases/download/v$version/lintel-$version-setup.exe"
+          Invoke-WebRequest https://aka.ms/wingetcreate/latest -OutFile wingetcreate.exe
+          .\wingetcreate.exe update ShakibBinKabir.Lintel --urls $url --version $version --token $env:WINGET_TOKEN --submit
