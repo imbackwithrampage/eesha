@@ -42,7 +42,7 @@ Var NotchReal ; 1: a real uninstall. 0: an update or a reinstall.
 Var NotchRun  ; the startup entry as it was
 
 !macro LINTEL_CMDKEY name
-  nsExec::Exec 'cmdkey /delete:${name}.lintel'
+  nsExec::Exec 'cmdkey /delete:${name}.eesha'
   Pop $0
 !macroend
 
@@ -53,28 +53,28 @@ Var NotchRun  ; the startup entry as it was
     StrCpy $NotchReal 0
     StrCpy $DeleteAppDataCheckboxState 0
   ${EndIf}
-  ReadRegStr $NotchRun HKCU "Software\Microsoft\Windows\CurrentVersion\Run" "lintel"
+  ReadRegStr $NotchRun HKCU "Software\Microsoft\Windows\CurrentVersion\Run" "eesha"
 
   ${If} $NotchReal = 1
-    ${If} ${FileExists} "$INSTDIR\lintel.exe"
-      ExecWait '"$INSTDIR\lintel.exe" --uninstall-hooks'
+    ${If} ${FileExists} "$INSTDIR\eesha.exe"
+      ExecWait '"$INSTDIR\eesha.exe" --uninstall-hooks'
     ${EndIf}
     ; The shelf's opt-in "Add to Shelf" entries: the Send To shortcut carries the
     ; label the key's default value holds. Untested: no uninstall was run.
-    ReadRegStr $0 HKCU "Software\Classes\*\shell\lintel.AddToShelf" ""
+    ReadRegStr $0 HKCU "Software\Classes\*\shell\eesha.AddToShelf" ""
     ${If} $0 != ""
       Delete "$SENDTO\$0.lnk"
     ${EndIf}
-    DeleteRegKey HKCU "Software\Classes\*\shell\lintel.AddToShelf"
-    DeleteRegKey HKCU "Software\Classes\Directory\shell\lintel.AddToShelf"
+    DeleteRegKey HKCU "Software\Classes\*\shell\eesha.AddToShelf"
+    DeleteRegKey HKCU "Software\Classes\Directory\shell\eesha.AddToShelf"
     ; The identity package of notification mirroring. Nothing happens when it was
     ; never registered. Untested: no uninstall was run.
-    nsExec::Exec `powershell.exe -NoProfile -NonInteractive -Command "Get-AppxPackage -Name dev.lintel.app | Remove-AppxPackage"`
+    nsExec::Exec `powershell.exe -NoProfile -NonInteractive -Command "Get-AppxPackage -Name dev.eesha.app | Remove-AppxPackage"`
     Pop $0
-    Delete "$LOCALAPPDATA\lintel\features\notifications-accessories\AppxManifest.xml"
-    Delete "$LOCALAPPDATA\lintel\features\notifications-accessories\logo.png"
+    Delete "$LOCALAPPDATA\eesha\features\notifications-accessories\AppxManifest.xml"
+    Delete "$LOCALAPPDATA\eesha\features\notifications-accessories\logo.png"
     ; The relay the app staged at launch: the installer never recorded it.
-    RMDir /r "$LOCALAPPDATA\lintel\bin"
+    RMDir /r "$LOCALAPPDATA\eesha\bin"
   ${EndIf}
 !macroend
 
@@ -96,13 +96,13 @@ Var NotchRun  ; the startup entry as it was
       !insertmacro LINTEL_CMDKEY notion-api-key
       !insertmacro LINTEL_CMDKEY calcom-api-key
       ${If} $APPDATA != ""
-        RMDir /r "$APPDATA\lintel"
+        RMDir /r "$APPDATA\eesha"
       ${EndIf}
       ${If} $LOCALAPPDATA != ""
-        RMDir /r "$LOCALAPPDATA\lintel"
+        RMDir /r "$LOCALAPPDATA\eesha"
       ${EndIf}
     ${EndIf}
   ${ElseIf} $NotchRun != ""
-    WriteRegStr HKCU "Software\Microsoft\Windows\CurrentVersion\Run" "lintel" $NotchRun
+    WriteRegStr HKCU "Software\Microsoft\Windows\CurrentVersion\Run" "eesha" $NotchRun
   ${EndIf}
 !macroend

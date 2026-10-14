@@ -21,7 +21,7 @@ const OK: &[&str] = &["ok", "okay", "oaky", "okie", "o", "oke", "okey"];
 /// What the engine may write for the name. Per name, and measured with target/voice-spike/scripts/.
 // debt: not measured for this name yet (the code name's table came from 63 clips). "lentil" is the
 // everyday word nearest in sound; the distance rule below covers the one-letter slips.
-const MISHEARD: &[&str] = &["lentil", "lintle", "lentle"];
+const MISHEARD: &[&str] = &["lentil", "lintle", "lentle", "eesha", "isha", "aisha"];
 
 /// A stock phrase the engine writes on hum and clicks.
 const STOCK: &[&str] = &["thank you", "thanks for watching", "you", "bye"];

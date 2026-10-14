@@ -23,10 +23,10 @@
   xmlns:uap10="http://schemas.microsoft.com/appx/manifest/uap/windows10/10"
   xmlns:rescap="http://schemas.microsoft.com/appx/manifest/foundation/windows10/restrictedcapabilities"
   IgnorableNamespaces="uap uap3 uap10 rescap">
-  <Identity Name="dev.lintel.app" Publisher="CN=Lintel" Version="1.0.0.0" ProcessorArchitecture="neutral" />
+  <Identity Name="dev.eesha.app" Publisher="CN=Eesha" Version="1.0.0.0" ProcessorArchitecture="neutral" />
   <Properties>
-    <DisplayName>Lintel</DisplayName>
-    <PublisherDisplayName>Lintel contributors</PublisherDisplayName>
+    <DisplayName>Eesha</DisplayName>
+    <PublisherDisplayName>Eesha contributors</PublisherDisplayName>
     <Logo>logo.png</Logo>
     <uap10:AllowExternalContent>true</uap10:AllowExternalContent>
   </Properties>
@@ -42,8 +42,8 @@
     <uap3:Capability Name="userNotificationListener" />
   </Capabilities>
   <Applications>
-    <Application Id="App" Executable="lintel.exe" uap10:TrustLevel="mediumIL" uap10:RuntimeBehavior="win32App">
-      <uap:VisualElements AppListEntry="none" DisplayName="lintel" Description="lintel" BackgroundColor="transparent" Square150x150Logo="logo.png" Square44x44Logo="logo.png" />
+    <Application Id="App" Executable="eesha.exe" uap10:TrustLevel="mediumIL" uap10:RuntimeBehavior="win32App">
+      <uap:VisualElements AppListEntry="none" DisplayName="eesha" Description="eesha" BackgroundColor="transparent" Square150x150Logo="logo.png" Square44x44Logo="logo.png" />
     </Application>
   </Applications>
 </Package>

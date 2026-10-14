@@ -200,7 +200,7 @@ export function settingsBody(cx: FeatureCtx): HTMLElement {
     secrets: [t("Saved keys"), t("The keys and tokens in the Windows Credential Manager.")],
     features: [t("What features keep"), t("History, caches and files the features saved.")],
     inbox: [t("Dropped files"), t("The copies of files dropped on the island.")],
-    hooks: [t("Agent hooks and the relay"), t("Takes Lintel's entries out of the agents' settings, with a dated backup of each file, then removes the relay program.")],
+    hooks: [t("Agent hooks and the relay"), t("Takes Eesha's entries out of the agents' settings, with a dated backup of each file, then removes the relay program.")],
     config: [t("Your settings"), t("Settings, shortcuts and backups. Removed after the app has quit.")],
   };
   const bytes = (n: number) => (n < 1024 ? `${n} B` : n < 1024 * 1024 ? `${Math.round(n / 1024)} KB` : `${(n / 1048576).toFixed(1)} MB`);

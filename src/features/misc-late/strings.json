@@ -888,17 +888,17 @@
       "ru": "Хуки агентов и ретранслятор",
       "id": "Hook agen dan relay"
     },
-    "Takes Lintel's entries out of the agents' settings, with a dated backup of each file, then removes the relay program.": {
-      "en": "Takes Lintel's entries out of the agents' settings, with a dated backup of each file, then removes the relay program.",
-      "zh-Hans": "从智能体的设置中移除 Lintel 的条目，并为每个文件保留带日期的备份，然后删除中继程序。",
-      "hi": "एजेंटों की सेटिंग से Lintel की प्रविष्टियाँ हटाता है, हर फ़ाइल का तारीख़ वाला बैकअप रखकर, फिर रिले प्रोग्राम हटा देता है।",
-      "es": "Quita las entradas de Lintel de los ajustes de los agentes, con una copia fechada de cada archivo, y luego elimina el programa relé.",
-      "ar": "يزيل إدخالات Lintel من إعدادات الوكلاء مع نسخة احتياطية مؤرَّخة لكل ملف، ثم يحذف برنامج المُرحِّل.",
-      "fr": "Retire les entrées de Lintel des paramètres des agents, avec une sauvegarde datée de chaque fichier, puis supprime le programme relais.",
-      "bn": "এজেন্টদের সেটিংস থেকে Lintel-এর এন্ট্রি সরায়, প্রতিটি ফাইলের তারিখসহ ব্যাকআপ রেখে, তারপর রিলে প্রোগ্রাম মুছে দেয়।",
-      "pt-BR": "Remove as entradas do Lintel das configurações dos agentes, com um backup datado de cada arquivo, e depois remove o programa relay.",
-      "ru": "Удаляет записи Lintel из настроек агентов, сохраняя датированную копию каждого файла, затем удаляет программу-ретранслятор.",
-      "id": "Menghapus entri Lintel dari pengaturan agen, dengan cadangan bertanggal untuk tiap file, lalu menghapus program relay."
+    "Takes Eesha's entries out of the agents' settings, with a dated backup of each file, then removes the relay program.": {
+      "en": "Takes Eesha's entries out of the agents' settings, with a dated backup of each file, then removes the relay program.",
+      "zh-Hans": "从智能体的设置中移除 Eesha 的条目，并为每个文件保留带日期的备份，然后删除中继程序。",
+      "hi": "एजेंटों की सेटिंग से Eesha की प्रविष्टियाँ हटाता है, हर फ़ाइल का तारीख़ वाला बैकअप रखकर, फिर रिले प्रोग्राम हटा देता है।",
+      "es": "Quita las entradas de Eesha de los ajustes de los agentes, con una copia fechada de cada archivo, y luego elimina el programa relé.",
+      "ar": "يزيل إدخالات Eesha من إعدادات الوكلاء مع نسخة احتياطية مؤرَّخة لكل ملف، ثم يحذف برنامج المُرحِّل.",
+      "fr": "Retire les entrées de Eesha des параметров des agents, avec une sauvegarde datée de chaque fichier, puis supprime le programme relais.",
+      "bn": "এজেন্টদের সেটিংস থেকে Eesha-এর এন্ট্রি সরায়, প্রতিটি ফাইলের তারিখসহ ব্যাকআপ রেখে, তারপর রিলে প্রোগ্রাম মুছে দেয়।",
+      "pt-BR": "Remove as entradas do Eesha das configurações dos agentes, com um backup datado de cada arquivo, e depois remove o programa relay.",
+      "ru": "Удаляет записи Eesha из настроек агентов, сохраняя датированную копию каждого файла, затем удаляет программу-ретранслятор.",
+      "id": "Menghapus entri Eesha dari pengaturan agen, dengan cadangan bertanggal untuk tiap file, lalu menghapus program relay."
     },
     "Your settings": {
       "en": "Your settings",

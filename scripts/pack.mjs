@@ -17,8 +17,8 @@ const { version } = JSON.parse(readFileSync(join(root, "src-tauri", "tauri.conf.
 // points at the latest release).
 const PACKAGES = {
   win32: [
-    { dir: "nsis", suffix: "-setup.exe", names: [`lintel-${version}-setup.exe`, "lintel-setup.exe"] },
-    { dir: "msi", suffix: ".msi", names: [`lintel-${version}.msi`, "lintel.msi"] },
+    { dir: "nsis", suffix: "-setup.exe", names: [`eesha-${version}-setup.exe`, "eesha-setup.exe"] },
+    { dir: "msi", suffix: ".msi", names: [`eesha-${version}.msi`, "eesha.msi"], optional: true },
   ],
 };
 
@@ -44,9 +44,10 @@ function newest(dir, suffix) {
 
 mkdirSync(outDir, { recursive: true });
 const written = [];
-for (const { dir, suffix, names } of packages) {
+for (const { dir, suffix, names, optional } of packages) {
   const built = newest(join(bundleRoot, dir), suffix);
   if (!built) {
+    if (optional) continue;
     console.error(`No *${suffix} in ${join(bundleRoot, dir)} — run \`npm run tauri build\` first.`);
     process.exit(1);
   }

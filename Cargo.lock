@@ -1005,6 +1005,15 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "d0881ea181b1df73ff77ffaaf9c7544ecc11e82fba9b5f27b262a3c73a332555"
 
 [[package]]
+name = "eesha-hook"
+version = "1.0.0"
+dependencies = [
+ "notch-brand",
+ "serde_json",
+ "windows 0.61.3",
+]
+
+[[package]]
 name = "embed-resource"
 version = "3.0.11"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -2299,15 +2308,6 @@ dependencies = [
  "webview2-com",
  "windows 0.61.3",
  "windows-core 0.62.2",
-]
-
-[[package]]
-name = "lintel-hook"
-version = "1.0.0"
-dependencies = [
- "notch-brand",
- "serde_json",
- "windows 0.61.3",
 ]
 
 [[package]]

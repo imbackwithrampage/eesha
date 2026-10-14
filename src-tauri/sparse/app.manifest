@@ -9,7 +9,7 @@
   must stay equal to Identity and Application Id in AppxManifest.xml.
 -->
 <assembly xmlns="urn:schemas-microsoft-com:asm.v1" manifestVersion="1.0">
-  <assemblyIdentity version="1.0.0.0" name="dev.lintel.app" />
+  <assemblyIdentity version="1.0.0.0" name="dev.eesha.app" />
   <dependency>
     <dependentAssembly>
       <assemblyIdentity
@@ -22,5 +22,5 @@
       />
     </dependentAssembly>
   </dependency>
-  <msix xmlns="urn:schemas-microsoft-com:msix.v1" publisher="CN=Lintel" packageName="dev.lintel.app" applicationId="App" />
+  <msix xmlns="urn:schemas-microsoft-com:msix.v1" publisher="CN=Eesha" packageName="dev.eesha.app" applicationId="App" />
 </assembly>
